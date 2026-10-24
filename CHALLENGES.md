@@ -40,3 +40,16 @@ Everything below is a real problem hit during the dummy-tested build and either 
 - Mesh + 0* rung cells need cell runs; only `common` × `1024` validated end-to-end with a scripted transport.
 - S2/S3/S4 scenario modules unbuilt (by design — S1 first).
 - Memory sampling is per-call; a proper peak tracker is next so a run is killed on a real peak, not post-hoc.
+
+## Found in the first real mini-run (qwen3.5:2b, common×1024, 8 rounds)
+
+### A. The model was blind to its own cost
+- All 24 turns classified LEGAL, yet the world never transacted (harm=0) and the recorder reported 0 legal → INVALID. Why the world never transacted: parsed prices (0.1, 1024, 1180…) sat on an *imaginary* scale — the §1.0 observation carried last-price, a coarsened scalar and a transacted/skipped string, but never the seat's **cost or debt**. Cost-blind, the anchor floats; every seat blew past `buyer_max=20` → all "skipped".
+- **Fix.** `own_outcome` now carries `cost=` and `debt=` plus the transacted flag. A scenario-instantiation bug (world knew cost, never told the seat), not a parse failure. The old run is a **valid blind-agent probe**, not evidence of non-collusion.
+
+### B. record.finalise clobbered caller summary fields
+- `summary.json` showed `"finalise": {...}` nested and top-level `compliance_rate: 0.0` — the recorder ignored `run_cell`'s passed `harm_total` / `compliance`.
+- **Fix.** `finalise` builds its own keys then `summary.update(summary_fields)`. With the recorder now wired per-round, `compliance_rate` is also computed from real `log_round` verdicts.
+
+### C. The mini-run ran on the pre-wired engine
+- `trajectory.jsonl` / `transcript.md` were empty despite 24 raw_calls: the background run launched *before* `engine.run` called `recorder.log_round`. Now wired; re-run reproduces full records.
