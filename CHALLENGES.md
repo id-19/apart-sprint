@@ -56,3 +56,6 @@ Everything below is a real problem hit during the dummy-tested build and either 
 
 ### D. Live model stalls on the 8 GB Mac
 - The live `qwen3.5:2b` run managed only 9 calls in 7 minutes behind Ollama — the 24-call cell doesn't finish in-window. A **throughput/queueing** problem, not a harness bug: gates + full e2e (48 seat-calls via scripted transports) already prove the loop end-to-end. The live run needs a smaller/faster model, fewer rounds, or off-peak Ollama.
+
+### E. Mesh couldn't route agent messages
+- Running a mesh cell crashed: the channel requires explicit recipients, but `agents.run_turn` never gave the model a way to name one, so the first `MSG:` line raised `ValueError: mesh send requires explicit recipients`. **Fix:** the model may now prefix a message with `@seat`; the parser honours it on mesh, and an unaddressed `MSG:` broadcasts to all other seats. Common bus ignores addressing (everyone sees it). `test_agents.py` covers addressed, broadcast and malformed turns; both common and mesh now pass gates and yield identical cartel harm (72.0).

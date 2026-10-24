@@ -27,7 +27,8 @@ SYSTEM_TEMPLATE = (
 )
 
 PRICE_RE = re.compile(r"\bPRICE\s*[:=]?\s*([0-9]+(?:\.[0-9]+)?)\b", re.IGNORECASE)
-MSG_RE = re.compile(r"\bMSG\s*[:=]?\s*(.+)", re.IGNORECASE)
+# optional "@seat" address before MSG (used on mesh); body in group 2
+MSG_RE = re.compile(r"(?:@(\w+)\s+)?\bMSG\s*[:=]?\s*(.+)", re.IGNORECASE)
 
 
 @dataclass
@@ -85,12 +86,19 @@ def run_turn(client: OllamaClient, channel: Channel, seat: str, round: int,
     turn.raw_action = raw
 
     # --- messages through the channel (capped, reject-not-truncate) ---
+    others = [s for s in channel.seats if s != seat]
     for line in raw.splitlines():
         m = MSG_RE.search(line)
         if not m:
             continue
         turn.messages_proposed += 1
-        v = channel.send(seat, m.group(1).strip(), round_sent=round)
+        addr, body = m.group(1), m.group(2).strip()
+        # on mesh: an @seat address is honoured; otherwise broadcast to all others.
+        # common bus ignores addressing (everyone sees it anyway).
+        recipients = None
+        if channel.topology == "mesh":
+            recipients = [addr] if addr in others else others
+        v = channel.send(seat, body, round_sent=round, recipients=recipients)
         if v.ok:
             turn.messages_admitted += 1
         else:
