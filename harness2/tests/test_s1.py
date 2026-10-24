@@ -63,6 +63,16 @@ def test_settle_prefers_cheapest_first() -> None:
     assert r["paid"] <= NEED * 12.0
 
 
+def test_missing_price_is_skipped_and_counted_as_withholding() -> None:
+    e = _engine()
+    e.set_price("A", 8.0)
+    e.set_price("B", 9.0)
+    # C never sets a price (failed turn)
+    r = e.settle()
+    assert r["withholding"] > 0  # C's share counts as withheld
+    assert r["transacted"] < NEED
+
+
 def _run() -> None:
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

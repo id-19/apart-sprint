@@ -1,14 +1,4 @@
-"""test_record.py – tests for record.py (R2)."""
-
-import os
-import json
-import tempfile
-import pathlib
-
-from harness2.record import RunRecorder
-
-
-def test_record_rounds_and_summary(tmp_path):
+import sys; sys.path.insert(0, os.path.abspath('../../..'))
     cell_spec = {"scenario": "demo", "rung_bits": 8, "topology": "common", "n": 2, "family": "test", "seed": 123}
     gates = {"wg": 1}
     recorder = RunRecorder(str(tmp_path), cell_spec, gates)

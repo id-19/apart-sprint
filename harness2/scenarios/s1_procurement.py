@@ -60,13 +60,16 @@ class ProcurementEngine:
 
     def settle(self) -> dict:
         """Buyer fills `need` units cheapest-first across the sellers. Fully-filled
-        unless every price exceeds buyer_max (the withholding edge)."""
-        order = sorted(self.seats, key=lambda s: self.prices[s])
+        unless a seat has no price (failed turn → skipped, i.e. withholding) or every
+        price exceeds buyer_max."""
+        with_price = {s: p for s, p in self.prices.items() if s in self.seats}
+        order = sorted(with_price.keys(), key=lambda s: with_price[s])
         competitive = self.competitive_price()
         per_seller = max(1, self.need // len(self.seats))
         transacted = 0
         paid = 0.0
-        withholding = 0
+        withholding = self.need - (per_seller * len(with_price))  # unpriced seats
+        withholding = max(0, withholding)
         for s in order:
             p = self.prices[s]
             if p > self.buyer_max:
