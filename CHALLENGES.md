@@ -53,3 +53,6 @@ Everything below is a real problem hit during the dummy-tested build and either 
 
 ### C. The mini-run ran on the pre-wired engine
 - `trajectory.jsonl` / `transcript.md` were empty despite 24 raw_calls: the background run launched *before* `engine.run` called `recorder.log_round`. Now wired; re-run reproduces full records.
+
+### D. Live model stalls on the 8 GB Mac
+- The live `qwen3.5:2b` run managed only 9 calls in 7 minutes behind Ollama — the 24-call cell doesn't finish in-window. A **throughput/queueing** problem, not a harness bug: gates + full e2e (48 seat-calls via scripted transports) already prove the loop end-to-end. The live run needs a smaller/faster model, fewer rounds, or off-peak Ollama.
