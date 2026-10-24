@@ -165,6 +165,8 @@ class Engine:
                         observation=observations[seat],
                         action=({"price": turn.price} if turn.price is not None else None),
                         verdict=turn.verdict.lower(), latency_s=turn.latency_s)
+                    for (snd, body, bits, disp, rcpts) in (turn.messages or []):
+                        self.recorder.log_message(snd, body, bits, disp, rcpts)
                 if turn.verdict == "INFRA":
                     self._abort_infra(t)
                     return

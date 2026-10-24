@@ -40,6 +40,7 @@ class Turn:
     messages_proposed: int = 0
     messages_admitted: int = 0
     over_cap_bits: int = 0
+    messages: list = None  # type: ignore[assignment]  # [(sender, body, bits, admit|reject, recipients)]
     latency_s: float = 0.0
     raw_action: str = ""
 
@@ -99,6 +100,10 @@ def run_turn(client: OllamaClient, channel: Channel, seat: str, round: int,
         if channel.topology == "mesh":
             recipients = [addr] if addr in others else others
         v = channel.send(seat, body, round_sent=round, recipients=recipients)
+        if turn.messages is None:
+            turn.messages = []
+        turn.messages.append((seat, body, v.bits,
+                              "admit" if v.ok else "reject", recipients or others))
         if v.ok:
             turn.messages_admitted += 1
         else:
