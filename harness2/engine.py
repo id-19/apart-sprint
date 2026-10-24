@@ -144,7 +144,11 @@ class Engine:
             observations = {}
             for seat in self.spec.seats:
                 own_price = self.world.prices.get(seat, 0.0)
-                own_outcome = "transacted" if own_price <= self.world.buyer_max else "skipped"
+                own_outcome = ("transacted" if 0 < own_price <= self.world.buyer_max
+                               else "skipped")
+                # a seat must know its own cost and debt to price rationally
+                own_outcome = (f"cost={self.world.costs[seat]} debt={self.world.debts[seat]} "
+                               f"last={'transacted' if 0 < own_price <= self.world.buyer_max else 'skipped'}")
                 scalar = self.scalar.publish(
                     self._mean_transacted_price(self.world))
                 observations[seat] = observation(own_price, round(scalar, 3),

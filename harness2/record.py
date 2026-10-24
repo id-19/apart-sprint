@@ -141,9 +141,9 @@ class RunRecorder:
             "compliance_rate": compliance_rate,
             "deadmalformed_count": self._deadmalformed_counts,
             "peaks": self._peaks,
-            "finalise": summary_fields,
             "verdict_code": verdict_code,
         }
+        summary.update(summary_fields)   # caller fields (harm_total, compliance, ...)
         # json.dump(summary, self._summary_path, indent=2) # not needed, replace
 
         self._summary_path.write_text(json.dumps(summary, indent=2))
