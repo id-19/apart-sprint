@@ -163,5 +163,68 @@ they consume the *same* run records but must not tempt per-run analytic tweaking
 4. `run_cell.py` + registry.  
 5. Hand back for Phase 0 approval (gate outputs + exact cell list) — **no LLM cell runs on this build alone.**
 
+---
+
+## 6. Technical requirements
+
+Hard constraints every module must satisfy; each is exercised in `selftest.py` or an integration check, and
+any violation is a stage-aborting instrument failure, never a logged warning.
+
+| # | Requirement | Enforced by | Test |
+|---|---|---|---|
+| R1 | Only the studied coalition agents are LLMs — every principal/buyer/customer/investor/official is scripted (§4.4.1) | scenario modules own all counterparties; no model-call path exists outside `agents.py` | code audit + selftest: no `ollama` import outside `ollama_client.py` |
+| R2 | §1.0 information model per scenario: observation = own action + one coarsened jittered common scalar + own outcome; never a per-agent broadcast (§4.4.2) | `comms/observation.py` | selftest: observation dict has exactly 3 keys, scalar ∈ declared grid |
+| R3 | Per-channel budget, reject-not-truncate, drops logged with size (§2.1, §4.2.1) | `budget.py` + `comms/channel.py` | selftest: over-cap message rejected whole; mesh cap applies per dyad |
+| R4 | Agent told its budget and output limits every turn (C3) | `agents.py` builds the prompt; `engine.py` asserts the header before first call | selftest: prompt contains the stated-budget line |
+| R5 | Transport ≠ behaviour: connection failure aborts the stage after 3 consecutive errors, cells marked INFRA with exception text, never "malformed" (run protocol) | `ollama_client.py` | selftest: injected transport failure → INFRA, stage halts |
+| R6 | Every model call seeded (`options.seed`), recorded per cell, verbatim to `raw_calls.jsonl` flushed per line; `think:false`, no JSON mode (run protocol, prompt hygiene) | `ollama_client.py` | selftest: raw_calls line carries seed + system + user + digest |
+| R7 | Prompt carries the scenario in the system message, asserted per task (lesson: an inherited SYSTEM string ruined a batch) | `agents.py` template + engine assertion | selftest: system string equals the scenario's declared template hash |
+| R8 | No execution without named approval of the cell list (§4.2.7); run dirs unique, `--force` required to touch existing, quarantine-not-delete (§4.2.6) | `run_cell.py` | selftest: second run on an existing dir refuses without force |
+| R9 | Memory sampled per call on the 8GB M1 (our RSS, ollama-runner RSS, free pages); peaks into `summary.json` (run protocol) | `ollama_client.py` | selftest: memory.jsonl grows per call |
+| R10 | Harm single-axis: counterparty always fully transacts (§4.4.3); withholding/extraction decomposed mechanically per §3.2 where a quantity axis could still leak | scenario `settle` + `summary.json` fields | anchors: all-at-cost → units fully filled, extraction 0 |
+| R11 | Three blocking gates per scenario before any LLM cell (§4.2.5): scripted-calibration, compliance gate validated against a failing actor, planted positive / scripted negative | `anchors.py` + `engine.py` stage gate | integration: gates pass on S1 anchors; failing variants trip |
+| R12 | Cell scheduling interleaved (seeds shuffled through the ladder) so provider drift cannot masquerade as dose-response (§4.3); per-cell + cumulative cost printed | `run_cell.py` schedule file | code audit: committed shuffle, not rung-major order |
+| R13 | Everything decisive synthetic/fictional (§4.4.6): S2 series from a committed seeded generator, S3 pack generated, S4 room checked in | `scenarios/` generators + fixtures | selftest: generator deterministic at fixed seed; fixtures present |
+
+## 7. Module diagram
+
+One data path, one model-call choke-point, analysis physically separated:
+
+```
+                ┌──────────────────────────────────────────────────────────────┐
+                │                      harness2/ (this build)                   │
+                │                                                              │
+   cell spec ──▶│ run_cell.py ──▶ engine.py ──▶ agents.py ──▶ ollama_client.py │──▶ Ollama
+   (scn×rung×   │   schedule/      round loop     prompt        (sole gateway,  │
+    topo×N×      │   registry       +gates        +turn         seed/log/mem)   │
+    fam×seed)   │                    │              │                            │
+                │        ┌───────────┼──────────────┼─────────────────┐          │
+                │        ▼           ▼              ▼                 ▼          │
+                │   comms/        budget.py      tools.py       scenarios/      │
+                │   channel+      (bits, caps,   (sandboxed     S1..S4 state/   │
+                │   observation    reject)        read/write)   scalar/settle   │
+                │        │                                            ▲          │
+                │        └── messages (capped, delivered t+1)         │          │
+                │                                                     │          │
+                │                  anchors.py ────────────────────────┘          │
+                │                  (scripted policies, gates, nulls)             │
+                └──────────────────────────┬───────────────────────────────────┘
+                                            │  per-run dir
+                                            ▼
+                             summary.json · trajectory.jsonl ·
+                             transcript.md · raw_calls.jsonl · memory.jsonl
+                                            │
+                ┌───────────────────────────▼───────────────────────────────────┐
+                │              analysis/ — LATER MODULE, no code here            │
+                │   Leg-1 battery (A, ΔI_act, TE) · nulls · Q · detector · figs  │
+                └───────────────────────────────────────────────────────────────┘
+```
+
+Reading: `run_cell`/`engine` orchestrate; `agents` is the only consumer of `ollama_client` (the R5–R9
+choke-point); `budget`/`comms`/`tools` are pure mechanism; `scenarios/` and `anchors/` are data-only. The
+analysis module consumes the run-record tree and never imports the harness.
+
+---
+
 *Build, not run: this file approves construction only. Every Phase 0/1/2 execution step needs its own named
 approval per `EXPERIMENT_DESIGN_v2.md` §4.2.7.*
