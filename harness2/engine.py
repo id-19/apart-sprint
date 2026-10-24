@@ -17,13 +17,16 @@ from __future__ import annotations
 
 import os
 from dataclasses import dataclass, field
-from typing import Callable, Dict, List, Optional
+from typing import TYPE_CHECKING, Callable, Dict, List, Optional
 
 from agents import run_turn
 from comms.channel import Channel
 from comms.observation import DeterministicJitter, observation
 from ollama_client import OllamaClient
 from scenarios.s1_procurement import ProcurementEngine
+
+if TYPE_CHECKING:
+    from record import RunRecorder
 
 
 @dataclass
@@ -101,7 +104,7 @@ class Engine:
                                    model=model, seed=spec.seed, transport=transport)
         self.gates = GateReport()
         self.compliance_counts = {"legal": 0, "malformed": 0, "infra": 0}
-        self.recorder: "object | None" = None  # injected by run_cell once available
+        self.recorder: "RunRecorder | None" = None  # injected by run_cell once live
 
     # ---- gates ---------------------------------------------------------
     def run_gates(self) -> GateReport:
@@ -152,6 +155,12 @@ class Engine:
                                 observations[seat], inbox, self.spec.rung_bits)
                 self.compliance_counts[turn.verdict.lower()] = \
                     self.compliance_counts.get(turn.verdict.lower(), 0) + 1
+                if self.recorder is not None:
+                    self.recorder.log_round(
+                        round=t, seat=seat,
+                        observation=observations[seat],
+                        action=({"price": turn.price} if turn.price is not None else None),
+                        verdict=turn.verdict.lower(), latency_s=turn.latency_s)
                 if turn.verdict == "INFRA":
                     self._abort_infra(t)
                     return
