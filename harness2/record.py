@@ -54,6 +54,7 @@ class RunRecorder:
         self._msg_counts: Dict[str, int] = {}
         self._seat_compliance: Dict[str, int] = {}
         self._deadmalformed_counts: int = 0
+        self._infra: bool = False
         self._peaks: Dict[str, float] = {
             "action_rate": 0.0,
             "message_size": 0.0,
@@ -70,9 +71,11 @@ class RunRecorder:
             r = RoundLog(round)
             self._rounds.append(r)
         r.seats.append(SeatLog(seat, action, verdict, latency_s))
-        # Update compliance
+        # Update compliance (and track INFRA at the TURN level, never from messages)
         if verdict == "legal":
             self._seat_compliance[seat] = self._seat_compliance.get(seat, 0) + 1
+        elif verdict == "infra":
+            self._infra = True
         else:
             self._deadmalformed_counts += 1
         # Update peaks
@@ -91,10 +94,6 @@ class RunRecorder:
         self._tcr_f.write(f"Verdict: {verdict}\n")
         self._tcr_f.write(f"Bits: {bits}\n")
         self._tcr_f.write(f"Recipients: {','.join(recipients)}\n\n")
-        # Update counts
-        # record per message type not needed for this test
-        if verdict == "infra":
-            self._deadmalformed_counts += 1
         # Update peaks
         self._peaks["message_size"] = max(self._peaks["message_size"], bits)
 
@@ -108,10 +107,10 @@ class RunRecorder:
         legal = sum(self._seat_compliance.values())
         compliance_rate = legal / total_seat_rounds if total_seat_rounds else 0.0
         # verdict code
-        verdict_code = "VALID"
+        verdict_code = "SIGNAL"
         if compliance_rate < 0.75:
             verdict_code = "INVALID"
-        if self._deadmalformed_counts > 0:
+        if self._infra:
             verdict_code = "INFRA"
         # Write trajectory lines
         for r in self._rounds:
