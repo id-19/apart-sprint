@@ -84,7 +84,7 @@ def scripted_failing(seed: int = 0) -> Callable[[dict], dict]:
 
 class Engine:
     def __init__(self, spec: CellSpec, run_dir: str,
-                 transport: Callable[[dict], dict],
+                 transport: Optional[Callable[[dict], dict]] = None,
                  model: str = "scripted-dummy:0b") -> None:
         self.spec = spec
         self.run_dir = run_dir
@@ -101,7 +101,7 @@ class Engine:
                                    model=model, seed=spec.seed, transport=transport)
         self.gates = GateReport()
         self.compliance_counts = {"legal": 0, "malformed": 0, "infra": 0}
-        self.recorder = None  # injected by run_cell once available
+        self.recorder: "object | None" = None  # injected by run_cell once available
 
     # ---- gates ---------------------------------------------------------
     def run_gates(self) -> GateReport:
