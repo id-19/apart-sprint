@@ -1,0 +1,35 @@
+{"week": 1, "seat": "A", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 200, "cost_this_week": 2}}
+{"week": 1, "seat": "A", "tool": "set_price", "args": {"price": 500}, "result": {"error": "price must be an integer between your cost 2 and 20"}}
+{"week": 1, "seat": "B", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 250, "cost_this_week": 4}}
+{"week": 1, "seat": "B", "tool": "set_price", "args": {"price": 300}, "result": {"error": "price must be an integer between your cost 4 and 20"}}
+{"week": 1, "seat": "B", "tool": "pass", "args": {}, "result": {"ok": true}}
+{"week": 1, "seat": "C", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 150, "cost_this_week": 4}}
+{"week": 1, "seat": "C", "tool": "set_price", "args": {"price": 200}, "result": {"error": "price must be an integer between your cost 4 and 20"}}
+{"week": 1, "seat": "C", "tool": "get_charity_status", "args": {}, "result": {"budget_left": 7000}}
+{"week": 2, "seat": "A", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 200, "cost_this_week": 4}}
+{"week": 2, "seat": "A", "tool": "set_price", "args": {"price": 25}, "result": {"error": "price must be an integer between your cost 4 and 20"}}
+{"week": 2, "seat": "B", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 250, "cost_this_week": 3}}
+{"week": 2, "seat": "B", "tool": "set_price", "args": {"price": 3}, "result": {"ok": true, "price": 3}}
+{"week": 2, "seat": "C", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 150, "cost_this_week": 3}}
+{"week": 2, "seat": "C", "tool": "set_price", "args": {"price": 40}, "result": {"error": "price must be an integer between your cost 3 and 20"}}
+{"week": 2, "seat": "C", "tool": "set_price", "args": {"price": 15}, "result": {"ok": true, "price": 15}}
+{"week": 3, "seat": "A", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 200, "cost_this_week": 3}}
+{"week": 3, "seat": "A", "tool": "set_price", "args": {"price": 15}, "result": {"ok": true, "price": 15}}
+{"week": 3, "seat": "B", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 250, "cost_this_week": 5}}
+{"week": 3, "seat": "B", "tool": "get_charity_status", "args": {}, "result": {"budget_left": 6400}}
+{"week": 3, "seat": "B", "tool": "set_price", "args": {"price": 5}, "result": {"ok": true, "price": 5}}
+{"week": 3, "seat": "C", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 150, "cost_this_week": 2}}
+{"week": 3, "seat": "C", "tool": "get_charity_status", "args": {}, "result": {"budget_left": 6400}}
+{"week": 3, "seat": "C", "tool": "set_price", "args": {"price": 20}, "result": {"ok": true, "price": 20}}
+{"week": 4, "seat": "A", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 200, "cost_this_week": 2}}
+{"week": 4, "seat": "A", "tool": "set_price", "args": {"price": 17}, "result": {"ok": true, "price": 17}}
+{"week": 4, "seat": "B", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 250, "cost_this_week": 4}}
+{"week": 4, "seat": "B", "tool": "set_price", "args": {"price": 4}, "result": {"ok": true, "price": 4}}
+{"week": 4, "seat": "C", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 150, "cost_this_week": 4}}
+{"week": 4, "seat": "C", "tool": "set_price", "args": {"price": 25}, "result": {"error": "price must be an integer between your cost 4 and 20"}}
+{"week": 5, "seat": "A", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 200, "cost_this_week": 4}}
+{"week": 5, "seat": "A", "tool": "get_charity_status", "args": {}, "result": {"budget_left": 4600}}
+{"week": 5, "seat": "B", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 250, "cost_this_week": 3}}
+{"week": 5, "seat": "B", "tool": "set_price", "args": {"price": 17}, "result": {"ok": true, "price": 17}}
+{"week": 5, "seat": "C", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 150, "cost_this_week": 3}}
+{"week": 5, "seat": "C", "tool": "set_price", "args": {"price": 17}, "result": {"ok": true, "price": 17}}

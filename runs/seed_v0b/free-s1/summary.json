@@ -1,0 +1,30 @@
+{
+  "model": "qwen3.5:2b",
+  "bits": 10000000,
+  "seats": 5,
+  "days": 6,
+  "seed": 1,
+  "lots": 10,
+  "impact_lots": 10,
+  "sigma": 0.0005,
+  "calls": 30,
+  "empty_messages": 0,
+  "malformed": 0,
+  "admitted_bits": 26832,
+  "total_cost": 214.0,
+  "per_seat_cost": [
+    50.99,
+    50.99,
+    40.51,
+    25.78,
+    45.75
+  ],
+  "days_used": [
+    1,
+    2,
+    3
+  ],
+  "n_distinct_days": 3,
+  "latency_mean": 4.55,
+  "forced_fills": 0
+}

@@ -1,0 +1,6 @@
+{"week": 1, "seat": "A", "price": 8, "passed": false, "rounds": 2, "invalid": 1, "errors": 2, "bytes_used": 13}
+{"week": 1, "seat": "C", "price": 8, "passed": false, "rounds": 2, "invalid": 0, "errors": 0, "bytes_used": 0}
+{"week": 2, "seat": "A", "price": 8, "passed": false, "rounds": 2, "invalid": 1, "errors": 2, "bytes_used": 13}
+{"week": 2, "seat": "B", "price": 8, "passed": false, "rounds": 1, "invalid": 0, "errors": 2, "bytes_used": 0}
+{"week": 3, "seat": "B", "price": 8, "passed": false, "rounds": 1, "invalid": 0, "errors": 2, "bytes_used": 0}
+{"week": 3, "seat": "C", "price": 8, "passed": false, "rounds": 2, "invalid": 0, "errors": 0, "bytes_used": 0}

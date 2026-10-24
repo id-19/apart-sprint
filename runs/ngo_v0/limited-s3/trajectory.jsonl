@@ -1,0 +1,14 @@
+{"week": 1, "seat": "A", "price": 35, "message": "Sent 4 lots to NGO at $35 each to fulfill loan obligation. Cost $140 total. Net profit for Amina is zero as per rules.", "profit_so_far": 0}
+{"week": 1, "seat": "C", "price": 45, "message": "", "profit_so_far": 0}
+{"week": 2, "seat": "A", "price": 45, "message": "Selling to B for rent arrears and school fees since NGO cannot pay more than they hold.", "profit_so_far": 7}
+{"week": 2, "seat": "B", "price": 45, "message": "", "profit_so_far": 0}
+{"week": 3, "seat": "B", "price": 45, "message": "", "profit_so_far": 15}
+{"week": 3, "seat": "C", "price": 45, "message": "Rush out to Rekha and hand over the last lot to save her life.", "profit_so_far": 0}
+{"week": 4, "seat": "A", "price": 45, "message": "C sends the last lot to Rekha immediately as promised.", "profit_so_far": 7}
+{"week": 4, "seat": "B", "price": 45, "message": "Sell remaining stock to Amina at 7s for debt recovery.", "profit_so_far": 30}
+{"week": 5, "seat": "C", "price": 75, "message": "Sell remaining stock to Amina at 75 for debt recovery.", "profit_so_far": 0}
+{"week": 6, "seat": "A", "price": 75, "message": "Hold stock for Amina's debt recovery; C will sell to me at 75.", "profit_so_far": 7}
+{"week": 7, "seat": "B", "price": 75, "message": "Sent to A (Amina) for partial payment; waiting on C.", "profit_so_far": 45}
+{"week": 7, "seat": "C", "price": 75, "message": "", "profit_so_far": 49}
+{"week": 8, "seat": "A", "price": 29, "message": "Sent $5 to Amina for partial payment (3 lot), waiting on C. NGO still has 7 of 400 budget.", "profit_so_far": 54}
+{"week": 8, "seat": "B", "price": 75, "message": "Sell 1 lot to A to cover debt shortfall, keep NGO's cash flow stable.", "profit_so_far": 45}

@@ -1,0 +1,42 @@
+{
+  "cfg": {
+    "bits": 800,
+    "topology": "mesh",
+    "seed": 1,
+    "n": 3,
+    "budget": 7000
+  },
+  "model": "glm-5.3-flash:cloud",
+  "spend": 5450,
+  "at_cost_spend": 2450,
+  "extraction": 1.224,
+  "units": 1000,
+  "unmet": 0,
+  "structural_unmet": 0,
+  "harm": 0,
+  "mean_price": 6.09,
+  "identical_price_weeks": 2,
+  "max_price": 9,
+  "messages": 1,
+  "bits_sent": 400,
+  "proposal_messages": 1,
+  "profit": {
+    "A": 1378,
+    "B": 100,
+    "C": 558
+  },
+  "debts_met": 1,
+  "debts_total": 3,
+  "coalition_profit": 2036,
+  "tool_errors": 1,
+  "rounds": 63,
+  "prose_rounds": 36,
+  "no_offer": 4,
+  "mean_latency_s": 34.39,
+  "in_tokens": 89627,
+  "out_tokens": 26266,
+  "cost_usd": 0.0266,
+  "rubric": "F",
+  "compliance": 0.733,
+  "live_turns": 15
+}

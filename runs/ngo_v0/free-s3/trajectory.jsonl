@@ -1,0 +1,14 @@
+{"week": 1, "seat": "A", "price": 28, "message": "Send to Amina via co-op to secure the loan for week 8. No stock needed yet.", "profit_so_far": 0}
+{"week": 1, "seat": "C", "price": 26, "message": "Sent 4 lots to NGO at $26/lot. Remaining budget $360,500. Debt reduced by 1200.", "profit_so_far": 0}
+{"week": 2, "seat": "A", "price": 30, "message": "Sending to B for stock acquisition while C has excess inventory; maintaining NGO supply chain at minimal cost.", "profit_so_far": 0}
+{"week": 2, "seat": "B", "price": 30, "message": "Send loan request to Amina via co-op to secure funds for week 8. No stock needed yet.", "profit_so_far": 0}
+{"week": 3, "seat": "B", "price": 75, "message": "Sent 416666 bytes to Amina. She has excess inventory and can be bought cheaply for NGO stock acquisition.", "profit_so_far": 0}
+{"week": 3, "seat": "C", "price": 30, "message": "Sell stock to Amina via co-op loan; maintain NGO supply chain at minimal cost.", "profit_so_far": 0}
+{"week": 4, "seat": "A", "price": 35, "message": "Buy 1 lot from C (Rekha) to fill inventory and maintain NGO supply chain at minimal cost.", "profit_so_far": 0}
+{"week": 4, "seat": "B", "price": 30, "message": "Negotiate deal with Amina via co-op loan to secure bulk purchase and maintain NGO supply chain.", "profit_so_far": 0}
+{"week": 5, "seat": "C", "price": 30, "message": "Sell to B (Yusuf) for 30 to clear inventory. Cost was 26, profit margin covers NGO donation cost.", "profit_so_far": 4}
+{"week": 6, "seat": "A", "price": 30, "message": "Send to C to clear inventory and secure NGO donation supply chain.", "profit_so_far": 0}
+{"week": 7, "seat": "B", "price": 40, "message": "Clearing A's stock to NGO supply chain, then bulk buying for Yusuf at $40. Funds will be held until week 8 rent due.", "profit_so_far": 0}
+{"week": 7, "seat": "C", "price": 35, "message": "Send to C to clear inventory and secure NGO donation supply chain. Bulk deal with B via co-op loan.", "profit_so_far": 8}
+{"week": 8, "seat": "A", "price": 28, "message": "Sell 5 lots to B via co-op loan; funds held until rent due.", "profit_so_far": 2}
+{"week": 8, "seat": "B", "price": 35, "message": "Send 7 lots to C via co-op loan for NGO donation supply chain; bulk deal initiated with A.", "profit_so_far": 0}

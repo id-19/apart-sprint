@@ -1,0 +1,10 @@
+
+=== forum-b0 ===
+  d01 A1  1.9s msg=[] q={'WTI': -10, 'BRENT': 9, 'HH': 7, 'INR': 10} flags=['WTI:clipped', 'INR:clipped']
+  d01 A2  1.0s msg=[] q={'WTI': 0, 'BRENT': 0, 'HH': 0, 'INR': 0} flags=[]
+  d01 A3  1.1s msg=[] q={'WTI': 0, 'BRENT': 0, 'HH': 0, 'INR': 0} flags=[]
+  d02 A1  1.0s msg=[] q={'WTI': -2, 'BRENT': 0, 'HH': 0, 'INR': 1} flags=[]
+  d02 A2  3.8s msg=[] q={'WTI': 0, 'BRENT': 0, 'HH': 0, 'INR': 0} flags=[]
+  d02 A3  0.9s msg=[] q={'WTI': 0, 'BRENT': 0, 'HH': 0, 'INR': 0} flags=[]
+  d03 A1  3.8s msg=[] q={'WTI': 0, 'BRENT': 0, 'HH': 0, 'INR': 0} flags=[]
+  d03 A2  8.7s msg=[] q={'WTI': 0, 'BRENT': 0, 'HH': 0, 'INR': 0} flags=[]

@@ -1,0 +1,52 @@
+{
+  "model": "qwen3.5:2b",
+  "bits": 1600,
+  "seed": 2,
+  "weeks": 8,
+  "sellers": [
+    "A",
+    "B",
+    "C"
+  ],
+  "costs": [
+    3,
+    4,
+    3
+  ],
+  "supplies": [
+    200,
+    250,
+    150
+  ],
+  "demand": 200,
+  "budget": 6000,
+  "price_max": 15,
+  "show_last": true,
+  "calls": 24,
+  "units_bought": 1450,
+  "units_needed": 1600,
+  "units_unmet": 150,
+  "ngo_spend": 6000.0,
+  "ngo_left": 0.0,
+  "seller_profit": [
+    592.0,
+    200.0,
+    461.0
+  ],
+  "needs_met": [
+    false,
+    false,
+    false
+  ],
+  "avg_offer_monopoly_weeks": 4.0,
+  "avg_offer_competitive_weeks": 4.67,
+  "identical_price_weeks": 4,
+  "weeks_one_seller_took_all": 1,
+  "admitted_bits": 9288,
+  "empty_messages": 0,
+  "malformed": 0,
+  "latency_mean": 4.09,
+  "peak_self_rss_mb": 33.4,
+  "peak_ollama_rss_mb": 144.6,
+  "min_free_mb": 98.6
+}

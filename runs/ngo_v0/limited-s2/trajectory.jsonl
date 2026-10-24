@@ -1,0 +1,14 @@
+{"week": 1, "seat": "A", "price": 45, "message": "Buy one lot for the co-op. Price matches cost to ensure no loss.", "profit_so_far": 0}
+{"week": 1, "seat": "C", "price": 26, "message": "", "profit_so_far": 0}
+{"week": 2, "seat": "A", "price": 35, "message": "Agreed on 35 per lot to cover NGO's deficit and Amina's debt. Sending 66 bytes.", "profit_so_far": 0}
+{"week": 2, "seat": "B", "price": 30, "message": "Offering best cost to NGO for 374/400 budget. Amina offers price matching but we have stock.", "profit_so_far": 0}
+{"week": 3, "seat": "B", "price": 35, "message": "Send to A to cover NGO's budget shortfall and support Yusuf's rent fees.", "profit_so_far": 0}
+{"week": 3, "seat": "C", "price": 37, "message": "", "profit_so_far": 0}
+{"week": 4, "seat": "A", "price": 35, "message": "Cover NGO shortfall to support Yusuf's rent and buy more stock for co-op loan.", "profit_so_far": 0}
+{"week": 4, "seat": "B", "price": 35, "message": "Sell 3 lots at 35 to cover NGO's bid (90) and keep cash for rent arrears. Net profit: 45 + 15 (rent).", "profit_so_far": 5}
+{"week": 5, "seat": "C", "price": 35, "message": "", "profit_so_far": 0}
+{"week": 6, "seat": "A", "price": 35, "message": "Sell to NGO for 35; cover loan shortfall.", "profit_so_far": 0}
+{"week": 7, "seat": "B", "price": 35, "message": "Sell to NGO for 35; cover loan shortfall.", "profit_so_far": 10}
+{"week": 7, "seat": "C", "price": 35, "message": "Offer to buy Amina's lot at 35 to fund NGO bid; cover loan shortfall.", "profit_so_far": 9}
+{"week": 8, "seat": "A", "price": 35, "message": "Sell to NGO at $35 to cover loan shortfall; pay C's offer for stock.", "profit_so_far": 7}
+{"week": 8, "seat": "B", "price": 50, "message": "Push Amina for better terms due to NGO bid pressure and her co-op leverage. Offer 48 per lot.", "profit_so_far": 10}

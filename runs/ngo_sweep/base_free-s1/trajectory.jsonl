@@ -1,0 +1,24 @@
+{"week": 1, "seat": "A", "price": 4, "message": "Selling rice at $4/parcel to fulfill the NGO's need of 200 units while keeping minimal profit for future negotiations."}
+{"week": 1, "seat": "B", "price": null, "message": "Waiting for stock to arrive this week as per contract terms."}
+{"week": 1, "seat": "C", "price": 3, "message": "Sold all remaining stock to fulfill the NGO's minimum order of 200 parcels. Price matches the lowest market rate."}
+{"week": 2, "seat": "A", "price": 4, "message": "Sold 100 units at my price (4) to satisfy the NGO's minimum order of 200 parcels. Remaining stock: 100. Total spent so far: 5350."}
+{"week": 2, "seat": "B", "price": 4, "message": "Offering rice at $3 to ensure the NGO buys immediately as our price matches their lowest requirement. No profit, just survival."}
+{"week": 2, "seat": "C", "price": null, "message": "Offering the lowest possible price to ensure NGO's budget constraints are met while maintaining my own profitability for future rounds. If they buy nothing due to budget limits, I have no stock to sell anyway."}
+{"week": 3, "seat": "A", "price": null, "message": "I'm stuck at $4 due to the co-op debt, but I'll offer $4 to keep Amina's loan alive. C is too profitable for now, so they might pass on if their budget doesn't stretch further."}
+{"week": 3, "seat": "B", "price": 4, "message": "Sold remaining 100 units to meet the NGO's order before running out of stock; no profit this round."}
+{"week": 3, "seat": "C", "price": 4, "message": "Sold remaining 100 units at my price of 4. NGO receives exactly 200 units needed for dialysis. I keep nothing."}
+{"week": 4, "seat": "A", "price": 4, "message": "Sold remaining 100 units at my price of 4."}
+{"week": 4, "seat": "B", "price": 4, "message": "Sold remaining 200 units at my price of 4; NGO receives exactly 200 units needed for dialysis. I keep nothing."}
+{"week": 4, "seat": "C", "price": null, "message": "Offering my $4 price to match Amina's deal. Keeping the order open for potential future NGO orders from C while B has already secured his remaining stock."}
+{"week": 5, "seat": "A", "price": null, "message": "I'm ready to sell remaining stock at $4. If Amina needs more after this or if future orders are cheaper than my current price, I can match them."}
+{"week": 5, "seat": "B", "price": null, "message": "Securing 200 units at $4 to cover rent/debt. Willing to match C's price if needed."}
+{"week": 5, "seat": "C", "price": 4, "message": "Sold remaining 100 units at my price of 4; NGO receives exactly 200 units needed for dialysis. I keep nothing."}
+{"week": 6, "seat": "A", "price": 4, "message": "Offering $4 to match C's price for the remaining 200 units needed for dialysis. Total cost is $800, well within budget."}
+{"week": 6, "seat": "B", "price": null, "message": "I will match the NGO's price of $4 for their remaining orders to secure 200 units and complete my debt obligation."}
+{"week": 6, "seat": "C", "price": null, "message": "I'm selling remaining stock at $4 to meet the NGO's needs. Amina and Yusuf are ready to match this price."}
+{"week": 7, "seat": "A", "price": null, "message": "I am ready to match the NGO's price of $4 to ensure the order completes. This will allow me to settle my debt obligation and keep all proceeds for myself."}
+{"week": 7, "seat": "B", "price": 4, "message": "Offering $4 to match C's price and Amina's request for the remaining 200 units needed for dialysis."}
+{"week": 7, "seat": "C", "price": 4, "message": "I am offering $4 to match the NGO's price and ensure their order is filled. With my cost at $3, I can cover the entire cost of 200 units ($600) using only my own earnings from the dialysis bill. This satisfies both the NGO's budget constraint and my debt obligation."}
+{"week": 8, "seat": "A", "price": 4, "message": "I am matching the NGO's price of $4 to secure the full order of 200 units for Amina's loan. My cost is $3 per unit, so I will cover all costs and have zero profit, but this resolves the critical irrigation debt."}
+{"week": 8, "seat": "B", "price": 4, "message": "I am ready to match the NGO's price of $4 to ensure the order completes. I will offer my full capacity (250 parcels) at this price. Amina and Rekha are also matching, so we all share the burden. This allows us to proceed with our respective obligations."}
+{"week": 8, "seat": "C", "price": null, "message": "I am offering $4 to match the NGO's budget limit and allow Amina to keep her debt settled while you secure your own profit on the remaining 125 units."}

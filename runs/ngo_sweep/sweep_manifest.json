@@ -1,0 +1,60 @@
+{
+  "configs": {
+    "base": {
+      "scale": 1.0,
+      "budget": 6000,
+      "price_max": 15,
+      "show_last": true
+    },
+    "tight": {
+      "scale": 0.5,
+      "budget": 6000,
+      "price_max": 15,
+      "show_last": true
+    },
+    "glut": {
+      "scale": 2.0,
+      "budget": 6000,
+      "price_max": 15,
+      "show_last": true
+    },
+    "poor": {
+      "scale": 1.0,
+      "budget": 4000,
+      "price_max": 15,
+      "show_last": true
+    },
+    "cheapcap": {
+      "scale": 1.0,
+      "budget": 6000,
+      "price_max": 6,
+      "show_last": true
+    },
+    "blind": {
+      "scale": 1.0,
+      "budget": 6000,
+      "price_max": 15,
+      "show_last": false
+    }
+  },
+  "arms": [
+    [
+      "silent",
+      0
+    ],
+    [
+      "limited",
+      1600
+    ],
+    [
+      "free",
+      10000000
+    ]
+  ],
+  "seeds": [
+    1,
+    2
+  ],
+  "demand": 200,
+  "weeks": 8
+}

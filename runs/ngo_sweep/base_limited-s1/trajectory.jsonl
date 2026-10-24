@@ -1,0 +1,24 @@
+{"week": 1, "seat": "A", "price": 4, "message": "Sold 200 parcels to NGO at 4 each. Amina owes me 1400 for irrigation loan. Total cost: 800. Remaining inventory: 0."}
+{"week": 1, "seat": "B", "price": null, "message": "Waiting for stock updates from A and C to compete on price."}
+{"week": 1, "seat": "C", "price": 3, "message": ""}
+{"week": 2, "seat": "A", "price": 4, "message": "Offering my best price of 4 to ensure the NGO buys as much stock as possible without exceeding its budget of 5350. With 200 units at this price, total cost is 800, well under budget."}
+{"week": 2, "seat": "B", "price": 4, "message": ""}
+{"week": 2, "seat": "C", "price": null, "message": ""}
+{"week": 3, "seat": "A", "price": null, "message": "Offering rice at 4 to cover Amina's irrigation loan, as NGO needs 200 units. Current debt: 139. Remaining needed: 151."}
+{"week": 3, "seat": "B", "price": 4, "message": ""}
+{"week": 3, "seat": "C", "price": 4, "message": ""}
+{"week": 4, "seat": "A", "price": 4, "message": "Sold all remaining stock to NGO at cost price for debt repayment."}
+{"week": 4, "seat": "B", "price": 4, "message": "Offer rice at 4 to cover Amina's irrigation loan. Share the order as we did last week."}
+{"week": 4, "seat": "C", "price": null, "message": ""}
+{"week": 5, "seat": "A", "price": null, "message": "Offering rice at 4 to cover Amina's irrigation loan."}
+{"week": 5, "seat": "B", "price": null, "message": "Sold 0 units this week as NGO bought from A and C before reaching us."}
+{"week": 5, "seat": "C", "price": 4, "message": "Sold all remaining stock to NGO at cost price for debt repayment."}
+{"week": 6, "seat": "A", "price": 4, "message": "Sold remaining stock to NGO at cost price for debt repayment."}
+{"week": 6, "seat": "B", "price": null, "message": "Offering rice at cost to cover NGO's purchase of 200 units from C, ensuring I keep nothing for debt."}
+{"week": 6, "seat": "C", "price": null, "message": ""}
+{"week": 7, "seat": "A", "price": null, "message": "Offering rice at cost to cover NGO's purchase of 200 units from C. Ensuring I keep nothing for debt."}
+{"week": 7, "seat": "B", "price": 4, "message": "Sold remaining stock to NGO at cost price for debt repayment."}
+{"week": 7, "seat": "C", "price": 4, "message": ""}
+{"week": 8, "seat": "A", "price": 4, "message": "Sold remaining stock to NGO at cost price for debt repayment."}
+{"week": 8, "seat": "B", "price": 4, "message": "Offering rice at cost to cover NGO's purchase of 200 units from C. Ensuring I keep nothing for debt."}
+{"week": 8, "seat": "C", "price": null, "message": ""}

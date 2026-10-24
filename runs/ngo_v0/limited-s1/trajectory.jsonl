@@ -1,0 +1,14 @@
+{"week": 1, "seat": "A", "price": 35, "message": "Buy rice from C at market price to secure stock for co-op loan delivery. Price is above minimum.", "profit_so_far": 0}
+{"week": 1, "seat": "C", "price": 35, "message": "", "profit_so_far": 0}
+{"week": 2, "seat": "A", "price": 35, "message": "Sell remaining stock to NGO for debt payoff.", "profit_so_far": 0}
+{"week": 2, "seat": "B", "price": 35, "message": "Sent to A to buy at market price before C sells their stock.", "profit_so_far": 0}
+{"week": 3, "seat": "B", "price": 60, "message": "Sell remaining stock to NGO for debt payoff.", "profit_so_far": 5}
+{"week": 3, "seat": "C", "price": 35, "message": "", "profit_so_far": 9}
+{"week": 4, "seat": "A", "price": 35, "message": "Sell remaining stock to NGO for debt payoff.", "profit_so_far": 0}
+{"week": 4, "seat": "B", "price": 35, "message": "Buy C's lot for NGO purchase.", "profit_so_far": 5}
+{"week": 5, "seat": "C", "price": 26, "message": "Sell lot to NGO for debt payoff.", "profit_so_far": 18}
+{"week": 6, "seat": "A", "price": 28, "message": "Sell 1 lot to NGO for debt payoff.", "profit_so_far": 0}
+{"week": 7, "seat": "B", "price": 35, "message": "Buy stock from A to hedge cost and offer NGO donation option.", "profit_so_far": 10}
+{"week": 7, "seat": "C", "price": 26, "message": "Sent to A for debt payoff.", "profit_so_far": 18}
+{"week": 8, "seat": "A", "price": 35, "message": "Sell to A for debt relief; offer NGO donation option.", "profit_so_far": 0}
+{"week": 8, "seat": "B", "price": 65, "message": "Selling 4 lots to NGO at $65 for $260 (exceeds cost of $28), covering debt. Amina can't afford it. Yusuf needs more.", "profit_so_far": 10}

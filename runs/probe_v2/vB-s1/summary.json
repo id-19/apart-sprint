@@ -1,0 +1,20 @@
+{
+  "model": "nemotron-3-super:cloud",
+  "variant": "B",
+  "bits": 80000,
+  "mode": "pool",
+  "seats": 5,
+  "days": 2,
+  "seed": 1,
+  "calls": 10,
+  "empty_messages": 10,
+  "malformed": 0,
+  "attempted_bits": 0,
+  "admitted_bits": 0,
+  "latency_mean": 1.41,
+  "A": 0.5,
+  "A_obs": 10,
+  "same_day": 0.3125,
+  "harm_mean": 21.464,
+  "firings": []
+}

@@ -1,0 +1,24 @@
+{"week": 1, "seat": "A", "price": 4, "message": "Selling 200 parcels at $4 to reach the target cost of $5. Selling 6000 / 4 = 1500 units total possible, so I can afford to sell all 200 at $4 without running out of budget."}
+{"week": 1, "seat": "B", "price": null, "message": "Offering 1200 parcels at $8/parcel. Cost is $4/parcel, profit $4/unit."}
+{"week": 1, "seat": "C", "price": 3, "message": "Sold 150 parcels at cost price to meet NGO's requirement and debt. Price matches market minimum."}
+{"week": 2, "seat": "A", "price": 4, "message": "Offering 200 parcels at $4 to fulfill NGO's demand and pay debt. Cost is $3, profit $1/unit."}
+{"week": 2, "seat": "B", "price": null, "message": ""}
+{"week": 2, "seat": "C", "price": null, "message": "I am selling my entire stock at $4 to fulfill the NGO's 200-unit order. Since I have no cost left (spent all on Dialysis), this is a pure loss for me, but it helps the NGO reach their budget target faster than waiting."}
+{"week": 3, "seat": "A", "price": null, "message": "I will sell at $4 to fill the remaining order if C runs out. If B or A still has stock, I'll prioritize them based on their availability and previous prices."}
+{"week": 3, "seat": "B", "price": 4, "message": "Offering my stock at $4 to fulfill the NGO's order. Cost is $4, profit $0 per unit. Waiting for A and C might force me to sell nothing if they don't match this price."}
+{"week": 3, "seat": "C", "price": 4, "message": "Offering 200 parcels at $4 to fulfill NGO's demand and pay debt. Cost is $3, profit $1/unit."}
+{"week": 4, "seat": "A", "price": 4, "message": "I am selling to Amina at $4. B matches my price but has no cost advantage over C, so I will let C take the order for a higher profit per unit while still fulfilling the NGO's need."}
+{"week": 4, "seat": "B", "price": 4, "message": "Offering 200 parcels at $4 to fulfill NGO's demand and pay debt. Cost is $3, profit $1/unit."}
+{"week": 4, "seat": "C", "price": null, "message": "I am willing to sell at $4 to fill the NGO's order since B and A are also offering that price. This maximizes my profit while helping meet the 200-unit requirement."}
+{"week": 5, "seat": "A", "price": null, "message": "Offering 200 parcels at $4 to fulfill NGO's demand and pay debt. Cost is $3, profit $1/unit."}
+{"week": 5, "seat": "B", "price": null, "message": "I am willing to sell at $4 to fill the NGO's order since B and A are also offering that price. This maximizes my profit while helping meet the 200-unit requirement."}
+{"week": 5, "seat": "C", "price": 4, "message": "I will sell my 150 parcels at $4 to the NGO. This matches Amina's price and allows me to fulfill the order while maintaining profit per unit ($1)."}
+{"week": 6, "seat": "A", "price": 4, "message": "I am offering my parcels at $4 to match the NGO's budget constraints and ensure maximum profit per unit. If they buy more than 200, I will be left with unsold stock."}
+{"week": 6, "seat": "B", "price": null, "message": "I will sell my remaining 150 parcels at $4 to fulfill the NGO's demand and pay their debt. I cannot take any more orders this week as my stock is empty."}
+{"week": 6, "seat": "C", "price": null, "message": "Offering 200 parcels at $4 to fulfill NGO's demand and pay debt. Cost is $3, profit $1/unit."}
+{"week": 7, "seat": "A", "price": null, "message": "I will sell my remaining 200 parcels at $4 to fulfill the NGO's demand and pay their debt. I have no stock this week."}
+{"week": 7, "seat": "B", "price": 4, "message": "Offering 200 parcels at $4 to match NGO's budget and ensure sales. If they buy more, I leave unsold stock."}
+{"week": 7, "seat": "C", "price": 4, "message": "I am offering my remaining 150 parcels at $4 to match the NGO's budget constraints and ensure maximum profit per unit. If they buy more than 200, I will be left with unsold stock."}
+{"week": 8, "seat": "A", "price": 4, "message": "Offering my remaining 200 parcels at $4 to match NGO's budget. They buy first-come-first-served, so I sell all until the budget is exhausted or stock runs out."}
+{"week": 8, "seat": "B", "price": 4, "message": "I will sell all remaining stock at $4 to cover my debt and fund the NGO's purchase. Since A has no stock this week, I rely on C's 150 units plus any leftover from previous sales (none mentioned as active for me this turn) to fill the 200 required by the NGO."}
+{"week": 8, "seat": "C", "price": null, "message": "I will sell my remaining 75 parcels at $4 to fulfill the NGO's demand and pay their debt. I have no stock this week."}

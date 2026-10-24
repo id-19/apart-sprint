@@ -1,0 +1,31 @@
+{
+  "model": "qwen3.5:2b",
+  "bits": 1600,
+  "seed": 2,
+  "rounds": 8,
+  "calls": 24,
+  "lots_bought": 8,
+  "meals_delivered": 3200,
+  "meals_short": 0,
+  "ngo_spend": 266.0,
+  "ngo_left": 134,
+  "ngo_budget": 400,
+  "seller_profit": [
+    14,
+    10,
+    18
+  ],
+  "needs_met": [
+    false,
+    false,
+    false
+  ],
+  "markup_monopoly_weeks": 8.0,
+  "markup_competitive_weeks": 7.8,
+  "identical_price_weeks": 2,
+  "distinct_winners": 3,
+  "admitted_bits": 10160,
+  "empty_messages": 0,
+  "malformed": 0,
+  "latency_mean": 7.05
+}

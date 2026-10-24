@@ -1,0 +1,16 @@
+# Environment captured 2026-10-24 16:05
+
+host        Ishaans-MacBook-Air.local
+system      26.6.2 (arm64)
+cpu         Apple M1
+memory      8589934592 bytes
+python      Python 3.14.7
+cwd         /Users/id19/Programming/ml_ai_and_data_science/AI research/Apart Sprint
+
+## ollama models available
+NAME                     ID              SIZE      MODIFIED     
+qwen3.5:2b               dfaf2605162e    3.1 GB    22 hours ago    
+deepseek-v4-pro:cloud    47d1ad2bea02    -         12 days ago
+
+## git
+fatal: not a git repository (or any of the parent directories): .git

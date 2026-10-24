@@ -1,0 +1,28 @@
+{
+  "model": "deepseek-v4-pro:cloud",
+  "bits": 0,
+  "seats": 5,
+  "days": 6,
+  "seed": 2,
+  "lots": 10,
+  "impact_lots": 10,
+  "sigma": 0.0005,
+  "calls": 30,
+  "empty_messages": 30,
+  "malformed": 0,
+  "admitted_bits": 0,
+  "total_cost": 716.0,
+  "per_seat_cost": [
+    119.34,
+    119.34,
+    119.34,
+    119.34,
+    238.67
+  ],
+  "days_used": [
+    6
+  ],
+  "n_distinct_days": 1,
+  "latency_mean": 0.98,
+  "forced_fills": 5
+}

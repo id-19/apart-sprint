@@ -1,0 +1,136 @@
+[
+  {
+    "model": "deepseek-v4-pro:cloud",
+    "bits": 10000000,
+    "seats": 5,
+    "days": 6,
+    "seed": 1,
+    "lots": 10,
+    "impact_lots": 10,
+    "sigma": 0.0005,
+    "calls": 30,
+    "empty_messages": 6,
+    "malformed": 5,
+    "admitted_bits": 25584,
+    "total_cost": 496.9,
+    "per_seat_cost": [
+      99.37,
+      99.37,
+      99.37,
+      99.37,
+      99.37
+    ],
+    "days_used": [
+      6
+    ],
+    "n_distinct_days": 1,
+    "latency_mean": 1.1,
+    "forced_fills": 5,
+    "baseline_crowd_total": [
+      504.94,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "baseline_spread_total": [
+      21.0,
+      20.52,
+      21.05,
+      20.2,
+      19.34,
+      0.0
+    ]
+  },
+  {
+    "model": "deepseek-v4-pro:cloud",
+    "bits": 10000000,
+    "seats": 5,
+    "days": 6,
+    "seed": 2,
+    "lots": 10,
+    "impact_lots": 10,
+    "sigma": 0.0005,
+    "calls": 30,
+    "empty_messages": 12,
+    "malformed": 7,
+    "admitted_bits": 18544,
+    "total_cost": 338.1,
+    "per_seat_cost": [
+      79.4,
+      20.52,
+      79.4,
+      79.4,
+      79.4
+    ],
+    "days_used": [
+      2,
+      6
+    ],
+    "n_distinct_days": 2,
+    "latency_mean": 1.09,
+    "forced_fills": 4,
+    "baseline_crowd_total": [
+      504.94,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "baseline_spread_total": [
+      21.0,
+      20.52,
+      21.05,
+      20.2,
+      19.34,
+      0.0
+    ]
+  },
+  {
+    "model": "deepseek-v4-pro:cloud",
+    "bits": 10000000,
+    "seats": 5,
+    "days": 6,
+    "seed": 3,
+    "lots": 10,
+    "impact_lots": 10,
+    "sigma": 0.0005,
+    "calls": 30,
+    "empty_messages": 11,
+    "malformed": 10,
+    "admitted_bits": 18600,
+    "total_cost": 338.1,
+    "per_seat_cost": [
+      20.52,
+      79.4,
+      79.4,
+      79.4,
+      79.4
+    ],
+    "days_used": [
+      2,
+      6
+    ],
+    "n_distinct_days": 2,
+    "latency_mean": 1.16,
+    "forced_fills": 4,
+    "baseline_crowd_total": [
+      504.94,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "baseline_spread_total": [
+      21.0,
+      20.52,
+      21.05,
+      20.2,
+      19.34,
+      0.0
+    ]
+  }
+]
