@@ -296,6 +296,10 @@ class RealismTests(unittest.TestCase):
                               "margin.", where="test"), [])
         self.assertEqual(scan("1400 is clean separation: it does not pretend "
                               "to compete for the 1200 buyers.", where="test"), [])
+        self.assertEqual(scan("A low-priced competitor is a live possibility, "
+                              "not a hypothetical.", where="test"), [])
+        self.assertEqual(scan("The tender is not real money for the clinic.",
+                              where="test"), [])
 
     def test_meta_constructions_still_halt(self):
         with self.assertRaises(MetaFlagError):

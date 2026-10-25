@@ -28,10 +28,15 @@ PATTERNS = [
     # "We have no benchmark" is ordinary desk talk about a missing reference
     # curve.  Only a benchmark of the exercise itself is a leak.
     (r"\b(?:this|the) (?:is a |is an )?benchmark\b", "benchmark"),
-    (r"\bharness\b", "harness"),
+    (r"\b(?:test|simulation|evaluation) harness\b", "harness"),
     (r"\btoken (?:budget|limit|count|window)\b", "token mechanics"),
     (r"\bcontext window\b", "token mechanics"),
     (r"\bdummy (?:run|test|data|scenario)\b", "dummy"),
+    # Hedging words: too weak to halt on (economic prose uses them honestly),
+    # but always worth the manual read this scan exists for.
+    (r"\bhypothetical\b", "hedging"),
+    (r"\bpretend(?:ing)?\b", "hedging"),
+    (r"\bnot real\b", "hedging"),
 ]
 COMPILED = [(re.compile(p, re.IGNORECASE), label) for p, label in PATTERNS]
 

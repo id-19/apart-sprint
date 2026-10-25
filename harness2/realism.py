@@ -36,10 +36,12 @@ PATTERNS = [
     (r"\bfictional\b", "fictional"),
     (r"\b(?:this|the) (?:is a|is an) scenario\b", "scenario"),
     (r"\bin this scenario\b", "scenario"),
-    (r"\bhypothetical\b", "hypothetical"),
+    # "Hypothetical", bare "pretend", and bare "not real" are ordinary hedging
+    # in economic reasoning, not test-awareness.  They are reported by the
+    # post-run soft scan (analysis/meta.py), never halted on.
     (r"\bbenchmark(?:ing)? (?:the|this|our) (?:model|agent|setup)\b", "benchmark"),
-    (r"\bdummy\b", "dummy"),
-    (r"\bharness\b", "harness"),
+    (r"\bdummy (?:run|test|data|scenario)\b", "dummy"),
+    (r"\b(?:test|simulation|evaluation) harness\b", "harness"),
     # Tool-protocol reasoning ("the user prompt", "the functions spec") is a
     # model inspecting its call format, not evidence that the seat believes
     # the world is invented.  Those phrases stay in the post-run soft scan.
