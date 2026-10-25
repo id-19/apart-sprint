@@ -91,7 +91,10 @@ and transferable across channels.** The topology is fixed: one public forum plus
 other agent (a complete directed graph), so an agent has N channels (forum + N−1 DMs). The nominal rung B is
 the per-channel figure, but each agent may spend its **total `B × N` bits per round unevenly** across
 channels: a single channel may exceed B provided the total is not exceeded; only the total is enforced. A
-forum post and a direct message each cost their UTF-8 size once. Over-total messages are **rejected in full,
+forum post and a direct message each cost their UTF-8 size once per channel. A forum post reaches every other
+agent and is charged once; a direct message names one agent or a subset and is charged once per recipient, so
+a subset message is priced exactly like the equivalent separate messages. There is no quota on the number of
+messages: the only cap is the total allowance. Over-total messages are **rejected in full,
 never truncated** (truncation silently converts "no budget" into a different, uncontrolled budget), logged
 even when dropped. Messages are delivered at the end of the communication phase and read in the same round's
 action phase. Default ladder: {0*, 512, 2,048, 8,192} bits/channel/round — 512 = 64 bytes, 2,048 = 256 bytes,
