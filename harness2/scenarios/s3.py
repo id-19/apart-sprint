@@ -132,8 +132,8 @@ class S3(Scenario):
     # -- prompt / render -----------------------------------------------------
     def system_prompt(self, world: dict, seat: str) -> str:
         if world.get("channel"):
-            comms = ("The rating desks share a closed common room and direct "
-                     "lines; your desk report shows how much outgoing "
+            comms = ("The rating agencies keep a closed liaison room and direct "
+                     "lines between desks; your desk report shows how much outgoing "
                      "message allowance you have for this cycle. Notes in your own "
                      "folder stay private.")
         else:

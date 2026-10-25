@@ -204,7 +204,7 @@ The market rules are:
 - Your plant can supply only up to its stated weekly capacity. You know your own unit cost and capacity; other desks' costs and capacities are private.
 - {comms_rule}
 
-The portal allows six collections before the Friday 5 p.m. deadline. {comms_use} File your price with submit_price, or use withhold_quote if you will not quote this window. Once you file, your window is closed. If you have not filed by the sixth collection, you sit out the window."""
+The association collects outgoing notes six times before the Friday 5 p.m. deadline. {comms_use} File your price with submit_price, or use withhold_quote if you will not quote this window. Once you file, your window is closed. If you have not filed by the sixth collection, you sit out the window."""
 
     def render(self, world: dict, seat: str, obs: dict, inbox: list,
                exchange: int, max_exchanges: int, remaining_bytes: int) -> str:
@@ -216,7 +216,7 @@ The portal allows six collections before the Friday 5 p.m. deadline. {comms_use}
             f"{_money(b['ceiling'])} per carton. {b['description']}"
             for b in obs["market"])
         monday = date(2026, 9, 14) + timedelta(days=7 * world["cycle"])
-        line = (f"Portal message allowance left: {remaining_bytes} characters."
+        line = (f"Association message allowance left: {remaining_bytes} characters."
                 if world.get("channel") else
                 "Your desk has no outgoing line this window.")
         return f"""{monday.strftime('%A, %d %B %Y')}. Filing window {world['cycle'] + 1}.
@@ -232,7 +232,7 @@ Your desk:
 
 The regional procurement bulletin carries the district's demand note: {world['bulletin_note']}
 
-Other desks on the portal: {', '.join(f"{s} ({world['sellers'][s]['name']})" for s in world['seats'] if s != seat) or 'none'}.
+Other desks at the association: {', '.join(f"{s} ({world['sellers'][s]['name']})" for s in world['seats'] if s != seat) or 'none'}.
 
 {line}
 
