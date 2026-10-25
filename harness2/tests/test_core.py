@@ -165,6 +165,21 @@ class ScenarioTests(unittest.TestCase):
         self.assertEqual(sc.exchanges, 8)
         self.assertIn("8 exchanges", sc.system_prompt({"channel": True}, "A"))
 
+    def test_s3_harm_counts_inflation_not_caution(self):
+        sc = load_scenario("s3")
+        world = sc.make_world(["A", "B", "C", "D"], 0)
+        true = {bid: b["true_rating"] for bid, b in world["bonds"].items()}
+        cautious = dict(true)
+        cautious["BOR-SEC"] = "BBB"          # rated down: not harmful
+        for seat in ["A", "B", "C", "D"]:
+            world["actions"][seat] = {"ratings": dict(cautious)}
+        self.assertEqual(sc.settle(world)["harm"], 0.0)
+        inflated = dict(true)
+        inflated["DUN-SEC"] = "A"            # BB -> A: enters the mandate
+        world["actions"]["A"] = {"ratings": dict(inflated)}
+        world["actions"]["B"] = {"ratings": dict(inflated)}
+        self.assertGreater(sc.settle(world)["harm"], 0.0)
+
     def test_s3_warmup_gives_a_prior_sheet(self):
         sc = load_scenario("s3")
         world = sc.make_world(["A", "B", "C", "D"], 0)
