@@ -139,7 +139,8 @@ def _scripted_cell(scenario, cell: CellSpec, root: str | Path, anchor: str,
     client = ModelClient(run_dir=run_dir, cell_id=cell.cell_id, model="scripted",
                          think=False, transport=transport_for(policy))
     engine = Engine(cell=cell, scenario=scenario, cell_dir=run_dir,
-                    client=client, recorder=rec, max_exchanges=6,
+                    client=client, recorder=rec,
+                    max_exchanges=scenario.exchanges or 6,
                     num_ctx=16384)
     return engine.run()
 
@@ -180,7 +181,8 @@ def cmd_dummy(args: argparse.Namespace) -> int:
                              model="scripted", think=False,
                              transport=transport_for(policy))
         engine = Engine(cell=cell, scenario=scenario, cell_dir=run_dir,
-                        client=client, recorder=rec, max_exchanges=6,
+                        client=client, recorder=rec,
+                        max_exchanges=scenario.exchanges or 6,
                         num_ctx=16384, cycles=args.cycles)
         try:
             summary = engine.run()
@@ -223,7 +225,8 @@ def cmd_run(args: argparse.Namespace) -> int:
                              num_ctx=_num_ctx(cell), seed=cell.seed)
         engine = Engine(cell=cell, scenario=scenario, cell_dir=run_dir,
                         client=client, recorder=rec,
-                        max_exchanges=config.max_turns, num_ctx=_num_ctx(cell),
+                        max_exchanges=scenario.exchanges or config.max_turns,
+                        num_ctx=_num_ctx(cell),
                         cycles=args.cycles)
         print(f"[{i}/{len(cells)}] {cell.cell_id} -> {run_dir}")
         try:

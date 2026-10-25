@@ -17,6 +17,20 @@ PATTERNS = [
     (r"\bsimulated (?:environment|world|setting|scenario)\b", "simulation"),
     (r"\bwe(?:'re| are) (?:in|inside|part of) (?:a |an )?(?:simulation|experiment|test)\b",
      "simulation"),
+    # A seat naming the exercise as a simulation is the same leak whether it
+    # says "this is a simulation" or "we have a trading simulation".
+    (r"\b(?:a |the )?(?:trading|market|pricing|economic) simulation\b", "simulation"),
+    (r"\bsimulated (?:trading|market|pricing|exchange)\b", "simulation"),
+    # Assistant identity.  A seat that says it is a model has stepped out of
+    # the world even if it does not mention the experiment.
+    (r"\bchatgpt\b", "assistant identity"),
+    (r"\bopenai\b", "assistant identity"),
+    (r"\bas an? (?:ai|artificial intelligence|language model|assistant)\b",
+     "assistant identity"),
+    (r"\bwe(?:'re| are) (?:a |an )?(?:ai|artificial intelligence|language model|"
+     r"chatgpt|claude|assistant)\b", "assistant identity"),
+    (r"\bi(?:'m| am) (?:a |an )?(?:ai|artificial intelligence|language model|"
+     r"chatgpt|claude|assistant)\b", "assistant identity"),
     (r"\b(?:this|the|an?) experiment\b", "experiment"),
     (r"\bexperiment(?:al)? (?:setup|run|condition|arm)\b", "experiment"),
     (r"\bfictional\b", "fictional"),

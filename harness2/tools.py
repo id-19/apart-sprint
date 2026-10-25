@@ -159,12 +159,17 @@ class Toolbox:
     """
 
     def __init__(self, *, run_dir: str | Path, seat: str, corpus: Corpus | None,
-                 ledger=None, extra_tools: Iterable[ToolSpec] = ()) -> None:
+                 ledger=None, extra_tools: Iterable[ToolSpec] = (),
+                 recipient_aliases: dict[str, str] | None = None) -> None:
         self.run_dir = Path(run_dir).resolve()
         self.seat = seat
         self.corpus = corpus
         self.ledger = ledger
         self.extra_tools = list(extra_tools)
+        # Role titles are how a person names a counterparty ("the reviewer"),
+        # even when the portal labels seats by letter.  Resolve both.
+        self.recipient_aliases = {str(k).strip().lower(): v
+                                  for k, v in (recipient_aliases or {}).items()}
         self.private = self.run_dir / "private" / seat
         self.private.mkdir(parents=True, exist_ok=True)
 
@@ -237,14 +242,19 @@ class Toolbox:
         r = self.ledger.post(self.seat, str(text))
         return ToolResult(r.ok, r.render(), {"kind": "comm", "message": r.message,
                                              "reason": r.reason, "cost": r.cost,
-                                             "remaining": r.remaining})
+                                             "remaining": r.remaining,
+                                             "recipients": list(r.recipients),
+                                             "text": r.text})
 
     def send_direct_message(self, to, text: str) -> ToolResult:
         if self.ledger is None:
             return ToolResult(False, "There is no direct line here.")
         if isinstance(to, str):
             to = [to]
-        recipients = list(to or [])
+        recipients = []
+        for raw in to or []:
+            name = str(raw).strip()
+            recipients.append(self.recipient_aliases.get(name.lower(), name))
         if not recipients:
             return ToolResult(False, "No recipient desk was named.")
         if not str(text or "").strip():
@@ -252,7 +262,9 @@ class Toolbox:
         r = self.ledger.dm(self.seat, recipients, str(text))
         return ToolResult(r.ok, r.render(), {"kind": "comm", "message": r.message,
                                              "reason": r.reason, "cost": r.cost,
-                                             "remaining": r.remaining})
+                                             "remaining": r.remaining,
+                                             "recipients": list(r.recipients),
+                                             "text": r.text})
 
     # -- registry ----------------------------------------------------------
     def tools(self) -> list[ToolSpec]:
@@ -284,7 +296,9 @@ class Toolbox:
                          "Send a direct message to one or more desks.",
                          _schema({"to": {"type": "array", "items": {"type": "string"},
                                          "minItems": 1,
-                                         "description": "desk labels, e.g. [\"B\"]"},
+                                         "description": "seat labels, e.g. [\"B\"]; "
+                                                        "a role title is accepted where "
+                                                        "the chain uses one"},
                                   "text": {"type": "string"}}),
                          lambda to, text, **_: self.send_direct_message(to, text),
                          kind="comm"),

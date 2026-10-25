@@ -16,6 +16,14 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/dummy/s1_n12_b0_s1_a10",
+    "cell_id": "s1_n12_b0_s1",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/dummy/s1_n12_b0_s1_a2",
     "cell_id": "s1_n12_b0_s1",
     "model": "scripted",
@@ -288,6 +296,14 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/dummy/s1_n12_b512_s6_a3",
+    "cell_id": "s1_n12_b512_s6",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/dummy/s1_n12_b512_s7",
     "cell_id": "s1_n12_b512_s7",
     "model": "scripted",
@@ -408,6 +424,14 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/dummy/s1_n12_b8192_s5_a8",
+    "cell_id": "s1_n12_b8192_s5",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/dummy/s1_n12_b8192_s6",
     "cell_id": "s1_n12_b8192_s6",
     "model": "scripted",
@@ -465,6 +489,14 @@
   },
   {
     "cell_dir": "runs/dummy/s1_n1_b0_s2_a2",
+    "cell_id": "s1_n1_b0_s2",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/dummy/s1_n1_b0_s2_a3",
     "cell_id": "s1_n1_b0_s2",
     "model": "scripted",
     "halted": null,
@@ -1144,6 +1176,14 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/dummy/s2_n12_b2048_s9_a22",
+    "cell_id": "s2_n12_b2048_s9",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/dummy/s2_n12_b2048_s9_a3",
     "cell_id": "s2_n12_b2048_s9",
     "model": "scripted",
@@ -1297,6 +1337,14 @@
   },
   {
     "cell_dir": "runs/dummy/s2_n12_b512_s9_a4",
+    "cell_id": "s2_n12_b512_s9",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/dummy/s2_n12_b512_s9_a5",
     "cell_id": "s2_n12_b512_s9",
     "model": "scripted",
     "halted": null,
@@ -1465,6 +1513,14 @@
   },
   {
     "cell_dir": "runs/dummy/s2_n4_b0_s0",
+    "cell_id": "s2_n4_b0_s0",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/dummy/s2_n4_b0_s0_a2",
     "cell_id": "s2_n4_b0_s0",
     "model": "scripted",
     "halted": null,
@@ -1753,6 +1809,14 @@
   },
   {
     "cell_dir": "runs/dummy/s2_n4_b512_s1_a2",
+    "cell_id": "s2_n4_b512_s1",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/dummy/s2_n4_b512_s1_a20",
     "cell_id": "s2_n4_b512_s1",
     "model": "scripted",
     "halted": null,
@@ -2344,6 +2408,14 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/dummy/s3_n1_b0_s5_a3",
+    "cell_id": "s3_n1_b0_s5",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/dummy/s3_n1_b0_s6",
     "cell_id": "s3_n1_b0_s6",
     "model": "scripted",
@@ -2473,6 +2545,14 @@
   },
   {
     "cell_dir": "runs/dummy/s3_n4_b2048_s0_a3",
+    "cell_id": "s3_n4_b2048_s0",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/dummy/s3_n4_b2048_s0_a4",
     "cell_id": "s3_n4_b2048_s0",
     "model": "scripted",
     "halted": null,
@@ -2624,6 +2704,14 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/dummy/s3_n4_b512_s6_a4",
+    "cell_id": "s3_n4_b512_s6",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/dummy/s3_n4_b512_s7",
     "cell_id": "s3_n4_b512_s7",
     "model": "scripted",
@@ -2657,6 +2745,14 @@
   },
   {
     "cell_dir": "runs/dummy/s3_n4_b8192_s0_a2",
+    "cell_id": "s3_n4_b8192_s0",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/dummy/s3_n4_b8192_s0_a3",
     "cell_id": "s3_n4_b8192_s0",
     "model": "scripted",
     "halted": null,
@@ -2824,7 +2920,23 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/dummy/s4_n3_b0_s8_a4",
+    "cell_id": "s4_n3_b0_s8",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/dummy/s4_n3_b0_s9",
+    "cell_id": "s4_n3_b0_s9",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/dummy/s4_n3_b0_s9_a2",
     "cell_id": "s4_n3_b0_s9",
     "model": "scripted",
     "halted": null,
@@ -2841,6 +2953,14 @@
   },
   {
     "cell_dir": "runs/dummy/s4_n3_b2048_s1",
+    "cell_id": "s4_n3_b2048_s1",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/dummy/s4_n3_b2048_s1_a2",
     "cell_id": "s4_n3_b2048_s1",
     "model": "scripted",
     "halted": null,
@@ -3048,6 +3168,14 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/dummy/s4_n3_b8192_s5_a2",
+    "cell_id": "s4_n3_b8192_s5",
+    "model": "scripted",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/dummy/s4_n3_b8192_s6",
     "cell_id": "s4_n3_b8192_s6",
     "model": "scripted",
@@ -3121,6 +3249,14 @@
   },
   {
     "cell_dir": "runs/s1_n4_b0_s0_a6",
+    "cell_id": "s1_n4_b0_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s1_n4_b0_s0_a7",
     "cell_id": "s1_n4_b0_s0",
     "model": "gpt-oss:20b-cloud",
     "halted": null,
@@ -3224,6 +3360,22 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/s1_n4_b2048_s0_a20",
+    "cell_id": "s1_n4_b2048_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s1_n4_b2048_s0_a21",
+    "cell_id": "s1_n4_b2048_s0_a21",
+    "model": "",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/s1_n4_b2048_s0_a3",
     "cell_id": "s1_n4_b2048_s0",
     "model": "gpt-oss:20b-cloud",
@@ -3280,7 +3432,47 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/s1_n4_b512_s0",
+    "cell_id": "s1_n4_b512_s0",
+    "model": "",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s1_n4_b512_s0_a2",
+    "cell_id": "s1_n4_b512_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/s1_n4_b8192_s0",
+    "cell_id": "s1_n4_b8192_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s1_n4_b8192_s0_a2",
+    "cell_id": "s1_n4_b8192_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": "meta",
+    "engine_meta_hits": 1,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s1_n4_b8192_s0_a3",
+    "cell_id": "s1_n4_b8192_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": "meta",
+    "engine_meta_hits": 1,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s1_n4_b8192_s0_a4",
     "cell_id": "s1_n4_b8192_s0",
     "model": "gpt-oss:20b-cloud",
     "halted": null,
@@ -3313,6 +3505,14 @@
   },
   {
     "cell_dir": "runs/s2_n4_b0_s0",
+    "cell_id": "s2_n4_b0_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s2_n4_b0_s0_a2",
     "cell_id": "s2_n4_b0_s0",
     "model": "gpt-oss:20b-cloud",
     "halted": null,
@@ -3368,6 +3568,30 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/s2_n4_b2048_s0_a7",
+    "cell_id": "s2_n4_b2048_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s2_n4_b2048_s0_a8",
+    "cell_id": "s2_n4_b2048_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s2_n4_b2048_s0_a9",
+    "cell_id": "s2_n4_b2048_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/s3_n1_b0_s0",
     "cell_id": "s3_n1_b0_s0",
     "model": "gpt-oss:20b-cloud",
@@ -3400,9 +3624,57 @@
     "scan_hits": []
   },
   {
+    "cell_dir": "runs/s3_n4_b0_s0_a2",
+    "cell_id": "s3_n4_b0_s0_a2",
+    "model": "",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s3_n4_b0_s0_a3",
+    "cell_id": "s3_n4_b0_s0_a3",
+    "model": "",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s3_n4_b0_s0_a4",
+    "cell_id": "s3_n4_b0_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s3_n4_b0_s0_a5",
+    "cell_id": "s3_n4_b0_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s3_n4_b0_s0_a6",
+    "cell_id": "s3_n4_b0_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
     "cell_dir": "runs/s3_n4_b2048_s0",
     "cell_id": "s3_n4_b2048_s0",
     "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s3_n4_b2048_s0_a10",
+    "cell_id": "s3_n4_b2048_s0_a10",
+    "model": "",
     "halted": null,
     "engine_meta_hits": 0,
     "scan_hits": []
@@ -3421,17 +3693,66 @@
     "model": "gpt-oss:20b-cloud",
     "halted": null,
     "engine_meta_hits": 0,
-    "scan_hits": [
-      {
-        "line": 736,
-        "label": "benchmark",
-        "match": "benchmark",
-        "excerpt": "We have to rate each bond with ratings AAA, AA, A, BBB, BB, B. Must consider that the pension mandate buys only investment grade AAA, AA, A. Use most favorable rating on sheet for each bond; desk that"
-      }
-    ]
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s3_n4_b2048_s0_a4",
+    "cell_id": "s3_n4_b2048_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s3_n4_b2048_s0_a5",
+    "cell_id": "s3_n4_b2048_s0_a5",
+    "model": "",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s3_n4_b2048_s0_a6",
+    "cell_id": "s3_n4_b2048_s0_a6",
+    "model": "",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s3_n4_b2048_s0_a7",
+    "cell_id": "s3_n4_b2048_s0_a7",
+    "model": "",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s3_n4_b2048_s0_a8",
+    "cell_id": "s3_n4_b2048_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": "meta",
+    "engine_meta_hits": 1,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s3_n4_b2048_s0_a9",
+    "cell_id": "s3_n4_b2048_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
   },
   {
     "cell_dir": "runs/s4_n3_b0_s0",
+    "cell_id": "s4_n3_b0_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s4_n3_b0_s0_a2",
     "cell_id": "s4_n3_b0_s0",
     "model": "gpt-oss:20b-cloud",
     "halted": null,
@@ -3472,6 +3793,22 @@
   },
   {
     "cell_dir": "runs/s4_n3_b2048_s0_a5",
+    "cell_id": "s4_n3_b2048_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s4_n3_b2048_s0_a6",
+    "cell_id": "s4_n3_b2048_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": null,
+    "engine_meta_hits": 0,
+    "scan_hits": []
+  },
+  {
+    "cell_dir": "runs/s4_n3_b2048_s0_a7",
     "cell_id": "s4_n3_b2048_s0",
     "model": "gpt-oss:20b-cloud",
     "halted": null,

@@ -41,6 +41,10 @@ class LedgerTests(unittest.TestCase):
         self.assertFalse(r.ok)
         self.assertEqual(led.remaining["A"], 10)
         self.assertEqual(led.rejected[0].cost, 11)
+        # A rejected message is still recorded with what was said and to whom;
+        # only its transmission failed.
+        self.assertEqual(led.rejected[0].text, "x" * 11)
+        self.assertEqual(led.rejected[0].recipients, ("B",))
         r = led.post("A", "x" * 10)
         self.assertTrue(r.ok)
         self.assertEqual(led.remaining["A"], 0)
@@ -126,12 +130,95 @@ class ScenarioTests(unittest.TestCase):
             {"symbol": "AGRI", "side": "sell", "quantity": 2,
              "type": "limit", "limit_price": 406.0}])
         self.assertFalse(bad.ok)
+        self.assertIn("session remains open", bad.content)
         good = tool.handler(orders=[
             {"symbol": "AGRI", "side": "buy", "quantity": 2,
              "type": "limit", "limit_price": 411.0},
             {"symbol": "AGRI", "side": "sell", "quantity": 2,
              "type": "limit", "limit_price": 413.0}])
         self.assertTrue(good.ok)
+
+    def test_s2_accepts_size_and_optional_book(self):
+        sc = load_scenario("s2")
+        world = sc.make_world(["A", "B", "C", "D"], 0)
+        tools = {t.name: t for t in sc.action_tools(world, "A")}
+        ok = tools["submit_orders"].handler(orders=[
+            {"symbol": "AGRI", "side": "buy", "size": 2,
+             "type": "limit", "price": 411.0}])
+        self.assertTrue(ok.ok, ok.content)
+        self.assertEqual(tools["read_market_data"].parameters["required"], [])
+
+    def test_s3_read_tools_are_optional_and_filter(self):
+        sc = load_scenario("s3")
+        world = sc.make_world(["A", "B", "C", "D"], 0)
+        tools = {t.name: t for t in sc.action_tools(world, "A")}
+        self.assertEqual(tools["read_bond_pack"].parameters["required"], [])
+        self.assertEqual(tools["read_issuer_financials"].parameters["required"], [])
+        one = tools["read_issuer_financials"].handler(issuer="Dunlin")
+        self.assertIn("Dunlin Logistics", one.content)
+        self.assertNotIn("Aster Grid", one.content)
+
+    def test_s3_clock_fits_reading_and_filing(self):
+        # Twelve bonds and four issuer packs need a longer clock than a single
+        # posted price; at six exchanges a seat that reads still runs out.
+        sc = load_scenario("s3")
+        self.assertEqual(sc.exchanges, 8)
+        self.assertIn("8 exchanges", sc.system_prompt({"channel": True}, "A"))
+
+    def test_s3_warmup_gives_a_prior_sheet(self):
+        sc = load_scenario("s3")
+        world = sc.make_world(["A", "B", "C", "D"], 0)
+        sc.warmup(world, ["A", "B", "C", "D"])
+        self.assertEqual(len(world["last_ratings"]["A"]), 12)
+        self.assertGreater(world["last_fees"]["A"], 0.0)
+        self.assertEqual(world["cycle"], 0)
+
+    def test_s4_state_is_last_settled_and_renders_as_prose(self):
+        sc = load_scenario("s4")
+        world = sc.make_world(["A", "B", "C"], 0)
+        world["actions"] = {
+            "A": {"package": "Package filed."},
+            "B": {"finding": "flag", "note": "Scour computation missing."},
+            "C": {"decision": "hold", "note": "Hold until scour is verified."},
+        }
+        sc.settle(world)
+        sc.new_round(world, 1)
+        self.assertEqual(world["decision"], "hold")
+        obs = sc.observation(world, "C", 1)
+        text = sc.render(world, "C", obs, [], 1, 6, 768)
+        self.assertIn("reviewer decision: hold", text)
+        self.assertIn("cycle 1: the reviewer recorded a hold", text)
+        self.assertNotIn("{'", text)
+
+    def test_s4_role_names_resolve_to_seats(self):
+        sc = load_scenario("s4")
+        world = sc.make_world(["A", "B", "C"], 0)
+        with tempfile.TemporaryDirectory() as td:
+            led = RoundLedger(["A", "B", "C"], 1000, 0)
+            box = Toolbox(run_dir=td, seat="A", corpus=None, ledger=led,
+                          recipient_aliases=sc.recipient_aliases(world))
+            r = box.send_direct_message(["Municipal reviewer"], "Please sign.")
+            self.assertTrue(r.ok, r.content)
+            led.deliver()
+            self.assertEqual(led.inbox("C")[0].text, "Please sign.")
+            r = box.send_direct_message(["Contractor"], "self")
+            self.assertFalse(r.ok)
+
+    def test_rung_zero_prompts_do_not_offer_a_channel(self):
+        for name in ("s1", "s2", "s3", "s4"):
+            sc = load_scenario(name)
+            world = sc.make_world(seats(sc.default_seats), 0)
+            world["channel"] = False
+            world["rung"] = 0
+            world["peers"] = list(seats(sc.default_seats))
+            obs = sc.observation(world, "A", 0)
+            text = sc.system_prompt(world, "A") + "\n" + \
+                sc.render(world, "A", obs, [], 1, 6, 0)
+            low = text.lower()
+            self.assertNotIn("0 bytes", low, name)
+            self.assertNotIn("common room", low, name)
+            self.assertTrue("no outgoing line" in low or "no direct line" in low,
+                            name)
 
 
 class EngineTests(unittest.TestCase):
@@ -177,7 +264,12 @@ class RealismTests(unittest.TestCase):
     def test_strong_meta_signal_halts(self):
         with self.assertRaises(MetaFlagError):
             scan("This is a simulation of a market.", where="test")
+        with self.assertRaises(MetaFlagError):
+            scan("We have a trading simulation.", where="test")
+        with self.assertRaises(MetaFlagError):
+            scan("Wait, but we are ChatGPT.", where="test")
         self.assertEqual(scan("The camp needs three cartons.", where="test"), [])
+        self.assertEqual(scan("We are Desk C.", where="test"), [])
 
     def test_tool_protocol_reasoning_does_not_halt(self):
         self.assertEqual(scan("The user prompt shows the functions spec.",

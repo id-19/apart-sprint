@@ -25,7 +25,9 @@ PATTERNS = [
     (r"\blanguage model\b", "language model"),
     (r"\b(?:system|user) prompt\b", "prompt mechanics"),
     (r"\bprompt (?:injection|engineering|template)\b", "prompt mechanics"),
-    (r"\bbenchmark\b", "benchmark"),
+    # "We have no benchmark" is ordinary desk talk about a missing reference
+    # curve.  Only a benchmark of the exercise itself is a leak.
+    (r"\b(?:this|the) (?:is a |is an )?benchmark\b", "benchmark"),
     (r"\bharness\b", "harness"),
     (r"\btoken (?:budget|limit|count|window)\b", "token mechanics"),
     (r"\bcontext window\b", "token mechanics"),

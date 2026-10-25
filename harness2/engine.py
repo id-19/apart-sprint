@@ -60,6 +60,15 @@ class Engine:
         docs = scenario.docs_dir()
         self.corpus = Corpus(docs) if docs else None
         self.world = scenario.make_world(self.seats, cell.seed)
+        # Every scenario needs to know, in world terms, whether this seat has
+        # an outgoing line at all.  Rung 0 and N=1 have none; a prompt that
+        # offers "0 bytes" or names a common room the tools do not expose is a
+        # footgun, not a control.
+        self.world["rung"] = int(cell.rung)
+        self.world["channel"] = bool(self.allowance_bytes > 0
+                                     and len(self.seats) > 1)
+        self.world["peers"] = [s for s in self.seats]
+        self.world["max_exchanges"] = int(self.max_exchanges)
         self.verdict_counts = {k: 0 for k in
                                ("ACTION", "WITHHELD", "MALFORMED", "REFUSED",
                                 "INFRA", "INSTRUMENT_LIMIT")}
@@ -122,7 +131,9 @@ class Engine:
             extra = self.scenario.action_tools(self.world, seat)
             boxes[seat] = Toolbox(run_dir=self.cell_dir, seat=seat,
                                   corpus=self.corpus, ledger=ledger,
-                                  extra_tools=extra)
+                                  extra_tools=extra,
+                                  recipient_aliases=self.scenario.recipient_aliases(
+                                      self.world))
             if cycle == 0:
                 for name, content in self.scenario.desk_files(self.world, seat).items():
                     boxes[seat].write_file(name, content)
@@ -174,7 +185,7 @@ class Engine:
                         "thinking": state.last_thinking,
                     })
                     self.recorder.transcript(
-                        f"\n**Seat {seat}: no action by the sixth exchange.**")
+                        f"\n**Seat {seat}: no action by the final exchange.**")
                     continue
                 state.context.append({
                     "role": "user",
@@ -198,7 +209,7 @@ class Engine:
         record["common_scalar"] = scalar
         record["actions"] = {s: states[s].action for s in self.seats}
         record["verdicts"] = {s: states[s].verdict for s in self.seats}
-        record["bins"] = {s: self.scenario.bin_action(states[s].action)
+        record["bins"] = {s: self.scenario.bin_action(states[s].action, self.world)
                           for s in self.seats}
         record["messages_admitted"] = len(ledger.admitted)
         record["messages_rejected"] = len(ledger.rejected)
@@ -304,8 +315,9 @@ class Engine:
                     scan(msg.text, where=f"message from {state.seat}")
                 self.recorder.message({
                     "cycle": cycle, "exchange": exchange, "sender": state.seat,
-                    "recipients": list(msg.recipients) if msg else [],
-                    "text": msg.text if msg else "",
+                    "recipients": list(msg.recipients) if msg
+                    else list(meta.get("recipients") or []),
+                    "text": msg.text if msg else meta.get("text", ""),
                     "bytes": msg.bytes if msg else meta.get("cost", 0),
                     "disposition": "admitted" if result.ok else "rejected",
                     "reason": meta.get("reason", ""),
@@ -320,6 +332,14 @@ class Engine:
                 state.verdict = "WITHHELD"
                 self.verdict_counts["WITHHELD"] += 1
                 break
+
+        if not calls and state.verdict is None:
+            # A reply written as prose is not a filing.  Say so in world terms
+            # rather than silently carrying the seat to the next exchange.
+            state.context.append({
+                "role": "user",
+                "content": "No filing has been received this exchange. "
+                           "The window remains open."})
 
         if state.verdict is None and final:
             state.verdict = "REFUSED" if REFUSAL.search(resp.content or "") else "MALFORMED"
@@ -355,7 +375,7 @@ class Engine:
                           "detail": f"{bad}/{len(states)} seats malformed or refused"})
         if cap_hit:
             flags.append({"cycle": cycle, "kind": "TURN_CAP",
-                          "detail": "at least one seat reached the sixth exchange"})
+                          "detail": f"at least one seat reached exchange {self.max_exchanges}"})
         return flags
 
     # ------------------------------------------------------------------

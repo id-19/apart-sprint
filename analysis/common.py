@@ -134,6 +134,11 @@ def load_cells(root: str | Path, *, include_scripted: bool = True) -> list[Cell]
         model = str(summary.get("model", cell_meta.get("model", "")))
         if not include_scripted and model == "scripted":
             continue
+        # A halted cell is evidence, never a scored observation.  Keeping it
+        # out of dedupe_latest stops a later meta stop from shadowing the last
+        # clean attempt at the same cell.
+        if summary.get("halted"):
+            continue
         cells.append(Cell(
             path=summary_path.parent,
             cell_id=cell_id,

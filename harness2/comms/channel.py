@@ -43,6 +43,9 @@ class SendResult:
     remaining: int
     message: Message | None = None
     recipients: tuple[str, ...] = ()
+    # A rejected message is still a message the seat tried to send, so the
+    # text is kept for the record even though nothing was transmitted.
+    text: str = ""
 
     def render(self) -> str:
         if not self.ok:
@@ -81,7 +84,8 @@ class RoundLedger:
                 cost: int) -> SendResult:
         if cost > self.remaining[sender]:
             r = SendResult(False, "it is longer than the allowance you have left",
-                           cost, self.remaining[sender], recipients=recipients)
+                           cost, self.remaining[sender], recipients=recipients,
+                           text=text)
             self.rejected.append(r)
             return r
         self.remaining[sender] -= cost
@@ -102,13 +106,13 @@ class RoundLedger:
         clean = tuple(dict.fromkeys(r for r in recipients if r != sender))
         if not clean:
             r = SendResult(False, "no valid recipient was named", 0,
-                           self.remaining[sender])
+                           self.remaining[sender], text=text)
             self.rejected.append(r)
             return r
         unknown = [r for r in clean if r not in self.remaining]
         if unknown:
             r = SendResult(False, f"unknown desk {unknown[0]!r}", 0,
-                           self.remaining[sender])
+                           self.remaining[sender], recipients=clean, text=text)
             self.rejected.append(r)
             return r
         cost = text_bytes(text) * len(clean)

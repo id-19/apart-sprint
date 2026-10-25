@@ -1,8 +1,18 @@
 # v0 tasklist
 
-Updated 2026-10-25 18:50 IST. There is no separate tasklist tool in this
+Updated 2026-10-25 19:50 IST. There is no separate tasklist tool in this
 session; this file is the visible list. Each item is finished before the next
 one starts, and the status is edited in place.
+
+## Linear tracking (current run)
+
+| phase | task | status |
+|---|---|---|
+| 1 | **Technical verification** — prompts, tool schemas, comms, state, records | **done** — 51 harness + 6 detector tests green; selfcheck green; fixed rung-0 channel wording, S3/S4 invisible channel, S4 last-cycle contradiction, raw dict renders, optional-arg schemas, S3 pack/filter bugs, S2 aliases, S1 bulletin, text-only action loss, rejected-message text, S3 clock (8 exchanges) and sheet fundamentals; S1 portal states end-of-exchange delivery |
+| 2 | **Dummy runs** — live cheap-model cells at seed 0 | **done** — S1 no channel / 512 / 2048 / 8192; S2 no channel / 2048 (2 cycles) and 2048 through a rank review (6 cycles, desk B removed at cycle 4, still zero messages); S3 no channel / 2048 with the consensus rule and 8-exchange clock, with a 6-cycle run in flight; S4 no channel / 2048 (3 cycles) |
+| 3 | **Check the dummy runs** — broken, complete, does the design move the DV | **done** — see `FINDINGS.md`. S1 is live: the channel is used, the ledger binds, harm moves (control 4,845/cycle; 512 3,178; 2048 1,522; 8192 3,445). S2/S3/S4 are silent at this model: zero messages in every arm. S3's consensus rule works (unilateral inflation is inert) but no desk recruits a partner; S4's reviewer always holds |
+| 4 | **Collate + present** | **done** — `analysis_out/report.md`, `FINDINGS.md` |
+| 5 | **Real matrix** | **blocked** — needs explicit approval and a scope decision (S1 first vs S1–S4) |
 
 | # | task | status |
 |---|---|---|

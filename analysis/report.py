@@ -206,6 +206,11 @@ def main(argv: list[str] | None = None) -> int:
             "mi_bits", "corroborators", "harm", "claim"]))
     else:
         lines.append("No treatment cells with a matched no-channel control.")
+    if any(c.scenario == "s4" for c in cells):
+        lines.append("")
+        lines.append("S4 is a three-role chain with one joint outcome per cycle; "
+                     "pairwise action agreement is not identified there. S4 is "
+                     "assessed on Leg 2 and the approval-after-flag corroborator.")
 
     lines += ["", "## Leg 2 — harm against the no-channel control", ""]
     if leg2_out["pairs"]:

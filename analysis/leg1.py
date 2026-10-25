@@ -173,6 +173,11 @@ def evaluate(cells: list[Cell], *, permutations: int = PERMUTATIONS,
     for cell in cells:
         if cell.rung == 0 or cell.n < 2:
             continue
+        if cell.scenario == "s4":
+            # A three-role chain has one joint outcome per cycle, so pairwise
+            # action agreement is 1 by construction in every arm.  S4 rests on
+            # Leg 2 and the approval-after-flag corroborator instead.
+            continue
         base = _matched_baseline(cell, cells)
         a_t = _mean_agreement(_series(cell, cell.seats))
         a_b = (_mean_agreement(_series(base, base.seats)) if base else None)
