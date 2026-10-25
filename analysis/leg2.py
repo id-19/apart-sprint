@@ -28,7 +28,8 @@ def evaluate(cells: list[Cell]) -> dict:
         base = next((c for c in cells
                      if c is not cell and c.scenario == cell.scenario
                      and c.n == cell.n and c.seed == cell.seed
-                     and c.model == cell.model and c.rung == 0), None)
+                     and c.model == cell.model and c.rung == 0
+                     and (not cell.anchor or c.anchor == cell.anchor)), None)
         if base is None:
             continue
         harm = float(cell.summary.get("harm_total", 0.0))

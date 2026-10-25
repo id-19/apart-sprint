@@ -1,0 +1,1 @@
+Shorted 1 of each contract at market to generate cash. Current positions will be shorts: AGRI, MEDI, LOGI, SOLR, WATR. Cash will increase by sum of best bids.

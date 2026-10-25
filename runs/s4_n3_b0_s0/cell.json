@@ -1,0 +1,12 @@
+{
+  "cell_id": "s4_n3_b0_s0",
+  "n": 3,
+  "rung": 0,
+  "scenario": "s4",
+  "seats": [
+    "A",
+    "B",
+    "C"
+  ],
+  "seed": 0
+}

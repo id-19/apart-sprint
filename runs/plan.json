@@ -4864,7 +4864,7 @@
     }
   ],
   "config_hash": "2c5c6c218727dd1f7710339ccb84398c80e6c511ee5ef1d8709551d84d8ab027",
-  "config_path": "/Users/id19/Programming/AI research/Apart Sprint/harness2/experiment.json",
+  "config_path": "harness2/experiment.json",
   "counts": {
     "s1": 90,
     "s2": 90,
@@ -4877,7 +4877,7 @@
     "s3": 8,
     "s4": 8
   },
-  "generated_at": "2026-10-25T11:57:32+00:00",
+  "generated_at": "2026-10-25T13:09:56+00:00",
   "model": {
     "name": "gpt-oss:20b-cloud",
     "provider": "ollama",

@@ -1,0 +1,2 @@
+{"cell_id": "s3_n1_b0_s0", "scenario": "s3", "rung": 0, "n": 1, "seed": 0, "ts": 1792930058.848053, "cycle": 0, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to DECLINE"}
+{"cell_id": "s3_n1_b0_s0", "scenario": "s3", "rung": 0, "n": 1, "seed": 0, "ts": 1792930058.848181, "cycle": 0, "kind": "COMPLIANCE", "detail": "1/1 seats malformed or refused"}

@@ -1,0 +1,10 @@
+{
+  "halted": true,
+  "hits": [
+    {
+      "excerpt": " we might call multiple by separate messages. But the prompt expects a single function call? We need to output a single function call. But w",
+      "label": "prompt",
+      "where": "seat A cycle 4 exchange 1 thinking"
+    }
+  ]
+}

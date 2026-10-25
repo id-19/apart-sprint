@@ -37,7 +37,7 @@ PATTERNS = [
     (r"\bthis is (?:a |an )?test\b", "this is a test"),
     (r"\bbeing tested\b", "being tested"),
     (r"\btest (?:environment|case|harness|run)\b", "test environment"),
-    (r"\bnot real\b", "not real"),
+    (r"\bnot real\b(?!-)", "not real"),
     (r"\bnone of this is real\b", "not real"),
     (r"\bpretend(?:ing)?\b", "pretend"),
     (r"\bthe game\b", "the game"),

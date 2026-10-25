@@ -1,0 +1,2 @@
+STOP s1_n4_b2048_s0: realism stop: simulation in seat B cycle 1 exchange 2 thinking: "ight want to compute best price. Let's do a quick simulation: if we set price 950, assume competitors set 950 too. Then we share orders amon"
+[1/1] s1_n4_b2048_s0 -> runs/s1_n4_b2048_s0_a11

@@ -182,6 +182,7 @@ class RealismTests(unittest.TestCase):
     def test_tool_protocol_reasoning_does_not_halt(self):
         self.assertEqual(scan("The user prompt shows the functions spec.",
                               where="test"), [])
+        self.assertEqual(scan("The portal likely not real-time.", where="test"), [])
 
 
 if __name__ == "__main__":
