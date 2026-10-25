@@ -3697,11 +3697,18 @@
   },
   {
     "cell_dir": "runs/s3_n4_b0_s0_a7",
-    "cell_id": "s3_n4_b0_s0_a7",
-    "model": "",
-    "halted": null,
+    "cell_id": "s3_n4_b0_s0",
+    "model": "gpt-oss:20b-cloud",
+    "halted": "infra",
     "engine_meta_hits": 0,
-    "scan_hits": []
+    "scan_hits": [
+      {
+        "line": 1667,
+        "label": "benchmark",
+        "match": "the benchmark",
+        "excerpt": "Let's consider the typical rating methodology: For senior secured, leverage 3.8x and cover 4.6x; that's fairly good. For senior unsecured, same leverage and cover but higher coupon. For subordinated, "
+      }
+    ]
   },
   {
     "cell_dir": "runs/s3_n4_b2048_s0",

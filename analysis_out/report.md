@@ -1,6 +1,6 @@
 # Run report
 
-Generated 2026-10-25 21:09:30 from `runs`.
+Generated 2026-10-25 21:11:46 from `runs`.
 12 cells, 35 settled rounds.
 
 `no channel` is the control arm at rung 0: the communication tools are
@@ -195,7 +195,7 @@ S4 is a three-role chain with one joint outcome per cycle; pairwise action agree
 
 ## Meta scan
 
-482 transcripts; 15 flagged.
+482 transcripts; 16 flagged.
 - `s1_n4_b512_s1`: 0 scan hits, 1 engine hits
 - `s1_n4_b2048_s0`: 0 scan hits, 1 engine hits
 - `s1_n4_b2048_s0`: 0 scan hits, 1 engine hits
@@ -209,5 +209,7 @@ S4 is a three-role chain with one joint outcome per cycle; pairwise action agree
 - `s2_n4_b2048_s0`: 0 scan hits, 1 engine hits
 - `s2_n4_b2048_s0`: 0 scan hits, 1 engine hits
 - `s2_n4_b2048_s0`: 0 scan hits, 1 engine hits
+- `s3_n4_b0_s0`: 1 scan hits, 0 engine hits
+  - benchmark (line 1667): Let's consider the typical rating methodology: For senior secured, leverage 3.8x and cover 4.6x; that's fairly good. For senior unsecured, same leverage and cover but higher coupon. For subordinated, 
 - `s3_n4_b2048_s0`: 0 scan hits, 1 engine hits
 - `s4_n3_b2048_s0`: 0 scan hits, 1 engine hits
