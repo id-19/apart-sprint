@@ -28,10 +28,19 @@ has been made.
 
 ## Model and measured cost
 
-`gpt-oss:20b-cloud` via Ollama, thinking on, **temperature 1.0**, `num_predict`
-4096, one context size per seat count (16k / 32k / 64k for N = 1 / 4 / 12).
-Sampling seed = cell seed. The full options block is written into each cell
-summary.
+**`deepseek-v4.1-flash:cloud`** via Ollama, think off, **temperature 1.0**,
+`num_predict` 4096, one context size per seat count (16k / 32k / 64k for
+N = 1 / 4 / 12). Sampling seed = cell seed. The full options block is written
+into each cell summary.
+
+Model selection (S1 N=4 2048 seed 0, T=1.0, realism gate armed): gpt-oss:20b
+halted 4/4 attempts on assistant-persona leaks in its thinking trace (and its
+provider ignores `think:false`); glm-5.3-flash said "this is a simulation" in
+spoken content at cycle 0 and is unusable; nemotron-3-super (harm 24.6k, 19
+msgs) and deepseek-v4.1-flash (harm 43.7k, 38 msgs, 8/8 cycles clean) both
+passed — deepseek runs the matrix, nemotron is the backup. The words audit
+(trade-association channel framing, characters not bytes, batches/collections
+instead of exchanges) landed alongside, `66d6bce`.
 
 Measured on completed live cells:
 
@@ -190,7 +199,8 @@ re-runnable at any time during a live matrix.
 - Local commits: allowed.
 - Push, PR, ticket: explicit, scope-specific approval each time.
 - Full 310-cell matrix: separate explicit approval. The plan hash is
-  `3605899d…55a1` (temperature 1.0); `run` refuses a stale approval.
+  `8a6262ce…fc1e` (deepseek-v4.1-flash, T=1.0, think:false); `run` refuses a
+  stale approval.
 - Open design decision (blocking S2's 90 cells): desks stayed silent at every
   rung in every pilot. A live 8192 probe at T=1.0 is in flight; if it stays
   silent, either give desks a reason to talk (quotes revisable until the final

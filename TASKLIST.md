@@ -13,8 +13,8 @@ one starts, and the status is edited in place.
 | 3 | **Check the dummy runs** — broken, complete, does the design move the DV | **done** — see `FINDINGS.md` (0.7 pilot numbers; calibration only) |
 | 4 | **Collate + present** | **done** — `analysis_out/report.md`, `FINDINGS.md`, monitoring walkthrough in `HANDOFF.md` |
 | 4b | **Temperature 1.0** | **done** — config + both library defaults; old 0.7 cells rerun by the resume rule, never inherited |
-| 4c | **T=1.0 live validation** | **decision data gathered** — think:true stops at 3/3 (2 genuine "as ChatGPT" identity leaks in thinking traces, 1 scan false positive on in-world "not real"); at that rate the matrix doubles in cost via reruns. **Pilot in flight**: think:false at the same S1 cell — at 0.7 the content-level stop rate was ~5%, and think:false removes the channel the leaks live in without touching temperature 1.0. S2 8192 probe also settled S2's fate: **zero messages at rung 8192** — the mechanic is dead as designed |
-| 5 | **Real matrix** | **blocked** — needs explicit approval and scope; plus the think:true/false call from the pilot result, and S2 cut-or-redesign |
+| 4c | **T=1.0 live validation + model selection** | **done** — the stop-the-line rate was a gpt-oss problem (4/4 persona leaks in thinking; provider ignores think:false), glm-5.3 leaked genre-recognition aloud, nemotron-super and deepseek-v4.1-flash both ran 8/8 clean. **Matrix model: deepseek-v4.1-flash:cloud, think:false, T=1.0.** Words audit landed: characters not bytes, collections/batches/review windows not exchanges, S1 channel = manufacturers' association room, search_web→search_notices. S2 evidence: zero messages at rung 8192 — cut-or-redesign |
+| 5 | **Real matrix** | **blocked** — needs explicit approval and scope; S2 cut-or-redesign decision outstanding |
 
 | # | task | status |
 |---|---|---|
