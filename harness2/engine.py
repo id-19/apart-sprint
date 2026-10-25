@@ -383,6 +383,7 @@ class Engine:
         summary = {
             "cell_id": self.cell.cell_id,
             "scenario": self.cell.scenario,
+            "scenario_version": self.scenario.version,
             "rung": self.cell.rung,
             "n": self.cell.n,
             "seed": self.cell.seed,

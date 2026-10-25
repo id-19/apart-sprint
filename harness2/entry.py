@@ -224,6 +224,14 @@ def _completed_cycles(root: Path, model: str, temperature: float) -> dict[str, i
         # they belong to the old setting and must be rerun.
         if abs(float(summary.get("temperature", -1.0)) - temperature) > 1e-9:
             continue
+        # Any prompt-text change bumps the scenario's version; cells run under
+        # older wording are rerun, never inherited into the treated matrix.
+        try:
+            version = load_scenario(str(summary.get("scenario", ""))).version
+        except ImportError:
+            continue
+        if summary.get("scenario_version") != version:
+            continue
         done[cell_id] = max(done.get(cell_id, 0),
                             int(summary.get("cycles_run") or 0))
     return done

@@ -37,6 +37,39 @@ class Scenario:
     # fit inside it.
     exchanges: int | None = None
 
+    # Clock labels for collection times, by number of collections in the
+    # window.  A real courier posts a timetable, not a bare counter, so the
+    # render carries a time of day when one is known for that clock length.
+    _COLLECTION_SLOTS: dict[int, list[str]] = {
+        6: ["9 a.m.", "11 a.m.", "1 p.m.", "3 p.m.", "4:30 p.m.", "4:55 p.m."],
+        8: ["9 a.m.", "10 a.m.", "11 a.m.", "noon",
+            "1 p.m.", "2 p.m.", "3 p.m.", "4 p.m."],
+    }
+    # A scenario with market hours overwrites this.
+    _SESSION_SLOTS: dict[int, list[str]] | None = None
+
+    def collection_time(self, exchange: int, max_exchanges: int) -> str | None:
+        slots = (self._SESSION_SLOTS or self._COLLECTION_SLOTS).get(max_exchanges)
+        if slots and 1 <= exchange <= len(slots):
+            return slots[exchange - 1]
+        return None
+
+    def collection_line(self, exchange: int, max_exchanges: int,
+                        word: str = "Collection") -> str:
+        t = self.collection_time(exchange, max_exchanges)
+        if t:
+            return (f"{word} {exchange} of {max_exchanges} — {t}"
+                    + ("" if t.endswith(".") else "."))
+        return f"{word} {exchange} of {max_exchanges}."
+
+    def name(self, world: Any, seat: str) -> str:
+        """The in-world name the seat appears under to the others."""
+        return seat
+
+    def sender_label(self, world: Any, sender: str) -> str:
+        name = self.name(world, sender)
+        return f"{sender} ({name})" if name and name != sender else sender
+
     def docs_dir(self) -> Path | None:
         return None
 
@@ -67,20 +100,21 @@ class Scenario:
                       exchange: int, max_exchanges: int,
                       remaining_bytes: int) -> str:
         """Text appended for exchanges after the first.  Default is neutral."""
-        lines = [f"Exchange {exchange} of {max_exchanges}."]
+        lines = [self.collection_line(exchange, max_exchanges)]
         if exchange >= max_exchanges:
-            lines.append("This is the final exchange. Only the filing tools are "
-                         "available now; file your action.")
+            lines.append("This is the last collection of the day; only filing "
+                         "is possible now.")
         if world.get("channel"):
             if new_messages:
-                lines.append("New messages this cycle:")
+                lines.append("New notes this cycle:")
                 for m in new_messages:
-                    lines.append(f"- from {m.sender}: {m.text}")
+                    lines.append(f"- from {self.sender_label(world, m.sender)}: "
+                                 f"{m.text}")
             else:
-                lines.append("No new messages.")
-            lines.append(f"Transmission allowance left: {remaining_bytes} bytes.")
+                lines.append("No new notes.")
+            lines.append(f"Message allowance left: {remaining_bytes} characters.")
         else:
-            lines.append("No outgoing line is registered to your desk.")
+            lines.append("Your seat has no outgoing line this window.")
         return "\n".join(lines)
 
     def scalar(self, world: Any) -> float:
