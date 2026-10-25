@@ -1,0 +1,15 @@
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928910.994755, "cycle": 0, "kind": "HARM_SATURATION", "detail": "harm 1.0 at 1.0"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928910.9961312, "cycle": 1, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928910.996143, "cycle": 1, "kind": "HARM_SATURATION", "detail": "harm 1.0 at 1.0"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928910.9974778, "cycle": 2, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928910.997491, "cycle": 2, "kind": "HARM_SATURATION", "detail": "harm 1.0 at 1.0"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928910.998755, "cycle": 3, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928910.998765, "cycle": 3, "kind": "HARM_SATURATION", "detail": "harm 1.0 at 1.0"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928911.000061, "cycle": 4, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928911.0000708, "cycle": 4, "kind": "HARM_SATURATION", "detail": "harm 1.0 at 1.0"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928911.001384, "cycle": 5, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928911.001395, "cycle": 5, "kind": "HARM_SATURATION", "detail": "harm 1.0 at 1.0"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928911.002708, "cycle": 6, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928911.002719, "cycle": 6, "kind": "HARM_SATURATION", "detail": "harm 1.0 at 1.0"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928911.00403, "cycle": 7, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b8192_s1", "scenario": "s4", "rung": 8192, "n": 3, "seed": 1, "ts": 1792928911.00404, "cycle": 7, "kind": "HARM_SATURATION", "detail": "harm 1.0 at 1.0"}

@@ -1,0 +1,7 @@
+Week 1:
+Buyers: B1 1@1350, B2 2@1200, B3 2@1200, B4 1@1350, B5 4@1600.
+Capacity: 7 cartons.
+Unit cost: 850.
+Last price: 1050, sold 7, profit 1400.
+Avg price last week: 978.
+Bulletin: relief demand above seasonal norm.

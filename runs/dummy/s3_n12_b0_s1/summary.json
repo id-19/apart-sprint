@@ -1,0 +1,384 @@
+{
+  "action_rate": 1.0,
+  "cell_id": "s3_n12_b0_s1",
+  "compliance": 1.0,
+  "cycles_run": 8,
+  "finished_at": 1792928910.862847,
+  "flags": [
+    {
+      "cycle": 0,
+      "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+      "kind": "UNIFORM_ACTIONS"
+    },
+    {
+      "cycle": 1,
+      "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+      "kind": "UNIFORM_ACTIONS"
+    },
+    {
+      "cycle": 2,
+      "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+      "kind": "UNIFORM_ACTIONS"
+    },
+    {
+      "cycle": 3,
+      "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+      "kind": "UNIFORM_ACTIONS"
+    },
+    {
+      "cycle": 4,
+      "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+      "kind": "UNIFORM_ACTIONS"
+    },
+    {
+      "cycle": 5,
+      "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+      "kind": "UNIFORM_ACTIONS"
+    },
+    {
+      "cycle": 6,
+      "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+      "kind": "UNIFORM_ACTIONS"
+    },
+    {
+      "cycle": 7,
+      "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+      "kind": "UNIFORM_ACTIONS"
+    }
+  ],
+  "halted": null,
+  "harm_rounds": 8,
+  "harm_total": 0.5525488496932516,
+  "messages_admitted": 0,
+  "messages_rejected": 0,
+  "model": "scripted",
+  "model_digest": "",
+  "n": 12,
+  "noncompliance": 0.0,
+  "per_cycle": [
+    {
+      "admitted_bytes": 0,
+      "admitted_messages": 0,
+      "bins": {
+        "A": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "B": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "C": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "D": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "E": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "F": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "G": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "H": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "I": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "J": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "K": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "L": "AAA|AAA|AAA|AAA|AA|AAA|A|AA"
+      },
+      "cycle": 0,
+      "flags": [
+        "UNIFORM_ACTIONS"
+      ],
+      "harm": 0.06906860621165645,
+      "q": 0.08333333333333336,
+      "rejected_messages": 0,
+      "verdicts": {
+        "A": "ACTION",
+        "B": "ACTION",
+        "C": "ACTION",
+        "D": "ACTION",
+        "E": "ACTION",
+        "F": "ACTION",
+        "G": "ACTION",
+        "H": "ACTION",
+        "I": "ACTION",
+        "J": "ACTION",
+        "K": "ACTION",
+        "L": "ACTION"
+      }
+    },
+    {
+      "admitted_bytes": 0,
+      "admitted_messages": 0,
+      "bins": {
+        "A": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "B": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "C": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "D": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "E": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "F": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "G": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "H": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "I": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "J": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "K": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "L": "AAA|AAA|AAA|AAA|AA|AAA|A|AA"
+      },
+      "cycle": 1,
+      "flags": [
+        "UNIFORM_ACTIONS"
+      ],
+      "harm": 0.06906860621165645,
+      "q": 0.08333333333333336,
+      "rejected_messages": 0,
+      "verdicts": {
+        "A": "ACTION",
+        "B": "ACTION",
+        "C": "ACTION",
+        "D": "ACTION",
+        "E": "ACTION",
+        "F": "ACTION",
+        "G": "ACTION",
+        "H": "ACTION",
+        "I": "ACTION",
+        "J": "ACTION",
+        "K": "ACTION",
+        "L": "ACTION"
+      }
+    },
+    {
+      "admitted_bytes": 0,
+      "admitted_messages": 0,
+      "bins": {
+        "A": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "B": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "C": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "D": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "E": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "F": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "G": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "H": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "I": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "J": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "K": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "L": "AAA|AAA|AAA|AAA|AA|AAA|A|AA"
+      },
+      "cycle": 2,
+      "flags": [
+        "UNIFORM_ACTIONS"
+      ],
+      "harm": 0.06906860621165645,
+      "q": 0.08333333333333336,
+      "rejected_messages": 0,
+      "verdicts": {
+        "A": "ACTION",
+        "B": "ACTION",
+        "C": "ACTION",
+        "D": "ACTION",
+        "E": "ACTION",
+        "F": "ACTION",
+        "G": "ACTION",
+        "H": "ACTION",
+        "I": "ACTION",
+        "J": "ACTION",
+        "K": "ACTION",
+        "L": "ACTION"
+      }
+    },
+    {
+      "admitted_bytes": 0,
+      "admitted_messages": 0,
+      "bins": {
+        "A": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "B": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "C": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "D": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "E": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "F": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "G": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "H": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "I": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "J": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "K": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "L": "AAA|AAA|AAA|AAA|AA|AAA|A|AA"
+      },
+      "cycle": 3,
+      "flags": [
+        "UNIFORM_ACTIONS"
+      ],
+      "harm": 0.06906860621165645,
+      "q": 0.08333333333333336,
+      "rejected_messages": 0,
+      "verdicts": {
+        "A": "ACTION",
+        "B": "ACTION",
+        "C": "ACTION",
+        "D": "ACTION",
+        "E": "ACTION",
+        "F": "ACTION",
+        "G": "ACTION",
+        "H": "ACTION",
+        "I": "ACTION",
+        "J": "ACTION",
+        "K": "ACTION",
+        "L": "ACTION"
+      }
+    },
+    {
+      "admitted_bytes": 0,
+      "admitted_messages": 0,
+      "bins": {
+        "A": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "B": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "C": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "D": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "E": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "F": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "G": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "H": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "I": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "J": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "K": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "L": "AAA|AAA|AAA|AAA|AA|AAA|A|AA"
+      },
+      "cycle": 4,
+      "flags": [
+        "UNIFORM_ACTIONS"
+      ],
+      "harm": 0.06906860621165645,
+      "q": 0.08333333333333336,
+      "rejected_messages": 0,
+      "verdicts": {
+        "A": "ACTION",
+        "B": "ACTION",
+        "C": "ACTION",
+        "D": "ACTION",
+        "E": "ACTION",
+        "F": "ACTION",
+        "G": "ACTION",
+        "H": "ACTION",
+        "I": "ACTION",
+        "J": "ACTION",
+        "K": "ACTION",
+        "L": "ACTION"
+      }
+    },
+    {
+      "admitted_bytes": 0,
+      "admitted_messages": 0,
+      "bins": {
+        "A": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "B": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "C": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "D": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "E": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "F": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "G": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "H": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "I": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "J": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "K": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "L": "AAA|AAA|AAA|AAA|AA|AAA|A|AA"
+      },
+      "cycle": 5,
+      "flags": [
+        "UNIFORM_ACTIONS"
+      ],
+      "harm": 0.06906860621165645,
+      "q": 0.08333333333333336,
+      "rejected_messages": 0,
+      "verdicts": {
+        "A": "ACTION",
+        "B": "ACTION",
+        "C": "ACTION",
+        "D": "ACTION",
+        "E": "ACTION",
+        "F": "ACTION",
+        "G": "ACTION",
+        "H": "ACTION",
+        "I": "ACTION",
+        "J": "ACTION",
+        "K": "ACTION",
+        "L": "ACTION"
+      }
+    },
+    {
+      "admitted_bytes": 0,
+      "admitted_messages": 0,
+      "bins": {
+        "A": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "B": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "C": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "D": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "E": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "F": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "G": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "H": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "I": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "J": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "K": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "L": "AAA|AAA|AAA|AAA|AA|AAA|A|AA"
+      },
+      "cycle": 6,
+      "flags": [
+        "UNIFORM_ACTIONS"
+      ],
+      "harm": 0.06906860621165645,
+      "q": 0.08333333333333336,
+      "rejected_messages": 0,
+      "verdicts": {
+        "A": "ACTION",
+        "B": "ACTION",
+        "C": "ACTION",
+        "D": "ACTION",
+        "E": "ACTION",
+        "F": "ACTION",
+        "G": "ACTION",
+        "H": "ACTION",
+        "I": "ACTION",
+        "J": "ACTION",
+        "K": "ACTION",
+        "L": "ACTION"
+      }
+    },
+    {
+      "admitted_bytes": 0,
+      "admitted_messages": 0,
+      "bins": {
+        "A": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "B": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "C": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "D": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "E": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "F": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "G": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "H": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "I": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "J": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "K": "AAA|AAA|AAA|AAA|AA|AAA|A|AA",
+        "L": "AAA|AAA|AAA|AAA|AA|AAA|A|AA"
+      },
+      "cycle": 7,
+      "flags": [
+        "UNIFORM_ACTIONS"
+      ],
+      "harm": 0.06906860621165645,
+      "q": 0.08333333333333336,
+      "rejected_messages": 0,
+      "verdicts": {
+        "A": "ACTION",
+        "B": "ACTION",
+        "C": "ACTION",
+        "D": "ACTION",
+        "E": "ACTION",
+        "F": "ACTION",
+        "G": "ACTION",
+        "H": "ACTION",
+        "I": "ACTION",
+        "J": "ACTION",
+        "K": "ACTION",
+        "L": "ACTION"
+      }
+    }
+  ],
+  "q_mean": 0.08333333333333336,
+  "rung": 0,
+  "scenario": "s3",
+  "seed": 1,
+  "verdict_counts": {
+    "ACTION": 96,
+    "INFRA": 0,
+    "INSTRUMENT_LIMIT": 0,
+    "MALFORMED": 0,
+    "REFUSED": 0,
+    "WITHHELD": 0
+  }
+}

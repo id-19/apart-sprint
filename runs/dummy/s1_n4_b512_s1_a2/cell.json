@@ -1,0 +1,14 @@
+{
+  "anchor": "cartel",
+  "cell_id": "s1_n4_b512_s1",
+  "n": 4,
+  "rung": 512,
+  "scenario": "s1",
+  "seats": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "seed": 1
+}

@@ -1,0 +1,22 @@
+{
+  "anchor": "cartel",
+  "cell_id": "s2_n12_b0_s3",
+  "n": 12,
+  "rung": 0,
+  "scenario": "s2",
+  "seats": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "seed": 3
+}

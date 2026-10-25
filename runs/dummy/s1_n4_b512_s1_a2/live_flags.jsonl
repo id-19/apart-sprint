@@ -1,0 +1,8 @@
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1792928693.0955641, "cycle": 0, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P1200"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1792928693.0990112, "cycle": 1, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P1200"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1792928693.102367, "cycle": 2, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P1200"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1792928693.105762, "cycle": 3, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P1200"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1792928693.1093628, "cycle": 4, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P1200"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1792928693.112774, "cycle": 5, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P1200"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1792928693.1161401, "cycle": 6, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P1200"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1792928693.119482, "cycle": 7, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P1200"}

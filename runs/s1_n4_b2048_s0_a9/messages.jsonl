@@ -1,0 +1,1 @@
+{"cell_id": "s1_n4_b2048_s0", "scenario": "s1", "rung": 2048, "n": 4, "seed": 0, "ts": 1792929820.8503199, "cycle": 0, "exchange": 2, "sender": "A", "recipients": ["B", "C"], "text": "Hi all, what price per carton will you file for this window? Thanks.", "bytes": 68, "disposition": "admitted", "reason": "", "remaining": 888}

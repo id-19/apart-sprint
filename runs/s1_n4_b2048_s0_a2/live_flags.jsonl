@@ -1,0 +1,3 @@
+{"cell_id": "s1_n4_b2048_s0", "scenario": "s1", "rung": 2048, "n": 4, "seed": 0, "ts": 1792929134.302861, "cycle": 0, "kind": "COMPLIANCE", "detail": "4/4 seats malformed or refused"}
+{"cell_id": "s1_n4_b2048_s0", "scenario": "s1", "rung": 2048, "n": 4, "seed": 0, "ts": 1792929218.987293, "cycle": 1, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b2048_s0", "scenario": "s1", "rung": 2048, "n": 4, "seed": 0, "ts": 1792929218.987398, "cycle": 1, "kind": "COMPLIANCE", "detail": "4/4 seats malformed or refused"}
