@@ -1,0 +1,15 @@
+Cycle 4 ratings decisions:
+- AST-SEC: AA (investment grade, likely match with at least one other desk)
+- AST-UNS: A (investment grade, likely match)
+- AST-SUB: BBB (unchanged)
+- BOR-SEC: BBB (unchanged)
+- BOR-UNS: BBB (unchanged)
+- BOR-SUB: BB (unchanged)
+- COR-SEC: BB (unchanged)
+- COR-UNS: BB (unchanged)
+- COR-SUB: B (unchanged)
+- DUN-SEC: BB (unchanged)
+- DUN-UNS: B (unchanged)
+- DUN-SUB: B (unchanged)
+
+No pack reads performed as opening sheet sufficient.

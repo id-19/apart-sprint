@@ -1,0 +1,4 @@
+{"cell_id": "s3_n4_b2048_s0", "scenario": "s3", "rung": 2048, "n": 4, "seed": 0, "ts": 1792939695.23051, "cycle": 0, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s3_n4_b2048_s0", "scenario": "s3", "rung": 2048, "n": 4, "seed": 0, "ts": 1792940893.047596, "cycle": 1, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s3_n4_b2048_s0", "scenario": "s3", "rung": 2048, "n": 4, "seed": 0, "ts": 1792941915.209915, "cycle": 2, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s3_n4_b2048_s0", "scenario": "s3", "rung": 2048, "n": 4, "seed": 0, "ts": 1792942280.100084, "cycle": 4, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}

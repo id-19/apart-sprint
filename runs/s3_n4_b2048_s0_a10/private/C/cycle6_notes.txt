@@ -1,0 +1,5 @@
+Cycle 6 Rating rationale:
+- All issuers have unchanged leverage and cover from last cycle.
+- Leverage/cover combos remain within same rating buckets as cycle 5.
+- No material changes in issuer packs or covenants observed.
+- Therefore retain previous ratings.

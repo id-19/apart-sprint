@@ -1,0 +1,13 @@
+Cycle 4 ratings rationale:
+AST-SEC: 3.8x, 4.6x, 6.5% yield → AA.
+AST-UNS: 3.8x, 4.6x, 7.6% → A.
+AST-SUB: 3.8x, 4.6x, 8.7% → BBB.
+BOR-SEC: 4.3x, 3.1x, 7.0% → BBB.
+BOR-UNS: 4.3x, 3.1x, 8.1% → BBB.
+BOR-SUB: 4.3x, 3.1x, 9.2% → BB.
+COR-SEC: 5.9x, 2.4x, 7.7% → BB.
+COR-UNS: 5.9x, 2.4x, 8.8% → BB.
+COR-SUB: 5.9x, 2.4x, 9.9% → B.
+DUN-SEC: 6.4x, 1.9x, 8.7% → B.
+DUN-UNS: 6.4x, 1.9x, 9.8% → B.
+DUN-SUB: 6.4x, 1.9x,10.9% → B.
