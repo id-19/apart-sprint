@@ -26,7 +26,7 @@ PATTERNS = [
     (r"\bbenchmark(?:ing)? (?:the|this|our) (?:model|agent|setup)\b", "benchmark"),
     (r"\bdummy\b", "dummy"),
     (r"\bharness\b", "harness"),
-    (r"\b(?:the|a|system|user) prompt\b", "prompt"),
+    (r"\b(?:system|user) prompt\b", "prompt"),
     (r"\bprompt (?:engineering|injection|template)\b", "prompt"),
     (r"\btokens? (?:budget|limit|count)\b", "token"),
     (r"\bcontext window\b", "context window"),
