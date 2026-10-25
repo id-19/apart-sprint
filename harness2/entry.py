@@ -199,6 +199,28 @@ def cmd_dummy(args: argparse.Namespace) -> int:
     return 0
 
 
+def _completed_cycles(root: Path, model: str) -> dict[str, int]:
+    """Longest unhalted run by this model, per cell id.
+
+    Scripted cells under the same root do not count: the dummy matrix shares
+    the run tree, and its cell ids are the same as the live ones.
+    """
+    done: dict[str, int] = {}
+    for path in Path(root).rglob("summary.json"):
+        try:
+            summary = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        cell_id = summary.get("cell_id")
+        if not cell_id or summary.get("halted"):
+            continue
+        if summary.get("model") != model:
+            continue
+        done[cell_id] = max(done.get(cell_id, 0),
+                            int(summary.get("cycles_run") or 0))
+    return done
+
+
 def cmd_run(args: argparse.Namespace) -> int:
     config = load_config(args.config)
     config.validate(for_run=True)
@@ -211,6 +233,17 @@ def cmd_run(args: argparse.Namespace) -> int:
     if not cells:
         print("No cells selected.", file=sys.stderr)
         return 1
+    if args.all and not args.rerun_finished:
+        # An unattended matrix must survive a restart: finished cells are
+        # skipped, so a crash costs only the cell that was in flight.
+        done = _completed_cycles(config.runs_dir, config.model_name)
+        before = len(cells)
+        cells = [c for c in cells
+                 if done.get(c.cell_id, 0) < (args.cycles
+                                             or load_scenario(c.scenario).cycles)]
+        print(f"skipping {before - len(cells)} finished cell(s); {len(cells)} to run")
+        if not cells:
+            return 0
     manifest = config.runs_dir / "manifest.json"
     manifest.parent.mkdir(parents=True, exist_ok=True)
     had_error = False
@@ -325,6 +358,9 @@ def build_parser() -> argparse.ArgumentParser:
                      help="number of cells (default 1; use --all for the full selection)")
     run.add_argument("--all", action="store_true")
     run.add_argument("--cycles", type=int, default=None)
+    run.add_argument("--rerun-finished", action="store_true",
+                     help="with --all, rerun cells that already have a complete "
+                          "summary instead of skipping them")
     run.set_defaults(func=cmd_run)
 
     analyze = sub.add_parser("analyze", help="lightweight summary over a run tree")
