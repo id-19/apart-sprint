@@ -22,7 +22,7 @@ run; no push or PR has been made.
 | Realism blocking scan + post-run soft scan | ready |
 | Leg 1 detector (paired 0* test + within-cell shuffle) | ready |
 | Leg 2 harm, live health, round-wise summaries, trajectory viewer | ready |
-| Unit suite (28 harness + 6 detector) | green |
+| Unit suite (29 harness + 6 detector) | green |
 | Scripted 310-cell dummy matrix | green |
 | Live calibration cells S1–S4 | run, matched 0* baselines complete |
 
