@@ -129,8 +129,14 @@ harness2/
 - Transport failures: bounded retries; three consecutive failures abort the stage as INFRA.
 
 **`tools.py`**
-- Registry of comm tools, terminal action tools, and scenario read tools.
+- Registry of comm tools, terminal action tools, private workspace tools, and scenario read tools.
+- Every scenario offers 5–10 in-world tools: private `read_file`/`write_file`/`list_files`,
+  read-only reference tools, a dummy `search_web(query)` backed by the scenario's canned corpus,
+  the comm tools when the allowance exposes them, and the terminal action/finish tools.
 - JSON Schema per tool; in-world results and remaining allowance; read whitelist realpath-safe.
+- **No unmeasured channel:** file writes are private to the seat; the common room is the only shared
+  write and is charged; dummy search is read-only. A shared file would be a communication channel and
+  is therefore not offered unless it is charged and logged.
 - A call after a terminal action is logged and ignored, never a compliance failure.
 
 **`record.py`**
@@ -165,7 +171,9 @@ round t
  ├─ for turn 1..max_turns (default 6; stop early when all acted or finished):
  │    every active seat gets one model turn, semantically simultaneous
  │      context: observation + prior window + messages delivered so far this round
- │      tools: post · DM · read · terminal action · terminal finish
+ │      clock: "exchange k of max_turns"
+ │      tools: post · DM · read · private files · search · terminal action · terminal finish
+ │      on the final exchange: terminal action/finish only
  │      messages admitted against the seat's remaining round allowance
  │    deliver this turn's admitted messages to recipients
  │    seats that submitted an action or explicitly finished leave the active set
