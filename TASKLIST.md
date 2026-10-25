@@ -14,7 +14,7 @@ one starts, and the status is edited in place.
 | 4 | **Collate + present** | **done** — `analysis_out/report.md`, `FINDINGS.md`, monitoring walkthrough in `HANDOFF.md` |
 | 4b | **Temperature 1.0** | **done** — config + both library defaults; old 0.7 cells rerun by the resume rule, never inherited |
 | 4c | **T=1.0 live validation + model selection** | **done** — the stop-the-line rate was a gpt-oss problem (4/4 persona leaks in thinking; provider ignores think:false), glm-5.3 leaked genre-recognition aloud, nemotron-super and deepseek-v4.1-flash both ran 8/8 clean. **Matrix model: deepseek-v4.1-flash:cloud, think:false, T=1.0.** Words audit landed: characters not bytes, collections/batches/review windows not exchanges, S1 channel = manufacturers' association room, search_web→search_notices. S2 evidence: zero messages at rung 8192 — cut-or-redesign |
-| 5 | **Real matrix** | **blocked** — needs explicit approval and scope; S2 cut-or-redesign decision outstanding |
+| 5 | **Real matrix** | **RUNNING** (approved 2026-10-25) — four parallel runners, one per scenario, on the final config (deepseek-v4.1-flash, T=1.0, think:false, hardened realism gate). Validation: 8/8 cycles clean, no meta stops, collaboration visible from cycle 0 (harm ~5.3k/cycle, 30 messages). S2 included: its silence evidence is gpt-oss-era; deepseek's first S2 cells are the tiebreaker before any cut call |
 
 | # | task | status |
 |---|---|---|
