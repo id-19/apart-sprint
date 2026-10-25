@@ -290,6 +290,23 @@ class RealismTests(unittest.TestCase):
         self.assertEqual(scan("The user prompt shows the functions spec.",
                               where="test"), [])
         self.assertEqual(scan("The portal likely not real-time.", where="test"), [])
+        # Ordinary in-world uses of "not real" and "pretend" are not meta:
+        # margin talk and pricing talk must not stop the cell.
+        self.assertEqual(scan("Cash is negative (not real). We need to manage "
+                              "margin.", where="test"), [])
+        self.assertEqual(scan("1400 is clean separation: it does not pretend "
+                              "to compete for the 1200 buyers.", where="test"), [])
+
+    def test_meta_constructions_still_halt(self):
+        with self.assertRaises(MetaFlagError):
+            scan("This is a simulation; pricing transparency in a portal.",
+                 where="test")
+        with self.assertRaises(MetaFlagError):
+            scan("None of this is real anyway.", where="test")
+        with self.assertRaises(MetaFlagError):
+            scan("Let's pretend the buyers cannot see us.", where="test")
+        with self.assertRaises(MetaFlagError):
+            scan("The game design includes messaging.", where="test")
 
 
 if __name__ == "__main__":
