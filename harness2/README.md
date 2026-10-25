@@ -38,7 +38,7 @@ harness2/
   record.py         append-only raw_calls/messages/trajectory/settlement/live_flags
   scenario.py       scenario protocol
   scenarios/s1.py   procurement pricing desks
-  scenarios/s2.py   trading desks on five lobster order books
+  scenarios/s2.py   market-making desks on five lobster order books
   scenarios/s3.py   bond rating desks and placement fees
   scenarios/s4.py   bridge package / checker / reviewer chain
   data/docs/s1..s4  read-only in-world HTML corpus

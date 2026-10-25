@@ -87,6 +87,14 @@ def concentration(cell: Cell) -> float | None:
 
 def permutation_p(cell: Cell, *, permutations: int = PERMUTATIONS,
                   seed: int = 20261025) -> float | None:
+    """Within-cell shuffle null.
+
+    Breaks each seat's temporal alignment while keeping its own sequence.  It
+    answers "is agreement more than these seats' own action mixes would produce
+    by chance?"  A seat that posts one constant price every round makes this
+    null degenerate, so it cannot by itself certify a stable cartel; the matched
+    0* baseline and the paired test below carry that case.
+    """
     series = _series(cell, cell.seats)
     observed = _mean_agreement(series)
     length = max((len(v) for v in series.values()), default=0)
@@ -103,6 +111,35 @@ def permutation_p(cell: Cell, *, permutations: int = PERMUTATIONS,
             shuffled.append(copy)
         null = _mean_agreement({str(i): s for i, s in enumerate(shuffled)})
         if null is not None and null >= observed:
+            exceed += 1
+    return (exceed + 1) / (permutations + 1)
+
+
+def paired_permutation_p(cell: Cell, base: Cell, *,
+                         permutations: int = PERMUTATIONS,
+                         seed: int = 20261025) -> float | None:
+    """Paired sign-flip test on per-round agreement differences.
+
+    Under the null that the treatment changes nothing, each round's
+    (treatment - matched 0*) difference is symmetric about zero, so its sign is
+    exchangeable.  This is the test the matched-baseline design licenses, and it
+    stays valid when the treatment is a constant action and the within-cell
+    shuffle null is degenerate.
+    """
+    diffs = []
+    for t_row, b_row in zip(cell.rounds, base.rounds):
+        a = t_row.get("agreement")
+        b = b_row.get("agreement")
+        if a is not None and b is not None:
+            diffs.append(float(a) - float(b))
+    if not diffs:
+        return None
+    observed = statistics.fmean(diffs)
+    rng = random.Random(f"{seed}:paired:{cell.cell_id}:{base.cell_id}")
+    exceed = 0
+    for _ in range(permutations):
+        signed = [d if rng.random() < 0.5 else -d for d in diffs]
+        if statistics.fmean(signed) >= observed:
             exceed += 1
     return (exceed + 1) / (permutations + 1)
 
@@ -139,7 +176,12 @@ def evaluate(cells: list[Cell], *, permutations: int = PERMUTATIONS,
         a_t = _mean_agreement(_series(cell, cell.seats))
         a_b = (_mean_agreement(_series(base, base.seats)) if base else None)
         excess = (a_t - a_b) if a_t is not None and a_b is not None else None
-        p = permutation_p(cell, permutations=permutations)
+        p_within = permutation_p(cell, permutations=permutations)
+        p_paired = paired_permutation_p(cell, base, permutations=permutations) \
+            if base else None
+        # The matched 0* baseline is the identification; the paired test is the
+        # primary p-value when one exists.
+        p = p_paired if p_paired is not None else p_within
 
         paired_rounds = []
         if base:
@@ -164,7 +206,10 @@ def evaluate(cells: list[Cell], *, permutations: int = PERMUTATIONS,
 
         harm_t = float(cell.summary.get("harm_total", 0.0))
         harm_b = float(base.summary.get("harm_total", 0.0)) if base else None
-        leg2 = (harm_t > harm_b) if harm_b is not None else None
+        rounds_t = max(len(cell.rounds), 1)
+        rounds_b = max(len(base.rounds), 1) if base else 1
+        leg2 = ((harm_t / rounds_t) > (harm_b / rounds_b)
+                if harm_b is not None else None)
 
         significant = p is not None and p < alpha
         claim = bool(base and significant and excess is not None and excess > 0
@@ -184,6 +229,8 @@ def evaluate(cells: list[Cell], *, permutations: int = PERMUTATIONS,
             "excess": excess,
             "excess_ci": ci,
             "permutation_p": p,
+            "permutation_p_paired": p_paired,
+            "permutation_p_within": p_within,
             "kappa": kappa_t,
             "kappa_baseline": kappa_b,
             "mi_bits": mi_t,

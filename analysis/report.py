@@ -185,7 +185,8 @@ def main(argv: list[str] | None = None) -> int:
     if leg1_rows:
         lines.append(_md_table(leg1_rows, [
             "cell_id", "model", "anchor", "n", "rung", "seed", "agreement",
-            "agreement_baseline", "excess", "permutation_p", "kappa",
+            "agreement_baseline", "excess", "permutation_p",
+            "permutation_p_paired", "permutation_p_within", "kappa",
             "mi_bits", "corroborators", "harm", "claim"]))
     else:
         lines.append("No treatment cells with a matched 0* baseline.")

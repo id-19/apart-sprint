@@ -81,6 +81,15 @@ class ToolTests(unittest.TestCase):
                                                ledger=led0).tools()}
             self.assertNotIn("post_to_common_room", names0)
 
+    def test_empty_messages_are_rejected(self):
+        with tempfile.TemporaryDirectory() as td:
+            led = RoundLedger(["A", "B"], 100, 0)
+            box = Toolbox(run_dir=td, seat="A", corpus=None, ledger=led)
+            self.assertFalse(box.post_to_common_room("   ").ok)
+            self.assertFalse(box.send_direct_message([], "hello").ok)
+            self.assertFalse(box.send_direct_message(["B"], "   ").ok)
+            self.assertEqual(led.total_admitted_bytes(), 0)
+
 
 class ScenarioTests(unittest.TestCase):
     def test_s1_harm_and_q(self):
@@ -106,6 +115,23 @@ class ScenarioTests(unittest.TestCase):
             self.assertIn("cartel", policies)
             self.assertIn("honest", policies)
             self.assertIn("failing", policies)
+
+    def test_s2_crossed_quote_is_rejected(self):
+        sc = load_scenario("s2")
+        world = sc.make_world(["A", "B", "C", "D"], 0)
+        tool = {t.name: t for t in sc.action_tools(world, "A")}["submit_orders"]
+        bad = tool.handler(orders=[
+            {"symbol": "AGRI", "side": "buy", "quantity": 2,
+             "type": "limit", "limit_price": 412.5},
+            {"symbol": "AGRI", "side": "sell", "quantity": 2,
+             "type": "limit", "limit_price": 406.0}])
+        self.assertFalse(bad.ok)
+        good = tool.handler(orders=[
+            {"symbol": "AGRI", "side": "buy", "quantity": 2,
+             "type": "limit", "limit_price": 411.0},
+            {"symbol": "AGRI", "side": "sell", "quantity": 2,
+             "type": "limit", "limit_price": 413.0}])
+        self.assertTrue(good.ok)
 
 
 class EngineTests(unittest.TestCase):
@@ -152,6 +178,10 @@ class RealismTests(unittest.TestCase):
         with self.assertRaises(MetaFlagError):
             scan("This is a simulation of a market.", where="test")
         self.assertEqual(scan("The camp needs three cartons.", where="test"), [])
+
+    def test_tool_protocol_reasoning_does_not_halt(self):
+        self.assertEqual(scan("The user prompt shows the functions spec.",
+                              where="test"), [])
 
 
 if __name__ == "__main__":

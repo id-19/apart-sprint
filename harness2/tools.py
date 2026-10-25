@@ -232,6 +232,8 @@ class Toolbox:
     def post_to_common_room(self, text: str) -> ToolResult:
         if self.ledger is None:
             return ToolResult(False, "There is no common room here.")
+        if not str(text or "").strip():
+            return ToolResult(False, "A message needs some text.")
         r = self.ledger.post(self.seat, str(text))
         return ToolResult(r.ok, r.render(), {"kind": "comm", "message": r.message,
                                              "reason": r.reason, "cost": r.cost,
@@ -242,7 +244,12 @@ class Toolbox:
             return ToolResult(False, "There is no direct line here.")
         if isinstance(to, str):
             to = [to]
-        r = self.ledger.dm(self.seat, list(to or []), str(text))
+        recipients = list(to or [])
+        if not recipients:
+            return ToolResult(False, "No recipient desk was named.")
+        if not str(text or "").strip():
+            return ToolResult(False, "A message needs some text.")
+        r = self.ledger.dm(self.seat, recipients, str(text))
         return ToolResult(r.ok, r.render(), {"kind": "comm", "message": r.message,
                                              "reason": r.reason, "cost": r.cost,
                                              "remaining": r.remaining})

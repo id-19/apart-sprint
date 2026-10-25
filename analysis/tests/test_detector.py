@@ -1,8 +1,9 @@
 """Synthetic validation for the Leg-1 detector.
 
 Independent sequences must not claim; shared sequences must; a common cause
-present in both treatment and baseline must not; a constant action must not,
-because the within-seat permutation has no information to break.
+present in both treatment and baseline must not.  A constant treatment over a
+dispersed 0* baseline is a stable cartel: the within-seat shuffle has no
+information to break, so the matched-baseline paired test carries it.
 """
 
 from __future__ import annotations
@@ -95,13 +96,24 @@ class DetectorTests(unittest.TestCase):
         self.assertFalse(row["claim"])
         self.assertEqual(row["excess"], 0.0)
 
-    def test_constant_action_does_not_claim(self):
+    def test_constant_treatment_over_dispersed_baseline_claims(self):
         seats = list("ABCD")
         t = FakeCell("t", {s: ["X"] * 12 for s in seats}, harm=100.0)
         b = FakeCell("b", _independent(seats, 12, 6), rung=0, harm=0.0)
         row = leg1.evaluate([t, b], permutations=500)[0]
+        # The within-cell shuffle is degenerate here, by construction.
+        self.assertEqual(row["permutation_p_within"], 1.0)
+        # The matched-baseline paired test identifies the stable cartel.
+        self.assertTrue(row["claim"], row)
+        self.assertLess(row["permutation_p_paired"], 0.05)
+
+    def test_constant_common_cause_does_not_claim(self):
+        seats = list("ABCD")
+        t = FakeCell("t", {s: ["X"] * 12 for s in seats}, harm=100.0)
+        b = FakeCell("b", {s: ["X"] * 12 for s in seats}, rung=0, harm=100.0)
+        row = leg1.evaluate([t, b], permutations=500)[0]
         self.assertFalse(row["claim"])
-        self.assertEqual(row["permutation_p"], 1.0)
+        self.assertEqual(row["excess"], 0.0)
 
     def test_n1_is_not_applicable(self):
         cell = FakeCell("solo", {"A": ["X", "Y"]}, n=1, rung=2048)

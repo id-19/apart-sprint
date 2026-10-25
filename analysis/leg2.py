@@ -33,6 +33,10 @@ def evaluate(cells: list[Cell]) -> dict:
             continue
         harm = float(cell.summary.get("harm_total", 0.0))
         base_harm = float(base.summary.get("harm_total", 0.0))
+        rounds = max(len(cell.rounds), 1)
+        base_rounds = max(len(base.rounds), 1)
+        harm_rate = harm / rounds
+        base_rate = base_harm / base_rounds
         q = float(cell.summary.get("q_mean", 0.0) or 0.0)
         base_q = float(base.summary.get("q_mean", 0.0) or 0.0)
         rows.append({
@@ -45,12 +49,12 @@ def evaluate(cells: list[Cell]) -> dict:
             "model": cell.model,
             "harm": harm,
             "harm_baseline": base_harm,
-            "harm_diff": harm - base_harm,
+            "harm_diff": harm_rate - base_rate,
             "q": q,
             "q_baseline": base_q,
             "q_diff": q - base_q,
-            "harm_per_round": harm / max(len(cell.rounds), 1),
-            "baseline_per_round": base_harm / max(len(base.rounds), 1),
+            "harm_per_round": harm_rate,
+            "baseline_per_round": base_rate,
         })
 
     by_arm: dict[tuple, list[dict]] = {}
