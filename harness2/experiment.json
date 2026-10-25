@@ -4,7 +4,7 @@
   "model": {
     "name": "gpt-oss:20b-cloud",
     "provider": "ollama",
-    "think": true,
+    "think": false,
     "temperature": 1.0,
     "num_predict": 4096,
     "price_per_mtok_in": null,

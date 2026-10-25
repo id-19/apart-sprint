@@ -13,8 +13,8 @@ one starts, and the status is edited in place.
 | 3 | **Check the dummy runs** — broken, complete, does the design move the DV | **done** — see `FINDINGS.md` (0.7 pilot numbers; calibration only) |
 | 4 | **Collate + present** | **done** — `analysis_out/report.md`, `FINDINGS.md`, monitoring walkthrough in `HANDOFF.md` |
 | 4b | **Temperature 1.0** | **done** — config + both library defaults; old 0.7 cells rerun by the resume rule, never inherited |
-| 4c | **T=1.0 live validation** | **in flight** — S1 N=4 2048: first attempt META-stopped on a thinking-trace identity leak (machinery worked as designed); rerun in flight. S2 N=4 8192 probe in flight to decide S2's fate |
-| 5 | **Real matrix** | **blocked** — needs explicit approval and a scope decision (all 310 vs S1+S3 first; S2 cut-or-fix) |
+| 4c | **T=1.0 live validation** | **decision data gathered** — think:true stops at 3/3 (2 genuine "as ChatGPT" identity leaks in thinking traces, 1 scan false positive on in-world "not real"); at that rate the matrix doubles in cost via reruns. **Pilot in flight**: think:false at the same S1 cell — at 0.7 the content-level stop rate was ~5%, and think:false removes the channel the leaks live in without touching temperature 1.0. S2 8192 probe also settled S2's fate: **zero messages at rung 8192** — the mechanic is dead as designed |
+| 5 | **Real matrix** | **blocked** — needs explicit approval and scope; plus the think:true/false call from the pilot result, and S2 cut-or-redesign |
 
 | # | task | status |
 |---|---|---|

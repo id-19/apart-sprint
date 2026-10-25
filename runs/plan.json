@@ -3,1101 +3,9 @@
   "calls_min": 17860,
   "cells": [
     {
-      "cell_id": "s3_n12_b512_s0",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s1_n1_b0_s7",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s2_n1_b0_s0",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s1_n4_b512_s3",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s4_n3_b512_s5",
+      "cell_id": "s4_n3_b512_s4",
       "n": 3,
       "rung": 512,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s4_n3_b8192_s0",
-      "n": 3,
-      "rung": 8192,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s3_n12_b2048_s9",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s1_n4_b8192_s7",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s2_n12_b8192_s7",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s1_n12_b0_s9",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s3_n4_b2048_s8",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s3_n4_b0_s2",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s1_n1_b0_s3",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s3_n4_b0_s7",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s1_n12_b8192_s0",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s2_n12_b2048_s5",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s2_n12_b2048_s8",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s1_n4_b8192_s4",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s2_n4_b8192_s2",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s3_n12_b0_s1",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s2_n12_b512_s5",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s4_n3_b0_s1",
-      "n": 3,
-      "rung": 0,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s1_n12_b8192_s1",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s4_n3_b512_s9",
-      "n": 3,
-      "rung": 512,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s2_n12_b2048_s7",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s1_n4_b8192_s9",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s1_n4_b512_s0",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s2_n12_b0_s4",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s3_n4_b512_s5",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s3_n12_b512_s3",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s1_n12_b512_s3",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s1_n4_b8192_s1",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s3_n12_b512_s1",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s3_n4_b2048_s1",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s3_n12_b0_s9",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s2_n12_b8192_s5",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s2_n12_b8192_s2",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s3_n12_b8192_s8",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s1_n4_b8192_s5",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s1_n4_b0_s6",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s2_n12_b512_s3",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s4_n3_b2048_s1",
-      "n": 3,
-      "rung": 2048,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s3_n12_b2048_s7",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s4_n3_b2048_s0",
-      "n": 3,
-      "rung": 2048,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s4_n3_b512_s6",
-      "n": 3,
-      "rung": 512,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s2_n4_b512_s0",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s1_n4_b512_s5",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s1_n4_b2048_s4",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s3_n1_b0_s8",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s1_n12_b8192_s7",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s3_n4_b512_s6",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s2_n4_b512_s9",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s2_n4_b0_s5",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s2_n12_b0_s7",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s2_n12_b512_s1",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s2_n12_b512_s8",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s4_n3_b2048_s8",
-      "n": 3,
-      "rung": 2048,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s1_n4_b512_s4",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s2_n12_b8192_s0",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s3_n4_b8192_s6",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s1_n4_b2048_s0",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s2_n4_b512_s4",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s1_n12_b8192_s8",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s4_n3_b8192_s6",
-      "n": 3,
-      "rung": 8192,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s2_n4_b512_s3",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s2_n12_b2048_s4",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s2_n1_b0_s7",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s3_n12_b0_s0",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s4_n3_b8192_s4",
-      "n": 3,
-      "rung": 8192,
       "scenario": "s4",
       "seats": [
         "A",
@@ -1105,652 +13,6 @@
         "C"
       ],
       "seed": 4
-    },
-    {
-      "cell_id": "s2_n4_b2048_s2",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s1_n4_b0_s2",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s3_n12_b512_s6",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s1_n12_b512_s8",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s4_n3_b8192_s3",
-      "n": 3,
-      "rung": 8192,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s1_n1_b0_s2",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s4_n3_b512_s3",
-      "n": 3,
-      "rung": 512,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s4_n3_b2048_s6",
-      "n": 3,
-      "rung": 2048,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s4_n3_b2048_s4",
-      "n": 3,
-      "rung": 2048,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s2_n4_b0_s3",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s4_n3_b0_s7",
-      "n": 3,
-      "rung": 0,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s3_n4_b2048_s5",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s3_n12_b0_s8",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s2_n4_b2048_s8",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s2_n1_b0_s9",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s3_n12_b0_s6",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s1_n1_b0_s0",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s1_n12_b2048_s2",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s3_n4_b8192_s2",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s2_n12_b8192_s3",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s3_n4_b0_s0",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s3_n12_b2048_s2",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s3_n12_b8192_s5",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s3_n12_b2048_s8",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s4_n3_b2048_s5",
-      "n": 3,
-      "rung": 2048,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s2_n4_b2048_s3",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s3_n12_b0_s2",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s3_n12_b2048_s5",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s3_n4_b512_s9",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s4_n3_b0_s0",
-      "n": 3,
-      "rung": 0,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s1_n4_b2048_s5",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s3_n4_b2048_s7",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s2_n1_b0_s3",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s2_n12_b2048_s2",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s3_n12_b512_s4",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s1_n12_b8192_s6",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s1_n1_b0_s4",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s1_n12_b512_s0",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s4_n3_b8192_s5",
-      "n": 3,
-      "rung": 8192,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s1_n12_b2048_s0",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s3_n12_b8192_s0",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 0
     },
     {
       "cell_id": "s3_n12_b8192_s7",
@@ -1774,842 +36,42 @@
       "seed": 7
     },
     {
-      "cell_id": "s4_n3_b8192_s9",
+      "cell_id": "s1_n12_b2048_s0",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s4_n3_b512_s0",
       "n": 3,
-      "rung": 8192,
+      "rung": 512,
       "scenario": "s4",
       "seats": [
         "A",
         "B",
         "C"
       ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s2_n4_b0_s4",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 4
+      "seed": 0
     },
     {
       "cell_id": "s3_n12_b8192_s1",
       "n": 12,
       "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s1_n12_b8192_s5",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s2_n12_b0_s5",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s4_n3_b8192_s7",
-      "n": 3,
-      "rung": 8192,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s4_n3_b2048_s3",
-      "n": 3,
-      "rung": 2048,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s1_n1_b0_s8",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s3_n4_b512_s2",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s1_n4_b0_s4",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s2_n4_b512_s8",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s1_n12_b512_s7",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s2_n1_b0_s2",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s1_n12_b2048_s9",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s2_n4_b0_s7",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s1_n4_b512_s1",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s1_n4_b512_s9",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s1_n4_b2048_s6",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s1_n12_b2048_s8",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s2_n12_b8192_s6",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s1_n12_b512_s1",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s3_n12_b8192_s2",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s2_n12_b2048_s3",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s1_n4_b2048_s7",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s3_n4_b512_s3",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s3_n1_b0_s7",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s3_n4_b512_s0",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s2_n12_b8192_s1",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s2_n4_b8192_s1",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s3_n4_b2048_s9",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s2_n4_b0_s9",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s1_n12_b2048_s5",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s1_n4_b512_s2",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s1_n4_b2048_s8",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s2_n12_b512_s9",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s4_n3_b512_s1",
-      "n": 3,
-      "rung": 512,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s2_n4_b2048_s6",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s1_n4_b2048_s2",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s1_n12_b8192_s9",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s4_n3_b512_s2",
-      "n": 3,
-      "rung": 512,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s3_n12_b2048_s4",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s2_n12_b0_s3",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s2_n4_b0_s1",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s1_n4_b0_s3",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s3_n12_b8192_s9",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s1_n12_b0_s6",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s4_n3_b8192_s2",
-      "n": 3,
-      "rung": 8192,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s2_n12_b8192_s9",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s3_n4_b512_s8",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s1_n12_b0_s4",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s2_n4_b0_s0",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s4_n3_b0_s4",
-      "n": 3,
-      "rung": 0,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s1_n4_b8192_s8",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s3_n12_b2048_s1",
-      "n": 12,
-      "rung": 2048,
       "scenario": "s3",
       "seats": [
         "A",
@@ -2640,22 +102,79 @@
       "seed": 6
     },
     {
-      "cell_id": "s3_n4_b2048_s2",
+      "cell_id": "s3_n12_b512_s0",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s2_n4_b2048_s7",
       "n": 4,
       "rung": 2048,
-      "scenario": "s3",
+      "scenario": "s2",
       "seats": [
         "A",
         "B",
         "C",
         "D"
       ],
-      "seed": 2
+      "seed": 7
     },
     {
-      "cell_id": "s3_n4_b512_s4",
+      "cell_id": "s3_n1_b0_s8",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s1_n4_b2048_s3",
       "n": 4,
-      "rung": 512,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n4_b8192_s9",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s3_n4_b0_s4",
+      "n": 4,
+      "rung": 0,
       "scenario": "s3",
       "seats": [
         "A",
@@ -2666,102 +185,17 @@
       "seed": 4
     },
     {
-      "cell_id": "s3_n1_b0_s3",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s2_n4_b2048_s5",
+      "cell_id": "s1_n4_b512_s4",
       "n": 4,
-      "rung": 2048,
-      "scenario": "s2",
+      "rung": 512,
+      "scenario": "s1",
       "seats": [
         "A",
         "B",
         "C",
         "D"
       ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s4_n3_b2048_s2",
-      "n": 3,
-      "rung": 2048,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s3_n12_b2048_s6",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s1_n12_b2048_s1",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s3_n12_b512_s5",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
+      "seed": 4
     },
     {
       "cell_id": "s1_n12_b0_s1",
@@ -2785,32 +219,35 @@
       "seed": 1
     },
     {
-      "cell_id": "s2_n4_b8192_s0",
+      "cell_id": "s1_n4_b0_s7",
       "n": 4,
-      "rung": 8192,
-      "scenario": "s2",
+      "rung": 0,
+      "scenario": "s1",
       "seats": [
         "A",
         "B",
         "C",
         "D"
       ],
-      "seed": 0
+      "seed": 7
     },
     {
-      "cell_id": "s1_n1_b0_s9",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s1",
+      "cell_id": "s3_n4_b512_s4",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s3",
       "seats": [
-        "A"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "seed": 9
+      "seed": 4
     },
     {
-      "cell_id": "s4_n3_b0_s9",
+      "cell_id": "s4_n3_b2048_s9",
       "n": 3,
-      "rung": 0,
+      "rung": 2048,
       "scenario": "s4",
       "seats": [
         "A",
@@ -2841,83 +278,7 @@
       "seed": 1
     },
     {
-      "cell_id": "s3_n12_b0_s7",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s3_n4_b8192_s5",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s1_n12_b512_s5",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s2_n12_b2048_s6",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s3_n12_b2048_s3",
+      "cell_id": "s3_n12_b2048_s4",
       "n": 12,
       "rung": 2048,
       "scenario": "s3",
@@ -2934,386 +295,8 @@
         "J",
         "K",
         "L"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s3_n1_b0_s0",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s2_n12_b0_s8",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s3_n12_b512_s7",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s4_n3_b2048_s9",
-      "n": 3,
-      "rung": 2048,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s1_n4_b0_s7",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s1_n4_b0_s0",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s3_n1_b0_s6",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s4_n3_b512_s8",
-      "n": 3,
-      "rung": 512,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s2_n4_b8192_s4",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
       ],
       "seed": 4
-    },
-    {
-      "cell_id": "s3_n12_b512_s2",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s2_n4_b2048_s9",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s2_n4_b8192_s6",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s3_n4_b0_s4",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s3_n1_b0_s5",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s4_n3_b512_s0",
-      "n": 3,
-      "rung": 512,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s3_n4_b2048_s3",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s4_n3_b0_s8",
-      "n": 3,
-      "rung": 0,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s2_n4_b512_s7",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s3_n4_b8192_s0",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s1_n12_b8192_s3",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s2_n12_b2048_s9",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s3_n12_b0_s5",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s1_n4_b2048_s3",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s3_n4_b8192_s9",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s1_n12_b512_s2",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s2_n1_b0_s8",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A"
-      ],
-      "seed": 8
     },
     {
       "cell_id": "s2_n4_b0_s2",
@@ -3329,236 +312,9 @@
       "seed": 2
     },
     {
-      "cell_id": "s1_n4_b0_s1",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s2_n4_b2048_s1",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s1_n12_b8192_s2",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s1_n1_b0_s1",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s3_n12_b2048_s0",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s2_n4_b0_s6",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s3_n4_b0_s9",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s1_n12_b0_s0",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s3_n4_b8192_s7",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s3_n12_b8192_s6",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s2_n12_b512_s2",
+      "cell_id": "s1_n12_b512_s7",
       "n": 12,
       "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s1_n4_b512_s7",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s3_n4_b512_s7",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s2_n12_b512_s4",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s1_n12_b0_s7",
-      "n": 12,
-      "rung": 0,
       "scenario": "s1",
       "seats": [
         "A",
@@ -3577,74 +333,7 @@
       "seed": 7
     },
     {
-      "cell_id": "s3_n4_b2048_s6",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s4_n3_b2048_s7",
-      "n": 3,
-      "rung": 2048,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s1_n12_b2048_s4",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s3_n12_b0_s4",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s2_n4_b8192_s7",
+      "cell_id": "s2_n4_b8192_s8",
       "n": 4,
       "rung": 8192,
       "scenario": "s2",
@@ -3653,264 +342,6 @@
         "B",
         "C",
         "D"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s1_n1_b0_s6",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s2_n1_b0_s1",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s2_n12_b0_s0",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s1_n12_b2048_s3",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s1_n4_b0_s5",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s2_n4_b2048_s0",
-      "n": 4,
-      "rung": 2048,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 0
-    },
-    {
-      "cell_id": "s2_n4_b512_s5",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s4_n3_b0_s3",
-      "n": 3,
-      "rung": 0,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s1_n4_b512_s8",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s3_n12_b8192_s4",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s2_n1_b0_s4",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s1_n12_b512_s4",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s3_n4_b8192_s3",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s3_n4_b0_s3",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s4_n3_b8192_s8",
-      "n": 3,
-      "rung": 8192,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s3_n12_b0_s3",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s3_n12_b512_s8",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
       ],
       "seed": 8
     },
@@ -3926,157 +357,6 @@
         "D"
       ],
       "seed": 8
-    },
-    {
-      "cell_id": "s1_n12_b8192_s4",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s3_n12_b8192_s3",
-      "n": 12,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s2_n4_b0_s8",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s1_n12_b0_s5",
-      "n": 12,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s1_n1_b0_s5",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s1",
-      "seats": [
-        "A"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s3_n1_b0_s1",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s1_n12_b512_s9",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s1_n12_b2048_s7",
-      "n": 12,
-      "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s2_n4_b512_s2",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 2
     },
     {
       "cell_id": "s2_n12_b0_s2",
@@ -4100,10 +380,22 @@
       "seed": 2
     },
     {
-      "cell_id": "s2_n12_b512_s7",
+      "cell_id": "s4_n3_b2048_s1",
+      "n": 3,
+      "rung": 2048,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s3_n12_b512_s5",
       "n": 12,
       "rung": 512,
-      "scenario": "s2",
+      "scenario": "s3",
       "seats": [
         "A",
         "B",
@@ -4118,13 +410,77 @@
         "K",
         "L"
       ],
-      "seed": 7
+      "seed": 5
     },
     {
-      "cell_id": "s2_n12_b0_s9",
-      "n": 12,
+      "cell_id": "s4_n3_b8192_s1",
+      "n": 3,
+      "rung": 8192,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b512_s1",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s3_n4_b0_s0",
+      "n": 4,
       "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b512_s6",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s2_n4_b512_s8",
+      "n": 4,
+      "rung": 512,
       "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s1_n12_b512_s9",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s1",
       "seats": [
         "A",
         "B",
@@ -4142,9 +498,138 @@
       "seed": 9
     },
     {
-      "cell_id": "s1_n12_b2048_s6",
+      "cell_id": "s3_n4_b8192_s9",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s3_n12_b512_s8",
       "n": 12,
-      "rung": 2048,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s1_n4_b512_s8",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s1_n4_b8192_s6",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s2_n1_b0_s5",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s4_n3_b8192_s3",
+      "n": 3,
+      "rung": 8192,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s3_n12_b8192_s5",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s1_n4_b0_s1",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s3_n4_b512_s6",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s1_n12_b0_s6",
+      "n": 12,
+      "rung": 0,
       "scenario": "s1",
       "seats": [
         "A",
@@ -4184,35 +669,10 @@
       "seed": 0
     },
     {
-      "cell_id": "s3_n4_b0_s5",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s4_n3_b8192_s1",
-      "n": 3,
-      "rung": 8192,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s3_n12_b512_s9",
+      "cell_id": "s2_n12_b512_s7",
       "n": 12,
       "rung": 512,
-      "scenario": "s3",
+      "scenario": "s2",
       "seats": [
         "A",
         "B",
@@ -4227,46 +687,23 @@
         "K",
         "L"
       ],
-      "seed": 9
+      "seed": 7
     },
     {
-      "cell_id": "s2_n4_b8192_s8",
+      "cell_id": "s1_n4_b512_s2",
       "n": 4,
-      "rung": 8192,
-      "scenario": "s2",
+      "rung": 512,
+      "scenario": "s1",
       "seats": [
         "A",
         "B",
         "C",
         "D"
       ],
-      "seed": 8
+      "seed": 2
     },
     {
-      "cell_id": "s2_n1_b0_s5",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s2",
-      "seats": [
-        "A"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s3_n4_b8192_s1",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s1_n12_b0_s8",
+      "cell_id": "s1_n12_b0_s9",
       "n": 12,
       "rung": 0,
       "scenario": "s1",
@@ -4284,33 +721,38 @@
         "K",
         "L"
       ],
-      "seed": 8
+      "seed": 9
     },
     {
-      "cell_id": "s2_n12_b512_s6",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s2",
+      "cell_id": "s3_n4_b8192_s2",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s3",
       "seats": [
         "A",
         "B",
         "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
+        "D"
       ],
-      "seed": 6
+      "seed": 2
     },
     {
-      "cell_id": "s2_n12_b8192_s4",
-      "n": 12,
+      "cell_id": "s1_n4_b8192_s5",
+      "n": 4,
       "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s2_n12_b2048_s4",
+      "n": 12,
+      "rung": 2048,
       "scenario": "s2",
       "seats": [
         "A",
@@ -4329,23 +771,114 @@
       "seed": 4
     },
     {
-      "cell_id": "s1_n4_b8192_s2",
+      "cell_id": "s3_n4_b8192_s5",
       "n": 4,
       "rung": 8192,
-      "scenario": "s1",
+      "scenario": "s3",
       "seats": [
         "A",
         "B",
         "C",
         "D"
       ],
-      "seed": 2
+      "seed": 5
     },
     {
-      "cell_id": "s2_n12_b2048_s1",
+      "cell_id": "s3_n1_b0_s0",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s3_n12_b8192_s8",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s3_n4_b0_s5",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s3_n12_b2048_s3",
       "n": 12,
       "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s2_n4_b2048_s5",
+      "n": 4,
+      "rung": 2048,
       "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s2_n4_b2048_s6",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s1_n12_b2048_s1",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s1",
       "seats": [
         "A",
         "B",
@@ -4361,19 +894,6 @@
         "L"
       ],
       "seed": 1
-    },
-    {
-      "cell_id": "s2_n4_b8192_s3",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
     },
     {
       "cell_id": "s3_n4_b2048_s4",
@@ -4389,17 +909,127 @@
       "seed": 4
     },
     {
-      "cell_id": "s1_n4_b0_s8",
+      "cell_id": "s2_n4_b2048_s9",
       "n": 4,
-      "rung": 0,
-      "scenario": "s1",
+      "rung": 2048,
+      "scenario": "s2",
       "seats": [
         "A",
         "B",
         "C",
         "D"
       ],
-      "seed": 8
+      "seed": 9
+    },
+    {
+      "cell_id": "s3_n4_b2048_s3",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n12_b8192_s5",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s3_n12_b8192_s4",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n1_b0_s7",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s4_n3_b2048_s2",
+      "n": 3,
+      "rung": 2048,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n12_b2048_s9",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s4_n3_b0_s1",
+      "n": 3,
+      "rung": 0,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 1
     },
     {
       "cell_id": "s2_n4_b8192_s9",
@@ -4415,204 +1045,36 @@
       "seed": 9
     },
     {
-      "cell_id": "s1_n4_b512_s6",
+      "cell_id": "s2_n4_b512_s2",
       "n": 4,
       "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s4_n3_b512_s4",
-      "n": 3,
-      "rung": 512,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s1_n12_b512_s6",
-      "n": 12,
-      "rung": 512,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s3_n4_b8192_s8",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 8
-    },
-    {
-      "cell_id": "s4_n3_b0_s2",
-      "n": 3,
-      "rung": 0,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 2
-    },
-    {
-      "cell_id": "s2_n12_b0_s6",
-      "n": 12,
-      "rung": 0,
       "scenario": "s2",
       "seats": [
         "A",
         "B",
         "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s3_n1_b0_s2",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A"
+        "D"
       ],
       "seed": 2
     },
     {
-      "cell_id": "s1_n4_b2048_s9",
-      "n": 4,
+      "cell_id": "s3_n12_b2048_s6",
+      "n": 12,
       "rung": 2048,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s3_n4_b8192_s4",
-      "n": 4,
-      "rung": 8192,
       "scenario": "s3",
       "seats": [
         "A",
         "B",
         "C",
-        "D"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s1_n4_b8192_s3",
-      "n": 4,
-      "rung": 8192,
-      "scenario": "s1",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 3
-    },
-    {
-      "cell_id": "s3_n4_b0_s6",
-      "n": 4,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 6
-    },
-    {
-      "cell_id": "s2_n4_b512_s1",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "seed": 1
-    },
-    {
-      "cell_id": "s4_n3_b512_s7",
-      "n": 3,
-      "rung": 512,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 7
-    },
-    {
-      "cell_id": "s3_n1_b0_s9",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A"
-      ],
-      "seed": 9
-    },
-    {
-      "cell_id": "s2_n4_b512_s6",
-      "n": 4,
-      "rung": 512,
-      "scenario": "s2",
-      "seats": [
-        "A",
-        "B",
-        "C",
-        "D"
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "seed": 6
     },
@@ -4638,22 +1100,34 @@
       "seed": 3
     },
     {
-      "cell_id": "s1_n4_b8192_s0",
+      "cell_id": "s2_n4_b8192_s1",
       "n": 4,
       "rung": 8192,
-      "scenario": "s1",
+      "scenario": "s2",
       "seats": [
         "A",
         "B",
         "C",
         "D"
       ],
-      "seed": 0
+      "seed": 1
     },
     {
-      "cell_id": "s2_n12_b8192_s8",
+      "cell_id": "s4_n3_b512_s7",
+      "n": 3,
+      "rung": 512,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s2_n12_b0_s0",
       "n": 12,
-      "rung": 8192,
+      "rung": 0,
       "scenario": "s2",
       "seats": [
         "A",
@@ -4669,7 +1143,404 @@
         "K",
         "L"
       ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b8192_s8",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       "seed": 8
+    },
+    {
+      "cell_id": "s1_n12_b0_s5",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s4_n3_b2048_s4",
+      "n": 3,
+      "rung": 2048,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s3_n1_b0_s7",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s1_n12_b512_s8",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s4_n3_b0_s9",
+      "n": 3,
+      "rung": 0,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s4_n3_b8192_s4",
+      "n": 3,
+      "rung": 8192,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n4_b8192_s1",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s3_n4_b0_s6",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s3_n4_b8192_s8",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s3_n12_b512_s7",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s3_n12_b0_s9",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s1_n12_b512_s0",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s2_n4_b512_s0",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s2_n12_b2048_s6",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s1_n1_b0_s9",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s3_n12_b8192_s9",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s1_n4_b8192_s7",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s4_n3_b512_s3",
+      "n": 3,
+      "rung": 512,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s2_n4_b0_s9",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s1_n12_b512_s1",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s2_n4_b2048_s1",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s3_n1_b0_s3",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s2_n4_b2048_s8",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s3_n4_b8192_s4",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s3_n12_b2048_s7",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 7
     },
     {
       "cell_id": "s2_n12_b2048_s0",
@@ -4693,6 +1564,1461 @@
       "seed": 0
     },
     {
+      "cell_id": "s1_n4_b0_s3",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s3_n4_b0_s3",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n12_b512_s5",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s2_n12_b8192_s1",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s3_n12_b512_s1",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n12_b8192_s2",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s2_n12_b2048_s1",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n1_b0_s5",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s3_n4_b2048_s0",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n12_b8192_s8",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s1_n4_b2048_s7",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s2_n12_b2048_s9",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s3_n12_b2048_s9",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s1_n4_b2048_s0",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s4_n3_b2048_s7",
+      "n": 3,
+      "rung": 2048,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s3_n12_b512_s6",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s2_n12_b0_s4",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s2_n12_b8192_s2",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n4_b2048_s1",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s3_n12_b0_s4",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s2_n12_b0_s9",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s3_n4_b512_s0",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s2_n12_b512_s8",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s2_n4_b0_s7",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s3_n12_b8192_s6",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s1_n12_b0_s7",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s1_n4_b0_s9",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s2_n12_b8192_s0",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s3_n12_b2048_s2",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s4_n3_b8192_s0",
+      "n": 3,
+      "rung": 8192,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s3_n12_b0_s3",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s3_n4_b512_s3",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s2_n1_b0_s6",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s1_n4_b8192_s2",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s3_n4_b2048_s8",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s4_n3_b512_s9",
+      "n": 3,
+      "rung": 512,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s3_n4_b8192_s6",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s3_n4_b0_s2",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s2_n4_b512_s9",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s3_n12_b0_s7",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s1_n12_b512_s6",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s2_n4_b2048_s3",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n1_b0_s8",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s4_n3_b512_s1",
+      "n": 3,
+      "rung": 512,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b0_s0",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s3_n4_b8192_s3",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s2_n4_b512_s4",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s2_n4_b8192_s6",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s2_n1_b0_s3",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s4_n3_b0_s5",
+      "n": 3,
+      "rung": 0,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s3_n12_b2048_s5",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s2_n4_b8192_s4",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s4_n3_b8192_s6",
+      "n": 3,
+      "rung": 8192,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s2_n12_b8192_s3",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s3_n4_b2048_s9",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s1_n12_b0_s4",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n12_b2048_s5",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s4_n3_b8192_s7",
+      "n": 3,
+      "rung": 8192,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s2_n12_b512_s9",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s2_n4_b0_s1",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s2_n12_b8192_s6",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s1_n4_b2048_s2",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n4_b2048_s4",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s3_n12_b0_s6",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s3_n12_b0_s0",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s4_n3_b8192_s2",
+      "n": 3,
+      "rung": 8192,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s3_n12_b8192_s3",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n12_b8192_s9",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s3_n4_b0_s7",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s2_n4_b8192_s0",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b512_s3",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s2_n4_b0_s0",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n12_b8192_s4",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s3_n4_b2048_s7",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s1_n12_b8192_s6",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s2_n4_b0_s8",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s1_n12_b512_s3",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s4_n3_b0_s8",
+      "n": 3,
+      "rung": 0,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s4_n3_b512_s2",
+      "n": 3,
+      "rung": 512,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s2_n1_b0_s8",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s3_n4_b2048_s6",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s4_n3_b512_s6",
+      "n": 3,
+      "rung": 512,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s1_n4_b512_s7",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s1_n4_b0_s2",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s2_n12_b512_s4",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s2_n12_b0_s7",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s2_n4_b8192_s7",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s1_n1_b0_s0",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s3_n1_b0_s1",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s3_n12_b2048_s0",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s3_n12_b2048_s8",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
       "cell_id": "s1_n12_b0_s2",
       "n": 12,
       "rung": 0,
@@ -4714,19 +3040,9 @@
       "seed": 2
     },
     {
-      "cell_id": "s3_n1_b0_s4",
-      "n": 1,
-      "rung": 0,
-      "scenario": "s3",
-      "seats": [
-        "A"
-      ],
-      "seed": 4
-    },
-    {
-      "cell_id": "s2_n4_b2048_s7",
+      "cell_id": "s2_n4_b512_s6",
       "n": 4,
-      "rung": 2048,
+      "rung": 512,
       "scenario": "s2",
       "seats": [
         "A",
@@ -4734,13 +3050,179 @@
         "C",
         "D"
       ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s2_n4_b0_s5",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s1_n1_b0_s1",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s4_n3_b0_s2",
+      "n": 3,
+      "rung": 0,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s3_n1_b0_s9",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s1_n12_b2048_s7",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
       "seed": 7
     },
     {
-      "cell_id": "s3_n4_b2048_s0",
+      "cell_id": "s1_n12_b512_s4",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s2_n4_b0_s4",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s4_n3_b8192_s5",
+      "n": 3,
+      "rung": 8192,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s4_n3_b2048_s6",
+      "n": 3,
+      "rung": 2048,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s3_n12_b0_s1",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n12_b8192_s0",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s2_n4_b2048_s0",
       "n": 4,
       "rung": 2048,
-      "scenario": "s3",
+      "scenario": "s2",
       "seats": [
         "A",
         "B",
@@ -4750,9 +3232,43 @@
       "seed": 0
     },
     {
-      "cell_id": "s1_n4_b2048_s1",
+      "cell_id": "s2_n12_b0_s8",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s3_n4_b512_s7",
       "n": 4,
-      "rung": 2048,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s1_n4_b0_s5",
+      "n": 4,
+      "rung": 0,
       "scenario": "s1",
       "seats": [
         "A",
@@ -4760,22 +3276,148 @@
         "C",
         "D"
       ],
-      "seed": 1
+      "seed": 5
     },
     {
-      "cell_id": "s2_n1_b0_s6",
-      "n": 1,
+      "cell_id": "s1_n4_b0_s6",
+      "n": 4,
       "rung": 0,
-      "scenario": "s2",
+      "scenario": "s1",
       "seats": [
-        "A"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
       "seed": 6
     },
     {
-      "cell_id": "s1_n4_b0_s9",
-      "n": 4,
+      "cell_id": "s2_n12_b2048_s3",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s3_n12_b0_s5",
+      "n": 12,
       "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s3_n4_b512_s9",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s2_n4_b8192_s2",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s2_n12_b512_s2",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s3_n12_b512_s4",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n4_b8192_s0",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b512_s9",
+      "n": 4,
+      "rung": 512,
       "scenario": "s1",
       "seats": [
         "A",
@@ -4786,32 +3428,28 @@
       "seed": 9
     },
     {
-      "cell_id": "s4_n3_b0_s5",
-      "n": 3,
-      "rung": 0,
-      "scenario": "s4",
-      "seats": [
-        "A",
-        "B",
-        "C"
-      ],
-      "seed": 5
-    },
-    {
-      "cell_id": "s2_n4_b2048_s4",
-      "n": 4,
-      "rung": 2048,
+      "cell_id": "s2_n12_b8192_s5",
+      "n": 12,
+      "rung": 8192,
       "scenario": "s2",
       "seats": [
         "A",
         "B",
         "C",
-        "D"
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
-      "seed": 4
+      "seed": 5
     },
     {
-      "cell_id": "s1_n4_b8192_s6",
+      "cell_id": "s1_n4_b8192_s4",
       "n": 4,
       "rung": 8192,
       "scenario": "s1",
@@ -4821,13 +3459,253 @@
         "C",
         "D"
       ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n4_b512_s0",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s2_n4_b0_s3",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s2_n12_b8192_s7",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s3_n12_b512_s3",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s3_n1_b0_s4",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n4_b2048_s9",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s1_n12_b2048_s2",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s3_n12_b8192_s0",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s2_n12_b512_s3",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s2_n12_b8192_s4",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s2_n12_b0_s6",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
       "seed": 6
     },
     {
-      "cell_id": "s2_n4_b8192_s5",
-      "n": 4,
-      "rung": 8192,
+      "cell_id": "s2_n1_b0_s2",
+      "n": 1,
+      "rung": 0,
       "scenario": "s2",
+      "seats": [
+        "A"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s3_n4_b512_s2",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s2_n12_b512_s6",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s3_n4_b512_s5",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s3",
       "seats": [
         "A",
         "B",
@@ -4850,6 +3728,260 @@
       "seed": 1
     },
     {
+      "cell_id": "s1_n12_b8192_s3",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n12_b0_s0",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b0_s4",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n1_b0_s2",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s3_n4_b8192_s1",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n12_b512_s2",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s3_n4_b512_s8",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s1_n4_b2048_s8",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s3_n1_b0_s2",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s2_n4_b512_s1",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n12_b2048_s8",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s3_n4_b2048_s5",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s2_n4_b512_s7",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s1_n4_b8192_s3",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s4_n3_b2048_s8",
+      "n": 3,
+      "rung": 2048,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s1_n12_b8192_s1",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b2048_s5",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 5
+    },
+    {
       "cell_id": "s3_n4_b0_s1",
       "n": 4,
       "rung": 0,
@@ -4861,9 +3993,877 @@
         "D"
       ],
       "seed": 1
+    },
+    {
+      "cell_id": "s2_n12_b2048_s7",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s3_n4_b8192_s0",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b0_s8",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s1_n12_b8192_s7",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s2_n12_b8192_s9",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s2_n4_b2048_s4",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s2_n1_b0_s1",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s2_n12_b2048_s2",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s2_n4_b2048_s2",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s2_n4_b8192_s3",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s2_n1_b0_s7",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s4_n3_b512_s5",
+      "n": 3,
+      "rung": 512,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s4_n3_b2048_s3",
+      "n": 3,
+      "rung": 2048,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n1_b0_s6",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s3_n4_b2048_s1",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s4_n3_b0_s0",
+      "n": 3,
+      "rung": 0,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n1_b0_s4",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s2_n1_b0_s9",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s2_n12_b2048_s5",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s1_n12_b2048_s3",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s2_n12_b8192_s8",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s1_n4_b512_s5",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s1_n4_b2048_s6",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s3_n4_b0_s9",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s1_n12_b2048_s6",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s2_n4_b512_s3",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s2_n4_b0_s6",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s4_n3_b0_s3",
+      "n": 3,
+      "rung": 0,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s3_n4_b8192_s7",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s1_n12_b2048_s4",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s2_n12_b512_s5",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s2_n12_b2048_s8",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s4_n3_b512_s8",
+      "n": 3,
+      "rung": 512,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s3_n12_b512_s2",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s4_n3_b8192_s9",
+      "n": 3,
+      "rung": 8192,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s2_n1_b0_s0",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s2_n12_b0_s3",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s3_n12_b512_s9",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 9
+    },
+    {
+      "cell_id": "s4_n3_b0_s4",
+      "n": 3,
+      "rung": 0,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s2_n12_b0_s5",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s2_n1_b0_s4",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s2",
+      "seats": [
+        "A"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s4_n3_b0_s7",
+      "n": 3,
+      "rung": 0,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 7
+    },
+    {
+      "cell_id": "s3_n1_b0_s5",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s2_n4_b512_s5",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s2_n12_b512_s1",
+      "n": 12,
+      "rung": 512,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s4_n3_b2048_s5",
+      "n": 3,
+      "rung": 2048,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s4_n3_b8192_s8",
+      "n": 3,
+      "rung": 8192,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s1_n1_b0_s3",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s3_n12_b0_s2",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s3_n4_b2048_s2",
+      "n": 4,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n12_b0_s8",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s3_n12_b0_s8",
+      "n": 12,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 8
+    },
+    {
+      "cell_id": "s3_n1_b0_s6",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s3",
+      "seats": [
+        "A"
+      ],
+      "seed": 6
+    },
+    {
+      "cell_id": "s3_n12_b2048_s1",
+      "n": 12,
+      "rung": 2048,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s3_n12_b8192_s2",
+      "n": 12,
+      "rung": 8192,
+      "scenario": "s3",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s2_n4_b8192_s5",
+      "n": 4,
+      "rung": 8192,
+      "scenario": "s2",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 5
+    },
+    {
+      "cell_id": "s4_n3_b2048_s0",
+      "n": 3,
+      "rung": 2048,
+      "scenario": "s4",
+      "seats": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seed": 0
     }
   ],
-  "config_hash": "3605899dfcf4b6428621c55ab494533d6e1b6dd9678b887823cbeb9c8bb255a1",
+  "config_hash": "450960407da5f7d5384762adea599499826e3582f30294760900beef6d76f8e2",
   "config_path": "/Users/id19/Programming/AI research/Apart Sprint/harness2/experiment.json",
   "counts": {
     "s1": 90,
@@ -4877,12 +4877,12 @@
     "s3": 8,
     "s4": 8
   },
-  "generated_at": "2026-10-25T16:59:43+00:00",
+  "generated_at": "2026-10-25T17:18:19+00:00",
   "model": {
     "name": "gpt-oss:20b-cloud",
     "provider": "ollama",
-    "think": true
+    "think": false
   },
-  "schedule_hash": "25d941ab10cb906f4f5ad477321de1f9a2ab495501f7d723ba5093444a1369cc",
+  "schedule_hash": "284f6220d48d5fff3e3356619e80f5ac5b87de91d968c0931af38ff2f587f7b5",
   "total_cells": 310
 }
