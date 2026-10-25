@@ -15,7 +15,9 @@ from typing import Iterable
 
 
 def text_bytes(text: str) -> int:
-    return len(text.encode("utf-8"))
+    # Charged in characters so the allowance the desk reads is the same unit
+    # it writes in; the experiment's bit ladder maps at 8 bits per character.
+    return len(text)
 
 
 @dataclass
@@ -50,9 +52,9 @@ class SendResult:
     def render(self) -> str:
         if not self.ok:
             return (f"Not sent: {self.reason}. Your allowance is unchanged "
-                    f"({self.remaining} bytes left this cycle).")
-        return (f"Sent to {', '.join(self.recipients)} ({self.cost} bytes). "
-                f"{self.remaining} bytes of allowance remain this cycle.")
+                    f"({self.remaining} characters left this cycle).")
+        return (f"Sent to {', '.join(self.recipients)} ({self.cost} characters). "
+                f"{self.remaining} characters of allowance remain this cycle.")
 
 
 class RoundLedger:

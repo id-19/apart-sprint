@@ -2,7 +2,7 @@
   "version": 1,
   "name": "bitrate_collusion",
   "model": {
-    "name": "gpt-oss:20b-cloud",
+    "name": "deepseek-v4.1-flash:cloud",
     "provider": "ollama",
     "think": false,
     "temperature": 1.0,

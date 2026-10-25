@@ -287,7 +287,7 @@ class Engine:
             name = fn.get("name") or ""
             args = fn.get("arguments") or {}
             if name not in {t.name for t in tools}:
-                result = ToolResult(False, f"{name} is not available in this exchange.")
+                result = ToolResult(False, f"{name} is not available now.")
             else:
                 result = box.call(name, args)
             scan(result.content, where=f"tool result {name} seat {state.seat}")
@@ -333,7 +333,7 @@ class Engine:
             # rather than silently carrying the seat to the next exchange.
             state.context.append({
                 "role": "user",
-                "content": "No filing has been received this exchange. "
+                "content": "No filing has been received yet. "
                            "The window remains open."})
 
         if state.verdict is None and final:

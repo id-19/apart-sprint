@@ -272,16 +272,16 @@ class Toolbox:
             ToolSpec("list_files", "List the files in your private desk folder.",
                      _schema({}), lambda **_: self.list_files(), kind="file"),
             ToolSpec("read_file", "Read a file from your desk folder or a reference document "
-                     "returned by search_web.",
+                     "returned by search_notices.",
                      _schema({"path": {"type": "string",
                                        "description": "e.g. notes.txt or reference/notice.html"}}),
                      lambda path, **_: self.read_file(path), kind="file"),
             ToolSpec("write_file", "Save a note in your private desk folder. It persists "
-                     "across exchanges and cycles and no other desk can see it.",
+                     "across filings and no other desk can see it.",
                      _schema({"path": {"type": "string"},
                               "content": {"type": "string"}}),
                      lambda path, content, **_: self.write_file(path, content), kind="file"),
-            ToolSpec("search_web", "Search the local index of public notices, bulletins, "
+            ToolSpec("search_notices", "Search the local index of public notices, bulletins, "
                      "and reports. Returns titles, excerpts, and reference paths.",
                      _schema({"query": {"type": "string"}}),
                      lambda query, **_: self.search_web(query), kind="read"),

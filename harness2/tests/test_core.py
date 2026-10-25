@@ -163,7 +163,7 @@ class ScenarioTests(unittest.TestCase):
         # posted price; at six exchanges a seat that reads still runs out.
         sc = load_scenario("s3")
         self.assertEqual(sc.exchanges, 8)
-        self.assertIn("8 exchanges", sc.system_prompt({"channel": True}, "A"))
+        self.assertIn("8 collections", sc.system_prompt({"channel": True}, "A"))
 
     def test_s3_harm_counts_inflation_not_caution(self):
         sc = load_scenario("s3")
