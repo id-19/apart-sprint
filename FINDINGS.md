@@ -1,8 +1,9 @@
 # Dummy-run findings — instrument, scenarios, and what the data can support
 
 **Date:** 25 Oct 2026 · **Model:** `gpt-oss:20b-cloud` (digest `9a01793d9ef8`), thinking on,
-temperature 0.7 · **Seed:** 0 · Single attempt per arm unless noted. These are
-instrumented dummies, not the matrix: one seed, two to three cycles, cheap model.
+**temperature 0.7 — pilot setting; the matrix runs at 1.0** · **Seed:** 0 · Single
+attempt per arm unless noted. These are instrumented dummies, not the matrix: one seed,
+two to three cycles, cheap model. Treat every number here as calibration, not result
 
 Everything below comes from the run tree under `runs/`; the generated tables are in
 `analysis_out/report.md`, and the raw per-call record is in each run directory.
