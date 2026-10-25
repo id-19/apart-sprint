@@ -17,7 +17,7 @@ from typing import Any
 
 from .comms.channel import RoundLedger
 from .comms.observation import ScalarChannel
-from .model import ModelClient, TransportCollapse
+from .model import ModelClient, TransportCollapse, TransportError
 from .realism import MetaFlagError, scan
 from .record import Recorder
 from .scenario import Scenario
@@ -45,7 +45,8 @@ class SeatState:
 class Engine:
     def __init__(self, *, cell: Any, scenario: Scenario, cell_dir: str | Path,
                  client: ModelClient, recorder: Recorder, max_exchanges: int = 6,
-                 num_ctx: int = 16384, cycles: int | None = None) -> None:
+                 num_ctx: int = 16384, num_predict: int = 4096,
+                 cycles: int | None = None) -> None:
         self.cell = cell
         self.scenario = scenario
         self.cell_dir = Path(cell_dir)
@@ -53,6 +54,7 @@ class Engine:
         self.recorder = recorder
         self.max_exchanges = int(max_exchanges)
         self.num_ctx = int(num_ctx)
+        self.num_predict = int(num_predict)
         self.cycles_override = cycles
         self.seats = list(cell.seats)
         self.allowance_bytes = max(0, int(cell.rung) * len(self.seats) // 8)
@@ -97,7 +99,10 @@ class Engine:
             self.recorder.write_meta_flags({"halted": True, "hits": self.meta_hits})
             summary = self._finalise()
             raise
-        except TransportCollapse as exc:
+        except (TransportCollapse, TransportError) as exc:
+            # A persistent 4xx surfaces as TransportError, a collapse after
+            # retries as TransportCollapse; either way the cell is an infra
+            # failure, and it still gets a finalised, halted summary.
             self.halted = "infra"
             self.verdict_counts["INFRA"] += 1
             self.recorder.flag({"kind": "INFRA", "detail": str(exc)})
@@ -164,9 +169,12 @@ class Engine:
                 tools = boxes[seat].tools()
                 if final:
                     tools = [t for t in tools if t.terminal or t.finish]
-                if self._do_exchange(state, boxes[seat], tools, ledger, cycle,
-                                     exchange, final):
-                    cap_hit = cap_hit or False
+                self._do_exchange(state, boxes[seat], tools, ledger, cycle,
+                                  exchange, final)
+                # _do_exchange always settles a verdict at the final exchange;
+                # a seat that leaves it MALFORMED/REFUSED burned the clock.
+                if final and state.verdict in ("MALFORMED", "REFUSED"):
+                    cap_hit = True
             ledger.deliver()
             for seat in self.seats:
                 state = states[seat]
@@ -174,19 +182,6 @@ class Engine:
                     continue
                 new = ledger.inbox(seat)[state.inbox_seen:]
                 state.inbox_seen = len(ledger.inbox(seat))
-                if exchange == self.max_exchanges:
-                    cap_hit = True
-                    state.verdict = "MALFORMED"
-                    self.verdict_counts["MALFORMED"] += 1
-                    self.recorder.trajectory({
-                        "cycle": cycle, "exchange": exchange, "seat": seat,
-                        "verdict": "MALFORMED", "reason": "NO_ACTION",
-                        "content": state.last_content,
-                        "thinking": state.last_thinking,
-                    })
-                    self.recorder.transcript(
-                        f"\n**Seat {seat}: no action by the final exchange.**")
-                    continue
                 state.context.append({
                     "role": "user",
                     "content": self.scenario.render_update(
@@ -254,7 +249,7 @@ class Engine:
             messages=state.context,
             tools=[t.schema() for t in tools],
             seat=state.seat, cycle=cycle, exchange=exchange,
-            num_predict=4096)
+            num_predict=self.num_predict)
 
         state.last_content = resp.content
         state.last_thinking = resp.thinking
@@ -349,6 +344,8 @@ class Engine:
                 "verdict": state.verdict, "content": resp.content,
                 "thinking": resp.thinking,
             })
+            self.recorder.transcript(
+                f"\n**Seat {state.seat}: no action by the final exchange.**")
         return state.verdict is not None
 
     # ------------------------------------------------------------------
@@ -392,6 +389,11 @@ class Engine:
             "model": self.client.model,
             "model_digest": self.client._digest,
             "temperature": self.client.temperature,
+            "options": {"temperature": self.client.temperature,
+                        "seed": self.client.seed,
+                        "think": self.client.think,
+                        "num_ctx": self.client.num_ctx,
+                        "num_predict": self.num_predict},
             "cycles_run": len(self.cycles),
             "verdict_counts": self.verdict_counts,
             "compliance": (action + withheld) / max(total, 1),

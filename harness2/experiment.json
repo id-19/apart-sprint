@@ -6,8 +6,7 @@
     "provider": "ollama",
     "think": true,
     "temperature": 1.0,
-    "num_predict_comm": 4096,
-    "num_predict_action": 4096,
+    "num_predict": 4096,
     "price_per_mtok_in": null,
     "price_per_mtok_out": null
   },

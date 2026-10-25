@@ -142,7 +142,10 @@ def paired_permutation_p(cell: Cell, base: Cell, *,
         signed = [d if rng.random() < 0.5 else -d for d in diffs]
         if statistics.fmean(signed) >= observed:
             exceed += 1
-    return (exceed + 1) / (permutations + 1)
+    # The sign-flip space holds 2^len(diffs) assignments, so no p-value below
+    # its one-sided minimum is meaningful however many draws we take.
+    floor = 1.0 / (2 ** len(diffs) + 1)
+    return max((exceed + 1) / (permutations + 1), floor)
 
 
 def bootstrap_ci(values: list[float], *, draws: int = 2000,

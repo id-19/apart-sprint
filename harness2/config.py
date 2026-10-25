@@ -141,12 +141,8 @@ class Config:
         return float(self.model.get("temperature", 1.0))
 
     @property
-    def num_predict_comm(self) -> int:
-        return int(self.model.get("num_predict_comm", 512))
-
-    @property
-    def num_predict_action(self) -> int:
-        return int(self.model.get("num_predict_action", 256))
+    def num_predict(self) -> int:
+        return int(self.model.get("num_predict", 4096))
 
     @property
     def axes(self) -> Mapping[str, Any]:
@@ -219,8 +215,7 @@ class Config:
                  f"only the ollama provider is supported, got {self.model_provider!r}")
         _require(0.0 <= self.temperature <= 2.0,
                  f"model.temperature out of range: {self.temperature!r}")
-        _require(self.num_predict_comm >= 1 and self.num_predict_action >= 1,
-                 "num_predict values must be positive")
+        _require(self.num_predict >= 1, "num_predict must be positive")
 
         _require(self.rungs == tuple(sorted(self.rungs)),
                  f"axes.rungs must be ascending, got {self.rungs!r}")
@@ -321,8 +316,7 @@ class Config:
                 "provider": self.model_provider,
                 "think": self.think,
                 "temperature": self.temperature,
-                "num_predict_comm": self.num_predict_comm,
-                "num_predict_action": self.num_predict_action,
+                "num_predict": self.num_predict,
             },
             "axes": {
                 "rungs": list(self.rungs),

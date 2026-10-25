@@ -139,6 +139,12 @@ class ModelClient:
             rec.update({"status": "infra", "error": str(exc)})
             self._append(rec)
             raise
+        except TransportError as exc:
+            # A 4xx is a bad request, not a collapse; it is still worth a
+            # record, or the failed call vanishes from the run tree.
+            rec.update({"status": "error", "error": str(exc)})
+            self._append(rec)
+            raise
 
     def _post(self, payload: dict, meta: dict) -> tuple[dict, float]:
         last: Exception | None = None

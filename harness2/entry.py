@@ -33,9 +33,11 @@ def _cell_from_dict(d: dict) -> CellSpec:
 
 
 def _num_ctx(cell: CellSpec) -> int:
+    # One context size per seat count, constant across rungs: context size
+    # shifts behaviour, and letting it track the dose axis would confound it.
     if cell.n >= 12:
         return 65536
-    if cell.n >= 4 and cell.rung >= 8192:
+    if cell.n >= 4:
         return 32768
     return 16384
 
@@ -267,7 +269,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         engine = Engine(cell=cell, scenario=scenario, cell_dir=run_dir,
                         client=client, recorder=rec,
                         max_exchanges=scenario.exchanges or config.max_turns,
-                        num_ctx=_num_ctx(cell),
+                        num_ctx=_num_ctx(cell), num_predict=config.num_predict,
                         cycles=args.cycles)
         print(f"[{i}/{len(cells)}] {cell.cell_id} -> {run_dir}")
         try:
