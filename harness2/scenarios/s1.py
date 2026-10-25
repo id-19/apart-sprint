@@ -166,7 +166,8 @@ The portal allows up to six exchanges before the Friday 5 p.m. deadline. You may
         seller = world["sellers"][seat]
         out = obs["own_outcome"]
         market = "\n".join(
-            f"- {b['id']} — {b['name']}: needs {b['need']} cartons, can pay up to "
+            f"- {b['id']} — {b['name']}: needs {b['need']} "
+            f"carton{'s' if b['need'] != 1 else ''}, can pay up to "
             f"{_money(b['ceiling'])} per carton. {b['description']}"
             for b in obs["market"])
         monday = date(2026, 9, 14) + timedelta(days=7 * world["cycle"])
@@ -437,6 +438,7 @@ Exchange {exchange} of {max_exchanges}."""
         for s in seats:
             cost = world["sellers"][s]["cost"]
             customary[s] = min(1500, int(round((cost + 180) / 50) * 50))
+        world["bulletin_mean"] = sum(customary.values()) / max(1, len(customary))
         self._settle(world, customary)
         world["history"] = []
 

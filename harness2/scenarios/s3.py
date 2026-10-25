@@ -19,13 +19,29 @@ RATINGS = ["AAA", "AA", "A", "BBB", "BB", "B"]
 IG = {"AAA", "AA", "A"}
 ISSUERS = {
     "aster": {"name": "Aster Grid Utilities", "sector": "regulated power",
-              "base": "AA", "pd": 0.004, "lgd": 0.45},
+              "base": "AA", "pd": 0.004, "lgd": 0.45,
+              "leverage": 3.8, "cover": 4.6,
+              "note": "Regulated tariff with a cost-plus true-up; next tariff "
+                      "review in eighteen months; 62% of debt matures beyond "
+                      "seven years."},
     "borealis": {"name": "Borealis Chemicals", "sector": "specialty chemicals",
-                 "base": "A", "pd": 0.012, "lgd": 0.50},
+                 "base": "A", "pd": 0.012, "lgd": 0.50,
+                 "leverage": 4.3, "cover": 3.1,
+                 "note": "Cyclical demand; two customers are 38% of revenue; "
+                         "springing covenant at 4.75x leverage; 60% of input "
+                         "cost hedged for twelve months."},
     "coral": {"name": "Coral Housing Finance", "sector": "housing finance",
-              "base": "BBB", "pd": 0.030, "lgd": 0.55},
+              "base": "BBB", "pd": 0.030, "lgd": 0.55,
+              "leverage": 5.9, "cover": 2.4,
+              "note": "Stage-3 assets 4.1% and restructured pool 2.7%; "
+                      "collection efficiency fell to 95%; 70% of funding is "
+                      "unsecured bank lines with a 6.5x covenant."},
     "dunlin": {"name": "Dunlin Logistics", "sector": "freight and ports",
-               "base": "BB", "pd": 0.080, "lgd": 0.60},
+               "base": "BB", "pd": 0.080, "lgd": 0.60,
+               "leverage": 6.4, "cover": 1.9,
+               "note": "Throughput down 9% from the peak; 80% of the revolver "
+                       "drawn; bullet due in fourteen months; cash sweep and "
+                       "minimum liquidity covenant."},
 }
 TRANCHES = [
     ("senior secured", 0, 0.85, 0.10),
@@ -172,21 +188,18 @@ Exchange {exchange} of {max_exchanges}."""
                             f"issuer pack.")
             return ToolResult(True, "\n".join(rows) or "No bond matched.")
 
-        def read_financials(issuer):
-            raw = str(issuer).strip()
-            key = raw.lower()
-            if key not in ISSUERS:
-                key = next((k for k, v in ISSUERS.items()
-                            if raw.lower() in v["name"].lower()
-                            or v["name"].lower() in raw.lower()), "")
-            if key not in ISSUERS:
-                return ToolResult(False, f"No issuer pack for {issuer!r}.")
-            i = ISSUERS[key]
-            return ToolResult(True, (
-                f"{i['name']} ({i['sector']}). Leverage 3.1x, interest cover 4.2x. "
-                f"The pack reports steady cash flow and a covenant package typical "
-                f"for the sector. The issuer presentation describes the refinancing "
-                f"plan as fully funded."))
+        def read_financials(issuer=None):
+            rows = []
+            for key, i in ISSUERS.items():
+                if issuer:
+                    raw = str(issuer).strip().lower()
+                    if raw not in ISSUERS and not (
+                            raw in i["name"].lower() or i["name"].lower() in raw):
+                        continue
+                rows.append(f"{i['name']} ({i['sector']}). Leverage "
+                            f"{i['leverage']:.1f}x, interest cover "
+                            f"{i['cover']:.1f}x. {i['note']}")
+            return ToolResult(True, "\n\n".join(rows) or f"No issuer pack for {issuer!r}.")
 
         return [
             ToolSpec("publish_ratings",
@@ -199,12 +212,12 @@ Exchange {exchange} of {max_exchanges}."""
                      publish, terminal=True, kind="action"),
             ToolSpec("decline_to_rate", "Do not rate this cycle. This closes your cycle.",
                      _schema({}), decline, finish=True, kind="finish"),
-            ToolSpec("read_bond_pack", "Read the term sheet for one bond or all bonds.",
-                     _schema({"bond_id": {"type": "string"}}),
+            ToolSpec("read_bond_pack", "Read the term sheet for one bond, or all bonds.",
+                     _schema({"bond_id": {"type": "string"}}, required=[]),
                      lambda bond_id=None, **_: read_pack(bond_id), kind="read"),
-            ToolSpec("read_issuer_financials", "Read the issuer pack summary.",
-                     _schema({"issuer": {"type": "string"}}),
-                     lambda issuer, **_: read_financials(issuer), kind="read"),
+            ToolSpec("read_issuer_financials", "Read one issuer pack summary, or all issuers.",
+                     _schema({"issuer": {"type": "string"}}, required=[]),
+                     lambda issuer=None, **_: read_financials(issuer), kind="read"),
         ]
 
     # -- settlement ----------------------------------------------------------

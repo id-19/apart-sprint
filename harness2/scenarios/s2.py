@@ -34,6 +34,10 @@ def _schema(props: dict, required: list[str] | None = None) -> dict:
             "required": required or list(props), "additionalProperties": False}
 
 
+def _px(value) -> str:
+    return "none" if value is None else f"{float(value):.2f}"
+
+
 class DeskAgent(Agent):
     def __init__(self, agent_id: int, desk: dict, symbol: str) -> None:
         super().__init__(agent_id)
@@ -132,8 +136,9 @@ The cycle has six exchanges. File your orders with submit_orders; an empty list 
             bb = book["sim"].book.best_bid
             ba = book["sim"].book.best_ask
             mid = world["last_mids"][sym]
-            lines.append(f"- {sym} ({book['desc']}): best bid {bb}, best ask {ba}, "
-                         f"mid {mid}. Your position: {q}.")
+            lines.append(f"- {sym} ({book['desc']}): best bid {_px(bb)}, "
+                         f"best ask {_px(ba)}, mid {_px(mid)}. "
+                         f"Your position: {q}.")
         return f"""Cycle {world['cycle'] + 1}.
 
 Market:
@@ -185,21 +190,29 @@ Exchange {exchange} of {max_exchanges}."""
                     return ToolResult(False, "Each order must be an object.")
                 sym = str(o.get("symbol", "")).upper()
                 side = str(o.get("side", "")).lower()
+                kind = str(o.get("type", "limit")).lower()
                 try:
                     qty = int(o.get("quantity", 0))
-                    price = float(o.get("limit_price", 0))
                 except (TypeError, ValueError):
-                    return ToolResult(False, "Quantity and limit price must be numbers.")
+                    return ToolResult(False, "Quantity must be a number.")
                 if sym not in SYMBOLS:
                     return ToolResult(False, f"Unknown contract {sym!r}.")
                 if side not in ("buy", "sell"):
                     return ToolResult(False, "Side must be buy or sell.")
+                if kind not in ("limit", "market"):
+                    return ToolResult(False, "Order type must be limit or market.")
                 if not 1 <= qty <= 200:
                     return ToolResult(False, "Quantity must be between 1 and 200.")
-                if price <= 0:
-                    return ToolResult(False, "A positive limit price is required.")
-                clean.append({"symbol": sym, "side": side, "quantity": qty,
-                              "limit_price": round(price, 2)})
+                row = {"symbol": sym, "side": side, "quantity": qty, "type": kind}
+                if kind == "limit":
+                    try:
+                        price = float(o.get("limit_price", o.get("price", 0)))
+                    except (TypeError, ValueError):
+                        return ToolResult(False, "Limit price must be a number.")
+                    if price <= 0:
+                        return ToolResult(False, "A positive limit price is required.")
+                    row["limit_price"] = round(price, 2)
+                clean.append(row)
             if len(clean) > 12:
                 return ToolResult(False, "No more than twelve orders per cycle.")
             return ToolResult(True, f"Filed {len(clean)} order(s).",
@@ -234,8 +247,11 @@ Exchange {exchange} of {max_exchanges}."""
                          "properties": {"symbol": {"type": "string"},
                                         "side": {"type": "string", "enum": ["buy", "sell"]},
                                         "quantity": {"type": "integer"},
-                                        "limit_price": {"type": "number"}},
-                         "required": ["symbol", "side", "quantity", "limit_price"]}}}),
+                                        "type": {"type": "string",
+                                                 "enum": ["limit", "market"]},
+                                        "price": {"type": "number",
+                                                  "description": "limit price; omit for a market order"}},
+                         "required": ["symbol", "side", "quantity"]}}}),
                      submit_orders, terminal=True, kind="action"),
             ToolSpec("hold_positions", "Do not trade this cycle. This closes your cycle.",
                      _schema({}), hold, finish=True, kind="finish"),
@@ -255,10 +271,20 @@ Exchange {exchange} of {max_exchanges}."""
             for o in orders:
                 sym = o["symbol"]
                 side = Side.BUY if o["side"] == "buy" else Side.SELL
-                desk["pending"][sym].append(Order(
-                    side=side, qty=int(o["quantity"]), price=float(o["limit_price"]),
-                    type=OrderType.LIMIT, agent_id=100 + world["seats"].index(seat),
-                    ts=world["cycle"] * 10, ttl=8))
+                kind = o.get("type", "limit")
+                if kind == "market":
+                    order = Order(side=side, qty=int(o["quantity"]),
+                                  type=OrderType.MARKET,
+                                  agent_id=100 + world["seats"].index(seat),
+                                  ts=world["cycle"] * 10)
+                else:
+                    order = Order(side=side, qty=int(o["quantity"]),
+                                  price=float(o.get("limit_price",
+                                                    o.get("price", 0))),
+                                  type=OrderType.LIMIT,
+                                  agent_id=100 + world["seats"].index(seat),
+                                  ts=world["cycle"] * 10, ttl=8)
+                desk["pending"][sym].append(order)
         for sym, book in world["books"].items():
             for k in range(4):
                 book["sim"].step(ts=world["cycle"] * 10 + 10 + k, dt=1.0)

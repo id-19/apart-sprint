@@ -7,6 +7,7 @@ import json
 import os
 import sys
 import tempfile
+import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -184,6 +185,16 @@ def test_toy_config_is_allowed_but_not_default() -> None:
     config = _load_raw(raw)
     assert config.counts() == {"s1": 2 + 4 * 2}
     assert len(config.cells()) == 10
+
+
+class ConfigTests(unittest.TestCase):
+    """Expose the module-level test functions to unittest discovery."""
+
+
+for _name, _fn in list(globals().items()):
+    if _name.startswith("test_") and callable(_fn):
+        setattr(ConfigTests, _name, staticmethod(_fn))
+del _name, _fn
 
 
 def _run() -> None:

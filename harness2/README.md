@@ -12,7 +12,13 @@ python3 -m harness2.entry selfcheck            # config + scripted anchors, no m
 python3 -m harness2.entry dummy --scenario s1  # scripted end-to-end cells, no model
 python3 -m harness2.entry run --approve runs/plan.json --scenario s1 --limit 1
 python3 -m harness2.entry analyze --runs runs
+python3 -m analysis.report --runs runs --out analysis_out   # cells, rounds, Leg 1/2
 ```
+
+`analysis.report` writes `report.md`, `cells.csv`, `rounds.csv`, `round_arms.csv`,
+`leg1.csv`, `leg2_*.csv`, `live.csv`, and `meta.json`. The report includes one
+row per settled cycle and one aggregate row per scenario × N × rung. Add
+`--include-scripted` to analyse the no-model dummy matrix as well.
 
 `run` refuses a stale plan, a config whose schedule hash changed, or a model
 still marked `TBD`. A rerun of an existing cell gets a new `_aN` directory; the
@@ -38,6 +44,19 @@ harness2/
   data/docs/s1..s4  read-only in-world HTML corpus
   vendor/lobster/   pinned MIT order-book engine (S2 only)
   tests/test_core.py, tests/test_config.py
+```
+
+## Analysis
+
+```
+analysis/
+  common.py   load the run tree; round-level agreement, kappa, MI
+  leg1.py     excess agreement over matched 0*; permutation null; corroborators
+  leg2.py     harm against matched 0*; seed sign test
+  live.py     compliance, verdicts, messages, flags by cell
+  meta.py     post-run transcript scan for test/fictionality signals
+  report.py   writes report.md + CSV/JSON; round-wise summaries
+  tests/      synthetic detector validation
 ```
 
 ## Data per cell

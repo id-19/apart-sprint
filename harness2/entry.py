@@ -40,6 +40,10 @@ def _num_ctx(cell: CellSpec) -> int:
     return 16384
 
 
+def _fmt(value: float) -> str:
+    return f"{value:.0f}" if abs(value) >= 10 or value == 0 else f"{value:.3f}"
+
+
 # ---------------------------------------------------------------------------
 # plan / selfcheck
 # ---------------------------------------------------------------------------
@@ -123,7 +127,7 @@ def cmd_selfcheck(args: argparse.Namespace) -> int:
                 _check(results["failing"]["compliance"] < 0.75,
                        f"{name}: failing anchor passed compliance")
         print(f"scenario {name}: anchors OK "
-              + ", ".join(f"{k}={v['harm_total']:.0f}" for k, v in results.items()))
+              + ", ".join(f"{k}={_fmt(v['harm_total'])}" for k, v in results.items()))
     print("selfcheck: OK (no model calls)")
     return 0
 
@@ -165,9 +169,13 @@ def cmd_dummy(args: argparse.Namespace) -> int:
     root.mkdir(parents=True, exist_ok=True)
     for i, cell in enumerate(cells, 1):
         scenario = load_scenario(cell.scenario)
-        policy = scenario.anchors(list(cell.seats), cell.seed)["cartel"]
+        anchors = scenario.anchors(list(cell.seats), cell.seed)
+        if args.anchor not in anchors:
+            print(f"{cell.scenario} has no {args.anchor!r} anchor", file=sys.stderr)
+            return 1
+        policy = anchors[args.anchor]
         run_dir = allocate_run_dir(root, cell.cell_id)
-        rec = Recorder(run_dir, {**cell.as_dict(), "anchor": "cartel"})
+        rec = Recorder(run_dir, {**cell.as_dict(), "anchor": args.anchor})
         client = ModelClient(run_dir=run_dir, cell_id=cell.cell_id,
                              model="scripted", think=False,
                              transport=transport_for(policy))
@@ -179,7 +187,10 @@ def cmd_dummy(args: argparse.Namespace) -> int:
         except MetaFlagError as exc:
             print(f"STOP {cell.cell_id}: {exc}", file=sys.stderr)
             return 2
-        print(f"[{i}/{len(cells)}] {cell.cell_id} harm={summary['harm_total']:.0f} "
+        except Exception as exc:  # preserve partial data, then stop
+            print(f"ERROR {cell.cell_id}: {exc}", file=sys.stderr)
+            return 3
+        print(f"[{i}/{len(cells)}] {cell.cell_id} harm={_fmt(summary['harm_total'])} "
               f"q={summary['q_mean']:.2f} compliance={summary['compliance']:.2f} "
               f"flags={len(summary['flags'])}")
     print(f"\nscripted cells written under {root}")
@@ -231,7 +242,7 @@ def cmd_run(args: argparse.Namespace) -> int:
                                    "harm_total": summary["harm_total"],
                                    "q_mean": summary["q_mean"],
                                    "compliance": summary["compliance"]})
-        print(f"    harm={summary['harm_total']:.0f} q={summary['q_mean']:.2f} "
+        print(f"    harm={_fmt(summary['harm_total'])} q={summary['q_mean']:.2f} "
               f"compliance={summary['compliance']:.2f} flags={len(summary['flags'])}")
     print(f"\n{len(cells)} cell(s) run; manifest at {manifest}")
     return 0
@@ -291,6 +302,8 @@ def build_parser() -> argparse.ArgumentParser:
     dummy.add_argument("--cell", default=None)
     dummy.add_argument("--limit", type=int, default=None)
     dummy.add_argument("--cycles", type=int, default=None)
+    dummy.add_argument("--anchor", default="cartel",
+                       choices=["cartel", "honest", "independent", "failing"])
     dummy.set_defaults(func=cmd_dummy)
 
     run = sub.add_parser("run", help="live model run; requires an approved plan")

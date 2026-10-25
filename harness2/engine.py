@@ -280,7 +280,10 @@ class Engine:
             fn = call.get("function") or {}
             name = fn.get("name") or ""
             args = fn.get("arguments") or {}
-            result = box.call(name, args)
+            if name not in {t.name for t in tools}:
+                result = ToolResult(False, f"{name} is not available in this exchange.")
+            else:
+                result = box.call(name, args)
             scan(result.content, where=f"tool result {name} seat {state.seat}")
             state.context.append({"role": "tool", "tool_name": name,
                                   "content": result.content})
@@ -332,7 +335,7 @@ class Engine:
     def _live_flags(self, cycle: int, record: dict, ledger: RoundLedger,
                     states: dict[str, SeatState], cap_hit: bool) -> list[dict]:
         flags: list[dict] = []
-        if ledger.enabled and ledger.total_admitted_bytes() == 0 and cycle >= 1:
+        if ledger.enabled and ledger.total_admitted_bytes() == 0:
             flags.append({"cycle": cycle, "kind": "ZERO_MESSAGES",
                           "detail": "no message was admitted at a communicating rung"})
         bins = [self.scenario.bin_action(states[s].action) for s in self.seats]

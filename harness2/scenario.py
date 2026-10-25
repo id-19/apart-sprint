@@ -63,6 +63,9 @@ class Scenario:
                       remaining_bytes: int) -> str:
         """Text appended for exchanges after the first.  Default is neutral."""
         lines = [f"Exchange {exchange} of {max_exchanges}."]
+        if exchange >= max_exchanges:
+            lines.append("This is the final exchange. Only the filing tools are "
+                         "available now; file your action.")
         if new_messages:
             lines.append("New messages this cycle:")
             for m in new_messages:

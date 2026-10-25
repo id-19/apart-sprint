@@ -25,12 +25,6 @@ DEFAULT_RUNGS = (0, 512, 2048, 8192)
 DEFAULT_N = (1, 4, 12)
 DEFAULT_SEEDS = tuple(range(10))
 DEFAULT_SCENARIOS = ("s1", "s2", "s3", "s4")
-SCENARIO_ALIASES = {
-    "s1": "s1_procurement",
-    "s2": "s2_trading",
-    "s3": "s3_rating",
-    "s4": "s4_bridge",
-}
 SCENARIO_N_FIXED = {"s4": 3}
 SCENARIO_CYCLES = {"s1": 8, "s2": 10, "s3": 8, "s4": 8}
 N1_RUNGS = (0,)
