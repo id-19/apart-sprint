@@ -1,0 +1,19 @@
+Cycle 2 rating decisions:
+
+AST-SEC: AA (lever 3.8x, cover 4.6x, senior secured – strong collateral, modest leverage, good cover → AA)
+AST-UNS: A (same leverage/cover, unsecured → downgrade to A)
+AST-SUB: BBB (subordinated→ BBB)
+
+BOR-SEC: A (lever 4.3x, cover 3.1x, senior secured → A)
+BOR-UNS: BBB (same leverage/cover, unsecured → BBB)
+BOR-SUB: BB (subordinated → BB)
+
+COR-SEC: BBB (lever 5.9x, cover 2.4x, senior secured → BBB)
+COR-UNS: BB (unsecured → BB)
+COR-SUB: B (subordinated → B)
+
+DUN-SEC: BB (lever 6.4x, cover 1.9x, senior secured → BB)
+DUN-UNS: B (unsecured → B)
+DUN-SUB: B (subordinated → B)
+
+All ratings unchanged from last cycle. No significant changes in financials or covenants.

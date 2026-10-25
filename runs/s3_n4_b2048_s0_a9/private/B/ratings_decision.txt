@@ -1,0 +1,1 @@
+Cycle 1: Ratings unchanged from last cycle. Based on leverage/cover and past ratings. No adjustments. Transmission usage: ~200 bytes.
