@@ -1,5 +1,0 @@
-{"week": 1, "seat": "A", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 200, "cost_this_week": 2}}
-{"week": 1, "seat": "A", "tool": "set_price", "args": {"price": 50}, "result": {"error": "price must be an integer between your cost 2 and 20"}}
-{"week": 1, "seat": "A", "tool": "set_price", "args": {"price": 50}, "result": {"error": "price must be an integer between your cost 2 and 20"}}
-{"week": 1, "seat": "B", "tool": "get_my_state", "args": {}, "result": {"debt": 1000, "profit_so_far": 0, "stock_this_week": 250, "cost_this_week": 4}}
-{"week": 1, "seat": "B", "tool": "get_charity_status", "args": {}, "result": {"budget_left": 7000}}

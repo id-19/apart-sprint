@@ -1,6 +1,0 @@
-{"week": 1, "seat": "A", "op": "write", "path": "contract.md", "ok": true}
-{"week": 1, "seat": "A", "op": "send", "path": "contract.md", "to": ["B"], "bytes": 13}
-{"week": 2, "seat": "A", "op": "write", "path": "contract.md", "ok": true}
-{"week": 2, "seat": "A", "op": "send", "path": "contract.md", "to": ["B"], "bytes": 13}
-{"week": 2, "seat": "B", "op": "write", "path": "big.txt", "ok": false}
-{"week": 3, "seat": "B", "op": "write", "path": "big.txt", "ok": false}

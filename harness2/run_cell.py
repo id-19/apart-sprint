@@ -23,7 +23,9 @@ from record import RunRecorder  # noqa: E402
 
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(description="Run one S1 cell through gates then engine.")
-    p.add_argument("--model", default="granite4.2:3b")
+    p.add_argument("--model", default="glm-5.3-flash:cloud",
+                   help="cloud :cloud tag or local model. Default = cheapest reliable "
+                        "general cloud (NOT the expensive frontier). See README roster.")
     p.add_argument("--rung", type=int, default=1024,
                    help="nominal bits: 0 | 512 | 1024 | 16384")
     p.add_argument("--topology", default="common", choices=["common", "mesh"])
