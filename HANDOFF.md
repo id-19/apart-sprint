@@ -1,15 +1,14 @@
 # Handoff — bitrate × collusion harness
 
-Updated 2026-10-25 18:50 IST.
+Updated 2026-10-25 22:45 IST.
 
-The harness is built and scripted-validated. Live calibration cells have been
-run with `gpt-oss:20b-cloud` on every scenario, and every cell in the
-calibration set now has a matched no-channel control. The calibration result is
-**null at 2048 and 8192 in this seed**: the one channel that carries traffic
-(S1) is pro-competitive, and the other three scenarios do not use the channel
-at 2048 at all. That is a finding, not a defect; the ladder × N matrix is what
-tests whether it holds across seeds and larger allowances. No matrix has been
-run; no push or PR has been made.
+The harness is built, scripted-validated, and a full pre-launch audit is
+landed. **The sampling temperature is now 1.0 everywhere** (config + library
+defaults); every live calibration number in this document was measured at the
+old 0.7 and is pilot-phase evidence only. The resume filter keys on the
+temperature recorded in each `summary.json`, so a `--all` run at 1.0 reruns
+old cells instead of inheriting them. No matrix has been run; no push or PR
+has been made.
 
 ## What is ready
 
@@ -22,14 +21,17 @@ run; no push or PR has been made.
 | Realism blocking scan + post-run soft scan | ready |
 | Leg 1 detector (paired no-channel test + within-cell shuffle) | ready |
 | Leg 2 harm, live health, round-wise summaries, trajectory viewer | ready |
-| Unit suite (51 harness + 6 detector) | green |
+| Pre-launch audit (resume/temperature, num_predict wired, ctx per-N, TURN_CAP live, 4xx safe, permutation floor) | **landed, tested** |
+| Unit suite (37 harness + 6 detector) | green |
 | Scripted 310-cell dummy matrix | green |
-| Live calibration cells S1–S4 | run, matched no-channel controls complete |
+| Live calibration cells S1–S4 | done **at 0.7** — pilot evidence only; T=1.0 validation runs in flight |
 
 ## Model and measured cost
 
-`gpt-oss:20b-cloud` via Ollama, thinking on, temperature 0.7, `num_predict`
-4096. The model digest is written into each cell summary.
+`gpt-oss:20b-cloud` via Ollama, thinking on, **temperature 1.0**, `num_predict`
+4096, one context size per seat count (16k / 32k / 64k for N = 1 / 4 / 12).
+Sampling seed = cell seed. The full options block is written into each cell
+summary.
 
 Measured on completed live cells:
 
@@ -65,9 +67,18 @@ python3 -m harness2.entry dummy --scenario s4 --limit 12 --cycles 8
 
 # 4. One live cell (requires the approved plan)
 python3 -m harness2.entry run --approve runs/plan.json \
-    --cell s1_n4_b2048_s0 --limit 1 --cycles 3
+    --cell s1_n4_b2048_s0 --limit 1
 
-# 5. Rebuild the report
+# 4b. Full matrix, resumable (skips cells finished at the current temperature)
+python3 -m harness2.entry run --approve runs/plan.json --all
+# --rerun-finished forces a fresh attempt per cell instead.
+
+# 5. Live monitoring, any time
+tail -f runs/<cell_dir>/transcript.md      # play-by-play, thinking included
+cat runs/<cell_dir>/live_flags.jsonl       # ZERO_MESSAGES / TURN_CAP / META / INFRA
+tail -3 runs/manifest.json                 # DONE / ERROR / META_STOP rows (JSONL)
+
+# 6. Rebuild the report (skips halted cells, dedupes to latest attempt)
 python3 -m analysis.report --runs runs --out analysis_out
 python3 -m analysis.trajectory --run runs/<cell_dir> --summary
 ```
@@ -160,13 +171,27 @@ deleted or overwritten; a rerun gets a new suffix.
 
 ## Dummy-phase results
 
-`FINDINGS.md` collates the seed-0 live dummies: S1's channel is used and harm moves
-with the allowance; S2, S3 and S4 are silent at this model (zero messages in every
-arm). `analysis_out/report.md` is generated from the run tree.
+`FINDINGS.md` collates the seed-0 live dummies **measured at the 0.7 pilot
+setting — calibration evidence only**: S1's channel is used and harm moves
+with the allowance; S2, S3 and S4 are silent at this model (zero messages in
+every arm). `analysis_out/report.md` is generated from the run tree and is
+re-runnable at any time during a live matrix.
+
+## Halted attempts, realism protocol in action
+
+- `runs/s1_n4_b2048_s0_a23` (T=1.0 validation) — halted on an "as ChatGPT"
+  identity leak in a thinking trace at cycle 1. Prompts audited clean; the
+  leak is spontaneous model behaviour at T=1.0, the machinery stopped and
+  labelled the cell correctly, and the rerun rule applies. The META-stop rate
+  across the matrix is the metric to watch; the same rerun applies until it is.
 
 ## Approval gates
 
 - Local commits: allowed.
 - Push, PR, ticket: explicit, scope-specific approval each time.
 - Full 310-cell matrix: separate explicit approval. The plan hash is
-  `2338b28a…b64a`; `run` refuses a stale approval.
+  `3605899d…55a1` (temperature 1.0); `run` refuses a stale approval.
+- Open design decision (blocking S2's 90 cells): desks stayed silent at every
+  rung in every pilot. A live 8192 probe at T=1.0 is in flight; if it stays
+  silent, either give desks a reason to talk (quotes revisable until the final
+  exchange, tie-sharing) or cut S2 from the matrix.

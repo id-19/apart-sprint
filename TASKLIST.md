@@ -1,6 +1,6 @@
 # v0 tasklist
 
-Updated 2026-10-25 19:50 IST. There is no separate tasklist tool in this
+Updated 2026-10-25 22:45 IST. There is no separate tasklist tool in this
 session; this file is the visible list. Each item is finished before the next
 one starts, and the status is edited in place.
 
@@ -8,11 +8,13 @@ one starts, and the status is edited in place.
 
 | phase | task | status |
 |---|---|---|
-| 1 | **Technical verification** — prompts, tool schemas, comms, state, records | **done** — 51 harness + 6 detector tests green; selfcheck green; fixed rung-0 channel wording, S3/S4 invisible channel, S4 last-cycle contradiction, raw dict renders, optional-arg schemas, S3 pack/filter bugs, S2 aliases, S1 bulletin, text-only action loss, rejected-message text, S3 clock (8 exchanges) and sheet fundamentals; S1 portal states end-of-exchange delivery |
-| 2 | **Dummy runs** — live cheap-model cells at seed 0 | **done** — S1 no channel / 512 / 2048 / 8192; S2 no channel / 2048 (2 cycles) and 2048 through a rank review (6 cycles, desk B removed at cycle 4, still zero messages); S3 no channel / 2048 with the consensus rule and 8-exchange clock (2 and 6 cycles; channel used from cycle 3), 6-cycle control in flight; S4 no channel / 2048 (3 cycles) |
-| 3 | **Check the dummy runs** — broken, complete, does the design move the DV | **done** — see `FINDINGS.md`. S1 is live: same prompt and three cycles per arm, harm runs 1,595 (512) < 2,338 (no channel) < 2,828 (2048) < 3,335 (8192); the messages show thin-bandwidth price disclosure holding prices down and thick-bandwidth coordination talking them up. S2 is silent even through a rank review. S4 is uniformly honest. S3 uses its channel from cycle 3 under the consensus rule, with no inflation yet; matched long control in flight |
-| 4 | **Collate + present** | **done** — `analysis_out/report.md`, `FINDINGS.md` |
-| 5 | **Real matrix** | **blocked** — needs explicit approval and a scope decision (S1 first vs S1–S4) |
+| 1 | **Technical verification** — prompts, tool schemas, comms, state, records | **done** — 37 harness + 6 detector tests green; selfcheck green; full pre-launch audit landed (temperature recorded per cell, resume keys on it, num_predict wired through config→engine→ollama, one ctx per N so context can't confound the dose axis, TURN_CAP flag now fires, 4xx aborts record and finalise, paired-permutation p floored at its sign-space minimum) |
+| 2 | **Dummy runs** — scripted 310-cell matrix | **done** — 310/310, exit 0, at the temperature-1.0 config |
+| 3 | **Check the dummy runs** — broken, complete, does the design move the DV | **done** — see `FINDINGS.md` (0.7 pilot numbers; calibration only) |
+| 4 | **Collate + present** | **done** — `analysis_out/report.md`, `FINDINGS.md`, monitoring walkthrough in `HANDOFF.md` |
+| 4b | **Temperature 1.0** | **done** — config + both library defaults; old 0.7 cells rerun by the resume rule, never inherited |
+| 4c | **T=1.0 live validation** | **in flight** — S1 N=4 2048: first attempt META-stopped on a thinking-trace identity leak (machinery worked as designed); rerun in flight. S2 N=4 8192 probe in flight to decide S2's fate |
+| 5 | **Real matrix** | **blocked** — needs explicit approval and a scope decision (all 310 vs S1+S3 first; S2 cut-or-fix) |
 
 | # | task | status |
 |---|---|---|
