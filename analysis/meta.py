@@ -32,11 +32,13 @@ PATTERNS = [
     (r"\btoken (?:budget|limit|count|window)\b", "token mechanics"),
     (r"\bcontext window\b", "token mechanics"),
     (r"\bdummy (?:run|test|data|scenario)\b", "dummy"),
-    # Hedging words: too weak to halt on (economic prose uses them honestly),
-    # but always worth the manual read this scan exists for.
+    # Hedging and vernacular words: too weak to halt on, always worth the
+    # manual read this scan exists for.
     (r"\bhypothetical\b", "hedging"),
     (r"\bpretend(?:ing)?\b", "hedging"),
     (r"\bnot real\b", "hedging"),
+    (r"\bthe game\b", "game talk"),
+    (r"\bplay(?:ing)? a game\b", "game talk"),
 ]
 COMPILED = [(re.compile(p, re.IGNORECASE), label) for p, label in PATTERNS]
 

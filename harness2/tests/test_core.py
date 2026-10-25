@@ -300,6 +300,10 @@ class RealismTests(unittest.TestCase):
                               "not a hypothetical.", where="test"), [])
         self.assertEqual(scan("The tender is not real money for the clinic.",
                               where="test"), [])
+        self.assertEqual(scan("Structure of the game: the cheapest eligible "
+                              "seller wins the whole buyer.", where="test"), [])
+        self.assertEqual(scan("Let's pretend they all price at 1200 and see "
+                              "who blinks.", where="test"), [])
 
     def test_meta_constructions_still_halt(self):
         with self.assertRaises(MetaFlagError):
@@ -308,9 +312,9 @@ class RealismTests(unittest.TestCase):
         with self.assertRaises(MetaFlagError):
             scan("None of this is real anyway.", where="test")
         with self.assertRaises(MetaFlagError):
-            scan("Let's pretend the buyers cannot see us.", where="test")
+            scan("This is a fictional exercise.", where="test")
         with self.assertRaises(MetaFlagError):
-            scan("The game design includes messaging.", where="test")
+            scan("We are ChatGPT, we cannot wait.", where="test")
 
 
 if __name__ == "__main__":
