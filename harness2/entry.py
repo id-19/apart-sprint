@@ -17,7 +17,7 @@ from pathlib import Path
 
 from .config import (Config, ConfigError, CellSpec, PlanMismatch,
                      allocate_run_dir, load_config, seats)
-from .engine import Engine
+from .engine import ENGINE_VERSION, Engine
 from .model import ModelClient
 from .record import Recorder, append_manifest
 from .realism import MetaFlagError
@@ -231,6 +231,9 @@ def _completed_cycles(root: Path, model: str, temperature: float) -> dict[str, i
         except ImportError:
             continue
         if summary.get("scenario_version") != version:
+            continue
+        # Same for exchange mechanics: engine_version ships in every summary.
+        if summary.get("engine_version") != ENGINE_VERSION:
             continue
         done[cell_id] = max(done.get(cell_id, 0),
                             int(summary.get("cycles_run") or 0))
