@@ -199,11 +199,13 @@ def cmd_dummy(args: argparse.Namespace) -> int:
     return 0
 
 
-def _completed_cycles(root: Path, model: str) -> dict[str, int]:
+def _completed_cycles(root: Path, model: str, temperature: float) -> dict[str, int]:
     """Longest unhalted run by this model, per cell id.
 
     Scripted cells under the same root do not count: the dummy matrix shares
     the run tree, and its cell ids are the same as the live ones.
+    Runs recorded at a different sampling temperature do not count either:
+    a resume must rerun those, never inherit them.
     """
     done: dict[str, int] = {}
     for path in Path(root).rglob("summary.json"):
@@ -215,6 +217,10 @@ def _completed_cycles(root: Path, model: str) -> dict[str, int]:
         if not cell_id or summary.get("halted"):
             continue
         if summary.get("model") != model:
+            continue
+        # Summaries written before temperature was recorded have no key;
+        # they belong to the old setting and must be rerun.
+        if abs(float(summary.get("temperature", -1.0)) - temperature) > 1e-9:
             continue
         done[cell_id] = max(done.get(cell_id, 0),
                             int(summary.get("cycles_run") or 0))
@@ -236,7 +242,8 @@ def cmd_run(args: argparse.Namespace) -> int:
     if args.all and not args.rerun_finished:
         # An unattended matrix must survive a restart: finished cells are
         # skipped, so a crash costs only the cell that was in flight.
-        done = _completed_cycles(config.runs_dir, config.model_name)
+        done = _completed_cycles(config.runs_dir, config.model_name,
+                                 config.temperature)
         before = len(cells)
         cells = [c for c in cells
                  if done.get(c.cell_id, 0) < (args.cycles

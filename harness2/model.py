@@ -63,7 +63,7 @@ def _norm_tool_calls(message: dict) -> list[dict]:
 class ModelClient:
     def __init__(self, *, run_dir: str | os.PathLike, cell_id: str, model: str,
                  provider: str = "ollama", think: bool | None = True,
-                 temperature: float = 0.7, num_ctx: int = 16384,
+                 temperature: float = 1.0, num_ctx: int = 16384,
                  seed: int = 0, transport: Callable[[dict, dict], dict] | None = None,
                  max_retries: int = 5, max_consecutive: int = 6) -> None:
         self.run_dir = os.fspath(run_dir)

@@ -391,6 +391,7 @@ class Engine:
             "seed": self.cell.seed,
             "model": self.client.model,
             "model_digest": self.client._digest,
+            "temperature": self.client.temperature,
             "cycles_run": len(self.cycles),
             "verdict_counts": self.verdict_counts,
             "compliance": (action + withheld) / max(total, 1),

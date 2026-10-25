@@ -138,7 +138,7 @@ class Config:
 
     @property
     def temperature(self) -> float:
-        return float(self.model.get("temperature", 0.7))
+        return float(self.model.get("temperature", 1.0))
 
     @property
     def num_predict_comm(self) -> int:
