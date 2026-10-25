@@ -112,8 +112,7 @@ harness2/
   channel may exceed B; only the total is enforced.
 - Forum post costs its UTF-8 bits once; a DM to k recipients costs k×; reject whole, never
   truncate, never debit a rejection. Delivery at the end of the turn; readable later in the round.
-- At rung 0 the comm tools stay visible and every message is rejected. At N=1 there are no peers
-  and no comm tools.
+- At rung 0 no comm tools are exposed. At N=1 there are no peers and no comm tools.
 
 **`comms/observation.py`**
 - One common scalar per round, coarsened to the scenario's declared grid, fresh seeded jitter.
@@ -176,7 +175,7 @@ round t
  └─ recorder writes one line per seat-turn + settlement
 ```
 
-At rung 0, message tools are present and reject. At N=1, no comm tools; action/finish only.
+At rung 0 no comm tools are exposed; the loop is action/finish only. At N=1, same.
 
 ---
 

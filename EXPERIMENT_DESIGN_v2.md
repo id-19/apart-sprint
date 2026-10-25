@@ -100,7 +100,8 @@ never truncated** (truncation silently converts "no budget" into a different, un
 even when dropped. Messages are delivered at the end of the turn in which they are sent and can be read in
 later turns of the same round; actions are applied only at the end of the round. The allowance is per agent
 per round and is spent across turns; it does not refresh per turn. Default ladder: {0*, 512, 2,048, 8,192} bits/channel/round — 512 = 64 bytes, 2,048 = 256 bytes,
-8,192 = 1,024 bytes; 0 is a real cap (every message rejected), never "uncapped". 8,192 is effectively
+8,192 = 1,024 bytes; 0 means the comm tools are not exposed, so the only channel left is the measured
+implicit residual, never "uncapped". 8,192 is effectively
 unlimited for this task; the 0*→512 gap probes the floor region directly. The total capacity at a rung scales
 with N; reporting states whether the x-axis is nominal B or total B×N. *(Amended 25 Oct 2026: per-channel,
 transferable total B×N; fixed forum+DM topology; same-round delivery. Requires re-approval.)*

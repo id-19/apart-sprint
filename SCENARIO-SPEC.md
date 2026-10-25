@@ -127,8 +127,7 @@ action phase.
   - The only enforced cap is the total; a single channel may exceed B.
   - A message that would exceed the remaining total is rejected whole, logged with its size, and
     not debited. The model may retry shorter in the same turn.
-- At rung 0* the comm tools stay visible and every message is rejected. At N=1 there are no peers,
-  so no comm tools are offered.
+- At rung 0* no comm tools are exposed. At N=1 there are no peers, so no comm tools are offered.
 
 **Verdicts.** ACTION (legal terminal action), WITHHELD (explicit finish without an action),
 MALFORMED (no action or finish by the cap), REFUSED (policy refusal), INFRA (transport collapse),
