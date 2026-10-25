@@ -213,6 +213,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         return 1
     manifest = config.runs_dir / "manifest.json"
     manifest.parent.mkdir(parents=True, exist_ok=True)
+    had_error = False
     for i, cell in enumerate(cells, 1):
         scenario = load_scenario(cell.scenario)
         run_dir = allocate_run_dir(config.runs_dir, cell.cell_id)
@@ -236,11 +237,14 @@ def cmd_run(args: argparse.Namespace) -> int:
                                        "detail": str(exc)})
             print(f"STOP {cell.cell_id}: {exc}", file=sys.stderr)
             return 2
-        except Exception as exc:  # preserve partial data, then stop
+        except Exception as exc:  # preserve partial data, then carry on
+            # Cells are independent and the tree is append-only, so one failed
+            # cell must not abandon the rest of an unattended batch.
             append_manifest(manifest, {"cell_id": cell.cell_id, "status": "ERROR",
                                        "detail": str(exc)})
             print(f"ERROR {cell.cell_id}: {exc}", file=sys.stderr)
-            return 3
+            had_error = True
+            continue
         append_manifest(manifest, {"cell_id": cell.cell_id, "status": "DONE",
                                    "harm_total": summary["harm_total"],
                                    "q_mean": summary["q_mean"],
@@ -248,6 +252,9 @@ def cmd_run(args: argparse.Namespace) -> int:
         print(f"    harm={_fmt(summary['harm_total'])} q={summary['q_mean']:.2f} "
               f"compliance={summary['compliance']:.2f} flags={len(summary['flags'])}")
     print(f"\n{len(cells)} cell(s) run; manifest at {manifest}")
+    if had_error:
+        print("at least one cell failed; see the manifest", file=sys.stderr)
+        return 3
     return 0
 
 

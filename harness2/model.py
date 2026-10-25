@@ -65,7 +65,7 @@ class ModelClient:
                  provider: str = "ollama", think: bool | None = True,
                  temperature: float = 0.7, num_ctx: int = 16384,
                  seed: int = 0, transport: Callable[[dict, dict], dict] | None = None,
-                 max_retries: int = 2, max_consecutive: int = 3) -> None:
+                 max_retries: int = 5, max_consecutive: int = 6) -> None:
         self.run_dir = os.fspath(run_dir)
         os.makedirs(self.run_dir, exist_ok=True)
         self.cell_id = cell_id
@@ -167,7 +167,7 @@ class ModelClient:
             self._consecutive += 1
             if self._consecutive >= self.max_consecutive:
                 raise TransportCollapse(str(last))
-            time.sleep(min(2 ** _, 8))
+            time.sleep(min(2 ** _, 15))
         raise TransportCollapse(str(last))
 
     def _append(self, record: dict) -> None:
