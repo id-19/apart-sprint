@@ -117,7 +117,9 @@ def test_empty_model_name_rejected() -> None:
 
 
 def test_run_rejects_tbd_model() -> None:
-    config = _load_default()
+    raw = _base()
+    raw["model"]["name"] = "TBD"
+    config = _load_raw(raw)
     config.validate(for_run=False)
     try:
         config.validate(for_run=True)

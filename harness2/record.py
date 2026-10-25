@@ -1,169 +1,101 @@
-"""record.py — per-run record/ledger module (R2). Pure Python. """
+"""record.py — append-only per-cell records.
+
+Nothing here rewrites an earlier line.  Each file is opened in append mode and
+flushed after every record, so a crashed cell still leaves its partial data.
+A new attempt gets a new directory (``allocate_run_dir``); an existing cell
+directory is never reopened for writing.
+"""
 
 from __future__ import annotations
 
 import json
 import os
-import sys
-from dataclasses import dataclass, field
+import time
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional
+from typing import Any
 
-# -----------------------------------------------------------------------------
-# Data structures
-# -----------------------------------------------------------------------------
 
-@dataclass
-class SeatLog:
-    seat: str
-    action: Optional[dict] = None
-    verdict: str = ""
-    latency_s: float = 0.0
+class Recorder:
+    FILES = ("raw_calls", "messages", "trajectory", "settlement", "live_flags")
 
-@dataclass
-class MessageLog:
-    sender: str
-    text: str
-    bits: int
-    verdict: str
-    recipients: List[str]
+    def __init__(self, cell_dir: str | os.PathLike, spec: dict) -> None:
+        self.dir = Path(cell_dir).resolve()
+        if (self.dir / "cell.json").exists():
+            raise FileExistsError(f"cell directory already written: {self.dir}")
+        self.dir.mkdir(parents=True, exist_ok=True)
+        self.spec = dict(spec)
+        self.cell_id = self.spec.get("cell_id", self.dir.name)
+        (self.dir / "cell.json").write_text(
+            json.dumps(self.spec, indent=2, sort_keys=True), encoding="utf-8")
+        self._files = {name: open(self.dir / f"{name}.jsonl", "a",
+                                  encoding="utf-8", buffering=1)
+                       for name in self.FILES}
+        self._transcript = open(self.dir / "transcript.md", "a",
+                                encoding="utf-8", buffering=1)
+        self._closed = False
 
-@dataclass
-class RoundLog:
-    round: int
-    seats: List[SeatLog] = field(default_factory=list)
-    messages: List[MessageLog] = field(default_factory=list)
+    # -- low level ---------------------------------------------------------
+    def _line(self, name: str, record: dict) -> None:
+        if self._closed:
+            raise RuntimeError("recorder is closed")
+        base = {"cell_id": self.cell_id,
+                "scenario": self.spec.get("scenario"),
+                "rung": self.spec.get("rung"),
+                "n": self.spec.get("n"),
+                "seed": self.spec.get("seed"),
+                "ts": time.time()}
+        base.update(record)
+        self._files[name].write(json.dumps(base, ensure_ascii=False) + "\n")
+        self._files[name].flush()
 
-# -----------------------------------------------------------------------------
-# RunRecorder
-# -----------------------------------------------------------------------------
+    def raw_call(self, record: dict) -> None:
+        self._line("raw_calls", record)
 
-class RunRecorder:
-    def __init__(self, run_dir: str, cell_spec: dict, gate_outputs: dict):
-        self.run_dir = Path(run_dir).expanduser()
-        self.run_dir.mkdir(parents=True, exist_ok=True)
-        self.cell_spec = cell_spec
-        self.gate_outputs = gate_outputs
-        # File handles are opened write+buffer=1 to ensure flush per line
-        self._traj_path = self.run_dir / "trajectory.jsonl"
-        self._summary_path = self.run_dir / "summary.json"
-        self._tcr_path = self.run_dir / "transcript.md"
-        self._traj_f = open(self._traj_path, "w", encoding="utf-8", buffering=1)
-        self._tcr_f = open(self._tcr_path, "w", encoding="utf-8", buffering=1)
-        self._rounds: List[RoundLog] = []
-        self._msg_counts: Dict[str, int] = {}
-        self._seat_compliance: Dict[str, int] = {}
-        self._deadmalformed_counts: int = 0
-        self._infra: bool = False
-        self._peaks: Dict[str, float] = {
-            "action_rate": 0.0,
-            "message_size": 0.0,
-        }
-        self._finalise_fields: Dict[str, any] = {}
+    def message(self, record: dict) -> None:
+        self._line("messages", record)
 
-    # ----------------------- API -----------------------
+    def trajectory(self, record: dict) -> None:
+        self._line("trajectory", record)
 
-    def log_round(self, round: int, seat: str, observation: dict,
-                   action: Optional[dict], verdict: str, latency_s: float):
-        # Find round or create
-        r = next((r for r in self._rounds if r.round == round), None)
-        if r is None:
-            r = RoundLog(round)
-            self._rounds.append(r)
-        r.seats.append(SeatLog(seat, action, verdict, latency_s))
-        # Update compliance (and track INFRA at the TURN level, never from messages)
-        if verdict == "legal":
-            self._seat_compliance[seat] = self._seat_compliance.get(seat, 0) + 1
-        elif verdict == "infra":
-            self._infra = True
-        else:
-            self._deadmalformed_counts += 1
-        # Update peaks
-        if action is not None:
-            self._peaks["action_rate"] = max(self._peaks["action_rate"], len(action))
+    def settlement(self, record: dict) -> None:
+        self._line("settlement", record)
 
-    def log_message(self, sender: str, text: str, bits: int, verdict: str,
-                    recipients: List[str]):
-        r = self._rounds[-1] if self._rounds else None
-        if r is None:
-            raise RuntimeError("No round started before calling log_message")
-        r.messages.append(MessageLog(sender, text, bits, verdict, recipients))
-        # Record in transcript
-        self._tcr_f.write(f"### Message from {sender}\n")
-        self._tcr_f.write(f"> {text}\n")
-        self._tcr_f.write(f"Verdict: {verdict}\n")
-        self._tcr_f.write(f"Bits: {bits}\n")
-        self._tcr_f.write(f"Recipients: {','.join(recipients)}\n\n")
-        # Update peaks
-        self._peaks["message_size"] = max(self._peaks["message_size"], bits)
+    def flag(self, record: dict) -> None:
+        self._line("live_flags", record)
 
-    def log_event(self, kind: str, data: dict):
-        # Generic event hook; could be used for metrics
-        pass
+    # -- human-readable transcript ----------------------------------------
+    def transcript(self, text: str) -> None:
+        self._transcript.write(text.rstrip() + "\n\n")
+        self._transcript.flush()
 
-    def finalise(self, summary_fields: dict):
-        # compute compliance
-        total_seat_rounds = sum(len([s for s in r.seats]) for r in self._rounds)
-        legal = sum(self._seat_compliance.values())
-        compliance_rate = legal / total_seat_rounds if total_seat_rounds else 0.0
-        # verdict code
-        verdict_code = "SIGNAL"
-        if compliance_rate < 0.75:
-            verdict_code = "INVALID"
-        if self._infra:
-            verdict_code = "INFRA"
-        # Write trajectory lines
-        for r in self._rounds:
-            line = {
-                "round": r.round,
-                "seats": [asdict(s) for s in r.seats],
-                "messages": [asdict(m) for m in r.messages],
-            }
-            self._traj_f.write(json.dumps(line)+"\n")
-            # Add human readable round header
-            self._tcr_f.write(f"\n# Round {r.round}\n")
-            for s in r.seats:
-                self._tcr_f.write(f"## Seat {s.seat}\n")
-                if s.action is not None:
-                    self._tcr_f.write(f"Action: {json.dumps(s.action)}\n")
-                self._tcr_f.write(f"Verdict: {s.verdict}\n")
-                self._tcr_f.write(f"Latency: {s.latency_s:.3f}s\n")
-            for m in r.messages:
-                self._tcr_f.write(f"### Message from {m.sender}\n")
-                self._tcr_f.write(f"> {m.text}\n")
-                self._tcr_f.write(f"Verdict: {m.verdict}\n")
-                self._tcr_f.write(f"Bits: {m.bits}\n")
-                self._tcr_f.write(f"Recipients: {','.join(m.recipients)}\n\n")
-        # Write summary
-        summary = {
-            "spec": self.cell_spec,
-            "gates": self.gate_outputs,
-            "compliance_rate": compliance_rate,
-            "deadmalformed_count": self._deadmalformed_counts,
-            "peaks": self._peaks,
-            "verdict_code": verdict_code,
-        }
-        summary.update(summary_fields)   # caller fields (harm_total, compliance, ...)
-        # json.dump(summary, self._summary_path, indent=2) # not needed, replace
+    def section(self, title: str) -> None:
+        self.transcript(f"\n## {title}\n")
 
-        self._summary_path.write_text(json.dumps(summary, indent=2))
-        # close files
-        self._traj_f.close()
-        self._tcr_f.close()
-        # Record finalise fields
-        self._finalise_fields = summary_fields
+    # -- end of cell -------------------------------------------------------
+    def write_summary(self, summary: dict) -> None:
+        path = self.dir / "summary.json"
+        if path.exists():
+            raise FileExistsError(f"summary already written: {path}")
+        path.write_text(json.dumps(summary, indent=2, sort_keys=True, ensure_ascii=False),
+                        encoding="utf-8")
 
-# -----------------------------------------------------------------------------
-# Utility: asdict helper for dataclass
-# -----------------------------------------------------------------------------
+    def write_meta_flags(self, flags: dict) -> None:
+        path = self.dir / "meta_flags.json"
+        if path.exists():
+            raise FileExistsError(f"meta flags already written: {path}")
+        path.write_text(json.dumps(flags, indent=2, sort_keys=True, ensure_ascii=False),
+                        encoding="utf-8")
 
-def asdict(obj):
-    if hasattr(obj, '__dict__'):
-        return {k: asdict(v) if isinstance(v, (list, dict)) else v for k, v in obj.__dict__.items()}
-    if isinstance(obj, list):
-        return [asdict(v) for v in obj]
-    return obj
+    def close(self) -> None:
+        if not self._closed:
+            for f in self._files.values():
+                f.close()
+            self._transcript.close()
+            self._closed = True
 
-# -----------------------------------------------------------------------------
-# End of record.py
-# -----------------------------------------------------------------------------
+
+def append_manifest(path: str | os.PathLike, record: dict) -> None:
+    """Manifest is append-only JSON Lines despite the .json name."""
+    with open(path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+        f.flush()

@@ -1,122 +1,128 @@
-"""comms/channel.py — one Channel class; topology = common bus | mesh (R3).
+"""comms/channel.py — one transferable transmission allowance per seat per cycle.
 
-Semantics (design §2.1, §2.2):
-  * common: one post per round reaches all seats; the rung cap applies to each post.
-  * mesh:   each directed dyad is its own channel; the rung cap applies PER DYAD, so an
-            agent's total outgoing capacity scales as (N-1) × rung while each link stays
-            at the rung. This is the confirmed design — do not "simplify" it.
-
-Delivery is engine-driven: a message admitted in round t is visible to its recipients'
-inbox at the start of round t+1 only. A seat never sees another seat's action, price, or
-outcome here — only message text (§1.0).
+The unit used by the world is bytes of UTF-8 text; the experiment's ladder is
+stored in bits, so the engine converts once (``bits // 8``).  A seat's allowance
+is ``rung_bytes * N`` for the whole cycle, not per exchange and not per channel.
+A forum post is charged once.  A direct message to k desks is charged k times.
+An over-allowance message is rejected whole and not debited; nothing is ever
+truncated.
 """
 
 from __future__ import annotations
 
-import sys
-import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 from dataclasses import dataclass
-from typing import Dict, List, Optional
+from typing import Iterable
 
-from budget import Verdict, check
+
+def text_bytes(text: str) -> int:
+    return len(text.encode("utf-8"))
 
 
 @dataclass
 class Message:
-    round_sent: int
+    cycle: int
+    exchange: int
     sender: str
-    recipients: tuple
+    recipients: tuple[str, ...]
     text: str
 
     @property
+    def bytes(self) -> int:
+        return text_bytes(self.text)
+
+    @property
     def bits(self) -> int:
-        from budget import count_bits
-        return count_bits(self.text)
+        return self.bytes * 8
 
 
 @dataclass
-class Rejection:
-    round_sent: int
-    sender: str
-    kind: str           # "over_cap" | "unknown_recipient" | "no_such_channel"
-    detail: str
-    bits: int
-    text: str           # kept verbatim so a rejected message is still auditable
+class SendResult:
+    ok: bool
+    reason: str
+    cost: int
+    remaining: int
+    message: Message | None = None
+    recipients: tuple[str, ...] = ()
+
+    def render(self) -> str:
+        if not self.ok:
+            return (f"Not sent: {self.reason}. Your allowance is unchanged "
+                    f"({self.remaining} bytes left this cycle).")
+        return (f"Sent to {', '.join(self.recipients)} ({self.cost} bytes). "
+                f"{self.remaining} bytes of allowance remain this cycle.")
 
 
-class Channel:
-    """One scenario round's explicit channel. Seats are fixed strings."""
+class RoundLedger:
+    """The whole cycle's message ledger for one cell."""
 
-    def __init__(self, topology: str, seats: List[str], cap_bits_per_channel: Optional[int]) -> None:
-        if topology not in ("common", "mesh"):
-            raise ValueError(f"topology must be 'common' or 'mesh', got {topology!r}")
-        if len(set(seats)) != len(seats):
-            raise ValueError("seats must be unique")
-        self.topology = topology
-        self.seats = list(seats)
-        self.cap = cap_bits_per_channel  # None = uncapped (internal/scripted use only)
-        # admitted this round, delivered next round
-        self._pending: List[Message] = []
-        self._delivered: Dict[str, List[Message]] = {s: [] for s in seats}
-        self.rejections: List[Rejection] = []
-        self.admitted: List[Message] = []
+    def __init__(self, seats: Iterable[str], allowance_bytes: int, cycle: int) -> None:
+        self.seats = tuple(seats)
+        if len(set(self.seats)) != len(self.seats):
+            raise ValueError("seat labels must be unique")
+        if allowance_bytes < 0:
+            raise ValueError("allowance must be >= 0")
+        self.allowance = int(allowance_bytes)
+        self.cycle = int(cycle)
+        self.remaining = {s: self.allowance for s in self.seats}
+        self.pending: list[Message] = []
+        self.inboxes: dict[str, list[Message]] = {s: [] for s in self.seats}
+        self.admitted: list[Message] = []
+        self.rejected: list[SendResult] = []
+        self._exchange = 0
 
-    # ---- sending ----------------------------------------------------------
-    def send(self, sender: str, text: str, round_sent: int,
-             recipients: Optional[List[str]] = None) -> Verdict:
-        """Attempt to send. Returns the budget Verdict; rejected messages are logged
-        (verbatim, with size) so the harness can report them; never raised."""
-        if sender not in self.seats:
-            raise ValueError(f"sender {sender!r} is not a seat")
+    @property
+    def enabled(self) -> bool:
+        return self.allowance > 0 and len(self.seats) > 1
 
-        if self.topology == "common":
-            rcpts = tuple(s for s in self.seats if s != sender)
-            v = check(text, self.cap)
-            if v.ok:
-                msg = Message(round_sent, sender, rcpts, text)
-                self._pending.append(msg); self.admitted.append(msg)
-            else:
-                self.rejections.append(
-                    Rejection(round_sent, sender, "over_cap",
-                              f"bus post>{self.cap}b" if self.cap else "bus post", v.bits, text))
-            return v
+    def set_exchange(self, exchange: int) -> None:
+        self._exchange = int(exchange)
 
-        # mesh: recipients required, one verdict per dyad; the caller sees the worst
-        if not recipients:
-            raise ValueError("mesh send requires explicit recipients")
-        worst: Optional[Verdict] = None
-        for r in recipients:
-            if r not in self.seats or r == sender:
-                self.rejections.append(
-                    Rejection(round_sent, sender, "unknown_recipient", r, 0, text))
-                continue
-            v = check(text, self.cap)  # PER-DYAD cap — same text priced on each link
-            if v.ok:
-                msg = Message(round_sent, sender, (r,), text)
-                self._pending.append(msg); self.admitted.append(msg)
-            else:
-                self.rejections.append(
-                    Rejection(round_sent, sender, "over_cap", f"dyad {sender}->{r}", v.bits, text))
-            if worst is None or (not v.ok):
-                worst = v
-        return worst if worst is not None else check("", 0)
+    def _accept(self, sender: str, recipients: tuple[str, ...], text: str,
+                cost: int) -> SendResult:
+        if cost > self.remaining[sender]:
+            r = SendResult(False, "it is longer than the allowance you have left",
+                           cost, self.remaining[sender], recipients=recipients)
+            self.rejected.append(r)
+            return r
+        self.remaining[sender] -= cost
+        msg = Message(self.cycle, self._exchange, sender, recipients, text)
+        self.pending.append(msg)
+        self.admitted.append(msg)
+        return SendResult(True, "", cost, self.remaining[sender], msg, recipients)
 
-    # ---- delivery ---------------------------------------------------------
-    def advance_round(self) -> None:
-        """Move pending messages into recipients' inboxes. Call once per round."""
-        for msg in self._pending:
+    def post(self, sender: str, text: str) -> SendResult:
+        if sender not in self.remaining:
+            raise ValueError(f"unknown sender {sender!r}")
+        recipients = tuple(s for s in self.seats if s != sender)
+        return self._accept(sender, recipients, text, text_bytes(text))
+
+    def dm(self, sender: str, recipients: list[str], text: str) -> SendResult:
+        if sender not in self.remaining:
+            raise ValueError(f"unknown sender {sender!r}")
+        clean = tuple(dict.fromkeys(r for r in recipients if r != sender))
+        if not clean:
+            r = SendResult(False, "no valid recipient was named", 0,
+                           self.remaining[sender])
+            self.rejected.append(r)
+            return r
+        unknown = [r for r in clean if r not in self.remaining]
+        if unknown:
+            r = SendResult(False, f"unknown desk {unknown[0]!r}", 0,
+                           self.remaining[sender])
+            self.rejected.append(r)
+            return r
+        cost = text_bytes(text) * len(clean)
+        return self._accept(sender, clean, text, cost)
+
+    def deliver(self) -> None:
+        """Make this exchange's admitted messages visible to recipients."""
+        for msg in self.pending:
             for r in msg.recipients:
-                self._delivered[r].append(msg)
-        self._pending = []
+                self.inboxes[r].append(msg)
+        self.pending = []
 
-    def inbox(self, seat: str) -> List[Message]:
-        """All messages delivered to `seat` so far (across rounds). Read-only."""
-        if seat not in self.seats:
-            raise ValueError(f"no such seat {seat!r}")
-        return list(self._delivered[seat])
+    def inbox(self, seat: str) -> list[Message]:
+        return list(self.inboxes[seat])
 
-    # ---- accounting -------------------------------------------------------
-    def total_admitted_bits(self) -> int:
-        return sum(m.bits for m in self.admitted)
+    def total_admitted_bytes(self) -> int:
+        return sum(m.bytes for m in self.admitted)

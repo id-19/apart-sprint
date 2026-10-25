@@ -1,0 +1,311 @@
+"""Order book data structures.
+
+A PriceLevel keeps FIFO order arrival queue at one price; OrderBook combines
+both sides and exposes top-of-book queries.
+
+Internal representation:
+- `_bids`: list of PriceLevels sorted by best-bid (descending price).
+- `_asks`: list of PriceLevels sorted ascending.
+- Parallel `_bid_prices`/`_ask_prices` arrays for O(log n) bisect insertion.
+  Bids store negated prices so bisect operates ascendingly on both sides.
+"""
+
+from __future__ import annotations
+
+import bisect
+from collections import deque
+from collections.abc import Iterable, Iterator
+from dataclasses import dataclass, field
+
+from .order import Order, Side
+
+
+@dataclass
+class PriceLevel:
+    price: float
+    orders: deque[Order] = field(default_factory=deque)
+    total_qty: int = 0
+
+    def add(self, order: Order) -> None:
+        if order.price != self.price:
+            raise ValueError(
+                f"order price {order.price} does not match level {self.price}"
+            )
+        self.orders.append(order)
+        self.total_qty += order.qty
+
+    def reduce(self, order_id: int, qty: int) -> int:
+        """Reduce a resting order's size by `qty` (partial execution/cancel).
+
+        Removes the order entirely if it reaches zero. Returns the quantity
+        actually removed (0 if `order_id` is not on this level, and 0 for
+        `qty <= 0`: min(qty, o.qty) with a negative qty would *grow* the
+        order, which is corruption, not a reduction).
+        """
+        if qty <= 0:
+            return 0
+        for i, o in enumerate(self.orders):
+            if o.id == order_id:
+                removed = min(qty, o.qty)
+                o.qty -= removed
+                self.total_qty -= removed
+                if o.qty == 0:
+                    del self.orders[i]
+                return removed
+        return 0
+
+    def cancel(self, order_id: int) -> Order | None:
+        for i, o in enumerate(self.orders):
+            if o.id == order_id:
+                del self.orders[i]
+                self.total_qty -= o.qty
+                return o
+        return None
+
+    def __len__(self) -> int:
+        return len(self.orders)
+
+
+class OrderBook:
+    def __init__(self) -> None:
+        self._bids: list[PriceLevel] = []
+        self._bid_prices: list[float] = []  # negated prices for ascending bisect
+        self._asks: list[PriceLevel] = []
+        self._ask_prices: list[float] = []
+        self._index: dict[int, tuple[Side, float]] = {}
+
+    @classmethod
+    def from_snapshot(cls, bids: Iterable[tuple[float, int]],
+                      asks: Iterable[tuple[float, int]],
+                      ts: float = 0.0) -> OrderBook:
+        """Seed a book from per-level ``(price, qty)`` depth (e.g. the first
+        row of a LOBSTER orderbook file), so a message replay does not start
+        from an empty book.
+
+        Each level becomes one synthetic resting order with a fresh
+        auto-assigned id. Levels with zero/negative qty (LOBSTER pads empty
+        levels with dummy entries) are skipped.
+        """
+        book = cls()
+        for side, levels in ((Side.BUY, bids), (Side.SELL, asks)):
+            for price, qty in levels:
+                if qty <= 0:
+                    continue
+                book.add(Order(side=side, qty=qty, price=price,
+                               agent_id=0, ts=ts))
+        return book
+
+    # ---- top-of-book properties ---------------------------------------------
+
+    @property
+    def best_bid(self) -> float | None:
+        return self._bids[0].price if self._bids else None
+
+    @property
+    def best_ask(self) -> float | None:
+        return self._asks[0].price if self._asks else None
+
+    @property
+    def mid(self) -> float | None:
+        bb, ba = self.best_bid, self.best_ask
+        if bb is None or ba is None:
+            return None
+        return (bb + ba) / 2.0
+
+    @property
+    def spread(self) -> float | None:
+        bb, ba = self.best_bid, self.best_ask
+        if bb is None or ba is None:
+            return None
+        return ba - bb
+
+    @property
+    def microprice(self) -> float | None:
+        """Size-weighted mid (a.k.a. weighted mid): each side's price
+        weighted by the *opposite* side's top-of-book size.
+
+        This is the common imbalance-weighted proxy for where the next
+        trade is headed. Note it is *not* Stoikov's (2018) micro-price,
+        which is a Markov-chain estimator constructed precisely because
+        the weighted mid is a biased predictor.
+        """
+        if not self._bids or not self._asks:
+            return None
+        bb, ba = self._bids[0], self._asks[0]
+        denom = bb.total_qty + ba.total_qty
+        if denom == 0:
+            return self.mid
+        return (bb.price * ba.total_qty + ba.price * bb.total_qty) / denom
+
+    # ---- mutations ----------------------------------------------------------
+
+    def add(self, order: Order, *, allow_crossed: bool = False) -> None:
+        """Rest `order` on the book without matching.
+
+        Adding a bid at/above the best ask (or an ask at/below the best bid)
+        would silently produce a crossed book (negative spread, nonsense mid
+        and microprice), so it raises `ValueError`. Route marketable orders
+        through `match()` instead; pass `allow_crossed=True` only when
+        deliberately reconstructing an externally-observed state (e.g. a
+        message replay with incomplete pre-window context).
+        """
+        if order.price is None:
+            raise ValueError("cannot rest an order with no price on the book")
+        if not allow_crossed:
+            if order.is_buy:
+                ba = self.best_ask
+                if ba is not None and order.price >= ba:
+                    raise ValueError(
+                        f"bid {order.price} crosses best ask {ba}; "
+                        f"use match() for marketable orders"
+                    )
+            else:
+                bb = self.best_bid
+                if bb is not None and order.price <= bb:
+                    raise ValueError(
+                        f"ask {order.price} crosses best bid {bb}; "
+                        f"use match() for marketable orders"
+                    )
+        # An id is how every later operation finds this order: cancel, reduce,
+        # queue position, the replay index. Reusing one silently overwrites
+        # that pointer, and the first order stays resting on its level with
+        # nothing able to reach it. `len()` and `cancel()` then disagree with
+        # the book, which is the same class of corruption a crossed book is,
+        # so it is refused the same way.
+        if order.id in self._index:
+            raise ValueError(
+                f"order id {order.id} is already resting; ids must be unique "
+                f"while an order is on the book"
+            )
+        if order.is_buy:
+            levels, prices = self._bids, self._bid_prices
+            key = -order.price
+        else:
+            levels, prices = self._asks, self._ask_prices
+            key = order.price
+        idx = bisect.bisect_left(prices, key)
+        if idx < len(prices) and prices[idx] == key:
+            levels[idx].add(order)
+        else:
+            level = PriceLevel(order.price)
+            level.add(order)
+            prices.insert(idx, key)
+            levels.insert(idx, level)
+        self._index[order.id] = (order.side, order.price)
+
+    def cancel(self, order_id: int) -> Order | None:
+        info = self._index.pop(order_id, None)
+        if info is None:
+            return None
+        side, price = info
+        if side is Side.BUY:
+            levels, prices = self._bids, self._bid_prices
+            key = -price
+        else:
+            levels, prices = self._asks, self._ask_prices
+            key = price
+        idx = bisect.bisect_left(prices, key)
+        if idx >= len(prices) or prices[idx] != key:
+            return None
+        cancelled = levels[idx].cancel(order_id)
+        if not levels[idx].orders:
+            del levels[idx]
+            del prices[idx]
+        return cancelled
+
+    def reduce(self, order_id: int, qty: int) -> int:
+        """Partially reduce a resting order by `qty` (e.g. partial execution).
+
+        Drops the order from the index if it reaches zero, and prunes the
+        price level if it becomes empty. Returns the quantity removed (0 if
+        the order is not resting, and 0 for `qty <= 0`, same as `reduce_at`:
+        a replay feeds this sizes parsed from a CSV, and a negative size
+        must not inflate a resting order).
+        """
+        if qty <= 0:
+            return 0
+        info = self._index.get(order_id)
+        if info is None:
+            return 0
+        side, price = info
+        if side is Side.BUY:
+            levels, prices = self._bids, self._bid_prices
+            key = -price
+        else:
+            levels, prices = self._asks, self._ask_prices
+            key = price
+        idx = bisect.bisect_left(prices, key)
+        if idx >= len(prices) or prices[idx] != key:
+            return 0
+        removed = levels[idx].reduce(order_id, qty)
+        still_there = any(o.id == order_id for o in levels[idx].orders)
+        if not still_there:
+            self._index.pop(order_id, None)
+        if not levels[idx].orders:
+            del levels[idx]
+            del prices[idx]
+        return removed
+
+    def reduce_at(self, side: Side, price: float, qty: int) -> int:
+        """Remove up to `qty` shares of resting depth at `price`, anonymously.
+
+        This exists for replaying real feeds seeded from a depth snapshot:
+        the snapshot gives per-level quantity but not the resting order ids,
+        so a cancel or execution against a pre-window order cannot be applied
+        by id. Reducing the level it names is the standard LOBSTER
+        reconstruction move — depth is what the snapshot vouched for, so
+        depth is what the event adjusts.
+
+        Shares come off the front of the FIFO queue (the oldest resting
+        orders), which is where pre-window orders sit after a snapshot seed.
+        Orders drained to zero leave the id index, and an emptied level is
+        pruned. Returns the quantity actually removed, which is less than
+        `qty` when the level is short or absent.
+        """
+        if qty <= 0:
+            return 0
+        if side is Side.BUY:
+            levels, prices = self._bids, self._bid_prices
+            key = -price
+        else:
+            levels, prices = self._asks, self._ask_prices
+            key = price
+        idx = bisect.bisect_left(prices, key)
+        if idx >= len(prices) or prices[idx] != key:
+            return 0
+        level = levels[idx]
+        remaining = qty
+        while remaining > 0 and level.orders:
+            head = level.orders[0]
+            taken = min(remaining, head.qty)
+            head.qty -= taken
+            level.total_qty -= taken
+            remaining -= taken
+            if head.qty == 0:
+                level.orders.popleft()
+                self._index.pop(head.id, None)
+        if not level.orders:
+            del levels[idx]
+            del prices[idx]
+        return qty - remaining
+
+    # ---- queries ------------------------------------------------------------
+
+    def depth(self, side: Side, levels: int = 5) -> list[tuple[float, int]]:
+        src = self._bids if side is Side.BUY else self._asks
+        return [(lv.price, lv.total_qty) for lv in src[:levels]]
+
+    def snapshot(self, levels: int = 5) -> dict[str, object]:
+        return {
+            "bids": self.depth(Side.BUY, levels),
+            "asks": self.depth(Side.SELL, levels),
+            "mid": self.mid,
+            "spread": self.spread,
+            "microprice": self.microprice,
+        }
+
+    def iter_levels(self, side: Side) -> Iterator[PriceLevel]:
+        return iter(self._bids if side is Side.BUY else self._asks)
+
+    def __len__(self) -> int:
+        return len(self._index)

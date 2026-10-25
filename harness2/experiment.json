@@ -2,25 +2,52 @@
   "version": 1,
   "name": "bitrate_collusion",
   "model": {
-    "name": "TBD",
+    "name": "gpt-oss:20b-cloud",
     "provider": "ollama",
     "think": true,
     "temperature": 0.7,
-    "num_predict_comm": 512,
-    "num_predict_action": 256,
+    "num_predict_comm": 4096,
+    "num_predict_action": 4096,
     "price_per_mtok_in": null,
     "price_per_mtok_out": null
   },
   "axes": {
-    "rungs": [0, 512, 2048, 8192],
-    "n": [1, 4, 12],
-    "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    "rungs": [
+      0,
+      512,
+      2048,
+      8192
+    ],
+    "n": [
+      1,
+      4,
+      12
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
   },
-  "scenarios": ["s1", "s2", "s3", "s4"],
+  "scenarios": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+  ],
   "scenario_n": {
     "s4": 3
   },
-  "n1_rungs": [0],
+  "n1_rungs": [
+    0
+  ],
   "turns": {
     "max": 6
   },
