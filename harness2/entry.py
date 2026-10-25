@@ -270,7 +270,7 @@ def cmd_analyze(args: argparse.Namespace) -> int:
     print(f"{'cell':<28} {'n':>2} {'rung':>6} {'harm':>8} {'q':>5} {'comp':>5} flags")
     for s in rows:
         print(f"{s['cell_id']:<28} {s['n']:>2} {s['rung']:>6} "
-              f"{s['harm_total']:>8.0f} {s['q_mean']:>5.2f} "
+              f"{_fmt(s['harm_total']):>8} {s['q_mean']:>5.2f} "
               f"{s['compliance']:>5.2f} {len(s.get('flags', []))}")
     print(f"\n{len(rows)} cells")
     return 0

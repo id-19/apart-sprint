@@ -38,6 +38,19 @@ def _px(value) -> str:
     return "none" if value is None else f"{float(value):.2f}"
 
 
+def _orders_text(orders: list[dict]) -> str:
+    if not orders:
+        return "none"
+    parts = []
+    for o in orders:
+        price = (f"at {o['limit_price']:.2f}"
+                 if o.get("type") != "market" and o.get("limit_price") is not None
+                 else "at market")
+        parts.append(f"{o.get('side', '')} {o.get('quantity', 0)} "
+                     f"{o.get('symbol', '')} {price}")
+    return "; ".join(parts)
+
+
 class DeskAgent(Agent):
     def __init__(self, agent_id: int, desk: dict, symbol: str) -> None:
         super().__init__(agent_id)
@@ -115,6 +128,30 @@ class S2(Scenario):
                 desk["pending"][sym] = []
         world["actions"] = {}
 
+    def warmup(self, world: dict, seats: list[str]) -> None:
+        """Three prior cycles so the account does not open blank.
+
+        Positions are flattened afterwards: the desk starts the day flat but
+        has a trading history and last orders on the blotter.
+        """
+        symbols = list(SYMBOLS)
+        for c in (-4, -3, -2):
+            world["cycle"] = c
+            actions = {}
+            for i, seat in enumerate(seats):
+                sym = symbols[(i + c) % len(symbols)]
+                side = "buy" if (i + c) % 2 == 0 else "sell"
+                actions[seat] = {"orders": [
+                    {"symbol": sym, "side": side, "quantity": 2,
+                     "type": "market"}]}
+            world["actions"] = actions
+            self.settle(world)
+        for desk in world["desks"].values():
+            desk["cash"] = 0.0
+            desk["inventory"] = {s: 0 for s in SYMBOLS}
+            desk["pnl"] = 0.0
+        world["cycle"] = 0
+
     # -- prompt / render -----------------------------------------------------
     def system_prompt(self, world: dict, seat: str) -> str:
         desk = world["desks"][seat]
@@ -148,7 +185,7 @@ Your account:
 - Cash: {desk['cash']:.2f}
 - Marked P&L: {desk['pnl'] if desk['pnl'] else 0.0:.2f}
 - Last cycles: {len(world['history'])} completed.
-- Your last orders: {desk['last_orders'] or 'none'}.
+- Your last orders: {_orders_text(desk['last_orders'])}.
 
 Transmission allowance left this cycle: {remaining_bytes} bytes.
 

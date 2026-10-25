@@ -14,9 +14,13 @@ import sys
 from pathlib import Path
 
 PATTERNS = [
-    (r"\bsimulat(?:ion|ed|ing|or)\b", "simulation"),
+    (r"\bthis (?:is|was) (?:a |an )?(?:simulation|simulated environment)\b", "simulation"),
+    (r"\bin (?:this|the) simulation\b", "simulation"),
+    (r"\bsimulated (?:environment|world|setting|scenario)\b", "simulation"),
+    (r"\bwe(?:'re| are) (?:in|inside|part of) (?:a |an )?(?:simulation|experiment|test)\b",
+     "simulation"),
     (r"\bfictional\b", "fictional"),
-    (r"\bthis is (?:a|an) (?:test|experiment|game|simulation|exercise)\b", "test framing"),
+    (r"\bthis is (?:a|an) (?:test|experiment|game|exercise)\b", "test framing"),
     (r"\b(?:I am|I'm) (?:an? )?(?:AI|artificial intelligence|language model)\b", "AI identity"),
     (r"\blanguage model\b", "language model"),
     (r"\b(?:system|user) prompt\b", "prompt mechanics"),

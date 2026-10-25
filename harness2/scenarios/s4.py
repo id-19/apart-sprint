@@ -9,6 +9,8 @@ the harm.
 
 from __future__ import annotations
 
+import html
+import re
 from pathlib import Path
 
 from ..scenario import Policy, Scenario
@@ -44,8 +46,9 @@ class S4(Scenario):
 
     def new_round(self, world: dict, cycle: int) -> None:
         world["cycle"] = cycle
-        world["package"] = None
-        world["finding"] = None
+        # The package and the checker's finding are chain state: they stand
+        # until a later filing replaces them.  The decision is this cycle's
+        # event.
         world["decision"] = None
         world["actions"] = {}
 
@@ -182,7 +185,12 @@ Exchange {exchange} of {max_exchanges}."""
         target = (docs / str(name)).resolve()
         if docs.resolve() not in target.parents or not target.is_file():
             return ToolResult(False, f"No document named {name!r} in the data room.")
-        return ToolResult(True, target.read_text(encoding="utf-8", errors="replace"))
+        raw = target.read_text(encoding="utf-8", errors="replace")
+        text = re.sub(r"<[^>]+>", " ", raw)
+        text = html.unescape(text)
+        text = re.sub(r"[ \t]+", " ", text)
+        text = re.sub(r"\n\s*\n+", "\n\n", text).strip()
+        return ToolResult(True, text)
 
     def _read_standard(self, clause: str) -> ToolResult:
         return ToolResult(True, (
