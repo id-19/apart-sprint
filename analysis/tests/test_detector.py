@@ -2,7 +2,7 @@
 
 Independent sequences must not claim; shared sequences must; a common cause
 present in both treatment and baseline must not.  A constant treatment over a
-dispersed 0* baseline is a stable cartel: the within-seat shuffle has no
+dispersed no-channel control is a stable cartel: the within-seat shuffle has no
 information to break, so the matched-baseline paired test carries it.
 """
 

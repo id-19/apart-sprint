@@ -1,4 +1,4 @@
-"""Leg 2 — harm against matched 0* cells.
+"""Leg 2 — harm against the matched no-channel control.
 
 The detector's action-agreement signal is never sufficient on its own; a cell
 also needs harm above its no-communication baseline.

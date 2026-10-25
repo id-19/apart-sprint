@@ -225,7 +225,7 @@ class Config:
         _require(self.rungs == tuple(sorted(self.rungs)),
                  f"axes.rungs must be ascending, got {self.rungs!r}")
         _require(all(r >= 0 for r in self.rungs), "axes.rungs must be non-negative")
-        _require(0 in self.rungs, "axes.rungs must include 0 (the 0* baseline)")
+        _require(0 in self.rungs, "axes.rungs must include 0 (the no-channel control)")
         _require(all(n >= 1 for n in self.n_values), "axes.n must be positive")
         _require(all(s >= 0 for s in self.seeds), "axes.seeds must be non-negative")
         _require(self.max_turns >= 1, "turns.max must be >= 1")
@@ -247,7 +247,7 @@ class Config:
         _require(set(self.n1_rungs).issubset(set(self.rungs)),
                  f"n1_rungs {self.n1_rungs!r} must be a subset of axes.rungs {self.rungs!r}")
         _require(self.n1_rungs == N1_RUNGS,
-                 f"N=1 may run only rung 0*, got n1_rungs={self.n1_rungs!r}")
+                 f"N=1 may run only rung 0 (no channel), got n1_rungs={self.n1_rungs!r}")
 
     def validate_selected(self) -> None:
         """Checks that depend on which scenarios were selected."""

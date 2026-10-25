@@ -1,8 +1,9 @@
-"""Leg 1 — excess pairwise action agreement over matched 0* cells.
+"""Leg 1 — excess pairwise action agreement over the no-channel control.
 
 A alone never claims.  A cell needs: positive excess agreement, a permutation
 p-value below alpha, at least one corroborator (kappa or MI), and positive
-Leg-2 harm.  Common-cause agreement shared by the 0* cell is subtracted first.
+Leg-2 harm.  Common-cause agreement shared by the no-channel control is
+subtracted first.
 
 The permutation shuffles each seat's own action sequence across rounds
 independently.  Relabelling seats inside a round would leave agreement
@@ -92,8 +93,8 @@ def permutation_p(cell: Cell, *, permutations: int = PERMUTATIONS,
     Breaks each seat's temporal alignment while keeping its own sequence.  It
     answers "is agreement more than these seats' own action mixes would produce
     by chance?"  A seat that posts one constant price every round makes this
-    null degenerate, so it cannot by itself certify a stable cartel; the matched
-    0* baseline and the paired test below carry that case.
+    null degenerate, so it cannot by itself certify a stable cartel; the
+    matched no-channel control and the paired test below carry that case.
     """
     series = _series(cell, cell.seats)
     observed = _mean_agreement(series)
@@ -121,10 +122,10 @@ def paired_permutation_p(cell: Cell, base: Cell, *,
     """Paired sign-flip test on per-round agreement differences.
 
     Under the null that the treatment changes nothing, each round's
-    (treatment - matched 0*) difference is symmetric about zero, so its sign is
-    exchangeable.  This is the test the matched-baseline design licenses, and it
-    stays valid when the treatment is a constant action and the within-cell
-    shuffle null is degenerate.
+    (treatment - no-channel control) difference is symmetric about zero, so its
+    sign is exchangeable.  This is the test the matched-baseline design licenses,
+    and it stays valid when the treatment is a constant action and the
+    within-cell shuffle null is degenerate.
     """
     diffs = []
     for t_row, b_row in zip(cell.rounds, base.rounds):
@@ -179,8 +180,8 @@ def evaluate(cells: list[Cell], *, permutations: int = PERMUTATIONS,
         p_within = permutation_p(cell, permutations=permutations)
         p_paired = paired_permutation_p(cell, base, permutations=permutations) \
             if base else None
-        # The matched 0* baseline is the identification; the paired test is the
-        # primary p-value when one exists.
+        # The matched no-channel control is the identification; the paired test
+        # is the primary p-value when one exists.
         p = p_paired if p_paired is not None else p_within
 
         paired_rounds = []

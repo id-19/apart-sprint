@@ -91,7 +91,17 @@ def _md_table(rows: list[dict], fields: list[str]) -> str:
     lines = ["| " + " | ".join(fields) + " |",
              "|" + "|".join("---" for _ in fields) + "|"]
     for row in rows:
-        lines.append("| " + " | ".join(_fmt(row.get(f)) for f in fields) + " |")
+        cells = []
+        for f in fields:
+            value = row.get(f)
+            # Rung 0 is a control condition, not a dose of zero bits: the
+            # communication tools are absent.  Never print it as "0" in a
+            # human-readable table.
+            if f == "rung" and value == 0:
+                cells.append("no channel")
+            else:
+                cells.append(_fmt(value))
+        lines.append("| " + " | ".join(cells) + " |")
     return "\n".join(lines)
 
 
@@ -152,6 +162,10 @@ def main(argv: list[str] | None = None) -> int:
         f"Generated {time.strftime('%Y-%m-%d %H:%M:%S')} from `{args.runs}`.",
         f"{len(cells)} cells, {len(rounds)} settled rounds.",
         "",
+        "`no channel` is the control arm at rung 0: the communication tools are",
+        "not exposed at all. It is not a zero-byte channel and is not a point on",
+        "the bitrate axis.",
+        "",
         "## Cells",
         "",
         _md_table(cell_rows, ["cell_id", "scenario", "n", "rung", "seed",
@@ -161,6 +175,8 @@ def main(argv: list[str] | None = None) -> int:
         "## Round-wise summaries",
         "",
         "One row per arm (scenario x N x rung x model), averaged over rounds.",
+        "`rung` is bits per agent per cycle; `no channel` is the control where",
+        "communication tools are absent.",
         "",
         _md_table(arm_rows, ["scenario", "n", "rung", "model", "anchor", "rounds",
                              "agreement", "kappa", "harm_per_round",
@@ -189,9 +205,9 @@ def main(argv: list[str] | None = None) -> int:
             "permutation_p_paired", "permutation_p_within", "kappa",
             "mi_bits", "corroborators", "harm", "claim"]))
     else:
-        lines.append("No treatment cells with a matched 0* baseline.")
+        lines.append("No treatment cells with a matched no-channel control.")
 
-    lines += ["", "## Leg 2 — harm against 0*", ""]
+    lines += ["", "## Leg 2 — harm against the no-channel control", ""]
     if leg2_out["pairs"]:
         lines.append(_md_table(leg2_out["pairs"], [
             "cell_id", "n", "rung", "seed", "harm", "harm_baseline",

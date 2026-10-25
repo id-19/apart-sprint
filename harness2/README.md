@@ -51,8 +51,8 @@ harness2/
 ```
 analysis/
   common.py   load the run tree; round-level agreement, kappa, MI
-  leg1.py     excess agreement over matched 0*; permutation null; corroborators
-  leg2.py     harm against matched 0*; seed sign test
+  leg1.py     excess agreement over the matched no-channel control; permutation null; corroborators
+  leg2.py     harm against the matched no-channel control; seed sign test
   live.py     compliance, verdicts, messages, flags by cell
   meta.py     post-run transcript scan for test/fictionality signals
   report.py   writes report.md + CSV/JSON; round-wise summaries
@@ -82,7 +82,7 @@ exchange, semantically simultaneously. Messages are delivered at the end of the
 exchange in which they were sent and are readable from the next exchange.
 Actions settle at the end of the cycle. The sixth exchange exposes only the
 terminal action and finish tools. A seat still active after the sixth exchange
-is `MALFORMED (NO_ACTION)`. At rung 0 and at N=1 no comm tools are exposed.
+is `MALFORMED (NO_ACTION)`. At rung 0 (no channel) and at N=1 no comm tools are exposed.
 
 The allowance is `rung_bits × N / 8` bytes per seat for the whole cycle. A forum
 post costs its UTF-8 size once; a DM to k desks costs k times. A message over the
