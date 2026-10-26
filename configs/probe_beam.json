@@ -13,7 +13,8 @@
   "axes": {
     "rungs": [
       0,
-      512
+      512,
+      1024
     ],
     "n": [
       4
@@ -29,7 +30,7 @@
     0
   ],
   "turns": {
-    "max": 6
+    "max": 24
   },
   "comms": {
     "topology": "forum_dm",

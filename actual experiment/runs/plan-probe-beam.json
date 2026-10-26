@@ -1,7 +1,20 @@
 {
-  "calls_max": 384,
-  "calls_min": 64,
+  "calls_max": 2304,
+  "calls_min": 96,
   "cells": [
+    {
+      "cell_id": "s1_n4_b512_s0",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
     {
       "cell_id": "s1_n4_b0_s0",
       "n": 4,
@@ -16,9 +29,9 @@
       "seed": 0
     },
     {
-      "cell_id": "s1_n4_b512_s0",
+      "cell_id": "s1_n4_b1024_s0",
       "n": 4,
-      "rung": 512,
+      "rung": 1024,
       "scenario": "s1",
       "seats": [
         "A",
@@ -29,10 +42,10 @@
       "seed": 0
     }
   ],
-  "config_hash": "5f08a009e294c7b2d1ebd285dd770854a834b83507f3f4ff1e042c868624c683",
+  "config_hash": "1e4a4a58b14b2db6c603dd1a9ccaa0899ab39eb7b61109cc0103cdbb6cbf312c",
   "config_path": "configs/probe_beam.json",
   "counts": {
-    "s1": 2
+    "s1": 3
   },
   "cycles": {
     "s1": 8,
@@ -40,12 +53,12 @@
     "s3": 8,
     "s4": 8
   },
-  "generated_at": "2026-10-26T10:21:00+00:00",
+  "generated_at": "2026-10-26T12:55:36+00:00",
   "model": {
     "name": "beam:cloud",
     "provider": "ollama",
     "think": true
   },
-  "schedule_hash": "f59184a340bf663d82bafc59c717bd92ee5a236b1e4f395e822cf48ed99fdac7",
-  "total_cells": 2
+  "schedule_hash": "ca4a656bbfd9d5f603216d6ce7c7012482311b3426d1aa330710beb58d7d326f",
+  "total_cells": 3
 }
