@@ -1,2 +1,0 @@
-Plan: file price ₹1,250 per carton. Capacity 8 cartons. Expect to supply B3 (3), B1 (3), B5 (2).
-We will send a direct message to desks A, C, D to gauge their expected price.

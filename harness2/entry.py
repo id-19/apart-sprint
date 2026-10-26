@@ -13,10 +13,14 @@ import argparse
 import json
 import sys
 import tempfile
+import threading
+import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-from .config import (Config, ConfigError, CellSpec, PlanMismatch,
-                     allocate_run_dir, load_config, seats)
+from .config import (
+    Config, ConfigError, CellSpec, PlanMismatch,
+    allocate_run_dir, load_config, num_ctx_for, seats)
 from .engine import ENGINE_VERSION, Engine
 from .model import ModelClient
 from .record import Recorder, append_manifest
@@ -35,11 +39,7 @@ def _cell_from_dict(d: dict) -> CellSpec:
 def _num_ctx(cell: CellSpec) -> int:
     # One context size per seat count, constant across rungs: context size
     # shifts behaviour, and letting it track the dose axis would confound it.
-    if cell.n >= 12:
-        return 65536
-    if cell.n >= 4:
-        return 32768
-    return 16384
+    return num_ctx_for(cell.n)
 
 
 def _fmt(value: float) -> str:
@@ -76,9 +76,28 @@ def cmd_plan(args: argparse.Namespace) -> int:
     config.validate(for_run=False)
     out = Path(args.out) if args.out else config.runs_dir / "plan.json"
     plan = config.write_plan(out)
+    _write_design(config.runs_dir, config.scenarios)
     _print_plan(config, plan, out)
     print("\nNo model calls were made.")
     return 0
+
+
+def _write_design(runs_dir: Path, scenarios: list[str]) -> None:
+    """Record the design a run tree was written for.
+
+    Analysis is stdlib-only and never imports the harness, so it reads this
+    file instead: a cell whose versions differ from the ones here belongs to an
+    earlier design and is not evidence for this one.
+    """
+    design = {
+        "engine_version": ENGINE_VERSION,
+        "scenario_versions": {name: load_scenario(name).version
+                              for name in scenarios},
+        "written_at": time.time(),
+    }
+    path = Path(runs_dir) / "design.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(design, indent=2, sort_keys=True), encoding="utf-8")
 
 
 def _check(condition: bool, message: str) -> None:
@@ -201,14 +220,18 @@ def cmd_dummy(args: argparse.Namespace) -> int:
     return 0
 
 
-def _completed_cycles(root: Path, model: str, temperature: float) -> dict[str, int]:
+def _completed_cycles(root: Path, model: str, temperature: float,
+                      expected_kwargs: dict[str, dict] | None = None
+                      ) -> dict[str, int]:
     """Longest unhalted run by this model, per cell id.
 
     Scripted cells under the same root do not count: the dummy matrix shares
     the run tree, and its cell ids are the same as the live ones.
     Runs recorded at a different sampling temperature do not count either:
-    a resume must rerun those, never inherit them.
+    a resume must rerun those, never inherit them.  Nor does a run whose
+    scenario parameters differ from the ones this matrix asks for.
     """
+    expected_kwargs = expected_kwargs or {}
     done: dict[str, int] = {}
     for path in Path(root).rglob("summary.json"):
         try:
@@ -235,6 +258,10 @@ def _completed_cycles(root: Path, model: str, temperature: float) -> dict[str, i
         # Same for exchange mechanics: engine_version ships in every summary.
         if summary.get("engine_version") != ENGINE_VERSION:
             continue
+        # A cell whose world was built with different scenario parameters is a
+        # different world, whatever its cell id says.
+        if summary.get("scenario_kwargs") != expected_kwargs.get(cell_id):
+            continue
         done[cell_id] = max(done.get(cell_id, 0),
                             int(summary.get("cycles_run") or 0))
     return done
@@ -244,9 +271,12 @@ def cmd_run(args: argparse.Namespace) -> int:
     config = load_config(args.config)
     config.validate(for_run=True)
     plan = config.verify_plan(Path(args.approve))
+    wanted_rungs = ({int(r) for r in str(args.rungs).split(",") if r.strip()}
+                    if getattr(args, "rungs", None) else None)
     cells = [_cell_from_dict(c) for c in plan["cells"]
              if (args.scenario is None or c["scenario"] == args.scenario)
-             and (args.cell is None or c["cell_id"] == args.cell)]
+             and (args.cell is None or c["cell_id"] == args.cell)
+             and (wanted_rungs is None or int(c["rung"]) in wanted_rungs)]
     if not args.all:
         cells = cells[:max(0, args.limit)]
     if not cells:
@@ -255,8 +285,10 @@ def cmd_run(args: argparse.Namespace) -> int:
     if args.all and not args.rerun_finished:
         # An unattended matrix must survive a restart: finished cells are
         # skipped, so a crash costs only the cell that was in flight.
-        done = _completed_cycles(config.runs_dir, config.model_name,
-                                 config.temperature)
+        done = _completed_cycles(
+            config.runs_dir, config.model_name, config.temperature,
+            expected_kwargs={c.cell_id: dict(getattr(c, "scenario_kwargs", {}) or {})
+                             for c in cells})
         before = len(cells)
         cells = [c for c in cells
                  if done.get(c.cell_id, 0) < (args.cycles
@@ -266,46 +298,83 @@ def cmd_run(args: argparse.Namespace) -> int:
             return 0
     manifest = config.runs_dir / "manifest.json"
     manifest.parent.mkdir(parents=True, exist_ok=True)
-    had_error = False
-    for i, cell in enumerate(cells, 1):
+    workers = max(1, int(getattr(args, "workers", 1) or 1))
+    done = {"n": 0}
+    lock = threading.Lock()
+
+    def record(entry: dict) -> None:
+        with lock:
+            append_manifest(manifest, entry)
+
+    def run_cell(cell: CellSpec) -> dict:
+        with lock:
+            done["n"] += 1
+            index = done["n"]
         scenario = load_scenario(cell.scenario)
-        run_dir = allocate_run_dir(config.runs_dir, cell.cell_id)
-        rec = Recorder(run_dir, cell.as_dict())
-        client = ModelClient(run_dir=run_dir, cell_id=cell.cell_id,
-                             model=config.model_name,
-                             provider=config.model_provider,
-                             think=config.think,
-                             temperature=config.temperature,
-                             num_ctx=_num_ctx(cell), seed=cell.seed)
-        engine = Engine(cell=cell, scenario=scenario, cell_dir=run_dir,
-                        client=client, recorder=rec,
-                        max_exchanges=scenario.exchanges or config.max_turns,
-                        num_ctx=_num_ctx(cell), num_predict=config.num_predict,
-                        cycles=args.cycles)
-        print(f"[{i}/{len(cells)}] {cell.cell_id} -> {run_dir}")
         try:
+            run_dir = allocate_run_dir(config.runs_dir, cell.cell_id)
+            rec = Recorder(run_dir, {**cell.as_dict(), "model": config.model_name})
+            client = ModelClient(run_dir=run_dir, cell_id=cell.cell_id,
+                                 model=config.model_name,
+                                 provider=config.model_provider,
+                                 think=config.think,
+                                 temperature=config.temperature,
+                                 num_ctx=_num_ctx(cell), seed=cell.seed)
+            engine = Engine(cell=cell, scenario=scenario, cell_dir=run_dir,
+                            client=client, recorder=rec,
+                            max_exchanges=scenario.exchanges or config.max_turns,
+                            num_ctx=_num_ctx(cell), num_predict=config.num_predict,
+                            cycles=args.cycles)
+            with lock:
+                print(f"[{index}/{len(cells)}] {cell.cell_id} -> {run_dir.name}",
+                      flush=True)
             summary = engine.run()
         except MetaFlagError as exc:
-            append_manifest(manifest, {"cell_id": cell.cell_id, "status": "META_STOP",
-                                       "detail": str(exc)})
-            print(f"STOP {cell.cell_id}: {exc}", file=sys.stderr)
-            return 2
+            record({"cell_id": cell.cell_id, "status": "META_STOP",
+                    "detail": str(exc)})
+            with lock:
+                print(f"STOP {cell.cell_id}: {exc}", file=sys.stderr, flush=True)
+            return {"cell_id": cell.cell_id, "status": "META_STOP"}
         except Exception as exc:  # preserve partial data, then carry on
             # Cells are independent and the tree is append-only, so one failed
             # cell must not abandon the rest of an unattended batch.
-            append_manifest(manifest, {"cell_id": cell.cell_id, "status": "ERROR",
-                                       "detail": str(exc)})
-            print(f"ERROR {cell.cell_id}: {exc}", file=sys.stderr)
-            had_error = True
-            continue
-        append_manifest(manifest, {"cell_id": cell.cell_id, "status": "DONE",
-                                   "harm_total": summary["harm_total"],
-                                   "q_mean": summary["q_mean"],
-                                   "compliance": summary["compliance"]})
-        print(f"    harm={_fmt(summary['harm_total'])} q={summary['q_mean']:.2f} "
-              f"compliance={summary['compliance']:.2f} flags={len(summary['flags'])}")
-    print(f"\n{len(cells)} cell(s) run; manifest at {manifest}")
-    if had_error:
+            record({"cell_id": cell.cell_id, "status": "ERROR",
+                    "detail": str(exc)})
+            with lock:
+                print(f"ERROR {cell.cell_id}: {exc}", file=sys.stderr, flush=True)
+            return {"cell_id": cell.cell_id, "status": "ERROR"}
+        record({"cell_id": cell.cell_id, "status": "DONE",
+                "harm_total": summary["harm_total"],
+                "q_mean": summary["q_mean"],
+                "compliance": summary["compliance"]})
+        with lock:
+            print(f"[{index}/{len(cells)}] {cell.cell_id} done "
+                  f"harm={_fmt(summary['harm_total'])} q={summary['q_mean']:.2f} "
+                  f"compliance={summary['compliance']:.2f} "
+                  f"flags={len(summary['flags'])}", flush=True)
+        return {"cell_id": cell.cell_id, "status": "DONE"}
+
+    if workers == 1:
+        results = []
+        for cell in cells:
+            results.append(run_cell(cell))
+            if results[-1]["status"] == "META_STOP":
+                break  # a stopped cell ends the batch, as it always has
+    else:
+        # Cells are independent: separate run directories, separate clients,
+        # separate worlds.  Running them together is how the matrix fits in a
+        # session; a realism halt stops that cell, not the batch, because the
+        # other cells are already in flight and their calls are already paid
+        # for.
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            results = list(pool.map(run_cell, cells))
+
+    statuses = [r["status"] for r in results]
+    print(f"\n{len(results)} cell(s) run; manifest at {manifest}")
+    if "META_STOP" in statuses:
+        print("at least one cell stopped on the realism gate", file=sys.stderr)
+        return 2
+    if "ERROR" in statuses:
         print("at least one cell failed; see the manifest", file=sys.stderr)
         return 3
     return 0
@@ -374,6 +443,11 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--approve", required=True)
     run.add_argument("--scenario", default=None)
     run.add_argument("--cell", default=None)
+    run.add_argument("--rungs", default=None,
+                     help="comma-separated rungs to select, e.g. 0 or 0,128")
+    run.add_argument("--workers", type=int, default=1,
+                     help="cells to run at once (each cell still runs its "
+                          "seats concurrently within an exchange)")
     run.add_argument("--limit", type=int, default=1,
                      help="number of cells (default 1; use --all for the full selection)")
     run.add_argument("--all", action="store_true")

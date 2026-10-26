@@ -1,5 +1,0 @@
-Cycle 2 ratings: AST-SEC AA, AST-UNS A, AST-SUB BBB, BOR-SEC A, BOR-UNS BBB, BOR-SUB BB, COR-SEC BBB, COR-UNS BB, COR-SUB B, DUN-SEC BB, DUN-UNS B, DUN-SUB B.
-
-Ratings unchanged from last cycle. No changes to placement fee. Transmission allowance remains 1024 bytes.
-
-No further action.

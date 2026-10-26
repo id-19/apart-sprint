@@ -125,7 +125,8 @@ def main(argv: list[str] | None = None) -> int:
         cells = dedupe_latest(cells)
     cells = [c for c in cells if args.include_scripted or not c.scripted]
     if not cells:
-        print(f"no cells under {args.runs}")
+        print(f"no cells under {args.runs} for the recorded design "
+              f"(see {args.runs}/design.json; stale cells are ignored)")
         return 1
 
     out_dir = Path(args.out)

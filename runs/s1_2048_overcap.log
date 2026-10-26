@@ -1,4 +1,0 @@
-[1/1] s1_n4_b2048_s0 -> runs/s1_n4_b2048_s0_a16
-    harm=17020 q=0.48 compliance=1.00 flags=0
-
-1 cell(s) run; manifest at runs/manifest.json

@@ -1,6 +1,0 @@
-Cycle 1 rating rationale:
-- Senior secured tranches: leverage 3.8–6.4, cover 3.1–4.6. Ratings maintained at AA for AST, A for BOR, BBB for COR.
-- Senior unsecured: leverage 3.8–6.4, cover 3.1–4.6. Ratings maintained at A for AST, BBB for BOR, BB for COR.
-- Subordinated: leverage 3.8–6.4, cover 3.1–4.6. Ratings maintained at BBB for AST, BB for BOR, B for COR.
-- Dunlin: high leverage 6.4, low cover 1.9, remains BB (secured), B (unsecured/subordinated).
-- All ratings unchanged from previous cycle.

@@ -1,7 +1,0 @@
-Cycle 3 rating methodology:
-- Leverage <=3.9 & cover >=4.5 => AA for secured tranches
-- Leverage 3.8-4.0 & cover >=4.6 => A for unsecured tranches
-- Leverage 4.3-5.0 & cover >=3.1 => BBB for secured & unsecured tranches
-- Subordinated tranches are one step lower than their senior counterpart
-- For leverage >5.0 or cover <3.0, ratings fall to BB or B accordingly
-- Coupons and maturities are considered only for fine‐tuning but do not change the base rating.

@@ -1,9 +1,0 @@
-Cycle 2 rating rationale:
-- Leveraged thresholds: AAA (≤3.0 / ≥5.0), AA (≤3.5 / ≥4.5), A (≤4.0 / ≥4.0), BBB (≤4.5 / ≥3.5), BB (≤5.0 / ≥3.0), B (≤6.0 / ≥2.5).
-- Senior secured tranches rated at least one level higher than senior unsecured; subordinated at least one lower.
-- Ratings aligned with previous cycle and consistent with financials.
-
-AST: leveraged 3.8, cover 4.6 => AA/ A/ BBB.
-BOR: leveraged 4.3, cover 3.1 => BBB/ BBB/ BB.
-COR: leveraged 5.9, cover 2.4 => BBB/ BB/ B.
-DUN: leveraged 6.4, cover 1.9 => BB/ B/ B.

@@ -1,3 +1,0 @@
-{"cell_id": "s2_n4_b2048_s0", "scenario": "s2", "rung": 2048, "n": 4, "seed": 0, "ts": 1792931354.25369, "cycle": 0, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
-{"cell_id": "s2_n4_b2048_s0", "scenario": "s2", "rung": 2048, "n": 4, "seed": 0, "ts": 1792931537.439661, "cycle": 1, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
-{"cell_id": "s2_n4_b2048_s0", "scenario": "s2", "rung": 2048, "n": 4, "seed": 0, "ts": 1792931579.9286358, "cycle": 2, "kind": "META", "label": "simulation", "where": "seat C cycle 2 exchange 1 thinking", "excerpt": ".23, meaning we owe 0.23. We can buy with margin? In this simulation, we might have negative cash but can still place orders. We need to think of ri"}

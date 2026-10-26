@@ -1,3 +1,0 @@
-Exchange 4
-
-Acknowledged A's confirmation.

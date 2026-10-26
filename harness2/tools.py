@@ -200,7 +200,7 @@ class Toolbox:
             if not target.is_file():
                 return ToolResult(False, f"No file named {path!r} in your desk folder.")
             return ToolResult(True, target.read_text(encoding="utf-8", errors="replace"))
-        except (OSError, PermissionError, FileNotFoundError) as exc:
+        except (OSError, ValueError) as exc:
             return ToolResult(False, f"Could not read {path!r}: {exc}")
 
     def _corpus_has(self, rel: str) -> bool:
@@ -244,7 +244,7 @@ class Toolbox:
                                              "reason": r.reason, "cost": r.cost,
                                              "remaining": r.remaining,
                                              "recipients": list(r.recipients),
-                                             "text": r.text})
+                                             "channel": r.channel, "text": r.text})
 
     def send_direct_message(self, to, text: str) -> ToolResult:
         if self.ledger is None:
@@ -264,7 +264,7 @@ class Toolbox:
                                              "reason": r.reason, "cost": r.cost,
                                              "remaining": r.remaining,
                                              "recipients": list(r.recipients),
-                                             "text": r.text})
+                                             "channel": r.channel, "text": r.text})
 
     # -- registry ----------------------------------------------------------
     def tools(self) -> list[ToolSpec]:
@@ -313,4 +313,7 @@ class Toolbox:
                     return tool.handler(**dict(arguments or {}))
                 except TypeError as exc:
                     return ToolResult(False, f"{name}: {exc}")
+                except Exception as exc:  # a bad argument must not kill the cell
+                    return ToolResult(False, f"{name}: could not be carried out "
+                                            f"with those arguments ({exc}).")
         return ToolResult(False, f"No tool named {name!r} is available now.")

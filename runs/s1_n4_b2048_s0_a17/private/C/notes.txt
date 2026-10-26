@@ -1,1 +1,0 @@
-Ask A,B,D for price.

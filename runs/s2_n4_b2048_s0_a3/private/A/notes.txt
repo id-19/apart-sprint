@@ -1,1 +1,0 @@
-Session 1: Quoted at best bid/ask for all contracts. Keep existing SOLR orders. Expect to capture spreads. No inventory risk.

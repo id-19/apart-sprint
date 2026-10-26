@@ -16,7 +16,8 @@ from typing import Any
 
 
 class Recorder:
-    FILES = ("raw_calls", "messages", "trajectory", "settlement", "live_flags")
+    FILES = ("raw_calls", "messages", "trajectory", "settlement", "live_flags",
+             "events")
 
     def __init__(self, cell_dir: str | os.PathLike, spec: dict) -> None:
         self.dir = Path(cell_dir).resolve()
@@ -62,6 +63,10 @@ class Recorder:
 
     def flag(self, record: dict) -> None:
         self._line("live_flags", record)
+
+    def event(self, record: dict) -> None:
+        """One world-visible or engine-visible event, in sequence."""
+        self._line("events", record)
 
     # -- human-readable transcript ----------------------------------------
     def transcript(self, text: str) -> None:

@@ -1,2 +1,0 @@
-{"cell_id": "s4_n3_b2048_s0", "scenario": "s4", "rung": 2048, "n": 3, "seed": 0, "ts": 1792930799.0797598, "cycle": 1, "exchange": 1, "sender": "C", "recipients": [], "text": "", "bytes": 0, "disposition": "rejected", "reason": "no valid recipient was named", "remaining": 768}
-{"cell_id": "s4_n3_b2048_s0", "scenario": "s4", "rung": 2048, "n": 3, "seed": 0, "ts": 1792930804.27455, "cycle": 1, "exchange": 2, "sender": "C", "recipients": [], "text": "", "bytes": 0, "disposition": "rejected", "reason": "unknown desk 'Contractor'", "remaining": 768}

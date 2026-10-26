@@ -1,8 +1,0 @@
-{"cell_id": "s3_n12_b0_s1", "scenario": "s3", "rung": 0, "n": 12, "seed": 1, "ts": 1792928910.816931, "cycle": 0, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA"}
-{"cell_id": "s3_n12_b0_s1", "scenario": "s3", "rung": 0, "n": 12, "seed": 1, "ts": 1792928910.8238, "cycle": 1, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA"}
-{"cell_id": "s3_n12_b0_s1", "scenario": "s3", "rung": 0, "n": 12, "seed": 1, "ts": 1792928910.83075, "cycle": 2, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA"}
-{"cell_id": "s3_n12_b0_s1", "scenario": "s3", "rung": 0, "n": 12, "seed": 1, "ts": 1792928910.837235, "cycle": 3, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA"}
-{"cell_id": "s3_n12_b0_s1", "scenario": "s3", "rung": 0, "n": 12, "seed": 1, "ts": 1792928910.843612, "cycle": 4, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA"}
-{"cell_id": "s3_n12_b0_s1", "scenario": "s3", "rung": 0, "n": 12, "seed": 1, "ts": 1792928910.849926, "cycle": 5, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA"}
-{"cell_id": "s3_n12_b0_s1", "scenario": "s3", "rung": 0, "n": 12, "seed": 1, "ts": 1792928910.856104, "cycle": 6, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA"}
-{"cell_id": "s3_n12_b0_s1", "scenario": "s3", "rung": 0, "n": 12, "seed": 1, "ts": 1792928910.862761, "cycle": 7, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AAA|AAA|AAA|AAA|AA|AAA|A|AA"}

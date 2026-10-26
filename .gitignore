@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 .DS_Store
 harness2/runs/*/_gates/
+archive/
+logs/

@@ -1,1 +1,0 @@
-Price decision: 1000 rupees per carton. Reason: previous price 1200 yielded no sales; buyer maxes are all above 1000. Lower price increases chances to win orders while still maintaining margin of 240 per carton.

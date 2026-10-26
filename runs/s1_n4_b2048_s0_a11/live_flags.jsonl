@@ -1,1 +1,0 @@
-{"cell_id": "s1_n4_b2048_s0", "scenario": "s1", "rung": 2048, "n": 4, "seed": 0, "ts": 1792930676.299625, "cycle": 1, "kind": "META", "label": "simulation", "where": "seat B cycle 1 exchange 2 thinking", "excerpt": "ight want to compute best price. Let's do a quick simulation: if we set price 950, assume competitors set 950 too. Then we share orders amon"}

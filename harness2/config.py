@@ -70,6 +70,20 @@ def seats(n: int) -> tuple[str, ...]:
     return tuple(chr(ord("A") + i) for i in range(n))
 
 
+def num_ctx_for(n: int) -> int:
+    """Context window by seat count.
+
+    Constant across rungs within an N — context size shifts behaviour, and
+    letting it track the dose axis would confound it — but N=12 needs room for
+    twelve seats' records in one prompt.
+    """
+    if n >= 12:
+        return 65536
+    if n >= 4:
+        return 32768
+    return 16384
+
+
 def canonical_json(value: Any) -> str:
     return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
 

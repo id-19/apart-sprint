@@ -10,15 +10,53 @@ from __future__ import annotations
 import json
 import os
 import subprocess
+import threading
 import time
 import urllib.error
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from typing import Callable
+
+# Concurrent cells each build their own client; the digest lookup shells out to
+# `ollama list`, so it is done once per model per process rather than once per
+# cell.  The transport itself has no shared state.
+_DIGEST_LOCK = threading.Lock()
+_DIGEST_CACHE: dict[str, str] = {}
 
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://127.0.0.1:11434").rstrip("/")
 OLLAMA_CHAT = OLLAMA_HOST + "/api/chat"
 OLLAMA_SHOW = OLLAMA_HOST + "/api/show"
+
+
+def concurrent_map(fn: Callable, items, max_workers: int | None = None) -> list:
+    """Call ``fn`` on independent items at the same time, results in order.
+
+    One exchange is already semantically simultaneous: no seat sees another
+    seat's message until the exchange closes, and each seat spends only its own
+    allowance.  Calling the model seat by seat therefore lengthens the clock
+    without changing what any seat can know, so the calls go out together.
+    A failure is re-raised only after every call has been waited for; leaving
+    an executor on its first exception would abandon calls already in flight
+    and lose their raw records.
+    """
+    items = list(items)
+    workers = min(len(items), max_workers or len(items))
+    if workers <= 1:
+        return [fn(item) for item in items]
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(fn, item) for item in items]
+        results: list = [None] * len(futures)
+        error: BaseException | None = None
+        for i, fut in enumerate(futures):
+            try:
+                results[i] = fut.result()
+            except BaseException as exc:  # re-raised below, after the drain
+                if error is None:
+                    error = exc
+        if error is not None:
+            raise error
+        return results
 
 
 class TransportError(Exception):
@@ -78,21 +116,32 @@ class ModelClient:
         self.transport = transport
         self.max_retries = max_retries
         self.max_consecutive = max_consecutive
+        # Seats share one client and now call it at the same time: the retry
+        # counter and the raw transcript each need a lock, or two turns can
+        # interleave their lines and a collapse can be counted twice.
+        self._lock = threading.Lock()
         self._consecutive = 0
         self._digest = self._lookup_digest()
         self.raw_path = os.path.join(self.run_dir, "raw_calls.jsonl")
 
     def _lookup_digest(self) -> str:
+        with _DIGEST_LOCK:
+            if self.model in _DIGEST_CACHE:
+                return _DIGEST_CACHE[self.model]
+        digest = ""
         try:
             out = subprocess.check_output(["ollama", "list"], text=True,
                                           stderr=subprocess.DEVNULL, timeout=5)
             for line in out.splitlines()[1:]:
                 parts = line.split()
                 if len(parts) >= 2 and parts[0] == self.model:
-                    return parts[1]
+                    digest = parts[1]
+                    break
         except Exception:
             pass
-        return ""
+        with _DIGEST_LOCK:
+            _DIGEST_CACHE[self.model] = digest
+        return digest
 
     def chat(self, *, messages: list[dict], tools: list[dict] | None = None,
              seat: str = "", cycle: int = 0, exchange: int = 0,
@@ -131,7 +180,7 @@ class ModelClient:
                 latency_s=latency,
                 raw=data,
             )
-            self._consecutive = 0
+            self._reset_streak()
             rec.update({"response": data, "latency_s": latency, "status": "ok"})
             self._append(rec)
             return resp
@@ -164,19 +213,36 @@ class ModelClient:
                 return data, time.time() - t0
             except urllib.error.HTTPError as exc:
                 last = exc
-                if 400 <= exc.code < 500:
+                if 400 <= exc.code < 500 and exc.code not in (408, 429):
                     # a malformed request is not a transport collapse; report it
                     raise TransportError(f"HTTP {exc.code}: {exc.reason}") from exc
+                # 408 and 429 are the provider asking us to wait, not a bad
+                # request: with several cells and several seats calling at
+                # once they are expected, and one must not end a cell.
             except (urllib.error.URLError, ConnectionError, TimeoutError, OSError,
                     TransportError) as exc:
                 last = exc
-            self._consecutive += 1
-            if self._consecutive >= self.max_consecutive:
+            self._bump_streak()
+            if self._streak() >= self.max_consecutive:
                 raise TransportCollapse(str(last))
             time.sleep(min(2 ** _, 15))
         raise TransportCollapse(str(last))
 
+    def _reset_streak(self) -> None:
+        with self._lock:
+            self._consecutive = 0
+
+    def _bump_streak(self) -> None:
+        with self._lock:
+            self._consecutive += 1
+
+    def _streak(self) -> int:
+        with self._lock:
+            return self._consecutive
+
     def _append(self, record: dict) -> None:
-        with open(self.raw_path, "a", encoding="utf-8") as f:
-            f.write(json.dumps(record, ensure_ascii=False) + "\n")
-            f.flush()
+        line = json.dumps(record, ensure_ascii=False) + "\n"
+        with self._lock:
+            with open(self.raw_path, "a", encoding="utf-8") as f:
+                f.write(line)
+                f.flush()

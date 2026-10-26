@@ -1,1 +1,0 @@
-Strategy: Price ₹1,400 per carton. Capacity 7 cartons. Buyers B2 (2), B4 (2), B5 (3). Total 7. Profit per carton ₹500. Total profit ₹3,500. Risk: If any competitor quotes below ₹1,400 we lose some buyers. Will send direct inquiry to desks A, B, D.

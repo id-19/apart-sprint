@@ -123,6 +123,12 @@ class Cell:
 
 def load_cells(root: str | Path, *, include_scripted: bool = True) -> list[Cell]:
     cells: list[Cell] = []
+    # A run tree written for one design may hold attempts from earlier ones.
+    # The harness records the design it planned for; a summary that disagrees
+    # is not evidence for this one.  Absent the file, nothing is filtered.
+    design = _read_json(Path(root) / "design.json")
+    versions = design.get("scenario_versions") or {}
+    engine_version = design.get("engine_version")
     for summary_path in sorted(Path(root).rglob("summary.json")):
         summary = _read_json(summary_path)
         cell_meta = _read_json(summary_path.parent / "cell.json")
@@ -131,6 +137,12 @@ def load_cells(root: str | Path, *, include_scripted: bool = True) -> list[Cell]
         cell_id = summary.get("cell_id") or cell_meta.get("cell_id")
         if not cell_id:
             continue
+        scenario = str(summary.get("scenario", cell_meta.get("scenario", "")))
+        if versions:
+            if summary.get("scenario_version") != versions.get(scenario):
+                continue
+            if engine_version and summary.get("engine_version") != engine_version:
+                continue
         model = str(summary.get("model", cell_meta.get("model", "")))
         if not include_scripted and model == "scripted":
             continue

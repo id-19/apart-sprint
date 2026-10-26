@@ -32,6 +32,13 @@ MODEL_SWEEP = [
 ROOT = Path(__file__).resolve().parent.parent
 LOG = ROOT / "analysis_out" / "sweep.log"
 
+# A summary is only evidence for the design that produced it.  Both versions
+# ship in every summary; resume and the health check compare them, so a cell
+# written under an older harm measure can neither be skipped as finished nor
+# counted in a model's total.
+from harness2.engine import ENGINE_VERSION  # noqa: E402
+from harness2.scenario import load_scenario  # noqa: E402
+
 
 def _log(text: str) -> None:
     LOG.parent.mkdir(parents=True, exist_ok=True)
@@ -80,6 +87,35 @@ def _transport_errors(model: str) -> tuple[int, int]:
     return errors, calls
 
 
+def _current_done(model: str) -> tuple[dict[str, dict], int, int]:
+    """Completed cells under the current design, plus stale/halted counts."""
+    rows = _summaries(model)
+    done: dict[str, dict] = {}
+    halted = stale = 0
+    for s in rows:
+        if s.get("halted"):
+            halted += 1
+            continue
+        try:
+            version = load_scenario(s.get("scenario", "s1")).version
+        except (KeyError, ImportError):
+            stale += 1
+            continue
+        if summary_stale(s, version):
+            stale += 1
+            continue
+        if s.get("cycles_run", 0) >= 8:
+            prev = done.get(s["cell_id"])
+            if prev is None or s.get("finished_at", 0) >= prev.get("finished_at", 0):
+                done[s["cell_id"]] = s
+    return done, halted, stale
+
+
+def summary_stale(summary: dict, scenario_version: str) -> bool:
+    return (summary.get("scenario_version") != scenario_version
+            or summary.get("engine_version") != ENGINE_VERSION)
+
+
 def _verdict(model: str) -> str | None:
     """None = healthy, else the reason the sweep must stop.
 
@@ -89,19 +125,12 @@ def _verdict(model: str) -> str | None:
     caller turns into a stop.  Only a *pattern* of transport failure, a
     compliance collapse, or an empty batch stops the sweep.
     """
-    rows = _summaries(model)
-    done: dict[str, dict] = {}
-    halted = 0
-    for s in rows:
-        if s.get("halted"):
-            halted += 1
-            continue
-        if s.get("cycles_run", 0) >= 8:
-            prev = done.get(s["cell_id"])
-            if prev is None or s.get("finished_at", 0) >= prev.get("finished_at", 0):
-                done[s["cell_id"]] = s
+    done, halted, stale = _current_done(model)
     if halted:
         _log(f"{model}: {halted} infra-halted attempt(s) — resume will rerun them")
+    if stale:
+        _log(f"{model}: {stale} stale cell(s) from an earlier design — "
+             f"they are rerun, not counted")
     if not done:
         return "no completed cell"
     bad = [cid for cid, s in done.items() if s.get("compliance", 1.0) < 0.5]
@@ -145,10 +174,11 @@ def main() -> int:
         if reason:
             _log(f"{model}: STOP — {reason}")
             return 1
-        rows = _summaries(model)
-        harm = sum(s.get("harm_total", 0.0) for s in rows)
-        msgs = sum(s.get("messages_admitted", 0) for s in rows)
-        _log(f"{model}: OK — {len(rows)} cells, harm {harm:,.0f}, msgs {msgs}")
+        rows, _, _ = _current_done(model)
+        harm = sum(s.get("harm_total", 0.0) for s in rows.values())
+        msgs = sum(s.get("messages_admitted", 0) for s in rows.values())
+        _log(f"{model}: OK — {len(rows)} current cells, harm {harm:,.0f}, "
+             f"msgs {msgs}")
     _log("sweep complete")
     return 0
 
