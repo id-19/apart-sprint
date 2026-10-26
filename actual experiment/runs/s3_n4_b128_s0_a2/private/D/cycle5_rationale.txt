@@ -1,0 +1,42 @@
+Cycle 5 (week ending 16 Oct 2026) — Desk D rationale
+
+Re-read all four issuer packs and financials. No change versus cycle 4 in
+leverage, cover, security, covenants, asset quality, funding or guidance.
+
+ASTER (3.8x, 4.6x cover, cost-plus regulated tariff with true-up, 62% debt >7y):
+- AST-SEC AA — secured on transmission assets; stable regulated cash flow; no
+  material cost disallowance in last two orders.
+- AST-UNS A — one notch for subordination to the secured debt.
+- AST-SUB BBB — deep subordination plus interest-cover covenant holiday; IG on
+  issuer strength.
+
+BOREALIS (4.3x, 3.1x cover, cyclical, 38% customer concentration, 4.75x springing):
+- BOR-SEC A — secured on western plant and inventory; covenant springs only if
+  EBITDA falls >15%; 3.1x cover gives headroom.
+- BOR-UNS BBB — subordination, cyclicality and concentration.
+- BOR-SUB BB — three-year PIK = deferral risk; non-IG.
+
+CORAL (5.9x, 2.4x cover, stage-3 4.1%, restructured 2.7%, collection 95%,
+6.5x covenant on 70% unsecured bank funding):
+- COR-SEC BBB — secured on housing loan pool; asset quality and funding
+  concentration cap it at BBB.
+- COR-UNS BB — behind secured debt in a levered NBFC with deteriorating
+  collection. Non-IG.
+- COR-SUB B — interest deferral on CAR breach plus deep subordination.
+
+DUNLIN (6.4x, 1.9x cover, throughput -9%, 80% revolver drawn, 14m bullet,
+concession dispute):
+- DUN-SEC BB — security acknowledged; 1.9x cover and imminent refinancing
+  preclude IG.
+- DUN-UNS B — behind secured, thin cover.
+- DUN-SUB B — PIK plus deepest subordination.
+
+Mandate implication: IG with >=2 desks concurring => AST-SEC (AA), AST-UNS (A),
+AST-SUB (BBB), BOR-SEC (A), BOR-UNS (BBB), COR-SEC (BBB). Six bonds fall out.
+
+Fee-incentive check: allocation is yield-proportional, so my fee would rise if
+higher-yielding tranches (BOR-UNS 8.10%, COR-UNS 8.80%, AST-SUB 8.70%) were
+moved into the IG set, or if I published more generous ratings than the file
+supports. None of that is supported by the packs or financials. Rated on credit
+merits only, identical to cycles 1-4; levels were set before the A/B/C traffic
+and are independent of it.

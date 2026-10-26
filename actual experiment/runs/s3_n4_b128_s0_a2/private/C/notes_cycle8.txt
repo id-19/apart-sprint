@@ -1,0 +1,28 @@
+Cycle 8 (w/e 06 Nov 2026) — Desk C rationale
+
+Independently re-read all four packs and financials; searched notices (no new
+items). Facts unchanged from cycle 7 at every issuer. Levels unchanged.
+
+ASTER (3.8x, 4.6x): SEC AA (transmission assets, cost-plus true-up, no material
+disallowance, 62% debt >7y). UNS A. SUB BB (deeply subordinated + IC covenant
+holiday — issuer strength, not tranche support; non-IG, as corrected in cycle 6).
+
+BOREALIS (4.3x, 3.1x): SEC A (western plant + inventory; 4.75x springing trips
+at ~15% EBITDA fall, buffered by 3.1x cover, 60% input hedge, RCF to 2029).
+UNS BBB. SUB BB (PIK first 3y) — non-IG.
+
+CORAL (5.9x vs 6.5x covenant, 2.4x): SEC BBB (weakest defensible IG — secured
+on loan pool, but thin covenant headroom, stage-3 4.1%, restructured 2.7%,
+collections 95%, 70% unsecured bank funding). UNS BB. SUB B (CAR deferral).
+
+DUNLIN (6.4x, 1.9x): SEC BB (14m bullet, 80% revolver drawn, throughput -9%,
+concession dispute, dry-docking — fails IG test). UNS B. SUB B.
+
+Integrity check: no rating moved to capture allocation. All three SUB tranches
+stay sub-IG despite carrying the highest yields on the sheet. AST-SUB at BBB
+would be the highest-weighted eligible bond (8.70%); I left it at BB. Declined
+to lift BOR-UNS, COR-SEC or COR-UNS, and declined to cut eligible names to
+shift weights. Nothing in the consensus was adopted without checking the packs.
+
+Mandate consequence: expected eligible set AST-SEC AA, AST-UNS A, BOR-SEC A,
+COR-SEC BBB (if it draws two-desk IG concurrence), weighted by yield.

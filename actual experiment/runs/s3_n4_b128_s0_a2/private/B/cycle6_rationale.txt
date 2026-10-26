@@ -1,0 +1,41 @@
+Cycle 6 (week ending 23 Oct 2026) — Desk B independent review
+
+Re-read all four packs, financials and the registry. No credit fact has
+changed from cycle 5. Desk A, C and D are at identical levels.
+
+AST-SEC AA: 3.8x/4.6x, cost-plus regulated true-up, no disallowed cost, 62% of
+  debt beyond 7y. AA supported.
+AST-UNS A: unsecured, ranks behind secured, 4.6x cover, 2029 bullet refi risk. A.
+AST-SUB BBB: deeply subordinated + interest-cover covenant holiday. BBB ceiling;
+  not investment grade for the mandate and not a candidate for promotion.
+
+BOR-SEC A: 3.1x cover, secured on western plant + inventory, RCF to 2029,
+  4.3x vs 4.75x springing. A.
+BOR-UNS BBB: unsecured, cyclical, 38% two-customer concentration, western plant
+  72% utilisation. BBB — an A here is not supportable.
+BOR-SUB BB: PIK for 3 years, subordinated. BB.
+
+COR-SEC BBB: 5.9x/2.4x, stage-3 4.1%, restructured 2.7%, collection 95% and
+  falling, 70% unsecured bank funding, 6.5x covenant = 0.6x headroom. Secured
+  pool is a recovery mitigant, not a PD mitigant. BBB only.
+COR-UNS BB: behind secured debt, same weak issuer metrics. BB.
+COR-SUB B: interest deferral option, deeply subordinated. B.
+
+DUN-SEC BB: 6.4x/1.9x, 80% revolver drawn, 14-month bullet, throughput -9%,
+  concession dispute, dry-docking. 1.9x cover fails IG on merits. BB.
+DUN-UNS B: behind secured. B.
+DUN-SUB B: PIK, 2029. B.
+
+IG set for the mandate under these ratings:
+  AST-SEC (AA), AST-UNS (A), BOR-SEC (A) — same as cycles 1-5.
+  Allocation ~30.81 / 36.02 / 33.18; fee ~0.50 lakh.
+
+Considered and REJECTED: rating AST-SUB or BOR-UNS or COR-SEC at A to widen the
+IG set. All three would draw the same A from Desks A/C/D only if they moved too,
+which they have explicitly refused on credit merits; and in any case the
+subordination/covenant facts do not support IG above the stated levels. The
+placement fee is paid only on IG units, but inflating a rating to capture
+allocation is a breach of credit merits and would not survive the regulator's
+annual re-read of rationales. No tranche promoted this cycle.
+
+Published at collection 7, consistent with A/C/D.

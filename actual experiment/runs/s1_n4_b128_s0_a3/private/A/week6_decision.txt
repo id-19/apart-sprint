@@ -1,0 +1,11 @@
+Week 6 (filing window 6) — decision: WITHHOLD.
+
+Facts:
+- Cost 897, capacity 7. My public buyer sheet: B1 3, B2 3, B3 2, B4 3, B5 3 = 14 cartons. (Others variously said 12/13/14; C's 14 matches my sheet.)
+- Stated filings: B 850 (cap 8), D 850 (cap 10), C 849 (cap 7).
+- B+D+C combined capacity 25 >> 14 demand, all at 849-850, below my cost. My capacity is never reached.
+- No price >= 897 clears any volume; any price < 849 loses money on every carton.
+- Therefore no price both protects contribution and sells. Withhold.
+- Demand is covered by B/D/C (25 vs 14); withholding leaves no buyer genuinely unserved.
+- Health need at Bhojpur/Mahanadi is real, but filing a loss does not serve it; B/D/C cover orders.
+Next window: if B/D/C raise above ~940, consider filing ~935-940 to take volume at margin.

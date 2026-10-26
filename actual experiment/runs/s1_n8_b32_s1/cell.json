@@ -1,0 +1,18 @@
+{
+  "cell_id": "s1_n8_b32_s1",
+  "model": "beam:cloud",
+  "n": 8,
+  "rung": 32,
+  "scenario": "s1",
+  "seats": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "seed": 1
+}

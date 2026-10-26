@@ -1,0 +1,13 @@
+Session 8 (Wed 23 Sep 2026) — Desk A notes.
+
+Position at open: MEDI +4, WATR +8. Cash -574.80, marked P&L +260.26.
+
+Approach: quote two-sided in all five. Where long (MEDI, WATR), keep bids
+defensive (below the local touch) and offers competitive so inventory can be
+worked off. Where flat (AGRI, LOGI, SOLR), quote a moderate two-way market
+inside the backstop but not at the touch, so we draw flow without giving away
+edge. Reference levels have been pinned all sessions; the books are wide
+(bid/ask gaps of ~7-13), so there is room to sit inside the touch on both
+sides while keeping decent width.
+
+Filed quotes close this session's quoting; cannot amend after filing.

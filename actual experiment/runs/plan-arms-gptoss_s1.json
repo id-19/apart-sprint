@@ -1,0 +1,675 @@
+{
+  "calls_max": 11760,
+  "calls_min": 1960,
+  "cells": [
+    {
+      "cell_id": "s1_n8_b128_s2",
+      "n": 8,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n8_b512_s3",
+      "n": 8,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n4_b64_s2",
+      "n": 4,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n8_b64_s4",
+      "n": 8,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n8_b128_s1",
+      "n": 8,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b128_s4",
+      "n": 4,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n8_b64_s0",
+      "n": 8,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n8_b64_s3",
+      "n": 8,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n1_b0_s4",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n4_b64_s3",
+      "n": 4,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n1_b0_s0",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b512_s3",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n4_b128_s2",
+      "n": 4,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n8_b0_s4",
+      "n": 8,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n4_b64_s1",
+      "n": 4,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n1_b0_s1",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b128_s1",
+      "n": 4,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b0_s2",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n4_b0_s0",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b512_s0",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n8_b0_s2",
+      "n": 8,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n4_b64_s4",
+      "n": 4,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n8_b512_s0",
+      "n": 8,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n1_b0_s3",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n4_b0_s1",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n8_b128_s3",
+      "n": 8,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n8_b512_s2",
+      "n": 8,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n4_b0_s3",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n4_b64_s0",
+      "n": 4,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b512_s2",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n4_b512_s4",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n8_b128_s0",
+      "n": 8,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n8_b128_s4",
+      "n": 8,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n8_b64_s1",
+      "n": 8,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n8_b64_s2",
+      "n": 8,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n4_b0_s4",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n8_b0_s0",
+      "n": 8,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n8_b512_s4",
+      "n": 8,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 4
+    },
+    {
+      "cell_id": "s1_n1_b0_s2",
+      "n": 1,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A"
+      ],
+      "seed": 2
+    },
+    {
+      "cell_id": "s1_n4_b512_s1",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n8_b0_s1",
+      "n": 8,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b128_s3",
+      "n": 4,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n8_b512_s1",
+      "n": 8,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n8_b0_s3",
+      "n": 8,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "seed": 3
+    },
+    {
+      "cell_id": "s1_n4_b128_s0",
+      "n": 4,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    }
+  ],
+  "config_hash": "618c3fc36523e0d71d27db1ddd70e9eb0fb7bc377ba344a091a610559d5ecbac",
+  "config_path": "configs/arms_gptoss_s1.json",
+  "counts": {
+    "s1": 45
+  },
+  "cycles": {
+    "s1": 8,
+    "s2": 10,
+    "s3": 8,
+    "s4": 8
+  },
+  "generated_at": "2026-10-26T10:38:34+00:00",
+  "model": {
+    "name": "gpt-oss:120b-cloud",
+    "provider": "ollama",
+    "think": true
+  },
+  "schedule_hash": "9ccfada94e865b42554c960a67f298f37bee52bf3effff709f988cab78471a02",
+  "total_cells": 45
+}

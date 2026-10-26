@@ -1,0 +1,2 @@
+{"cell_id": "s3_n4_b0_s3", "scenario": "s3", "rung": 0, "n": 4, "seed": 3, "ts": 1793012659.327342, "cycle": 0, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AA|A|BBB|A|BBB|BB|BBB|BB|B|BB|B|B"}
+{"cell_id": "s3_n4_b0_s3", "scenario": "s3", "rung": 0, "n": 4, "seed": 3, "ts": 1793012846.5922098, "kind": "INFRA", "detail": "HTTP Error 429: Too Many Requests"}

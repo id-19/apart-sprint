@@ -1,0 +1,39 @@
+Cycle 4 (week ending 09 Oct 2026) — Desk A rationale, Sangam Credit Ratings
+
+Inputs re-read: all four issuer packs, all four financials sets, cycle-1 and cycle-3
+rationales, the common room record, direct notes, the registry. No new data has appeared
+since cycle 3 — no Coral CAR, no funding-diversification detail, no Dunlin concession
+ruling, no Aster tariff/guarantee news. Direct notes from B and C ask for my COR-SEC,
+AST-SUB and BOR-UNS views; I answered those on the record in cycle 3 and my answer is
+unchanged.
+
+Principle: rate on credit fundamentals, tranche by tranche. No tranche moved to create
+mandate eligibility. Yield affects allocation, never the rating. Placement fees (last
+cycle Rs 0.50 lakh) are not a basis for an opinion.
+
+AST (regulated cost-plus, true-up, 3.8x/4.6x, 62% debt >7y, no disallowance)
+  SEC AA   — secured on transmission assets, long-dated stable regulated cash flow
+  UNS A    — behind secured, cover adequate
+  SUB BBB  — IG floor only: deeply subordinated + ICR covenant holiday. Not above BBB.
+BOR (cyclical, 4.3x/3.1x, 38% two-customer concentration, 4.75x springing)
+  SEC A    — secured on western plant + inventory
+  UNS BBB  — ~10% headroom to springing covenant; thin but defensible lowest IG
+  SUB BB   — 3y PIK + subordination -> non-IG
+COR (5.9x/2.4x, stage-3 4.1%, restructured 2.7%, collections 98->95%, 70% unsecured
+     bank lines vs 6.5x covenant = 0.6x headroom on pullable funding)
+  SEC BB   — security is a recovery argument, not default probability. Below IG.
+  UNS BB   — ranks behind secured
+  SUB B    — interest deferral if CAR < regulatory minimum
+DUN (6.4x/1.9x, throughput -9%, 80% revolver drawn, bullet 14m, concession dispute)
+  SEC BB   — security over concession, but refinancing wall dominates
+  UNS B
+  SUB B    — PIK + 2029 maturity
+
+Declined specifically, again: DUN-SEC at BBB (8.70%) and COR-SEC at BBB (7.70%). They
+would be the two largest allocations on the sheet. Neither has credit support at
+6.4x/1.9x or 5.9x with pullable unsecured funding. B, C and D are all at BB on COR-SEC
+and on credit grounds; I agree with them independently, not by chasing concurrence.
+
+Expected registry effect: AST-SEC, AST-UNS, BOR-SEC qualify outright (multi-desk IG).
+AST-SUB, BOR-UNS and BOR-SUB reach IG only on concurring desks — fee shared with those
+desks on the winning rating.

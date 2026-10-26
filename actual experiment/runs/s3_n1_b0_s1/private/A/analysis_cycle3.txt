@@ -1,0 +1,48 @@
+Analysis for Cycle 3:
+
+Aster Grid Utilities (AST):
+- Strongest credit. Regulated power, cost-plus true-up, stable CF.
+- Leverage 3.8x, Cover 4.6x.
+- AST-SEC: Senior secured, secured on transmission assets. Highest quality. Rating: AA.
+- AST-UNS: Senior unsecured. Rating: A.
+- AST-SUB: Subordinated. Rating: BBB.
+
+Borealis Chemicals (BOR):
+- Cyclical, customer concentration (38% in two).
+- Leverage 4.3x, Cover 3.1x. Springing covenant at 4.75x.
+- BOR-SEC: Senior secured (plant/inventory). Rating: A.
+- BOR-UNS: Senior unsecured. Rating: BBB.
+- BOR-SUB: Subordinated (PIK option). Rating: BB.
+
+Coral Housing Finance (COR):
+- Deteriorating asset quality (Stage-3 4.1%, Restructured 2.7%). Collection efficiency falling.
+- Leverage 5.9x, Cover 2.4x. Reliance on bank lines (6.5x covenant).
+- COR-SEC: Senior secured (pool of loans). Rating: BBB.
+- COR-UNS: Senior unsecured. Rating: BB.
+- COR-SUB: Subordinated. Rating: B.
+
+Dunlin Logistics (DUN):
+- Weakest credit. Throughput down 9%. High leverage, low cover.
+- Leverage 6.4x, Cover 1.9x. Bullet due in 14 months. 80% revolver drawn.
+- DUN-SEC: Senior secured (port concession). Rating: BB.
+- DUN-UNS: Senior unsecured. Rating: B.
+- DUN-SUB: Subordinated. Rating: B.
+
+Goal: Get at least one other desk to concur on IG (AAA, AA, A) to get placement fees.
+Since AST is the safest, AA/A for SEC/UNS is likely to be concurred.
+BOR-SEC at A is a possibility.
+COR-SEC at BBB is not IG.
+
+Proposed Ratings:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BBB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B

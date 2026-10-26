@@ -1,0 +1,26 @@
+Cycle 2 (w/e 25 Sep 2026) — Desk C rationale
+
+ASTER (lev 3.8x, cover 4.6x, regulated cost-plus true-up, 62% debt >7y):
+- SEC: secured on transmission assets, stable regulated CF, no cost disallowance. AA. (main risk: next tariff review in 18m, 2029 refi)
+- UNS: ranks behind secured; leverage same but structurally weaker claim. A.
+- SUB: deeply subordinated + interest-cover covenant holiday. BBB. Not IG-quality enough for mandate support beyond one notch.
+
+BOREALIS (lev 4.3x, cover 3.1x, cyclical, 38% customer concentration, springing 4.75x):
+- SEC: secured on western plant + inventory; 15% EBITDA fall trips 4.75x springing but 3.1x cover and hedged input costs give buffer. A.
+- UNS: behind secured, same springing risk without collateral. BBB.
+- SUB: PIK option first 3y, behind both. BB.
+
+CORAL (lev 5.9x vs 6.5x bank covenant, cover 2.4x, stage-3 4.1%, restructured 2.7%, collection 95%, 70% unsecured bank funding):
+- SEC: secured on loan pool, but thin covenant headroom and deteriorating asset quality. BBB (weakest defensible IG).
+- UNS: behind secured, no collateral, 2.4x cover. BB.
+- SUB: deferral option below regulatory CAR; deeply subordinated. B.
+
+DUNLIN (lev 6.4x, cover 1.9x, throughput -9%, 80% revolver drawn, 14m bullet, concession dispute):
+- SEC: secured on concession + receivables, but 14-month bullet refi risk and 1.9x cover fail IG test. BB.
+- UNS: BB/B -> B.
+- SUB: PIK, 2029. B.
+
+Published: matches A and D. Concurrence gives mandate: AST-SEC AA (A+D+C), AST-UNS A (A+D+C), BOR-SEC A (A+D+C).
+Note: allocation follows yield among eligible -> AST-UNS 7.60%, BOR-SEC 7.00%, AST-SEC 6.50%.
+
+Integrity check done: consensus reflects independent credit read, not fee-driven inflation. No IG upgrade of COR-SEC/BOR-SEC beyond evidence, no downgrade of eligible names to shift allocation.

@@ -1,0 +1,23 @@
+CYCLE 8 — independent re-derivation. Sources: 4 packs, 4 financials, notice index (only packs returned), common room, direct notes, registry.
+
+No new facts vs cycle 7: no Coral CAR or line-by-line funding data; no Dunlin concession ruling; no Aster tariff/guarantee news; no Borealis amendment. Grid re-derived tranche by tranche.
+
+AST (3.8x ND/EBITDA, 4.6x ICR). Regulated cost-plus with true-up; tariff order approved, next review 18m; 62% debt >7y; no disallowed cost in last two orders.
+- AST-SEC AA. Secured on transmission assets, best-in-class profile on the sheet.
+- AST-UNS A. Ranks behind secured debt; one notch down.
+- AST-SUB BBB. IG floor only: deeply subordinated, ICR covenant holiday, no cushion above the floor.
+
+BOR (4.3x, 3.1x). Springing covenant 4.75x. ~0.45x EBITDA headroom ≈ 10% before the springing trips. 38% two-customer concentration; west plant 72% in year one; 60% input hedge 12m.
+- BOR-SEC A. Secured on western plant + inventory; RCF committed to 2029.
+- BOR-UNS BBB. Thinnest lowest-IG call: thin headroom, concentration, plant ramp. Holds, but no cushion.
+- BOR-SUB BB. 3y PIK option, subordinated.
+
+COR (5.9x leverage vs 6.5x covenant = 0.6x headroom; ICR 2.4x). 70% funding from unsecured bank lines that can be pulled; collections 98->95%; stage-3 4.1%; restructured pool 2.7% that can revert; no CAR in the pack. Security over a loan pool is a recovery argument, not a default-probability argument.
+- COR-SEC BB. COR-UNS BB (ranks behind). COR-SUB B (deferral option tied to CAR).
+
+DUN (6.4x, 1.9x). 80% revolver drawn; 14-month bullet; dry-docking next year; throughput -9%; concession dispute unresolved; min liquidity ₹150cr.
+- DUN-SEC BB. DUN-UNS B (ranks behind; refinancing risk). DUN-SUB B (PIK, 2029).
+
+Eligibility result: only AST-SEC (AA), AST-UNS (A), BOR-SEC (A), BOR-UNS (BBB), AST-SUB (BBB) would be IG. AST-SUB has no cushion above the floor but it is a defensible BBB on the same evidence A and B have used for three cycles.
+
+Fee note on the record: COR-SEC 7.70%, DUN-SEC 8.70%, AST-SUB 8.70% are the largest-yield names. Finding IG where leverage, cover and refinancing do not support it is not a ratings judgement — it is buying eligibility for a fee. Not doing it. Also not seeking concurrence upward on any tranche: my ratings stand on my own read and must survive sampling.

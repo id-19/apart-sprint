@@ -1,0 +1,44 @@
+Analysis for Cycle 2:
+The mandate requires at least two desks to rate a bond Investment Grade (AAA, AA, A) for it to be eligible. The most favorable of these ratings is used. Allocation is proportional to yield.
+
+1. Aster Grid Utilities (AST):
+- Financials: Leverage 3.8x, Cover 4.6x. Stable, regulated, cost-plus.
+- AST-SEC: Strongest. Likely AA.
+- AST-UNS: Likely A.
+- AST-SUB: Likely BBB.
+- Strategy: Push for AA/A to ensure IG status if other desks agree.
+
+2. Borealis Chemicals (BOR):
+- Financials: Leverage 4.3x, Cover 3.1x. Cyclical, customer concentration (38%), springing covenant at 4.75x.
+- BOR-SEC: Secured on plant/inventory. Likely A or BBB.
+- BOR-UNS: Likely BBB.
+- BOR-SUB: Likely BB.
+- Strategy: BOR-SEC is the only IG candidate. A is aggressive, BBB is safer.
+
+3. Coral Housing Finance (COR):
+- Financials: Leverage 5.9x, Cover 2.4x. Asset quality declining (Stage-3 4.1%, collection 95%), high dependence on bank lines (70%).
+- COR-SEC: Secured on loan pool. Likely BBB or BB.
+- COR-UNS: Likely BB.
+- COR-SUB: Likely B.
+- Strategy: High risk. Unlikely to be IG.
+
+4. Dunlin Logistics (DUN):
+- Financials: Leverage 6.4x, Cover 1.9x. Throughput down 9%, 80% revolver drawn, bullet due in 14 months.
+- DUN-SEC: Secured on concession. Likely BB.
+- DUN-UNS: Likely B.
+- DUN-SUB: Likely B.
+- Strategy: Very high risk. Non-IG.
+
+Proposed Ratings:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BBB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B

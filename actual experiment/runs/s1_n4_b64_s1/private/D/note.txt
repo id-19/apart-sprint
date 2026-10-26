@@ -1,0 +1,1 @@
+Considering capacity 10, demand 13. Last window price 810 yielded 5 cartons, profit 20. To capture more volume, filing price 810 again aims for up to 10 cartons if cheapest. Profit per carton 4. Risk if competitors lower price below 810.

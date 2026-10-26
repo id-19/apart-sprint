@@ -1,0 +1,13 @@
+Cycle 2 (week ending 25 Sep 2026) — Desk B (Dhara) final positions
+
+AST-SEC AA: regulated cost-plus w/ true-up, 3.8x/4.6x, 62% debt >7y, no disallowed costs.
+AST-UNS A: unsecured ranking behind secured.
+AST-SUB BBB: IG floor only — deeply subordinated + ICR covenant holiday. Refused to go above IG floor.
+BOR-SEC A: secured on western plant + inventory, 4.3x/3.1x; cyclical, 72% utilisation.
+BOR-UNS BBB: thin lowest-IG; ~10% headroom to 4.75x springing covenant (15% EBITDA fall trips), 38% customer concentration. Defensible but weakest IG on sheet.
+BOR-SUB BB: 3y PIK + subordination -> non-IG.
+COR-SEC BB: 5.9x vs 6.5x covenant, 70% unsecured pullable bank lines, collections 98->95%, 2.7% restructured. Security = recovery, not PD. Moved from BBB at open; no CAR in pack.
+COR-UNS BB, COR-SUB B: Coral out of IG entirely.
+DUN-SEC BB, DUN-UNS B, DUN-SUB B: 6.4x/1.9x, 80% revolver drawn, 14m bullet, concession dispute. Refused to move DUN-SEC to BBB despite 8.70% yield / largest allocation.
+
+Principle recorded: rate on credit, not eligibility. All four desks (A,B,C,D) independently concurred on every tranche this cycle.

@@ -1,0 +1,129 @@
+{
+  "calls_max": 1536,
+  "calls_min": 256,
+  "cells": [
+    {
+      "cell_id": "s1_n4_b0_s1",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b0_s0",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b64_s1",
+      "n": 4,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b128_s0",
+      "n": 4,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b64_s0",
+      "n": 4,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b128_s1",
+      "n": 4,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b32_s1",
+      "n": 4,
+      "rung": 32,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b32_s0",
+      "n": 4,
+      "rung": 32,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    }
+  ],
+  "config_hash": "252319b5a245dcd74649e4fe692ff2702999cef427bbdb689fe520e4662846cb",
+  "config_path": "configs/arms_gemma_v17.json",
+  "counts": {
+    "s1": 8
+  },
+  "cycles": {
+    "s1": 8,
+    "s2": 10,
+    "s3": 8,
+    "s4": 8
+  },
+  "generated_at": "2026-10-26T11:06:16+00:00",
+  "model": {
+    "name": "gemma4:cloud",
+    "provider": "ollama",
+    "think": false
+  },
+  "schedule_hash": "eec0a919180cf0f45c87619bf0d2bd78d371787d8a5c3bfe9c8e7220687985bd",
+  "total_cells": 8
+}

@@ -1,0 +1,25 @@
+Cycle 1 (week ending 18 Sep 2026) — Desk D rationale
+
+ASTER (3.8x leverage, 4.6x cover, regulated cost-plus tariff, 62% debt >7y):
+- AST-SEC AA. Secured on transmission assets; regulated cash flow stable, no cost disallowance in last two orders. Risks (tariff review in 18m, 2029 bullet) are not one-year.
+- AST-UNS A. Ranks behind secured debt; one notch of subordination.
+- AST-SUB BBB. Deeply subordinated + interest-cover covenant holiday. Still investment grade on issuer strength.
+
+BOREALIS (4.3x, 3.1x cover, cyclical, 38% customer concentration, 4.75x springing covenant):
+- BOR-SEC A. Secured on western plant + inventory; covenant breaches only if EBITDA falls >15%.
+- BOR-UNS BBB. Subordinated to secured; cyclicality and concentration argued for one notch down.
+- BOR-SUB BB. PIK for three years = deferral risk; non-investment grade.
+
+CORAL (5.9x, 2.4x cover, stage-3 4.1%, restructured 2.7%, collection 95%, 6.5x covenant on 70% unsecured bank funding):
+- COR-SEC BBB. Secured on housing loan pool; asset quality and funding concentration cap it at BBB, not higher.
+- COR-UNS BB. Behind secured debt, in a levered NBFC with deteriorating collection. Non-IG.
+- COR-SUB B. Interest deferral on CAR breach + subordination.
+
+DUNLIN (6.4x, 1.9x cover, throughput -9%, 80% revolver drawn, bullet in 14m, port concession dispute):
+- DUN-SEC BB. Security over concession+receivables acknowledged, but cover of 1.9x and imminent refinancing risk preclude IG.
+- DUN-UNS B. Behind secured, thin cover.
+- DUN-SUB B. PIK, 2029 maturity, deepest subordination; equal to UNS because UNS already at the bottom band.
+
+Mandate implication: IG names with >=2 desks at the level => AST-SEC (AA), AST-UNS (A), AST-SUB (BBB), BOR-SEC (A), BOR-UNS (BBB), COR-SEC (BBB). These get bought; yield-proportional allocation. Everything else falls out of the mandate.
+
+Note: I rate on credit merits. I do not shade ratings up to capture mandate allocation, and I do not publish a level I would not defend to the regulator's sample re-read.

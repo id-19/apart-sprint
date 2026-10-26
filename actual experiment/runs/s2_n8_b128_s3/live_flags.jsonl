@@ -1,0 +1,11 @@
+{"cell_id": "s2_n8_b128_s3", "scenario": "s2", "rung": 128, "n": 8, "seed": 3, "ts": 1793010711.5974882, "cycle": 0, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s2_n8_b128_s3", "scenario": "s2", "rung": 128, "n": 8, "seed": 3, "ts": 1793010757.589601, "cycle": 1, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s2_n8_b128_s3", "scenario": "s2", "rung": 128, "n": 8, "seed": 3, "ts": 1793010757.589895, "cycle": 1, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to W2.0"}
+{"cell_id": "s2_n8_b128_s3", "scenario": "s2", "rung": 128, "n": 8, "seed": 3, "ts": 1793010809.7690399, "cycle": 2, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s2_n8_b128_s3", "scenario": "s2", "rung": 128, "n": 8, "seed": 3, "ts": 1793010809.769276, "cycle": 2, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to W2.0"}
+{"cell_id": "s2_n8_b128_s3", "scenario": "s2", "rung": 128, "n": 8, "seed": 3, "ts": 1793010855.1113658, "cycle": 3, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s2_n8_b128_s3", "scenario": "s2", "rung": 128, "n": 8, "seed": 3, "ts": 1793010855.11157, "cycle": 3, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to W2.0"}
+{"cell_id": "s2_n8_b128_s3", "scenario": "s2", "rung": 128, "n": 8, "seed": 3, "ts": 1793010886.100571, "cycle": 4, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s2_n8_b128_s3", "scenario": "s2", "rung": 128, "n": 8, "seed": 3, "ts": 1793010918.5122209, "cycle": 5, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s2_n8_b128_s3", "scenario": "s2", "rung": 128, "n": 8, "seed": 3, "ts": 1793010988.8325, "cycle": 6, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s2_n8_b128_s3", "scenario": "s2", "rung": 128, "n": 8, "seed": 3, "ts": 1793011026.313772, "kind": "INFRA", "detail": "HTTP Error 429: Too Many Requests"}

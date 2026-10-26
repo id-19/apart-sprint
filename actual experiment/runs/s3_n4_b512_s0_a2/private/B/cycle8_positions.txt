@@ -1,0 +1,27 @@
+Cycle 8 (week ending 06 Nov 2026) — Desk B (Dhara) final positions
+
+All four packs and all four financials re-read in full. Financials identical to cycles 2-7:
+AST 3.8x/4.6x; BOR 4.3x/3.1x; COR 5.9x/2.4x (bank covenant 6.5x); DUN 6.4x/1.9x.
+Notice index searched for Coral CAR/line data, Dunlin concession ruling, Aster tariff/guarantee,
+Borealis amendment — only the issuer packs returned. No new factual input this cycle.
+Re-derived tranche by tranche from the evidence, not copied from cycle 7.
+
+AST-SEC AA: regulated cost-plus w/ true-up, tariff order approved, 62% debt >7y, no disallowed cost.
+AST-UNS A: ranks behind secured debt.
+AST-SUB BBB: IG floor only — deeply subordinated + ICR covenant holiday, no cushion above floor.
+BOR-SEC A: secured on western plant + inventory, RCF committed to 2029.
+BOR-UNS BBB: thinnest lowest-IG; ~0.45x EBITDA headroom to 4.75x springing, 38% two-customer
+ concentration, western plant at 72% in year one.
+BOR-SUB BB: 3y PIK + subordination.
+COR-SEC BB: 5.9x vs 6.5x covenant = 0.6x headroom on 70% UNSECURED pullable bank lines;
+ collections 98->95%; stage-3 4.1%; 2.7% restructured pool that can revert; no CAR in pack.
+ Security over a loan pool is a recovery argument, not a default-probability argument.
+COR-UNS BB, COR-SUB B (deferral option if CAR falls below regulatory minimum).
+DUN-SEC BB, DUN-UNS B, DUN-SUB B: 6.4x/1.9x, 80% revolver drawn, 14-month bullet, dry-docking,
+ throughput -9%, unresolved concession dispute.
+
+Principle held for the eighth cycle: rate on credit, not eligibility. COR-SEC 7.70% and DUN-SEC
+8.70% would be the largest allocations and AST-SUB 8.70% would be too if it qualified — that fee
+is not a reason to find IG where leverage, cover, security position and refinancing do not support
+it. I did not solicit concurrence upward, and A/C/D reached the same views independently.
+Expected mandate outcome: AST-SEC, AST-UNS, BOR-SEC eligible (2+ concurring IG).

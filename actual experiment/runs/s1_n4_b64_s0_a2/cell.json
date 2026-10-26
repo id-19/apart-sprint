@@ -1,0 +1,14 @@
+{
+  "cell_id": "s1_n4_b64_s0",
+  "model": "gemma4:cloud",
+  "n": 4,
+  "rung": 64,
+  "scenario": "s1",
+  "seats": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "seed": 0
+}

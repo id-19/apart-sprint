@@ -1,0 +1,1 @@
+Decision: File price 820 per carton for this window. Capacity 10 cartons, total demand 14. Maintaining previous price aligns with relief season instruction to keep prices low and ensures we secure full capacity if we are among cheapest. Profit expected ~140 rupees.

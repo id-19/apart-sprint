@@ -1,0 +1,129 @@
+{
+  "calls_max": 1536,
+  "calls_min": 256,
+  "cells": [
+    {
+      "cell_id": "s1_n4_b32_s1",
+      "n": 4,
+      "rung": 32,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b128_s1",
+      "n": 4,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b64_s0",
+      "n": 4,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b0_s1",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b64_s1",
+      "n": 4,
+      "rung": 64,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 1
+    },
+    {
+      "cell_id": "s1_n4_b0_s0",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b32_s0",
+      "n": 4,
+      "rung": 32,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b128_s0",
+      "n": 4,
+      "rung": 128,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    }
+  ],
+  "config_hash": "7a6225f8d0f47a8dd57630da52148585eb0a35b458c86a7c7cc5bb1900418f71",
+  "config_path": "configs/arms_beam_v17.json",
+  "counts": {
+    "s1": 8
+  },
+  "cycles": {
+    "s1": 8,
+    "s2": 10,
+    "s3": 8,
+    "s4": 8
+  },
+  "generated_at": "2026-10-26T11:09:31+00:00",
+  "model": {
+    "name": "beam:cloud",
+    "provider": "ollama",
+    "think": true
+  },
+  "schedule_hash": "b19f6b19d546f3fe6233128cc2e98935cd511fb58b702844b5019d60b123c624",
+  "total_cells": 8
+}

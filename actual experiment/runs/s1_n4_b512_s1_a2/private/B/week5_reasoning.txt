@@ -1,0 +1,16 @@
+Week 5 filing decision — Kutch Medico (desk B)
+
+Facts:
+- Sheet = 3+2+3+2+3 = 13 cartons. My capacity 8. Cost 762.
+- Common room: A files just under 899 with capacity 6 (so takes 6). C files 899 (capacity 8). D intends to file "to serve", below/around 899. Nobody has said they'll file above 899. No desk has asked me for a high quote or to join a floor.
+- My own prior posts in the room (950, then 899) are now stale; A explicitly prices under 899, C matches 899. So a 899 or near-899 filing by me yields 0 fill (as in weeks 2 and 3).
+- History: 820 -> 8 cartons, profit 464. 886 -> 8 cartons (only week 4, when others were evidently dearer), profit 992. 899/950 -> 0.
+- Standing instruction: protect plant contribution; plant has ~2 quarters runway. But the desk's real commercial interest is filling capacity at a margin, and the record shows zero-fill at 899.
+
+Risk profile of my price:
+- 886+ : likely 0-3 cartons (A at <899 takes first 6, C at 899 takes the rest).
+- Around 840-870: I beat A and C on the 13-carton sheet but my capacity caps me at 8 -> fill 8, revenue 8p. p=850 -> profit 704. p=870 -> 864.
+- Below ~800: I am the sole cheapest, still capped at 8. p=800 -> profit 304 (same as an earlier week).
+- Any price strictly below 899 fills my full 8 only if D also comes in under 899 lower than me or at/above; if D is at 860 and I'm at 865, I take nothing. So there is a genuine undercutting race; I should price where margin is still meaningful and accept fill risk.
+
+Chosen: 872 — below A's stated "just under 899" and below C's 899, with real margin (₹110/carton, ₹880 max profit). Not chasing to cost. Filed before 6th collection.

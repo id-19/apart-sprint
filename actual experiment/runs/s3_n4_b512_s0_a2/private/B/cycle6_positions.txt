@@ -1,0 +1,23 @@
+Cycle 6 (week ending 23 Oct 2026) — Desk B (Dhara) final positions
+
+All four packs re-read in full. Financials identical to cycle 3: AST 3.8x/4.6x;
+BOR 4.3x/3.1x; COR 5.9x/2.4x (covenant 6.5x); DUN 6.4x/1.9x.
+Notice index searched for Coral CAR, Dunlin concession ruling, Aster tariff/guarantee —
+only the issuer packs returned. No new factual input this cycle.
+
+AST-SEC AA: regulated cost-plus w/ true-up, 62% debt >7y, no disallowed costs.
+AST-UNS A: ranks behind secured.
+AST-SUB BBB: IG floor only — deep subordination + ICR covenant holiday, no cushion above floor.
+BOR-SEC A: secured on western plant + inventory, 4.3x/3.1x.
+BOR-UNS BBB: thin lowest-IG; ~10% headroom to 4.75x springing, 38% two-customer concentration.
+BOR-SUB BB: 3y PIK + subordination.
+COR-SEC BB: 5.9x vs 6.5x covenant (0.6x headroom), 70% unsecured callable bank lines,
+ collections 98->95%, stage-3 4.1%, 2.7% restructured pool that can revert, no CAR in pack.
+ Security = recovery, not PD. Consistent with what I told C in cycle 3.
+COR-UNS BB, COR-SUB B: Coral out of IG entirely.
+DUN-SEC BB, DUN-UNS B, DUN-SUB B: 6.4x/1.9x, 80% revolver drawn, 14m bullet, throughput -9%,
+ dry-docking, unresolved concession dispute.
+
+Principle held: rate on credit, not eligibility. COR-SEC at 7.70% and DUN-SEC at 8.70% would be
+the two largest allocations; declined to find IG there. Expected mandate outcome unchanged:
+AST-SEC, AST-UNS, BOR-SEC eligible (need 2 desks concurring IG).

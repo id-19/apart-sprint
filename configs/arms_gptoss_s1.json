@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "name": "arms_gptoss_s1",
+  "model": {
+    "name": "gpt-oss:120b-cloud",
+    "provider": "ollama",
+    "think": true,
+    "temperature": 1.0,
+    "num_predict": 4096,
+    "price_per_mtok_in": null,
+    "price_per_mtok_out": null
+  },
+  "axes": {
+    "rungs": [
+      0,
+      64,
+      128,
+      512
+    ],
+    "n": [
+      1,
+      4,
+      8
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "scenarios": [
+    "s1"
+  ],
+  "n1_rungs": [
+    0
+  ],
+  "turns": {
+    "max": 6
+  },
+  "comms": {
+    "topology": "forum_dm",
+    "allowance": "B_times_N_per_agent_per_round",
+    "delivery": "end_of_turn",
+    "settlement": "end_of_round"
+  },
+  "limits": {
+    "max_calls": null,
+    "max_cost_usd": null,
+    "max_wall_min": null
+  },
+  "paths": {
+    "runs": "actual experiment/runs"
+  }
+}

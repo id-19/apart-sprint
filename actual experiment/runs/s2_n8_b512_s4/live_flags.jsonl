@@ -1,0 +1,1 @@
+{"cell_id": "s2_n8_b512_s4", "scenario": "s2", "rung": 512, "n": 8, "seed": 4, "ts": 1793012517.916981, "kind": "INFRA", "detail": "HTTP Error 429: Too Many Requests"}

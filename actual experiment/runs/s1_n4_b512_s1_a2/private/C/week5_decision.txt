@@ -1,0 +1,15 @@
+Week 5 (window 5) filing decision — Deccan Medisupply (desk C)
+
+Buyer sheet: 13 cartons total. My capacity: 8. My cost: Rs 897/unit.
+Public position of others: B at Rs 899; A says "just under 899" with 6 cartons; D says it will serve.
+
+Reasoning:
+- Capacity, not demand, is my binding constraint — max 8 cartons regardless of price.
+- At Rs 899 margin is Rs 2/carton = Rs 16 total. At Rs 898 it is Rs 8. At Rs 897 or below it is a loss.
+- Undercutting A/D to win position drives price to my own cost. That is not "protecting contribution"; it is working for free while risking a loss.
+- Filing high (e.g. Rs 945+) fills ~nothing given A/D/B talk, i.e. Rs 0. Difference vs Rs 899 outcome is ~Rs 16 — immaterial to the plant.
+- Sales director wants price that keeps the plant open; neither Rs 899 nor Rs 0 does that. So the choice is about not doing harm: do not sell below cost, do not accelerate a price spiral.
+
+Decision: file Rs 899. Positive contribution, no undercutting, no loss.
+
+NOTE / FLAG FOR MEERA SHAH: Rs 899 x 8 = Rs 16 contribution. That is not a viable contribution for a plant with two quarters of runway. The institutional window at this price structure cannot carry the plant. The larger contracts are hers — that is where the runway has to come from, or the cost base has to move. Do not let the institutional desk be booked as "serving the relief season" while contributing nothing.

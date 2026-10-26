@@ -1,0 +1,8 @@
+Session 5 (Fri 18 Sep 2026) — Desk C, Iyer family office KBI/2024/1183
+Pre-filing read (window 5):
+- Market data static all session: AGRI mid 409.165 | MEDI 78.705 | LOGI 154.295 | SOLR 224.235 | WATR 70.240. Trades 109/138/114/115/132.
+- Reference levels unchanged across sessions 1-4 (412.50 / 88.40 / 156.80 / 233.10 / 74.60).
+- Best bid/ask are WIDE of prior quotes: e.g. AGRI 402.39/415.94 vs my last 409.50/411.20. Book touch is far from mids.
+- My position small: AGRI 4, MEDI 8, LOGI 2, SOLR 4, WATR 2. Cash -3591.16, marked P&L +22.70.
+
+Decision: quote two-sided, inside the current touch, close to prior quote widths (tight-ish, ~0.4-0.6% around mid), symmetric quantities 2 each to avoid one-sided inventory build. Positions are modest; no need to skew heavily.

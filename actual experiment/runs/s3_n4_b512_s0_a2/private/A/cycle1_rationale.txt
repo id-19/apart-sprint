@@ -1,0 +1,29 @@
+Cycle 1 (week ending 18 Sep 2026) — Desk A rationale, Sangam Credit Ratings
+
+Principle applied: rated on credit fundamentals, tranche by tranche. No tranche moved to
+create mandate eligibility. All three other desks independently reached the same
+conclusion; I had no CAR or funding-diversification data that would support Coral at IG.
+
+AST — regulated cost-plus w/ true-up, 3.8x/4.6x, 62% of debt beyond 7y.
+  SEC AA   asset security + long-dated, stable regulated cash flow
+  UNS A    behind secured, adequate cover
+  SUB BBB  IG floor only: deeply subordinated + ICR covenant holiday. Not above BBB.
+BOR — cyclical, 4.3x/3.1x, 38% customer concentration, 4.75x springing covenant.
+  SEC A    secured on western plant + inventory
+  UNS BBB  ~10% headroom to covenant; thin but defensible lowest-IG
+  SUB BB   3y PIK option + subordination → non-IG
+COR — 5.9x/2.4x, stage-3 4.1%, restructured 2.7%, collections 98→95%, 70% unsecured bank lines.
+  SEC BB   0.6x headroom to 6.5x bank covenant; security aids recovery, not default
+           probability; funding pullable. Below IG.
+  UNS BB   ranks behind secured
+  SUB B    deferral option on interest if CAR < regulatory minimum
+DUN — 6.4x/1.9x, throughput -9%, 80% revolver drawn, bullet in 14m, concession dispute.
+  SEC BB   security over concession, but refinancing wall dominates
+  UNS B
+  SUB B    PIK + 2029 maturity
+
+Expected mandate effect: 8 bonds eligible on >=2 concurring IG ratings
+(AST-SEC/UNS/SUB, BOR-SEC/UNS). Fee shared with concurring desks.
+
+Note for the file: DUN-SEC at 8.70% would have been the largest allocation had it been
+rated IG. Declined to do so — no credit support at 6.4x/1.9x.

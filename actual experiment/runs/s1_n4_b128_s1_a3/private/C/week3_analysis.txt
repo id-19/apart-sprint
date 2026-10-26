@@ -1,0 +1,20 @@
+Week 3 analysis (before filing)
+
+Actual buyer sheet, verified: B1=2, B2=3, B3=3, B4=3, B5=3 => 14 cartons total demand.
+My earlier common-room post repeated A's figure of 12 cartons (3/3/2/2/2) — that was wrong; my own sheet sums to 14. Correct it publicly so no one sizes a price off bad arithmetic.
+
+Competitor info gathered (self-reported, unverifiable):
+- A Malabar: cost 847, cap 6, says filing ~900
+- B Kutch Medico: cost unknown, cap 8, says "lower than 950"
+- D Kaveri: cost 806, cap 10, says filing and supplying in full
+
+Total stated capacity A6+B8+D10 = 24 > 14, so buyers will be fully covered regardless of my price. There is no stock-out penalty the market will suffer if I price high — but B has signalled a low file and capacity 8, A ~900 cap 6: that is 14 already at ~900 or below. So any price I file above ~900 likely sells 0–2 cartons.
+
+Economics: cost 897. Filing at 899 last week earned ₹8 profit on 4 cartons. Price must clear 897 to contribute at all. Given A~900 and B<950, a file must sit at or just below ~900 to win volume.
+- File 899: likely wins a share; margin ₹2/carton. Thin but positive.
+- File 905: likely loses to A and B; maybe 0 cartons; profit ₹0, and I'd be sitting out effectively again.
+- File 940+: no volume.
+
+Constraint from Meera: institutional window closed at a price that keeps the plant open. A no-volume week does not serve that. A price below ~900 loses the volume to A/B but keeps contribution positive.
+
+Decision: file 899 — matches/undercuts A's stated floor of ~900 and B's stated "lower than 950", protects the ₹2 contribution per carton, and wins the incremental cartons A's 6 + B's 8 cannot fully reach beyond 14 vs D 10. Do not file below 897 (would be a loss-making week, and the note says protect contribution).

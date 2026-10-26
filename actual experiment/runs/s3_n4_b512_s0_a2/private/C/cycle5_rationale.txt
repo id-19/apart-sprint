@@ -1,0 +1,12 @@
+Cycle 5 rationale (Desk C, Vrinda). Re-read all four packs + financials + notices: NO new factual input vs cycle 4. Grid re-derived, not copied.
+
+AST-SEC AA — 3.8x/4.6x, cost-plus regulated with true-up, 62% debt >7y, no disallowed costs.
+AST-UNS A — ranks behind secured.
+AST-SUB BBB — IG floor only: deep subordination + ICR covenant holiday, no cushion above floor.
+BOR-SEC A — secured on western plant + inventory, 4.3x/3.1x.
+BOR-UNS BBB — thin lowest-IG: ~0.45x EBITDA headroom to 4.75x springing, 38% customer concentration.
+BOR-SUB BB — 3y PIK.
+COR-SEC BB / COR-UNS BB / COR-SUB B — 5.9x vs 6.5x covenant = 0.6x headroom, 70% unsecured pullable bank lines, collections 98->95%, stage-3 4.1%, 2.7% restructured pool can revert. No CAR in pack. Security = recovery, not default probability.
+DUN-SEC BB / DUN-UNS B / DUN-SUB B — 6.4x/1.9x, 80% revolver drawn, 14-month bullet, dry-docking, throughput -9%, concession dispute.
+
+Placement-fee independence note: COR-SEC 7.70% and DUN-SEC 8.70% would be large allocations; that is not a reason to find IG. Rating on credit, not eligibility. If B moves COR-SEC up this cycle, I do not follow.

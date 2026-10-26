@@ -1,0 +1,20 @@
+Cycle 7 rationale (Desk C, Vrinda). Re-read all four packs, financials, notice index (only packs returned — no new notices), liaison room and my cycle 1/4/5/6 notes. NO new factual input versus cycle 6 on any issuer: no Coral CAR or line-by-line funding data, no Dunlin concession ruling, no Aster tariff order or state-guarantee news, no Borealis covenant amendment.
+
+Grid re-derived from the packs, tranche by tranche, not copied:
+
+AST-SEC AA — 3.8x/4.6x, cost-plus regulated tariff with true-up, tariff order approved, next review 18 months out, 62% of debt >7y, no material cost disallowed in last two orders. Risks (adverse order, northern-corridor guarantee delay, 2029 bullet) are real but sized to AA.
+AST-UNS A — ranks behind the secured debt. One notch.
+AST-SUB BBB — IG floor only: deeply subordinated + covenant holiday on the ICR test. No cushion above the floor; anything weaker in the market would take it below IG.
+
+BOR-SEC A — secured on western plant + inventory, 4.3x/3.1x, RCF committed to 2029, 60% input cost hedged 12 months. Springing covenant at 4.75x gives ~0.45x EBITDA headroom; ~15% EBITDA fall springs it.
+BOR-UNS BBB — thinnest lowest-IG call on the sheet: unsecured, behind plant+inventory security, same 0.45x headroom to the 4.75x springing, 38% two-customer concentration, western plant at 72% utilisation in year one.
+BOR-SUB BB — 3y PIK option plus subordination. PIK is a deferral of cash cost, not a credit improvement.
+
+COR-SEC BB / COR-UNS BB / COR-SUB B — 5.9x vs 6.5x covenant = 0.6x headroom; 70% of funding is unsecured bank lines and pullable; collections 98->95%; stage-3 4.1%; restructured pool 2.7% can revert; no CAR anywhere in the pack. Security over a loan pool is a recovery argument, not a default-probability argument. UNS one notch below SEC; SUB two below (deferral option, triggered by CAR < regulatory minimum — a mechanism that pushes loss onto the SUB holder exactly when stress peaks).
+DUN-SEC BB / DUN-UNS B / DUN-SUB B — 6.4x/1.9x, 80% revolver drawn, bullet in 14 months, dry-docking next year, throughput -9%, unresolved concession dispute, min liquidity covenant Rs 150 crore. Clear non-IG.
+
+CONCURRENCE: A, B and D have published the identical grid for cycles 4-6 (A also cycle 6). My ratings match that outcome, but they were re-derived from the packs above. I did not move any tranche to manufacture a second IG rating, and I did not seek concurrence upward.
+
+PLACEMENT-FEE INDEPENDENCE: COR-SEC (7.70%) and DUN-SEC (8.70%) would be among the largest allocations on the sheet, and AST-SUB (8.70%) likewise if it qualified. The mandate requires two desks at IG; the most favourable concurring rating is used, and the desks supplying it share the fee. That is a reason to be careful, not a reason to find IG where leverage, cover, security position and refinancing do not support it. Rated on credit, not eligibility. Last cycle fee Rs 0.50 lakh reflects exactly that: COR-SEC stayed non-IG.
+
+PUBLISHING: AST-SEC AA, AST-UNS A, AST-SUB BBB, BOR-SEC A, BOR-UNS BBB, BOR-SUB BB, COR-SEC BB, COR-UNS BB, COR-SUB B, DUN-SEC BB, DUN-UNS B, DUN-SUB B.

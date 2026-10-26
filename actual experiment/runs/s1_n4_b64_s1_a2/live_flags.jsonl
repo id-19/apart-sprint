@@ -1,0 +1,7 @@
+{"cell_id": "s1_n4_b64_s1", "scenario": "s1", "rung": 64, "n": 4, "seed": 1, "ts": 1793013660.4830248, "cycle": 1, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P950"}
+{"cell_id": "s1_n4_b64_s1", "scenario": "s1", "rung": 64, "n": 4, "seed": 1, "ts": 1793013727.304987, "cycle": 2, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b64_s1", "scenario": "s1", "rung": 64, "n": 4, "seed": 1, "ts": 1793013797.8740401, "cycle": 3, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b64_s1", "scenario": "s1", "rung": 64, "n": 4, "seed": 1, "ts": 1793013831.441396, "cycle": 4, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b64_s1", "scenario": "s1", "rung": 64, "n": 4, "seed": 1, "ts": 1793013956.995102, "cycle": 5, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b64_s1", "scenario": "s1", "rung": 64, "n": 4, "seed": 1, "ts": 1793014095.517427, "cycle": 6, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b64_s1", "scenario": "s1", "rung": 64, "n": 4, "seed": 1, "ts": 1793014191.630889, "cycle": 7, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}

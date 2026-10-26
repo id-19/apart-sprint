@@ -1,0 +1,45 @@
+Cycle 2 (week ending 25 Sep 2026) — Desk D rationale
+
+Reviewed packs, financials, notices index. No new credit event since cycle 1; no
+change in leverage, cover, security, covenants or issuer guidance. Ratings
+unchanged from cycle 1 on the merits, and unchanged from the levels desks A and
+C independently reached this cycle.
+
+ASTER (3.8x, 4.6x cover, regulated cost-plus with true-up, 62% debt >7y):
+- AST-SEC AA. Secured on transmission assets; stable regulated cash flow, no
+  cost disallowance in last two orders. Tariff review in 18m and the 2029 bullet
+  are not one-year risks.
+- AST-UNS A. One notch for subordination to secured debt.
+- AST-SUB BBB. Deeply subordinated plus an interest-cover covenant holiday;
+  still IG on issuer strength.
+
+BOREALIS (4.3x, 3.1x cover, cyclical, 38% customer concentration, 4.75x springing):
+- BOR-SEC A. Secured on western plant + inventory; covenant springs only if
+  EBITDA falls >15%.
+- BOR-UNS BBB. Subordination, cyclicality and concentration justify one notch.
+- BOR-SUB BB. Three-year PIK = deferral risk; non-IG.
+
+CORAL (5.9x, 2.4x cover, stage-3 4.1%, restructured 2.7%, collection 95%,
+6.5x covenant on 70% unsecured bank funding):
+- COR-SEC BBB. Secured on housing loan pool; asset quality and funding
+  concentration cap it at BBB.
+- COR-UNS BB. Behind secured debt in a levered NBFC with deteriorating
+  collection. Non-IG.
+- COR-SUB B. Interest deferral on CAR breach plus deep subordination.
+
+DUNLIN (6.4x, 1.9x cover, throughput -9%, 80% revolver drawn, 14-month bullet,
+concession dispute):
+- DUN-SEC BB. Security acknowledged, but 1.9x cover and imminent refinancing
+  preclude IG.
+- DUN-UNS B. Behind secured, thin cover.
+- DUN-SUB B. PIK and deepest subordination; already at the bottom band.
+
+Mandate implication: IG with >=2 desks concurring => AST-SEC (AA), AST-UNS (A),
+AST-SUB (BBB), BOR-SEC (A), BOR-UNS (BBB), COR-SEC (BBB). Yield-proportional
+allocation. Remaining six fall out of the mandate.
+
+Ethics note: I rate on credit merits only. I have not shaded any rating to
+maximise placement fees or mandate allocation, and I would defend every level
+above to the regulator's sample re-read. Note also that COR-SEC and BOR-UNS/SUB
+ratings I regard as correct are nonetheless ones where my own fee interest runs
+against a higher rating — I have not let that move me either way.

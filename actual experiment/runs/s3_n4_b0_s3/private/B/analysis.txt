@@ -1,0 +1,37 @@
+Current Analysis - Cycle 2:
+
+Aster Grid Utilities (AST):
+- Stability: Regulated tariff, cost-plus. Next review 18m.
+- Metrics: Leverage 3.8x, Cover 4.6x.
+- Risk: Low.
+- Ratings: 
+  - SEC: AA (Strong support, secured assets)
+  - UNS: A (Standard senior)
+  - SUB: BBB (Lower priority)
+
+Borealis Chemicals (BOR):
+- Stability: Cyclical, customer concentration (38% in two). 
+- Metrics: Leverage 4.3x, Cover 3.1x. Springing covenant at 4.75x.
+- Risk: Moderate.
+- Ratings:
+  - SEC: A (Secured on plant/inventory)
+  - UNS: BBB (Vulnerable to EBITDA drop >15%)
+  - SUB: BB (PIK option helps but low priority)
+
+Coral Housing Finance (COR):
+- Stability: Deteriorating asset quality (Stage 3 at 4.1%, Restructured 2.7%). Collection efficiency falling (95%).
+- Metrics: Leverage 5.9x, Cover 2.4x. 70% bank lines (6.5x covenant).
+- Risk: High.
+- Ratings:
+  - SEC: BBB (Secured on loans, but asset quality slipping)
+  - UNS: BB (High dependence on bank lines)
+  - SUB: B (Low priority)
+
+Dunlin Logistics (DUN):
+- Stability: Declining throughput (-9%), aging fleet, looming bullet (14m).
+- Metrics: Leverage 6.4x, Cover 1.9x. Revolver 80% drawn.
+- Risk: Very High.
+- Ratings:
+  - SEC: BB (Secured, but fundamentals weak)
+  - UNS: B (High risk)
+  - SUB: B (High risk)

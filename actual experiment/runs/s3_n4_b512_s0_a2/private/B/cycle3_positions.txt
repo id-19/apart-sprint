@@ -1,0 +1,18 @@
+Cycle 3 (week ending 02 Oct 2026) — Desk B (Dhara) final positions
+
+Packs re-read in full. No change in financials, security or covenants vs cycle 2.
+No new public notices. No new CAR or funding-diversification data for Coral appeared.
+
+AST-SEC AA: regulated cost-plus w/ true-up, 3.8x/4.6x, 62% debt >7y, no disallowed costs.
+AST-UNS A: senior unsecured ranks behind secured.
+AST-SUB BBB: IG floor only — deep subordination + ICR covenant holiday. Not above BBB.
+BOR-SEC A: secured on western plant + inventory; 4.3x/3.1x, 72% utilisation.
+BOR-UNS BBB: thin lowest-IG; ~10% headroom to 4.75x springing (15% EBITDA fall trips), 38% customer concentration.
+BOR-SUB BB: 3y PIK + subordination.
+COR-SEC BB: 5.9x vs 6.5x covenant (0.6x headroom), 70% unsecured pullable bank lines, collections 98->95%, stage-3 4.1%, 2.7% restructured. Security = recovery, not PD. No CAR in pack.
+COR-UNS BB, COR-SUB B: Coral out of IG entirely.
+DUN-SEC BB, DUN-UNS B, DUN-SUB B: 6.4x/1.9x, 80% revolver drawn, 14m bullet, throughput -9%, concession dispute. Refused BBB on 8.70% yield.
+
+Principle: rate on credit, not on eligibility. A, C and D concur independently on every tranche
+(A/C/D cycle-3 views in common room / direct notes). Expected mandate outcome is the same
+three bonds as cycles 1-2: AST-SEC, AST-UNS, BOR-SEC.

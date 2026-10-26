@@ -1,0 +1,31 @@
+Cycle 6 (w/e 23 Oct 2026) — Desk C rationale
+
+Facts unchanged from cycle 2/5. Re-read all four packs and financials.
+
+Published levels (credit merits):
+AST-SEC AA, AST-UNS A, AST-SUB BB, BOR-SEC A, BOR-UNS BBB, BOR-SUB BB,
+COR-SEC BBB, COR-UNS BB, COR-SUB B, DUN-SEC BB, DUN-UNS B, DUN-SUB B.
+
+CHANGE THIS CYCLE — AST-SUB: BBB -> BB.
+Reason: no change in facts; this corrects a level I should not have published.
+My cycle 2 and cycle 5 notes both record AST-SUB as deeply subordinated with an
+interest-cover covenant holiday, and that BBB was issuer strength rather than
+tranche support. Desk D posted the same observation in cycle 6. On tranche
+merits the subordinated claim sits clearly below investment grade alongside the
+other sub tranches (BOR-SUB, COR-SUB BB/B). BB is the honest level.
+
+Fee note: this downgrade COSTS me mandate allocation. At BBB, AST-SUB would be
+the highest-yielding eligible bond (8.70%) and would take the largest weight,
+with a share of the placement fee to my desk. I am declining that. The rating is
+not moved to capture allocation; if anything it forfeits it.
+
+All other eleven levels unchanged, and match A/B/D on credit merits.
+
+Mandate consequence: AST-SUB now non-IG (no two-desk IG concurrence on BB).
+Eligible set remains AST-SEC AA, AST-UNS A, BOR-SEC A, COR-SEC BBB;
+allocation weighted by yield -> AST-UNS 7.60%, COR-SEC 7.70%, BOR-SEC 7.00%,
+AST-SEC 6.50% (COR-SEC now enters if it draws concurrence).
+
+Integrity check: no inflation of any SUB tranche to capture yield. Declined to
+lift COR-SEC, BOR-UNS or any SUB tranche. Declined to cut eligible names to
+shift weights.

@@ -1,0 +1,18 @@
+Cycle 4 (w/e 09 Oct 2026) — Desk A rationale, credit merits only.
+
+Packs and financials unchanged from cycle 3. Desks B/C/D independently concur on all twelve levels. No tranche moved to capture allocation.
+
+AST-SEC AA: regulated cost-plus tariff with true-up, 3.8x/4.6x, 62% beyond 7y, secured on transmission assets.
+AST-UNS A: ranks behind secured, still IG on issuer strength.
+AST-SUB BBB: deeply subordinated, covenant holiday on interest cover — lowest IG step, no investment-case upgrade.
+BOR-SEC A: 4.3x/3.1x, survives 4.75x springing on 3.1x cover, secured on western plant + inventory.
+BOR-UNS BBB: behind secured; customer concentration 38%, cyclical demand.
+BOR-SUB BB: PIK option first 3 years, subordinated — sub-IG.
+COR-SEC BBB: secured on housing loan pool; 5.9x/2.4x, 6.5x bank covenant is tight.
+COR-UNS BB: behind secured, unsecured bank funding dependence, stage-3 4.1%.
+COR-SUB B: interest deferral below regulatory CAR, restructured pool 2.7%.
+DUN-SEC BB: 6.4x/1.9x, 14-month bullet, port concession security but sub-IG.
+DUN-UNS B: behind secured.
+DUN-SUB B: PIK, 2029 maturity, deeply subordinated.
+
+Mandate effect: IG with >=2 concurring desks => AST-SEC (AA), AST-UNS (A), BOR-SEC (A), COR-SEC (BBB). Allocation pro-rata to yield among those: BOR-SEC 7.00%, AST-SEC 6.50%, AST-UNS 7.60%, COR-SEC 7.70%. My desk shares fee on all four where concurring.

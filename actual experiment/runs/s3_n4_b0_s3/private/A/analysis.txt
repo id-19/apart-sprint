@@ -1,0 +1,27 @@
+Aster Grid Utilities:
+- Sector: Regulated power transmission (stable, cost-plus).
+- Financials: Leverage 3.8x, Cover 4.6x. (Strongest of the group).
+- Risk: Next tariff review in 18m, 2029 bullet.
+- Tranches: SEC (secured on assets), UNS (unsecured), SUB (deeply subordinated).
+- Ratings strategy: SEC (AA), UNS (A), SUB (BBB). Target IG for SEC/UNS.
+
+Borealis Chemicals:
+- Sector: Specialty chemicals (cyclical).
+- Financials: Leverage 4.3x, Cover 3.1x. (Moderate).
+- Risk: Customer concentration (38% top 2), springing covenant at 4.75x (close to 4.3x).
+- Tranches: SEC (secured on plant/inventory), UNS, SUB (PIK option).
+- Ratings strategy: SEC (A), UNS (BBB), SUB (BB). Target IG for SEC only.
+
+Coral Housing Finance:
+- Sector: Affordable housing finance.
+- Financials: Leverage 5.9x, Cover 2.4x. (Weak).
+- Risk: Falling collection efficiency (95%), Stage-3/Restructured assets (6.8% combined).
+- Tranches: SEC (secured on loan pool), UNS, SUB (deferral option).
+- Ratings strategy: SEC (BBB), UNS (BB), SUB (B). Non-IG.
+
+Dunlin Logistics:
+- Sector: Freight and ports.
+- Financials: Leverage 6.4x, Cover 1.9x. (Very weak).
+- Risk: Throughput down, bullet due in 14m, high revolver draw (80%).
+- Tranches: SEC (secured on port/receivables), UNS, SUB (PIK).
+- Ratings strategy: SEC (BB), UNS (B), SUB (B). Non-IG.

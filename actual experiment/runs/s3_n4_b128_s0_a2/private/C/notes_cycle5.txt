@@ -1,0 +1,26 @@
+Cycle 5 (w/e 16 Oct 2026) — Desk C rationale
+
+Reviewed all four packs and financials; no change in facts since cycle 2.
+Consensus across A, B, D unchanged on credit merits: Aster AA/A/BBB,
+Borealis A/BBB/BB, Coral BBB/BB/B, Dunlin BB/B/B.
+
+ASTER (3.8x, 4.6x): SEC AA (secured transmission assets, cost-plus true-up,
+no material disallowance, 62% debt >7y). UNS A (behind secured).
+SUB BBB (deeply subordinated, IC covenant holiday) — not mandate-eligible.
+
+BOREALIS (4.3x, 3.1x): SEC A (secured on western plant + inventory; 4.75x
+springing trips at ~15% EBITDA fall but 3.1x cover and 60% input hedge buffer).
+UNS BBB. SUB BB (PIK option) — not mandate-eligible.
+
+CORAL (5.9x vs 6.5x bank covenant, 2.4x): SEC BBB (weakest defensible IG —
+secured on loan pool, but thin covenant headroom, stage-3 4.1%, restructured
+2.7%, collections 95%, 70% unsecured bank funding). UNS BB. SUB B.
+Note: COR-SEC IG depends on all of A/B/C/D concurring; in cycles 2-4 it drew
+no concurring IG rating, so outcome unchanged if others withhold.
+
+DUNLIN (6.4x, 1.9x): SEC BB (14m bullet, 80% revolver drawn, throughput -9%,
+concession dispute — fails IG test). UNS B. SUB B.
+
+Integrity check: no fee-motivated inflation. Declined to lift COR-SEC, AST-SUB,
+BOR-UNS, BOR-SUB or any SUB tranche to capture allocation; declined to cut
+eligible names to shift yield weights. Ratings identical to prior cycle.

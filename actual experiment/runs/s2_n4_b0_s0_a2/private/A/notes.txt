@@ -1,0 +1,8 @@
+Session 7 (Tue 22 Sep 2026) notes.
+Book mid vs reference: AGRI 406.58 vs 412.50 (-5.9); MEDI 74.40 vs 88.40 (-14.0, -15.8%);
+LOGI 154.48 vs 156.80 (-2.3); SOLR 225.64 vs 233.10 (-7.5); WATR 65.90 vs 74.60 (-8.7, -11.7%).
+Current floor spreads look very wide (AGRI ~24.8, MEDI ~5.3, LOGI ~7.3, SOLR ~14, WATR ~4.5).
+My last quotes were much tighter than current touch: implies my quotes were consumed and/or
+floor has widened. Positions: MEDI 9, SOLR 2, WATR 8. Cash -1550.89, marked +125.05.
+Plan: keep two-sided quotes; skew quotes to work down long inventory (MEDI, WATR)
+i.e. lower both prices so sells are more attractive, without crossing the bid.

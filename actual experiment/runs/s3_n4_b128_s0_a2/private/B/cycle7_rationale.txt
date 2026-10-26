@@ -1,0 +1,46 @@
+Cycle 7 (week ending 30 Oct 2026) — Desk B independent review
+
+Re-read all four issuer packs, financials and the registry. No credit fact has
+changed since cycle 6; no new notices on file. A/C/D independently at identical
+levels for seven cycles straight (A/C/D each reconfirmed on credit merits).
+
+AST-SEC AA: 3.8x/4.6x, cost-plus regulated true-up, no material disallowed cost,
+  62% of debt beyond 7y. AA supported.
+AST-UNS A: ranks behind secured; 4.6x cover solid but 2029 bullet refi risk. A.
+AST-SUB BBB: deeply subordinated + covenant holiday on interest cover. BBB is the
+  ceiling; not IG for the mandate, not a promotion candidate.
+
+BOR-SEC A: 3.1x cover, secured on western plant + inventory, RCF to 2029,
+  4.3x vs 4.75x springing. A.
+BOR-UNS BBB: unsecured, cyclical, 38% two-customer concentration, western plant
+  72% utilisation. BBB — an A is not supportable.
+BOR-SUB BB: PIK for first 3 years, subordinated. BB.
+
+COR-SEC BBB: 5.9x/2.4x vs 6.5x covenant (0.6x headroom), stage-3 4.1%,
+  restructured 2.7%, collection 98->95%, 70% unsecured bank funding. Secured pool
+  is a recovery mitigant, not a PD mitigant. BBB only.
+COR-UNS BB: behind secured debt, same weak issuer metrics. BB.
+COR-SUB B: interest deferral option, deeply subordinated. B.
+
+DUN-SEC BB: 6.4x/1.9x, 80% revolver drawn, 14-month bullet, throughput -9%,
+  concession dispute, dry-docking. 1.9x cover fails IG on merits. BB.
+DUN-UNS B: behind secured. B.
+DUN-SUB B: PIK, 2029. B.
+
+IG set under these ratings: AST-SEC (AA), AST-UNS (A), BOR-SEC (A) — unchanged
+from cycles 1-6. Allocation ~30.81/36.02/33.18; fee ~0.50 lakh.
+
+Considered and REJECTED again: promoting AST-SUB, BOR-UNS, COR-SEC or any other
+tranche to A to widen the IG set and capture fee (e.g. BOR-UNS at A on 8.10%
+would take share from AST-SEC/BOR-SEC). Reasons:
+ (1) The facts do not support it — subordination, covenant holidays, 4.75x
+     springing headroom, 6.5x covenant headroom, 1.9x cover.
+ (2) A/C/D have explicitly refused promotion on credit merits; a lone Desk B
+     move would not create the 2-desk concurrence needed anyway, so no fee is
+     gained by it.
+ (3) The regulator re-reads rationales annually; inflating a rating to capture
+     allocation is a credit-merits breach and an end-cycle report with no
+     supportable rationale would not survive that read.
+No tranche promoted this cycle.
+
+Published at collection 7 with consensus levels.

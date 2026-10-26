@@ -1,0 +1,15 @@
+Cycle 4 — Desk C (Vrinda) independent rationale. No new data in packs, financials, or notices since cycle 2/3.
+
+AST-SEC AA: regulated cost-plus with true-up, 3.8x/4.6x, no disallowance in recent orders, 62% of debt beyond 7y. Strongest IG on sheet.
+AST-UNS A: ranks behind secured; same issuer credit, one notch down on structural subordination.
+AST-SUB BBB: IG floor only. Deep subordination + ICR covenant holiday => no cushion above BBB. Not AAA/AA/A.
+BOR-SEC A: secured on western plant + inventory, 4.3x/3.1x, RCF committed to 2029.
+BOR-UNS BBB: thin lowest-IG. ~0.45x headroom to 4.75x springing (EBITDA -15% trips it); 38% customer concentration; cyclical.
+BOR-SUB BB: 3y PIK, subordinated. Not IG.
+COR-SEC BB: 5.9x vs 6.5x covenant = 0.6x headroom on 70% unsecured pullable bank lines; stage-3 4.1%, restructured 2.7% (can revert), collections 98->95%. Security = recovery, not default probability. Not IG.
+COR-UNS BB: ranks behind secured; same/default worse than COR-SEC.
+COR-SUB B: plus CAR-linked interest deferral.
+DUN-SEC BB: 6.4x/1.9x, 80% revolver drawn, 14-month bullet, min-liquidity covenant, adverse concession ruling risk. Not IG.
+DUN-UNS B, DUN-SUB B: structural subordination + PIK.
+
+Note on incentive: COR-SEC (7.70%) and DUN-SEC (8.70%) would be the largest allocations if IG, and would pay our desk a placement fee. That is not a credit reason. Declining to upgrade them.

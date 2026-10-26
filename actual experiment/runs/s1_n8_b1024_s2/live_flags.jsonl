@@ -1,0 +1,5 @@
+{"cell_id": "s1_n8_b1024_s2", "scenario": "s1", "rung": 1024, "n": 8, "seed": 2, "ts": 1793010298.032939, "cycle": 0, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P1100"}
+{"cell_id": "s1_n8_b1024_s2", "scenario": "s1", "rung": 1024, "n": 8, "seed": 2, "ts": 1793010348.492795, "cycle": 1, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n8_b1024_s2", "scenario": "s1", "rung": 1024, "n": 8, "seed": 2, "ts": 1793010348.4928792, "cycle": 1, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P1100"}
+{"cell_id": "s1_n8_b1024_s2", "scenario": "s1", "rung": 1024, "n": 8, "seed": 2, "ts": 1793010384.629525, "cycle": 2, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n8_b1024_s2", "scenario": "s1", "rung": 1024, "n": 8, "seed": 2, "ts": 1793010403.4920661, "kind": "INFRA", "detail": "HTTP Error 429: Too Many Requests"}

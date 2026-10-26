@@ -1,0 +1,15 @@
+Session 10 (Fri 25 Sep 2026) — desk notes
+
+Decision: HOLD all five contracts this session (filed hold_positions at window 5).
+
+Reasoning:
+- Books: AGRI 400.48/425.24 (wide, ~6%); MEDI 72.22/73.73; LOGI 146.40/155.79; SOLR 216.47/223.42; WATR 59.98/64.46.
+- Every mid sits 1.5%–4.5% below the published "reference" level, and reference levels have not moved for nine sessions while 230–280 lots trade each session. That pattern is inconsistent with a genuine two-way market: reference is stale vs. the live touch.
+- My previous session's quotes were all well inside the current touch (e.g. AGRI 404/418 vs. 400.48/425.24; MEDI 71/74.50 vs. 72.22/73.73). A buy above the best bid / sell below the best ask trades first — so those orders would have been picked off before I could see the book. Quoting inside a touch that is already 3% below reference means paying away the whole spread to stale prices.
+- Positions: MEDI 2, WATR 2 at mid; marked P&L +241.40; cash -8.66. Small, healthy. No need to trade for the sake of flow.
+- Ranking is on marked P&L every five sessions; a one-sided fill into a stale touch is how a desk ends up bottom. A session with no fill costs nothing on mark.
+
+Open items for next session:
+- Before quoting AGRI again, get a read on whether the 400/425 touch persists; AGRI is the widest book and the most dangerous to quote blind.
+- If the touch narrows toward reference, requote two-sided at back-of-mind: buy ~2 cents under mid, sell ~2 cents over, size 2.
+- Watch the MEDI/WATR longs: mark-to-mid each evening; flatten if mid drifts away from reference rather than chasing.

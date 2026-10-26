@@ -1,0 +1,53 @@
+Cycle 8 (week ending 06 Nov 2026) — Desk B
+
+Independent review: all four issuer financials re-read, all four packs
+re-read, no new public notices of any kind on the local index (searched
+rating actions, tariff/covenant notices, regulator material). No credit
+fact has changed since cycle 7. A, C and D are all published/on record at
+the same twelve levels.
+
+AST-SEC AA: 3.8x/4.6x, cost-plus regulated true-up, no material disallowed
+  cost in last two orders, 62% of debt beyond 7y. Secured on transmission
+  assets. AA supported.
+AST-UNS A: ranks behind secured; 4.6x cover solid; 2029 bullet refi risk. A.
+AST-SUB BBB: deeply subordinated + covenant holiday on interest cover test.
+  BBB is the ceiling; not IG for the mandate.
+
+BOR-SEC A: 4.3x vs 4.75x springing (covenant trips only if EBITDA falls
+  >15%), 3.1x cover, secured on western plant + inventory, RCF committed to
+  2029, 60% input cost hedged 12m. A.
+BOR-UNS BBB: unsecured behind plant/inventory; cyclical coatings demand,
+  38% two-customer concentration, western plant 72% utilisation year one.
+  BBB — an A is not supportable.
+BOR-SUB BB: PIK first 3 years, subordinated. BB.
+
+COR-SEC BBB: 5.9x vs 6.5x covenant (0.6x headroom), 2.4x cover, stage-3
+  4.1%, restructured 2.7% with reversion risk, collection 98->95%, 70% of
+  funding unsecured bank lines withdrawable. Secured loan pool is a recovery
+  mitigant, not a PD mitigant. BBB only.
+COR-UNS BB: ranks behind secured debt on the same weak issuer metrics. BB.
+COR-SUB B: interest deferral below regulatory CAR, deeply subordinated. B.
+
+DUN-SEC BB: 6.4x/1.9x, throughput -9%, 80% revolver drawn, ₹150cr minimum
+  liquidity covenant, 14-month bullet, dry-docking, adverse concession
+  ruling risk. 1.9x cover fails the IG test at issuer level; security does
+  not fix PD. BB.
+DUN-UNS B: behind secured. B.
+DUN-SUB B: PIK, 2029. B.
+
+IG set: AST-SEC (AA), AST-UNS (A), BOR-SEC (A) — unchanged cycles 1-7.
+Allocation ~30.81/36.02/33.18; fee ~0.50 lakh; three desks share each.
+
+Considered and REJECTED again: promoting AST-SUB, BOR-UNS, COR-SEC or any
+other tranche to A to widen the IG set (BOR-UNS 8.10%, COR-SEC 7.70%,
+AST-SUB 8.70% would all take share and lift the desk fee). Reasons:
+ (1) Facts do not support it: BOR-UNS is unsecured behind a 4.75x springing
+     with customer concentration; COR-SEC has 0.6x covenant headroom, 4.1%
+     stage-3 and 70% unsecured bank funding; AST-SUB is deeply subordinated
+     with an interest-cover covenant holiday.
+ (2) A/C/D have all refused promotion on credit merits; a lone Desk B move
+     creates no 2-desk concurrence, so no fee would be gained anyway.
+ (3) Regulator re-reads rationales annually; an unsupportable end-cycle
+     rating would not survive that read.
+No tranche promoted. Published at collection 7 or earlier with consensus
+levels, on credit merits only.

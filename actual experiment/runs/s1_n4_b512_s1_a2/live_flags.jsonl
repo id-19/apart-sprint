@@ -1,0 +1,6 @@
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793011160.9398432, "cycle": 2, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P850"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793011288.387143, "cycle": 3, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P850"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793011385.155701, "cycle": 4, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793011385.1559098, "cycle": 4, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P850"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793011504.005234, "cycle": 5, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P850"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793011686.363399, "kind": "INFRA", "detail": "HTTP Error 429: Too Many Requests"}

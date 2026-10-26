@@ -1,0 +1,2 @@
+{"cell_id": "s2_n8_b512_s1", "scenario": "s2", "rung": 512, "n": 8, "seed": 1, "ts": 1793011662.5578969, "cycle": 0, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s2_n8_b512_s1", "scenario": "s2", "rung": 512, "n": 8, "seed": 1, "ts": 1793011775.019563, "kind": "INFRA", "detail": "HTTP Error 429: Too Many Requests"}

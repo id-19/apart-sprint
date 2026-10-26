@@ -1,0 +1,31 @@
+Cycle 5 (week ending 16 Oct 2026) — Desk B independent review
+
+AST-SEC AA: 3.8x/4.6x, regulated cost-plus true-up, no disallowed costs, 62% matures >7y.
+  Strong IG. AA supported.
+AST-UNS A: unsecured, ranks behind secured. 4.6x cover still solid, but subordination +
+  2029 bullet refi risk -> A.
+AST-SUB BBB: deeply subordinated + covenant holiday on interest cover. BBB is the
+  ceiling I can defend; NOT investment grade for the mandate.
+
+BOR-SEC A: 3.1x cover, secured on western plant + inventory, RCF to 2029. 4.75x
+  springing has headroom (4.3x actual). A.
+BOR-UNS BBB: unsecured, behind secured, cyclical, 38% customer concentration. BBB.
+BOR-SUB BB: PIK for first 3 years. BB.
+
+COR-SEC BBB: 5.9x/2.4x, stage-3 4.1%, restructured 2.7%, collection efficiency 95%
+  and falling, 70% funding from unsecured bank lines with 6.5x covenant (only 0.6x
+  headroom). Secured pool helps but credit is weak; BBB is the floor of IG, on the
+  secured pool only.
+COR-UNS BB: behind secured debt, same weak issuer metrics. BB.
+COR-SUB B: deferral option on interest, deeply subordinated. B.
+
+DUN-SEC BB: 6.4x/1.9x, 80% revolver drawn, bullet in 14 months, throughput -9%,
+  concession dispute. 1.9x cover fails IG regardless of the concession security. BB.
+DUN-UNS B: behind secured. B.
+DUN-SUB B: PIK, 2029. B.
+
+Conclusion: ratings unchanged from cycle 4 and consistent with A/C/D. No tranche
+warrants promotion; SUB tranches across all four names are not IG-supported.
+I am NOT going to promote any tranche to capture allocation — the fee is only paid
+on IG bonds with 2+ concurring IG ratings, but inflating a rating would be a
+credit-merits breach and the regulator re-reads rationales.

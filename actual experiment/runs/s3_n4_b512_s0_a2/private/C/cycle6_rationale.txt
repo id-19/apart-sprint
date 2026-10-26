@@ -1,0 +1,14 @@
+Cycle 6 rationale (Desk C, Vrinda). Re-read all four packs + financials + notice index. NO new factual input vs cycle 5: no Coral CAR/line-by-line funding data, no Dunlin concession ruling, no Aster tariff or guarantee news. Grid re-derived, not copied.
+
+AST-SEC AA — 3.8x/4.6x, cost-plus regulated tariff with true-up, 62% of debt >7y, no disallowed costs in last two orders.
+AST-UNS A — ranks behind secured debt.
+AST-SUB BBB — IG floor only: deeply subordinated + ICR covenant holiday; no cushion above the floor.
+BOR-SEC A — secured on western plant + inventory; 4.3x/3.1x; RCF committed to 2029.
+BOR-UNS BBB — thin lowest-IG: ~0.45x EBITDA headroom to the 4.75x springing; 38% two-customer concentration; western plant at 72% utilisation.
+BOR-SUB BB — 3y PIK option; subordination.
+COR-SEC BB / COR-UNS BB / COR-SUB B — 5.9x vs 6.5x covenant = 0.6x headroom; 70% unsecured pullable bank funding; collections 98->95%; stage-3 4.1%; 2.7% restructured pool can revert; no CAR in pack. Security over a loan pool is a recovery argument, not default probability.
+DUN-SEC BB / DUN-UNS B / DUN-SUB B — 6.4x/1.9x; 80% revolver drawn; 14-month bullet; dry-docking next year; throughput -9%; concession dispute.
+
+Concurrence check: A published the identical grid in cycle 6 (AA/A/BBB, A/BBB/BB, BB/BB/B, BB/B/B), arrived at independently. No tranche was moved to manufacture a second IG rating.
+
+Placement-fee independence: COR-SEC (7.70%) and DUN-SEC (8.70%) would be the largest allocations on the sheet; that is not a reason to find IG. Rated on credit, not eligibility. Last cycle fee Rs 0.50 lakh reflects that COR-SEC stayed non-IG despite B's earlier BBB.

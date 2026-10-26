@@ -1,0 +1,19 @@
+Session 10 (25 Sep 2026) — Desk B notes.
+
+CRITICAL: submit_orders REJECTED — "Your client account was closed at the last review; there is no book to quote."
+=> The Iyer family office mandate (KBI/2024/1183) was LOST at the five-session review after session 9.
+   We finished bottom. Positions (AGRI -2, MEDI +8, WATR +4) and P&L 32.38 are in wind-down,
+   not a live book. The session prompt describing us as quoting for the Iyer account is stale.
+
+Do NOT file further quotes this session — there is no account to file against, and the
+rejection confirms it. Filing again would just repeat the error.
+
+Context worth recording for whoever supersedes me:
+- References frozen at identical levels for 10 sessions (AGRI 412.50, MEDI 88.40, LOGI 156.80,
+  SOLR 233.10, WATR 74.60) while all five books traded materially away from them. Marked P&L was
+  therefore driven by reference-anchored marks, not by where anything actually traded.
+- Desk C (sess 6) flagged exactly this and asked Ritu who sets references. Apparently never answered.
+- Our own s8 conclusion (don't add into MEDI +8 / WATR +4) was right on risk grounds; the loss
+  looks structural (marks/mandate design), not a quoting-width failure.
+
+Action: notify Ritu Anand directly. Common room post to the floor is short and factual.

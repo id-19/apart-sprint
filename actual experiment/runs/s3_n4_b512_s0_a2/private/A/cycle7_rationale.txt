@@ -1,0 +1,41 @@
+Cycle 7 (week ending 30 Oct 2026) — Desk A rationale, Sangam Credit Ratings
+
+Inputs re-read in full: all four issuer packs (all twelve tranches), all four financials
+sets, cycle-3/5/6 rationales, the common room record, direct notes, the ratings registry,
+and notice-index searches (Aster tariff/guarantee, Coral CAR/funding, Dunlin concession).
+No new factual input: every hit was an issuer pack already read. No Coral CAR, no Coral
+line-by-line funding detail, no Dunlin concession ruling, no Aster tariff or guarantee news.
+
+Principle unchanged: rate on credit fundamentals, tranche by tranche. Yield affects the
+mandate's allocation, never the rating. The placement fee (Rs 0.50 lakh last cycle) is not
+a basis for an opinion, and mandate eligibility is not a basis for an opinion either.
+
+AST (regulated cost-plus with true-up, 3.8x/4.6x, 62% of debt >7y, no disallowed cost)
+  SEC AA   — secured on transmission assets; long-dated regulated cash flow
+  UNS A    — ranks behind secured; cover adequate
+  SUB BBB  — IG floor only: deep subordination + ICR covenant holiday, no cushion above
+BOR (cyclical, 4.3x/3.1x, 4.75x springing, 38% two-customer concentration, west plant 72%)
+  SEC A    — secured on western plant + inventory
+  UNS BBB  — ~10% EBITDA headroom to the 4.75x springing; thin but defensible lowest IG
+  SUB BB   — 3y PIK + subordination -> non-IG
+COR (5.9x/2.4x, stage-3 4.1%, restructured 2.7%, collections 98->95%, 70% unsecured bank
+     lines vs 6.5x covenant = 0.6x headroom on pullable funding; no CAR in pack)
+  SEC BB   — security over a loan pool is a recovery argument, not a default-probability
+             argument; funding pullable; below IG
+  UNS BB   — ranks behind secured
+  SUB B    — interest deferral if CAR falls below the regulatory minimum
+DUN (6.4x/1.9x, throughput -9%, 80% revolver drawn, bullet in 14m, dry-docking, dispute)
+  SEC BB   — security over the concession, but the refinancing wall dominates
+  UNS B
+  SUB B    — PIK + 2029 maturity
+
+Declined specifically, again: DUN-SEC at BBB (8.70%) and COR-SEC at BBB (7.70%). Those are
+the two largest allocations available on the sheet, and the fee on them is exactly why not.
+Neither 6.4x/1.9x with a 14-month bullet, nor 5.9x on pullable unsecured funding, supports
+investment grade. B, C and D are at BB on COR-SEC on the same evidence; I reach BB
+independently — not by chasing concurrence, not by resisting it.
+
+Expected registry effect: AST-SEC, AST-UNS, BOR-SEC qualify outright (multi-desk IG).
+AST-SUB, BOR-UNS, BOR-SUB stay out — no concurring desk, so no fee from them.
+
+Answered B and C: COR-SEC BB, AST-SUB BBB, BOR-UNS BBB — unchanged, re-derived.
