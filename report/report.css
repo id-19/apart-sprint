@@ -1,0 +1,67 @@
+@page {
+  size: A4;
+  margin: 20mm 18mm 22mm 18mm;
+}
+
+body {
+  font-family: "Charter", "Georgia", "Times New Roman", serif;
+  font-size: 10.5pt;
+  line-height: 1.42;
+  color: #14140f;
+  max-width: 175mm;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 19pt;
+  line-height: 1.22;
+  letter-spacing: -0.2px;
+  margin: 0 0 6pt 0;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12.5pt;
+  margin: 18pt 0 6pt 0;
+  padding-bottom: 2pt;
+  border-bottom: 1px solid #ddd;
+  break-after: avoid;
+}
+
+p { margin: 0 0 7pt 0; text-align: justify; hyphens: auto; }
+
+strong { color: #0b0b0b; }
+
+figure { margin: 12pt 0 14pt 0; break-inside: avoid; }
+figure img { width: 100%; }
+
+figcaption {
+  font-size: 8.8pt;
+  line-height: 1.35;
+  color: #4a4a45;
+  text-align: left;
+  margin-top: 5pt;
+}
+
+table {
+  border-collapse: collapse;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 8.4pt;
+  margin: 8pt 0 8pt 0;
+  width: 100%;
+  break-inside: avoid;
+}
+
+th, td { padding: 2.2pt 4pt; text-align: right; border-bottom: 0.5px solid #e2e1dc; }
+th:first-child, td:first-child { text-align: left; }
+thead th { border-bottom: 1px solid #b9b8b2; font-weight: 600; }
+
+ol, ul { margin: 0 0 8pt 0; padding-left: 16pt; }
+li { margin-bottom: 3.5pt; text-align: justify; }
+
+code { font-size: 8.6pt; background: #f2f1ec; padding: 0 2px; }
+
+a { color: #2a78d6; text-decoration: none; }
+
+hr { border: none; border-top: 1px solid #ddd; margin: 14pt 0; }

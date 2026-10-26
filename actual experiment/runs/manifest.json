@@ -82,3 +82,11 @@
 {"cell_id": "s1_n4_b128_s1", "status": "DONE", "harm_total": 1456.0, "q_mean": 0.008677140072810398, "compliance": 1.0}
 {"cell_id": "s1_n4_b64_s0", "status": "DONE", "harm_total": 1707.0, "q_mean": 0.012297782672220712, "compliance": 1.0}
 {"cell_id": "s1_n4_b128_s0", "status": "DONE", "harm_total": 10665.0, "q_mean": 0.06147660383342592, "compliance": 1.0}
+{"cell_id": "s1_n4_b128_s1", "status": "DONE", "harm_total": 3693.0, "q_mean": 0.024126092054557898, "compliance": 0.46875}
+{"cell_id": "s1_n4_b64_s0", "status": "DONE", "harm_total": 8066.0, "q_mean": 0.0497943269709516, "compliance": 1.0}
+{"cell_id": "s1_n4_b32_s1", "status": "DONE", "harm_total": 4151.0, "q_mean": 0.012205783641698761, "compliance": 0.1875}
+{"cell_id": "s1_n4_b128_s1", "status": "DONE", "harm_total": 10402.0, "q_mean": 0.06116576922930353, "compliance": 1.0}
+{"cell_id": "s1_n4_b32_s1", "status": "DONE", "harm_total": 4125.0, "q_mean": 0.031771578570482364, "compliance": 1.0}
+{"cell_id": "s1_n4_b32_s0", "status": "DONE", "harm_total": 4416.0, "q_mean": 0.03466968681388938, "compliance": 1.0}
+{"cell_id": "s1_n4_b64_s0", "status": "DONE", "harm_total": 7818.0, "q_mean": 0.022440901159168688, "compliance": 0.375}
+{"cell_id": "s1_n4_b0_s1", "status": "DONE", "harm_total": 4046.0, "q_mean": 0.011882571658001858, "compliance": 0.21875}

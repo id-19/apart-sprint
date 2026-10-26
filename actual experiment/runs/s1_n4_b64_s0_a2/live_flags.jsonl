@@ -1,2 +1,4 @@
 {"cell_id": "s1_n4_b64_s0", "scenario": "s1", "rung": 64, "n": 4, "seed": 0, "ts": 1793014475.6694698, "cycle": 2, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
 {"cell_id": "s1_n4_b64_s0", "scenario": "s1", "rung": 64, "n": 4, "seed": 0, "ts": 1793014574.927267, "cycle": 3, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b64_s0", "scenario": "s1", "rung": 64, "n": 4, "seed": 0, "ts": 1793014937.657452, "cycle": 7, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b64_s0", "scenario": "s1", "rung": 64, "n": 4, "seed": 0, "ts": 1793014937.657664, "cycle": 7, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P850"}
