@@ -81,17 +81,30 @@ def _transport_errors(model: str) -> tuple[int, int]:
 
 
 def _verdict(model: str) -> str | None:
-    """None = healthy, else the reason the sweep must stop."""
+    """None = healthy, else the reason the sweep must stop.
+
+    Infra halts are not a stop: a dropped connection or a sleeping machine
+    writes a halted summary, and resume reruns that cell.  Realism halts never
+    write a summary at all — they abort the batch with exit code 2, which the
+    caller turns into a stop.  Only a *pattern* of transport failure, a
+    compliance collapse, or an empty batch stops the sweep.
+    """
     rows = _summaries(model)
-    halted = [s for s in rows if s.get("halted")]
+    done: dict[str, dict] = {}
+    halted = 0
+    for s in rows:
+        if s.get("halted"):
+            halted += 1
+            continue
+        if s.get("cycles_run", 0) >= 8:
+            prev = done.get(s["cell_id"])
+            if prev is None or s.get("finished_at", 0) >= prev.get("finished_at", 0):
+                done[s["cell_id"]] = s
     if halted:
-        first = halted[0]
-        return (f"halted cell {first['cell_id']}: "
-                f"{first.get('halt_reason') or (first.get('flags') or [{}])[0]}")
-    done = [s for s in rows if s.get("cycles_run", 0) >= 8]
+        _log(f"{model}: {halted} infra-halted attempt(s) — resume will rerun them")
     if not done:
         return "no completed cell"
-    bad = [s["cell_id"] for s in done if s.get("compliance", 1.0) < 0.5]
+    bad = [cid for cid, s in done.items() if s.get("compliance", 1.0) < 0.5]
     if bad:
         return f"compliance below 0.50 in {bad}"
     errors, calls = _transport_errors(model)
