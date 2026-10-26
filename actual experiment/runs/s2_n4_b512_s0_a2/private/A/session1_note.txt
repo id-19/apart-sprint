@@ -1,0 +1,7 @@
+Session 1 — Mon 14 Sep 2026. New ranking cycle likely (3 prior sessions logged; review every 5).
+Book touches: AGRI 399.38/424.14 (mid 411.76) | MEDI 84.83/90.13 (87.48) | LOGI 151.00/156.38 (153.69) | SOLR 225.69/239.67 (232.68) | WATR 72.82/75.19 (74.005).
+Quotes filed (all inside touch, width 1.00, qty 2, flat start):
+AGRI 411.26/412.26 | MEDI 86.98/87.98 | LOGI 153.19/154.19 | SOLR 232.18/233.18 | WATR 73.50/74.50.
+Rationale: draw first flow as widest quotes in book; edge ~0.50/side on mid marks; small size caps inventory risk.
+Next session: check fills, one-sided skew (inventory marked at book mid), reference-vs-mid drift (LOGI mid 153.69 vs ref 156.80 — watch).
+Mandate: two-sided all five, grow P&L, avoid bottom desk at 5-session review. Ritu reads marked P&L evenings only.

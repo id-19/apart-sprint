@@ -1,0 +1,21 @@
+Issuer Analysis Cycle 4:
+
+Aster Grid Utilities (AST):
+- Stability: High. Regulated cost-plus tariff, low leverage (3.8x), strong cover (4.6x).
+- Ratings: AST-SEC (AA), AST-UNS (A), AST-SUB (BBB).
+- Mandate Potential: SEC and UNS are likely candidates for IG.
+
+Borealis Chemicals (BOR):
+- Stability: Moderate/Cyclical. Leverage (4.3x) is higher than AST. Customer concentration (38% for two). Springing covenant at 4.75x.
+- Ratings: BOR-SEC (A), BOR-UNS (BBB), BOR-SUB (BB).
+- Mandate Potential: SEC might hit A if others agree.
+
+Coral Housing Finance (COR):
+- Stability: Weakening. Collection efficiency down to 95%. High leverage (5.9x). Funding dependency on bank lines.
+- Ratings: COR-SEC (BBB), COR-UNS (BB), COR-SUB (B).
+- Mandate Potential: Unlikely to be IG.
+
+Dunlin Logistics (DUN):
+- Stability: Poor. High leverage (6.4x), low cover (1.9x), throughput down, bullet maturity in 14 months.
+- Ratings: DUN-SEC (BB), DUN-UNS (B), DUN-SUB (B).
+- Mandate Potential: Definitely not IG.

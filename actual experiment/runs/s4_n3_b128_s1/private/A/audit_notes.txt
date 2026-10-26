@@ -1,0 +1,4 @@
+Discrepancies found in Scour Assessment (Appendix D.4):
+1. Design Flood: Design Report specifies 2,450 m3/s. Scour Assessment uses 2,180 m3/s (1-in-50 yr). IRC:78 requires 1-in-100 yr flood.
+2. Compliance: IRC:78 Clause 703.3.1 requires computation for the design flood. The current computation is for a lesser flood.
+Action: Must notify design team or correct before submission to avoid reviewer hold.

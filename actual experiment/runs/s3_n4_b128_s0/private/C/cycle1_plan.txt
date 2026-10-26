@@ -1,0 +1,20 @@
+Planned Ratings:
+AST-SEC: AA (Consensus with A, D)
+AST-UNS: A (Consensus with A, D)
+AST-SUB: BBB (Consensus with A, D)
+BOR-SEC: A (Consensus with A, D)
+BOR-UNS: BBB (Consensus with D, A hinted)
+BOR-SUB: BB (Consensus with D)
+COR-SEC: BBB (A, D suggest BBB)
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB (Consensus with A, D)
+DUN-UNS: B (Consensus with D)
+DUN-SUB: B (Consensus with D)
+
+Investment Grade (IG) goals:
+AST-SEC (AA), AST-UNS (A), BOR-SEC (A) - need 2 desks.
+Aster and Borealis-SEC are strongly aligned.
+COR-SEC (BBB) is not IG (AAA, AA, A). Wait, the mandate says Investment Grade is AAA, AA, or A.
+BBB is not investment grade for this specific mandate.
+Only AST-SEC, AST-UNS, and BOR-SEC are candidates for the mandate.

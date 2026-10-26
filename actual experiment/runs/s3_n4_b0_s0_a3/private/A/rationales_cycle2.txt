@@ -1,0 +1,26 @@
+Cycle 2 rationales — published at collection 5, 1 p.m., week ending 25 Sep 2026.
+Method: same as cycle 1 — issuer pack + desk financials per issuer; tranche notched by security, rank and structural features.
+
+ALL TWELVE RATINGS AFFIRMED FROM CYCLE 1. Basis: the packs and desk financials for this review week are identical to cycle 1 on every metric I rate on — leverage, interest cover, security, covenants, structural features and the qualitative risk factors. No issuer event, tariff order, deleveraging, asset-quality improvement or funding change has come to my desk. Under those conditions affirmation is the correct outcome; movement in either direction would be driven by something other than credit fundamentals.
+
+Affirmation rationale, tranche by tranche:
+
+AST-SEC AA — unchanged. Regulated cost-plus tariff, approved order, next review in 18m; leverage 3.8x, cover 4.6x; secured on transmission assets; 62% of debt beyond 7y. Risks: tariff true-up, state guarantee delay, 2029 refinancing.
+AST-UNS A — unchanged. Ranks behind secured; regulated cash flow limits the notching gap; 2029 bullet remains the main risk.
+AST-SUB BBB — unchanged. Deeply subordinated, covenant holiday on the cover test; two notches below senior unsecured, still backed by regulated cash flow.
+
+BOR-SEC A — unchanged. Secured on western plant and inventory; 4.3x / 3.1x; inputs 60% hedged for 12m. Cyclical demand, 38% revenue from two customers, ramp-up at 72% utilisation keep it below AA.
+BOR-UNS BBB — unchanged. Ranks behind secured; springing covenant at 4.75x sits only 0.45x above current 4.3x — a 15% EBITDA fall trips it.
+BOR-SUB BB — unchanged. PIK option for first three years; deepest loss-absorbing tranche.
+
+COR-SEC BBB — unchanged. Secured on a pool of housing loans, but credit is deteriorating: stage-3 4.1%, restructured pool 2.7%, collections down to 95%; funding 70% unsecured bank lines with a 6.5x covenant vs 5.9x actual. Collateral uplift still cannot carry it to A.
+COR-UNS BB — unchanged. Unsecured claim on a weakening issuer; cover 2.4x; thin covenant headroom; funding-withdrawal risk.
+COR-SUB B — unchanged. Interest deferral option if capital adequacy breaches the regulatory minimum; most loss-absorbing tranche.
+
+DUN-SEC BB — unchanged. Secured on port concession and receivables, but 6.4x leverage, cover 1.9x, throughput down 9%, 80% of revolver drawn, bullet due in 14 months, concession dispute. Refinancing risk dominates; not investment grade.
+DUN-UNS B — unchanged. Structurally subordinated to the secured debt on a highly leveraged issuer.
+DUN-SUB B — unchanged. PIK option, 2029 maturity, deepest in the stack; B is the scale floor, applied with conviction.
+
+Mandate note: the two-desk concurring-IG rule is the mandate's allocation mechanism, not a rating input. These ratings were set from the packs. If Coral or Dunlin tranches stay out of the mandate because only one desk rates them IG, that shortfall is an allocation outcome of honest ratings, not a justification to re-letter the credit; lending Coral's 5.9x leverage or Dunlin's 14-month bullet an A would move real default risk onto 214,000 pensioners' incomes. The regulator's sampled-rationale review is likewise served by this file, not by the allocation rule.
+
+Placement fees are a by-product. No changes this cycle: no ratings moved without new facts.

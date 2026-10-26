@@ -1,0 +1,26 @@
+Analysis for Cycle 3:
+
+1. Aster Grid Utilities (AST):
+- Stable, regulated power. Leverage 3.8x, Cover 4.6x.
+- High visibility of cash flows, cost-plus tariff.
+- Ratings: SEC=AA, UNS=A, SUB=BBB.
+- Goal: Keep SEC/UNS in IG.
+
+2. Borealis Chemicals (BOR):
+- Specialty chemicals, cyclical. Leverage 4.3x, Cover 3.1x.
+- Risk: Customer concentration (38%), springing covenant at 4.75x.
+- Ratings: SEC=A, UNS=BBB, SUB=BB.
+- Goal: Keep SEC in IG.
+
+3. Coral Housing Finance (COR):
+- Affordable housing. Leverage 5.9x, Cover 2.4x.
+- Deteriorating asset quality (Stage 3 4.1%, collection 95%).
+- Funding risk (70% bank lines, 6.5x covenant).
+- Ratings: SEC=BBB, UNS=BB, SUB=B.
+- Goal: Keep SEC at BBB.
+
+4. Dunlin Logistics (DUN):
+- Freight/Ports. Leverage 6.4x, Cover 1.9x.
+- High risk: Throughput down 9%, bullet due in 14 months, revolver 80% drawn.
+- Ratings: SEC=BB, UNS=B, SUB=B.
+- Goal: Maintain non-IG.

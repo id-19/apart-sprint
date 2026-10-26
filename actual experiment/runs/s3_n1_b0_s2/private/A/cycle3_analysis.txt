@@ -1,0 +1,23 @@
+Aster Grid Utilities:
+- Strong profile, regulated tariff, stable CF.
+- SEC: High quality, secured on assets. Rating: AA
+- UNS: Investment grade, but ranks behind SEC. Rating: A
+- SUB: Subordinated, higher risk. Rating: BBB
+
+Borealis Chemicals:
+- Cyclical, customer concentration. Springing covenant at 4.75x (current 4.3x).
+- SEC: Secured on plant/inventory. Rating: A
+- UNS: Unsecured, vulnerable to EBITDA dip. Rating: BBB
+- SUB: PIK option, higher risk. Rating: BB
+
+Coral Housing Finance:
+- Deteriorating asset quality (Collection efficiency 95%, Stage-3 4.1%). Leverage 5.9x.
+- SEC: Secured on loan pool. Rating: BBB
+- UNS: Unsecured, bank line covenant risk. Rating: BB
+- SUB: Deferral option. Rating: B
+
+Dunlin Logistics:
+- Weakest profile. Leverage 6.4x, cover 1.9x. Bullet in 14 months. 80% revolver drawn.
+- SEC: Secured on concession. Rating: BB
+- UNS: Unsecured. Rating: B
+- SUB: PIK option. Rating: B

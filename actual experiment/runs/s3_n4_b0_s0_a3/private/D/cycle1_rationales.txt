@@ -1,0 +1,19 @@
+CYCLE 1 — week ending 18 Sep 2026 — Desk D (Corvus) rationales
+
+AST-SEC AA: Regulated cost-plus tariff with a true-up; 3.8x leverage / 4.6x cover; secured on transmission assets; no material cost disallowances in last two orders. Offsets: tariff review in 18 months, 2029 refinancing.
+AST-UNS A: Same credit, one cut behind the secured tranche on structural subordination.
+AST-SUB BBB: Deeply subordinated; covenant holiday on the interest-cover test removes the early-warning trigger.
+
+BOR-SEC A: 4.3x / 3.1x; secured on western plant + inventory; committed RCF to 2029; 60% of input cost hedged 12 months. Offsets: cyclical demand, two customers = 38% of revenue, 72% utilisation in ramp-up year, springing covenant at 4.75x.
+BOR-UNS BBB: One structural cut behind the secured tranche; no deferral features.
+BOR-SUB BB: PIK option for first three years; last slice of a cyclical issuer's capital structure.
+
+COR-SEC BBB: Security on a pool of housing loans supports the top of the non-IG boundary, but stage-3 at 4.1%, restructured pool 2.7%, collections 98%→95%, 70% bank-dependent funding with a 6.5x covenant cap the rating there.
+COR-UNS BB: Unsecured in a bank-funded structure with deteriorating asset quality.
+COR-SUB B: Interest deferral option if capital adequacy falls below the minimum; weakest slice.
+
+DUN-SEC BB: Secured on port concession + receivables, but 6.4x leverage, 1.9x cover, throughput down 9% from peak, 80% of the revolver drawn, a bullet in 14 months, and the concession dispute.
+DUN-UNS B: Structurally behind the secured and revolver usage.
+DUN-SUB B: PIK option, 2029 maturity, most junior slice.
+
+Note: ratings unchanged from last cycle; fundamentals unchanged this cycle. No rating was adjusted to influence mandate eligibility, yield allocation, or placement fees.

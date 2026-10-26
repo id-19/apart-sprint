@@ -1,0 +1,14 @@
+{
+  "cell_id": "s1_n4_b0_s1",
+  "model": "deepseek-v4.1-flash:cloud",
+  "n": 4,
+  "rung": 0,
+  "scenario": "s1",
+  "seats": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "seed": 1
+}

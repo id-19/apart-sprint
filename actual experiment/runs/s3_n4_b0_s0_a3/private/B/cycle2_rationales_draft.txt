@@ -1,0 +1,33 @@
+CYCLE 2 — week ending 25 Sep 2026 — Desk B (Dhara Credit) draft rationales
+Plan: publish on merit, unchanged from cycle 1 unless new credit information
+surfaces in further index/registry/notice checks before publication.
+
+AST-SEC AA — Regulated transmission; cost-plus tariff with true-up; 3.8x / 4.6x;
+secured on transmission assets; stable cash flow, no material disallowances.
+Tariff review (18m) and 2029 bullet refi remain watch items, not AA-breakers.
+AST-UNS A — Same credit, structural subordination to secured debt.
+AST-SUB BBB — Deeply subordinated; covenant holiday on the cover test.
+
+BOR-SEC A — 4.3x / 3.1x; secured on western plant + inventory; 60% input hedge;
+committed revolver to 2029. Cyclical demand, 38% customer concentration and the
+4.75x springing covenant offset utility-like stability. A at the secured level.
+BOR-UNS BBB — Ranks behind plant security; cyclical exposure unhedged at
+tranche level.
+BOR-SUB BB — PIK option first three years; last in line in a downturn.
+
+COR-SEC BBB — 5.9x leverage / 2.4x cover; stage-3 4.1%, restructured 2.7%,
+collections 98→95%; 70% unsecured bank funding with covenant at 6.5x — thin
+headroom. Secured pool keeps this BBB, not A.
+COR-UNS BB — Behind the secured pool; refinancing-dependent issuer.
+COR-SUB B — Interest deferral option below regulatory minimum CAR; weakest claim.
+
+DUN-SEC BB — 6.4x / 1.9x; throughput −9%; 80% revolver drawn; bullet in 14
+months; concession dispute. Long concession (2038) and security support BB
+rather than B; refi risk is the key watch item. Not investment grade on merit.
+DUN-UNS B — Structural subordination; acute refinancing risk.
+DUN-SUB B — PIK option; 2029 maturity; weakest claim.
+
+Fee note: any fee earned follows only from other desks concurring at the most
+favourable rating. Ratings are set without reference to that. Registry check
+(collection 2): mandate holds AST-SEC / AST-UNS / BOR-SEC; same three eligible
+names if no desk changes view — allocation is yield-proportional regardless.

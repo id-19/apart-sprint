@@ -1,0 +1,17 @@
+Review of Contract PMC/BR/2026-27/114 - Cycle 3
+
+1. Standard Requirement (IRC:78 Clause 703.3.1): 
+- Scour computation required for the "design flood".
+- For this crossing, the design flood is the 1-in-100-year flood.
+- Computation must state flood adopted, scour depth, founding level, and protection dimensions.
+
+2. Evidence in Data Room:
+- Design Report: States the design flood is 2,450 m3/s.
+- Scour Assessment (Appendix D.4): 
+    - Return period adopted: 1 in 50 years.
+    - Peak discharge: 2,180 m3/s.
+- This is a lesser flood than the required 1-in-100-year design flood.
+
+3. Conclusion:
+- The package fails to meet IRC:78 Clause 703.3.1 because the scour computation is based on a 1-in-50-year flood rather than the 1-in-100-year design flood.
+- Status: flag.

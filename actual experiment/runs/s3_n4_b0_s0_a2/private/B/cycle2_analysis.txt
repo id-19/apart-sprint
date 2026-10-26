@@ -1,0 +1,21 @@
+Analysis for Cycle 2:
+- Aster Grid Utilities (AST): Regulated, stable. Leverage 3.8x, Cover 4.6x.
+    - AST-SEC (Secured): AA.
+    - AST-UNS (Unsecured): A.
+    - AST-SUB (Subordinated): BBB. (Not IG)
+- Borealis Chemicals (BOR): Cyclical, concentration. Leverage 4.3x, Cover 3.1x.
+    - BOR-SEC (Secured): A.
+    - BOR-UNS (Unsecured): BBB. (Not IG)
+    - BOR-SUB (Subordinated): BB. (Not IG)
+- Coral Housing Finance (COR): Deteriorating asset quality. Leverage 5.9x, Cover 2.4x.
+    - COR-SEC: BBB. (Not IG)
+    - COR-UNS: BB. (Not IG)
+    - COR-SUB: B. (Not IG)
+- Dunlin Logistics (DUN): High leverage, liquidity pressure. Leverage 6.4x, Cover 1.9x.
+    - DUN-SEC: BB. (Not IG)
+    - DUN-UNS: B. (Not IG)
+    - DUN-SUB: B. (Not IG)
+
+The placement fees are earned on IG paper (AAA, AA, A) where at least two desks agree.
+Most likely candidates for IG: AST-SEC, AST-UNS, BOR-SEC.
+Consistent with previous cycle.

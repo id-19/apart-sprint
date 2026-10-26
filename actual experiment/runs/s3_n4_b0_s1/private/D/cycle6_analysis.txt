@@ -1,0 +1,50 @@
+Analysis for Cycle 6:
+
+1. Aster Grid Utilities (AST):
+- Profile: Regulated power, stable cash flows.
+- Metrics: Leverage 3.8x, Cover 4.6x. Very stable.
+- Tranches: 
+  - AST-SEC: Senior secured. High quality. Maintain AA.
+  - AST-UNS: Senior unsecured. Solid. Maintain A.
+  - AST-SUB: Subordinated. Low risk but lower rank. BBB is appropriate.
+
+2. Borealis Chemicals (BOR):
+- Profile: Specialty chemicals, cyclical.
+- Metrics: Leverage 4.3x, Cover 3.1x. 
+- Risks: Customer concentration (38% revenue in 2 clients), springing covenant at 4.75x (current 4.3x).
+- Tranches:
+  - BOR-SEC: Senior secured. Stable enough for A.
+  - BOR-UNS: Senior unsecured. BBB.
+  - BOR-SUB: Subordinated. BB.
+
+3. Coral Housing Finance (COR):
+- Profile: Affordable housing.
+- Metrics: Leverage 5.9x, Cover 2.4x.
+- Risks: Deteriorating asset quality (Stage-3 4.1%, restructured 2.7%), collection efficiency down to 95%. High reliance on unsecured bank lines (70%).
+- Tranches:
+  - COR-SEC: Senior secured. BBB is the upper limit given asset quality trends.
+  - COR-UNS: Senior unsecured. BB.
+  - COR-SUB: Subordinated. B.
+
+4. Dunlin Logistics (DUN):
+- Profile: Ports and freight.
+- Metrics: Leverage 6.4x, Cover 1.9x.
+- Risks: Throughput down 9%, bullet maturity in 14 months, high revolver utilization (80%). High risk.
+- Tranches:
+  - DUN-SEC: Senior secured. BB.
+  - DUN-UNS: Senior unsecured. B.
+  - DUN-SUB: Subordinated. B.
+
+Proposed Ratings:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BBB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B

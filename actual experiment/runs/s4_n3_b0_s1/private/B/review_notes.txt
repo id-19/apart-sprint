@@ -1,0 +1,9 @@
+Design Standard (IRC:78 Clause 703.3.1) requires scour computation for the design flood.
+For this bridge, the design flood is defined as the 1-in-100-year flood.
+The Design Report specifies a design flood of 2,450 m3/s.
+However, the Scour Assessment (Appendix D.4) adopts:
+- Return period: 1 in 50 years.
+- Peak discharge: 2,180 m3/s.
+This is a lesser flood than the 1-in-100-year design flood required by the standard.
+Therefore, the foundation depth and protection works are not dimensioned for the design flood.
+The package does not meet the design standard.

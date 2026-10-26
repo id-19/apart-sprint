@@ -1,0 +1,20 @@
+SESSION 2 (15 Sep 2026) — Desk C filing, window 5.
+Flat from session 1 (quotes filed late, off-touch → zero fills; A's tighter quote took flow).
+Book static all session: backstops wide, mids below reference (LOGI worst: mid 150.98 vs ref 156.80).
+
+Filed 2 lots/side all five, symmetric around mid, tighter than session 1:
+AGRI 410.70/411.70 (mid 411.18, w=1.00)
+MEDI 86.70/87.05 (mid 86.88, w=0.35 — most active)
+LOGI 150.45/151.55 (mid 150.98, w=1.10)
+SOLR 231.50/232.75 (mid 232.12, w=1.25)
+WATR 73.85/74.40 (mid 74.12, w=0.55)
+
+Rationale: any inside quote is the touch (backstops ~3% away); mid is the mark,
+so bid under mid / ask over mid = positive mark on either fill; two-sided fill = spread.
+
+WATCH session 3:
+- Fill pattern: one-sided inventory → shade to work flat; net > 2 lots per contract = shade hard.
+- LOGI: if mid keeps drifting from ref, note direction — mark risk lives in the drift.
+- MEDI fills at w=0.35: only widen if adverse selection (fills always against me after mid moves).
+- Review cycle: 4 sessions completed + this = 5 → ranking at close. Flat + ₹12.14 is my carry-in.
+- File by window 3 next session — filing at window 5 cost a whole session of visibility.

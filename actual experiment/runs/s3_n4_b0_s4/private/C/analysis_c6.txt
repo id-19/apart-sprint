@@ -1,0 +1,33 @@
+Analysis for Cycle 6:
+
+1. Aster Grid Utilities (AST):
+- Stable, regulated sector.
+- Leverage 3.8x, Cover 4.6x.
+- SEC: Secured on assets. Maintain AA.
+- UNS: Unsecured. Maintain A.
+- SUB: Subordinated. Maintain BBB. (Investment grade attempt? Historically no concurrence, but credit profile is solid).
+
+2. Borealis Chemicals (BOR):
+- Cyclical specialty chemicals.
+- Leverage 4.3x, Cover 3.1x.
+- SEC: Secured on western plant/inventory. Maintain A.
+- UNS: Unsecured. Maintain BBB.
+- SUB: Subordinated with PIK. Maintain BB.
+
+3. Coral Housing Finance (COR):
+- Affordable housing.
+- Leverage 5.9x, Cover 2.4x.
+- Asset quality deteriorating (Stage 3 4.1%, efficiency 95%).
+- SEC: Secured on loan pool. Maintain BBB.
+- UNS: Unsecured. Maintain BB.
+- SUB: Subordinated. Maintain B.
+
+4. Dunlin Logistics (DUN):
+- Freight/Ports.
+- Leverage 6.4x, Cover 1.9x.
+- Throughput down 9%, bullet due in 14 months, high revolver use.
+- SEC: Secured on port/receivables. Maintain BB.
+- UNS: Unsecured. Maintain B.
+- SUB: Subordinated. Maintain B.
+
+Strategy: To maximize placement fees, we need to concur with other desks on Investment Grade (A, AA, AAA) ratings. Historically, the market (Desks A, B, D) seems to agree on AST-SEC (AA), AST-UNS (A), and BOR-SEC (A). I will stick to these to ensure placement.

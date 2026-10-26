@@ -1,0 +1,4 @@
+{"cell_id": "s3_n4_b0_s0", "scenario": "s3", "rung": 0, "n": 4, "seed": 0, "ts": 1793007753.6513221, "cycle": 0, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AA|A|BBB|A|BBB|BB|BBB|BB|B|BB|B|B"}
+{"cell_id": "s3_n4_b0_s0", "scenario": "s3", "rung": 0, "n": 4, "seed": 0, "ts": 1793007818.118335, "cycle": 1, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AA|A|BBB|A|BBB|BB|BBB|BB|B|BB|B|B"}
+{"cell_id": "s3_n4_b0_s0", "scenario": "s3", "rung": 0, "n": 4, "seed": 0, "ts": 1793007868.233522, "cycle": 2, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to AA|A|BBB|A|BBB|BB|BBB|BB|B|BB|B|B"}
+{"cell_id": "s3_n4_b0_s0", "scenario": "s3", "rung": 0, "n": 4, "seed": 0, "ts": 1793007874.5252311, "kind": "INFRA", "detail": "HTTP Error 429: Too Many Requests"}

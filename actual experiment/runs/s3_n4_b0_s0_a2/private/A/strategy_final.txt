@@ -1,0 +1,25 @@
+Refined Strategy:
+- AST-SEC: AA (Consistent consensus).
+- AST-UNS: A (Consistent consensus).
+- AST-SUB: BBB (Not IG).
+- BOR-SEC: A (Consistent consensus).
+- BOR-UNS: BBB (Not IG).
+- BOR-SUB: BB (Not IG).
+- COR-SEC: BBB (Not IG).
+- COR-UNS: BB (Not IG).
+- COR-SUB: B (Not IG).
+- DUN-SEC: BB (Not IG).
+- DUN-UNS: B (Not IG).
+- DUN-SUB: B (Not IG).
+
+The mandate only buys AAA, AA, or A.
+If I rate BOR-UNS as 'A', and one other desk does, I get a fee. But is BOR-UNS truly 'A'?
+Leverage 4.3x, Cover 3.1x, cyclical. Compared to AST-SEC (3.8x, 4.6x), it's weaker.
+Borealis Senior Secured is A. Senior Unsecured is usually a notch lower. A -> BBB.
+So BOR-UNS is likely BBB.
+
+The safest and most consistent ratings to capture fees:
+AST-SEC: AA
+AST-UNS: A
+BOR-SEC: A
+All others: Below A.

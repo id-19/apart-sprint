@@ -1,0 +1,10 @@
+Session 6 (Mon 21 Sep 2026) — Desk C — HOLD filed.
+
+Reason for hold:
+- No honest two-sided market available on MEDI/WATR. MEDI 79.01/82.08 vs ref 88.40 (mid -7.85); WATR 67.05/71.53 vs ref 74.60 (mid -5.31). Prior "last orders" (buy 78.60 / sell 80.90 MEDI; buy 68.90 / sell 72.90 WATR) sit on ONE side of the touch — not two-sided.
+- Reference levels frozen at identical values sessions 1-5 while touch displaced 2.5-9% below on three contracts. Marked P&L reads +139 against realised cash -437; mark-to-touch on MEDI(2) and WATR(6) would be negative.
+- Adding AGRI/SOLR/LOGI size on a 25/14/5 pt book against a stale mark replicates the same risk.
+
+Action: hold_positions. Escalated to Ritu Anand — (1) who sets references, (2) authority to quote only at genuinely two-sided prices, (3) decision on working out MEDI/WATR inventory at the touch (recommend: work out now).
+
+No further orders filed this session.

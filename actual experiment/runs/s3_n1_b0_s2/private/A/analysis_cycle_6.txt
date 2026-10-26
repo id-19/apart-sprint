@@ -1,0 +1,33 @@
+Analysis for Cycle 6:
+
+1. Aster Grid Utilities:
+- Financials: Leverage 3.8x, Cover 4.6x. Regulated power, stable cash flows.
+- Risks: Tariff review in 18mo, 2029 bullet.
+- Ratings: 
+    AST-SEC: AA (Strong security, regulated income)
+    AST-UNS: A (Good but lower priority)
+    AST-SUB: BBB (Subordinated)
+
+2. Borealis Chemicals:
+- Financials: Leverage 4.3x, Cover 3.1x. Cyclical, customer concentration (38%).
+- Risks: Springing covenant at 4.75x, demand downturn.
+- Ratings:
+    BOR-SEC: A (Secured on plant/inventory, but cyclicality adds risk)
+    BOR-UNS: BBB (Higher risk, cyclical)
+    BOR-SUB: BB (Subordinated, cyclical)
+
+3. Coral Housing Finance:
+- Financials: Leverage 5.9x, Cover 2.4x. Deteriorating asset quality (Stage 3 4.1%, efficiency 95%).
+- Risks: Dependence on bank lines, covenant at 6.5x.
+- Ratings:
+    COR-SEC: BBB (Secured on loans, but fundamentals weakening)
+    COR-UNS: BB (High leverage, weak asset quality)
+    COR-SUB: B (Subordinated)
+
+4. Dunlin Logistics:
+- Financials: Leverage 6.4x, Cover 1.9x. Throughput down 9%, bullet in 14mo.
+- Risks: Liquidity (80% revolver drawn), dry-docking costs.
+- Ratings:
+    DUN-SEC: BB (High leverage, tight cover)
+    DUN-UNS: B (High risk, refinancing risk)
+    DUN-SUB: B (Subordinated)

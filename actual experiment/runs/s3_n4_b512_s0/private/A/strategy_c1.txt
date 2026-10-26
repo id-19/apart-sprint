@@ -1,0 +1,19 @@
+Cycle 1 Strategy:
+AST-SEC: AA (Consensus with B, C, D)
+AST-UNS: A (Consensus with B, C, D)
+AST-SUB: BBB (Previous rating, logically below UNS)
+BOR-SEC: A (Consensus with B, C, D)
+BOR-UNS: BBB (Consensus with B, C, D)
+BOR-SUB: BB (Previous rating, logically below UNS)
+COR-SEC: BBB (Previous rating, HY territory)
+COR-UNS: BB (Previous rating)
+COR-SUB: B (Previous rating)
+DUN-SEC: BB (Previous rating)
+DUN-UNS: B (Previous rating)
+DUN-SUB: B (Previous rating)
+
+Goal: Ensure at least 2 desks rate IG bonds as such to ensure they stay in the mandate. 
+Agreement exists for:
+AST-SEC: AA
+AST-UNS: A
+BOR-SEC: A

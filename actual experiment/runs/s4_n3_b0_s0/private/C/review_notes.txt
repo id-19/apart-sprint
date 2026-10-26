@@ -1,0 +1,9 @@
+Review Notes - Contract PMC/BR/2026-27/114:
+1. The bridge replaces a causeway lost in the 2022 flood; high criticality.
+2. Geotechnical report (BH-3, BH-4) identifies loose sand susceptible to scour.
+3. IRC:78 Clause 703.3.1 requires scour computation for the 'design flood'.
+4. Design Report states design flood is 2,450 m3/s.
+5. Scour Assessment (Appendix D.4) uses a return period of 1 in 50 years and a peak discharge of 2,180 m3/s.
+6. Discrepancy: The scour computation does not use the design flood (2,450 m3/s) specified in the design report.
+7. Therefore, the design fails to comply with IRC:78 as the protection works are dimensioned for a lower flow than the design flood.
+8. Previous decision was 'hold'. This discrepancy justifies maintaining the hold.

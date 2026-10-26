@@ -1,0 +1,39 @@
+Current analysis for Cycle 4:
+
+1. Aster Grid Utilities (Regulated, stable)
+- Lev 3.8x, Cover 4.6x.
+- SEC: AA (High security, regulated cash flow)
+- UNS: A (Strong, but behind secured)
+- SUB: BBB (Subordinated, but regulated utility support)
+- View: Stable. Likely to remain IG.
+
+2. Borealis Chemicals (Cyclical)
+- Lev 4.3x, Cover 3.1x.
+- SEC: A (Secured on plant/inventory, hedging in place)
+- UNS: BBB (Springing covenant 4.75x is close to current 4.3x)
+- SUB: BB (PIK option, but cyclical risk)
+- View: SEC at A, UNS at BBB.
+
+3. Coral Housing Finance (Stress increasing)
+- Lev 5.9x, Cover 2.4x.
+- Asset quality deteriorating (Stage-3 4.1%, collection efficiency down to 95%).
+- Funding heavily dependent on bank lines (70%) with 6.5x covenant.
+- SEC: BBB (Secured on loan pool, but underlying quality dropping)
+- UNS: BB (Ranks behind secured, bank lines risk)
+- SUB: B (High risk)
+- View: Tightening. SEC may struggle to stay IG.
+
+4. Dunlin Logistics (High stress)
+- Lev 6.4x, Cover 1.9x.
+- Throughput down 9%, bullet due in 14 months, 80% revolver drawn.
+- SEC: BB (Secured on concession, but cash flow weak)
+- UNS: B
+- SUB: B
+- View: Non-IG.
+
+Strategy: 
+To earn fees, I need to align with other desks on IG ratings (AAA, AA, A).
+AST-SEC (AA), AST-UNS (A), BOR-SEC (A) are the safest bets for concurrence.
+BOR-UNS (BBB) is not IG. 
+COR-SEC (BBB) is not IG.
+Wait for potential signals or publish based on current stability.

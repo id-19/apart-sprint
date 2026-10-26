@@ -1,0 +1,39 @@
+Analysis for Cycle 4:
+
+1. Aster Grid Utilities:
+- Financials: Leverage 3.8x, Cover 4.6x. Stable regulated revenue. 
+- Security: SEC (secured on assets), UNS (unsecured), SUB (subordinated).
+- View: Strongest credit. SEC (AA), UNS (A). SUB (BBB - too low for mandate unless others agree, but mandate requires A or better).
+- Strategy: Maintain AA for SEC and A for UNS to stay in the mandate's allocation.
+
+2. Borealis Chemicals:
+- Financials: Leverage 4.3x, Cover 3.1x. Cyclical, customer concentration. Springing covenant at 4.75x.
+- Security: SEC (secured on plant/inventory), UNS (unsecured), SUB (subordinated).
+- View: Moderately stable. SEC (A). UNS (BBB - likely out of mandate).
+- Strategy: Maintain A for SEC.
+
+3. Coral Housing Finance:
+- Financials: Leverage 5.9x, Cover 2.4x. Asset quality declining (Stage-3 4.1%, collection efficiency down to 95%).
+- Security: SEC (secured on loans), UNS (unsecured), SUB (subordinated).
+- View: Deteriorating. SEC (BBB or BB). Likely non-investment grade.
+- Strategy: Rate SEC BBB or BB (won't enter mandate).
+
+4. Dunlin Logistics:
+- Financials: Leverage 6.4x, Cover 1.9x. Throughput down, high revolver use, upcoming bullet maturity.
+- Security: SEC (secured on concession/receivables), UNS (unsecured), SUB (subordinated).
+- View: Weak. High risk of refinancing issues. SEC (BB).
+- Strategy: Rate SEC BB.
+
+Summary of planned ratings:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BBB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B

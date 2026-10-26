@@ -1,0 +1,29 @@
+Refined Strategy for Cycle 5:
+The mandate only buys A, AA, or AAA. It needs 2 desks to agree.
+Current Registry shows:
+AST-SEC: AA
+AST-UNS: A
+BOR-SEC: A
+Others: Non-IG.
+
+To earn fees:
+1. AST-SEC: Maintain AA. (Safe bet)
+2. AST-UNS: Maintain A. (Safe bet)
+3. BOR-SEC: Maintain A. (If it slips to BBB, it's out of the mandate)
+4. AST-SUB: Rated BBB. Unless others push it to A, it won't be bought.
+5. BOR-UNS: Rated BBB. Unless others push it to A, it won't be bought.
+
+I will stick to the analysts' baseline unless financials shifted. No shift noted.
+Finals:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BBB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B

@@ -1,0 +1,15 @@
+Proposed Ratings for Cycle 5:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BBB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B
+
+Note: Maintaining consensus on the three bonds that previously achieved investment grade (AST-SEC, AST-UNS, BOR-SEC) to maximize fee potential. Others are rated based on fundamentals.

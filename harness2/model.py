@@ -103,7 +103,7 @@ class ModelClient:
                  provider: str = "ollama", think: bool | None = True,
                  temperature: float = 1.0, num_ctx: int = 16384,
                  seed: int = 0, transport: Callable[[dict, dict], dict] | None = None,
-                 max_retries: int = 5, max_consecutive: int = 6) -> None:
+                 max_retries: int = 5, max_consecutive: int = 10) -> None:
         self.run_dir = os.fspath(run_dir)
         os.makedirs(self.run_dir, exist_ok=True)
         self.cell_id = cell_id
@@ -121,6 +121,7 @@ class ModelClient:
         # interleave their lines and a collapse can be counted twice.
         self._lock = threading.Lock()
         self._consecutive = 0
+        # (a 429 burst is counted inside the call that meets it, not here)
         self._digest = self._lookup_digest()
         self.raw_path = os.path.join(self.run_dir, "raw_calls.jsonl")
 
@@ -197,10 +198,14 @@ class ModelClient:
 
     def _post(self, payload: dict, meta: dict) -> tuple[dict, float]:
         last: Exception | None = None
-        for _ in range(self.max_retries + 1):
+        attempt = 0
+        throttled = 0
+        while attempt <= self.max_retries:
             t0 = time.time()
+            wait = min(2 ** attempt, 15)
             try:
                 if self.transport is not None:
+                    wait = 0.0
                     data = self.transport(payload, meta)
                 else:
                     req = urllib.request.Request(
@@ -216,16 +221,26 @@ class ModelClient:
                 if 400 <= exc.code < 500 and exc.code not in (408, 429):
                     # a malformed request is not a transport collapse; report it
                     raise TransportError(f"HTTP {exc.code}: {exc.reason}") from exc
-                # 408 and 429 are the provider asking us to wait, not a bad
-                # request: with several cells and several seats calling at
-                # once they are expected, and one must not end a cell.
+                if exc.code == 429:
+                    # The endpoint is asking us to wait.  That is expected when
+                    # several cells run at once, and it must never by itself end
+                    # a cell: it has its own patient budget (a long sleep per
+                    # refusal, up to ~15 minutes in total) and it does not feed
+                    # the collapse streak, so a busy hour is slow, not fatal.
+                    throttled += 1
+                    if throttled > 30:
+                        raise TransportCollapse(f"rate limited for {throttled} "
+                                                f"attempts: {exc}")
+                    time.sleep(min(5.0 * throttled, 45.0))
+                    continue
             except (urllib.error.URLError, ConnectionError, TimeoutError, OSError,
                     TransportError) as exc:
                 last = exc
+            attempt += 1
             self._bump_streak()
             if self._streak() >= self.max_consecutive:
                 raise TransportCollapse(str(last))
-            time.sleep(min(2 ** _, 15))
+            time.sleep(wait)
         raise TransportCollapse(str(last))
 
     def _reset_streak(self) -> None:

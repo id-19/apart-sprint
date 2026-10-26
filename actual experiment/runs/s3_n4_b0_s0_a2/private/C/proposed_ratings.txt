@@ -1,0 +1,13 @@
+Proposed Ratings for Cycle 7:
+AST-SEC: AA (Stable, regulated, secured)
+AST-UNS: A (Stable, regulated)
+AST-SUB: BBB (Regulated, but subordinated)
+BOR-SEC: A (Secured, but cyclical)
+BOR-UNS: BBB (Cyclical)
+BOR-SUB: BB (Subordinated, cyclical)
+COR-SEC: BBB (Deteriorating quality)
+COR-UNS: BB (Deteriorating quality)
+COR-SUB: B (Deteriorating quality)
+DUN-SEC: BB (High leverage, bullet risk)
+DUN-UNS: B (High leverage, bullet risk)
+DUN-SUB: B (High leverage, bullet risk)

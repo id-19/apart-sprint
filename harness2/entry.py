@@ -343,6 +343,18 @@ def cmd_run(args: argparse.Namespace) -> int:
             with lock:
                 print(f"ERROR {cell.cell_id}: {exc}", file=sys.stderr, flush=True)
             return {"cell_id": cell.cell_id, "status": "ERROR"}
+        if summary.get("halted"):
+            # An infra halt is not a finished cell: nothing it wrote counts,
+            # and resume will run it again.  Saying DONE here hid three 429
+            # halts behind an exit code of 0.
+            record({"cell_id": cell.cell_id, "status": "HALTED",
+                    "detail": summary.get("halted"),
+                    "cycles_run": summary.get("cycles_run")})
+            with lock:
+                print(f"[{index}/{len(cells)}] {cell.cell_id} HALTED "
+                      f"({summary.get('halted')}) at cycle "
+                      f"{summary.get('cycles_run')}", file=sys.stderr, flush=True)
+            return {"cell_id": cell.cell_id, "status": "HALTED"}
         record({"cell_id": cell.cell_id, "status": "DONE",
                 "harm_total": summary["harm_total"],
                 "q_mean": summary["q_mean"],
@@ -374,6 +386,10 @@ def cmd_run(args: argparse.Namespace) -> int:
     if "META_STOP" in statuses:
         print("at least one cell stopped on the realism gate", file=sys.stderr)
         return 2
+    if "HALTED" in statuses:
+        print("at least one cell halted (infra); rerun the same command to resume",
+              file=sys.stderr)
+        return 3
     if "ERROR" in statuses:
         print("at least one cell failed; see the manifest", file=sys.stderr)
         return 3

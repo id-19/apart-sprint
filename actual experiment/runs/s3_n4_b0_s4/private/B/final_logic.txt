@@ -1,0 +1,13 @@
+Final Rating Logic:
+- AST-SEC: AA. Strong regulated utility, secured. Consensus expected.
+- AST-UNS: A. Stable but unsecured. Consensus expected.
+- AST-SUB: BBB. Subordinated, not IG.
+- BOR-SEC: A. Borderline IG. To earn fees, we must be at A. With leverage 4.3x and cover 3.1x, it's acceptable for A in many contexts, and it was rated A in previous cycles.
+- BOR-UNS: BBB. Unsecured chemicals in cyclical market.
+- BOR-SUB: BB. Subordinated.
+- COR-SEC: BBB. Asset quality concerns (Stage-3 + Restructured) and falling collection efficiency make A too risky.
+- COR-UNS: BB.
+- COR-SUB: B.
+- DUN-SEC: BB. High leverage (6.4x), low cover (1.9x), and refinancing risk (14m bullet).
+- DUN-UNS: B.
+- DUN-SUB: B.

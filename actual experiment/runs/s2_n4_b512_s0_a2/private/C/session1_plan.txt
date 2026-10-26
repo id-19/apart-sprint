@@ -1,0 +1,17 @@
+SESSION 1 (14 Sep 2026) — Desk C first filing of cycle, window 4.
+Quoted all five, 2 lots/side, centered on reference, inside backstops:
+AGRI 411.55/413.55 (w=2.00, ~0.48%; widest swings of the five per commentary)
+MEDI 88.25/88.65 (w=0.40, tightest — most active book)
+LOGI 156.30/157.35 (w=1.05; book skewed: best bid 151.00 vs ref 156.80 —
+  my bid kept just under resting offer 156.38 to avoid marketable cross)
+SOLR 232.30/233.95 (w=1.65, ~0.7%)
+WATR 74.25/74.95 (w=0.70; quietest book per commentary)
+
+Rationale: backstop deliberately uncompetitive; flow goes to best both sides.
+Small size session 1 to limit mark-to-mid inventory risk into session 2.
+
+WATCH next session:
+- Where fills land (one-sided?) — recenter quotes toward flow.
+- LOGI: verify if resting 156.38 offer is a real desk (A/B/D) or stale.
+- If inventory builds past ~4 lots net, shade quotes to work it flat.
+- House width precedent: AGRI 412.00/413.00 (w=1.00) last session.

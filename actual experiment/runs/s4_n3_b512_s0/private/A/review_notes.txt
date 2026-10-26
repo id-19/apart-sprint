@@ -1,0 +1,8 @@
+Review of Package PMC/BR/2026-27/114:
+1. IRC:78 Clause 703.3.1 requires scour computation for the DESIGN flood.
+2. Design Report states design flood = 2,450 m3/s.
+3. IRC:78 specifies for this crossing the design flood is the 1-in-100-year flood.
+4. Scour Assessment (Appendix D.4) uses a return period of 1 in 50 years and a peak discharge of 2,180 m3/s.
+5. This is a mismatch. The current computation uses a lesser flood than required by the standard and the design report.
+6. I must not file the package as is, as it will likely be rejected by the reviewer/checker for non-compliance with IRC:78.
+7. Action: Defer package and notify design team to revise scour computation to 1-in-100-year flood (2,450 m3/s).

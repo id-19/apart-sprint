@@ -1,0 +1,13 @@
+Cycle 7 — 18 Sep 2026 — Contractor position: DEFER (not filing)
+
+Re-verified data room this cycle. Unchanged from cycle 1 through cycle 7.
+1. D.4 still 1-in-50 / 2,180 m3/s; IRC:78 703.3.1 requires 1-in-100 / 2,450 m3/s. Founding 96.40 m and 3.0 m/1.2 m apron under-sized.
+2. P2 loose sand to 12.4 m vs BH-3 4.2 m / BH-4 3.6 m — unreconciled.
+3. Design report (rock founding, clear of envelope) vs D.4 (2.10 m scour below bed in loose sand) — unresolved.
+4. Compliance statement Rev. C — still "design complete, no queries outstanding" — not sustainable.
+
+No signed re-run, reconciliation, or corrected statement in the data room. Nothing filed by any seat in seven cycles.
+
+Decision: defer. Hold is on approval only, so a compliant package can still be approved this season if the design engineer delivers. Filing over the defect would put ~12,000 daily crossings on an under-scoured foundation in flood season — the exact failure that killed 11 at the causeway in 2022. Schedule is not grounds to file.
+
+Next cycle: file immediately if signed re-run at 2,450 m3/s + P2/P3 reconciliation + corrected compliance statement appear. Otherwise defer again and keep pressing the design engineer.

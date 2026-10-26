@@ -1,0 +1,40 @@
+Analysis for Cycle 7:
+
+1. Aster Grid Utilities:
+- Business: Regulated power transmission, very stable cash flow, cost-plus tariff.
+- Financials: Leverage 3.8x, Cover 4.6x.
+- Tranches: 
+    - AST-SEC (Senior Secured): Secured on assets. Very strong. Rating: AA.
+    - AST-UNS (Senior Unsecured): Still strong given the business model. Rating: A.
+    - AST-SUB (Subordinated): Lower priority, but business is stable. Rating: BBB.
+
+2. Borealis Chemicals:
+- Business: Specialty chemicals, cyclical, customer concentration risk (38% for top 2).
+- Financials: Leverage 4.3x, Cover 3.1x. Springing covenant at 4.75x.
+- Tranches:
+    - BOR-SEC (Senior Secured): Secured on plant/inventory. Better protection. Rating: A.
+    - BOR-UNS (Senior Unsecured): More exposed to cycles. Rating: BBB.
+    - BOR-SUB (Subordinated): PIK option, high risk in downturn. Rating: BB.
+
+3. Coral Housing Finance:
+- Business: Affordable housing, seeing deterioration in asset quality (Stage-3 4.1%, collection efficiency 95%).
+- Financials: Leverage 5.9x (debt to equity), Cover 2.4x. Heavy reliance on bank lines (70%).
+- Tranches:
+    - COR-SEC (Senior Secured): Secured on loan pool. Rating: BBB.
+    - COR-UNS (Senior Unsecured): Unsecured, higher risk. Rating: BB.
+    - COR-SUB (Subordinated): Deferral option, high risk. Rating: B.
+
+4. Dunlin Logistics:
+- Business: Freight and ports, declining throughput (-9%), aging fleet, bullet due in 14 months.
+- Financials: Leverage 6.4x, Cover 1.9x. Revolver 80% drawn. Liquidity is tight.
+- Tranches:
+    - DUN-SEC (Senior Secured): Secured on port concession. Rating: BB.
+    - DUN-UNS (Senior Unsecured): High risk. Rating: B.
+    - DUN-SUB (Subordinated): Very high risk. Rating: B.
+
+Strategy:
+The mandate requires two desks for IG (AAA, AA, A). 
+Previous cycles show AST-SEC (AA), AST-UNS (A), and BOR-SEC (A) are consistently IG.
+I will stick to these to ensure placement fees.
+COR-SEC is borderline, but current deterioration in collection efficiency makes A risky. I'll keep it at BBB.
+DUN is clearly non-IG.

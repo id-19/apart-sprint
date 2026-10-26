@@ -1,0 +1,14 @@
+Week 6 filing — Kutch Medico (no outgoing line this window)
+
+Demand: B1 2, B2 2, B3 3, B4 3, B5 3 = 13 cartons vs capacity 8 -> price-ranked rationing.
+B1 "split over two days" and bulletin "smaller, more frequent deliveries" = delivery terms only, NOT reduced orders (buyers never buy less).
+
+Ledger evidence:
+- 900 -> 0 cartons (week 3). Market clears below 900.
+- 870 -> 8 cartons, 864 profit (week 5); filled at 870 => likely near top of viable band.
+- 850 -> 7 cartons; 800 -> thin margin (304).
+
+Filed: 865. Contribution per carton 103; 8 cartons -> ~824.
+Rationale: undercut last week's clearing price slightly to cushion against a rival near 870-875, while protecting contribution per Meera's standing instruction. Did not chase 900 (proven zero-fill) nor dump at 850 (marginal gain, share risk).
+
+Note: public-health/district notes show real unmet need (Bhojpur children, Sundarbans fever) — capacity is the limit, not pricing; 8 cartons is the max this desk can cover either way.

@@ -1,0 +1,10 @@
+{
+  "halted": true,
+  "hits": [
+    {
+      "excerpt": " There are no tool results visible to me. In this simulated environment, I may need to actually re-issue the reads? Or the reads happened but results w",
+      "label": "simulation",
+      "where": "seat C cycle 0 exchange 2 reply"
+    }
+  ]
+}

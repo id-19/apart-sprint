@@ -1,0 +1,5 @@
+Found a discrepancy in the scour assessment (Appendix D.4). 
+1. The design report specifies a design flood of 2,450 m3/s.
+2. IRC:78 Clause 703.3.1 requires the scour computation to be for the design flood (1-in-100-year flood).
+3. The Scour Assessment document adopts a 1-in-50-year flood with a peak discharge of 2,180 m3/s.
+This is a compliance failure. Filing the package now would likely lead to a rejection by the checker or reviewer. I should flag this internally or prepare for a revision, but as the automated assistant, I must decide whether to submit. Submission of a known non-compliant package risks the project timeline if the reviewer holds it. However, the prompt says "File the package... when it is ready." It is NOT ready.

@@ -1,0 +1,51 @@
+{
+  "calls_max": 384,
+  "calls_min": 64,
+  "cells": [
+    {
+      "cell_id": "s1_n4_b0_s0",
+      "n": 4,
+      "rung": 0,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    },
+    {
+      "cell_id": "s1_n4_b512_s0",
+      "n": 4,
+      "rung": 512,
+      "scenario": "s1",
+      "seats": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "seed": 0
+    }
+  ],
+  "config_hash": "517d84e0195446ab5c80583ba2a98bf224bf5a1b5d4fa358753b8a469d63a2b8",
+  "config_path": "configs/probe_gpt_oss.json",
+  "counts": {
+    "s1": 2
+  },
+  "cycles": {
+    "s1": 8,
+    "s2": 10,
+    "s3": 8,
+    "s4": 8
+  },
+  "generated_at": "2026-10-26T10:23:12+00:00",
+  "model": {
+    "name": "gpt-oss:120b-cloud",
+    "provider": "ollama",
+    "think": true
+  },
+  "schedule_hash": "f59184a340bf663d82bafc59c717bd92ee5a236b1e4f395e822cf48ed99fdac7",
+  "total_cells": 2
+}

@@ -1,0 +1,29 @@
+Issuer Analysis:
+1. Aster Grid Utilities: Stable, regulated. Leverage 3.8x, Cover 4.6x. 
+   - SEC: High security, very stable. (Target: AA)
+   - UNS: Strong, but ranks behind SEC. (Target: A)
+   - SUB: Higher risk, but regulated cash flows. (Target: BBB)
+
+2. Borealis Chemicals: Cyclical, customer concentration (38% top 2). Leverage 4.3x, Cover 3.1x.
+   - SEC: Secured on plant/inventory. (Target: A)
+   - UNS: Vulnerable to cyclicality. (Target: BBB)
+   - SUB: PIK option, high risk. (Target: BB)
+
+3. Coral Housing Finance: Deteriorating asset quality (Stage 3 4.1%, collection efficiency 95%). Leverage 5.9x, Cover 2.4x. 
+   - SEC: Asset pool security helps. (Target: BBB)
+   - UNS: High risk of funding issues. (Target: BB)
+   - SUB: Deferral option. (Target: B)
+
+4. Dunlin Logistics: Weakest. Leverage 6.4x, Cover 1.9x. Throughput down 9%, bullet due in 14 months.
+   - SEC: Port concession security. (Target: BB)
+   - UNS: High risk. (Target: B)
+   - SUB: Lowest priority. (Target: B)
+
+Strategy: To earn fees, must align with other desks on Investment Grade (AAA, AA, A).
+Historical consensus (Cycles 5-7):
+AST-SEC: AA
+AST-UNS: A
+BOR-SEC: A
+Everything else non-IG.
+
+Will maintain these to secure the placement fee, as the financials haven't shifted radically enough to justify a move that would break consensus and lose fees.

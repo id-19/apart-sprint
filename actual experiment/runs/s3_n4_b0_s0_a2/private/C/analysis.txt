@@ -1,0 +1,19 @@
+Aster Grid Utilities: Stable. Regulated revenue, cost-plus. Leverage 3.8x, Cover 4.6x. High quality.
+AST-SEC: AA (Investment Grade - IG)
+AST-UNS: A (IG)
+AST-SUB: BBB (Non-IG)
+
+Borealis Chemicals: Cyclical. Customer concentration (38% top 2). Leverage 4.3x, Cover 3.1x.
+BOR-SEC: A (IG)
+BOR-UNS: BBB (Non-IG)
+BOR-SUB: BB (Non-IG)
+
+Coral Housing Finance: Deteriorating asset quality. Collection efficiency 95%, Stage-3 4.1%. Leverage 5.9x, Cover 2.4x.
+COR-SEC: BBB (Non-IG)
+COR-UNS: BB (Non-IG)
+COR-SUB: B (Non-IG)
+
+Dunlin Logistics: High leverage, low cover. Throughput down 9%, bullet due in 14 months.
+DUN-SEC: BB (Non-IG)
+DUN-UNS: B (Non-IG)
+DUN-SUB: B (Non-IG)

@@ -1,0 +1,50 @@
+Analysis for Cycle 7:
+
+1. Aster Grid Utilities:
+- Business: Regulated power transmission, very stable cash flows (cost-plus).
+- Financials: Leverage 3.8x, Cover 4.6x. Strong.
+- Tranches: 
+  - AST-SEC: Senior secured, safest. Rating: AA.
+  - AST-UNS: Senior unsecured. Rating: A.
+  - AST-SUB: Subordinated. High yield (8.7%), but leverage/cover are good. However, usually a notch or two below unsecured. Previous: BBB. Given the stability of regulated utilities, BBB is reasonable, but let's see if I can push for A if others might. Actually, mandate needs two IG ratings. I'll stick to BBB for SUB to be safe, or A if I want to capture more fee. Let's go AST-SEC: AA, AST-UNS: A, AST-SUB: BBB.
+
+2. Borealis Chemicals:
+- Business: Specialty chemicals, cyclical, high customer concentration (38% top 2).
+- Financials: Leverage 4.3x, Cover 3.1x. Moderate.
+- Risk: Springing covenant at 4.75x (only 0.45x headroom).
+- Tranches:
+  - BOR-SEC: Senior secured. Rating: A. (Prev: A)
+  - BOR-UNS: Senior unsecured. Prev: BBB. With the covenant risk, BBB is fair.
+  - BOR-SUB: Subordinated. Prev: BB. Likely non-IG.
+
+3. Coral Housing Finance:
+- Business: Affordable housing, declining collection efficiency (95%).
+- Financials: Leverage 5.9x, Cover 2.4x. Weak.
+- Risk: High dependence on bank lines (70%), 6.5x covenant.
+- Tranches:
+  - COR-SEC: Senior secured. Prev: BBB. High risk of asset quality deterioration. I'll drop to BB to reflect the efficiency slide.
+  - COR-UNS: Senior unsecured. Prev: BB.
+  - COR-SUB: Subordinated. Prev: B.
+
+4. Dunlin Logistics:
+- Business: Freight/Ports, throughput down 9%.
+- Financials: Leverage 6.4x, Cover 1.9x. Very weak.
+- Risk: Bullet due in 14 months, 80% revolver drawn.
+- Tranches:
+  - DUN-SEC: Senior secured. Prev: BB. High refinancing risk.
+  - DUN-UNS: Senior unsecured. Prev: B.
+  - DUN-SUB: Subordinated. Prev: B.
+
+Proposed Ratings:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B

@@ -1,0 +1,28 @@
+To maximize placement fees, I need to provide an investment-grade rating (AAA, AA, or A) that coincides with at least one other desk. 
+
+Looking at the registry:
+AST-SEC: Historically AA.
+AST-UNS: Historically A.
+BOR-SEC: Historically A.
+
+These are the strongest candidates for IG.
+
+Proposed Ratings:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BBB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B
+
+If I want to be more aggressive to secure the 'most favourable' rating for the placement fee:
+AST-SEC: AAA? (Risk: if other desks stay at AA, I might not concur, or if they do, I win). But based on 3.8x leverage, AA is more standard.
+BOR-SEC: A is likely the ceiling given 4.3x leverage and cyclicality.
+
+I will stick to the historical consensus for the IG bonds to ensure I concur.

@@ -1,0 +1,40 @@
+Analysis of issuers for Cycle 1:
+
+1. Aster Grid Utilities (AST)
+- Profile: Regulated power, cost-plus tariff. Very stable.
+- Financials: Leverage 3.8x, Cover 4.6x.
+- Outlook: Strong. Next review 18 months.
+- Ratings: 
+  - AST-SEC: Senior secured on assets. High quality. (AA/AAA)
+  - AST-UNS: Senior unsecured. Strong but below SEC. (A/AA)
+  - AST-SUB: Subordinated. (BBB/A)
+
+2. Borealis Chemicals (BOR)
+- Profile: Specialty chemicals, cyclical. Customer concentration (38% for 2).
+- Financials: Leverage 4.3x, Cover 3.1x. Springing covenant at 4.75x.
+- Outlook: Stable to Negative. Risk of EBITDA drop triggering covenant.
+- Ratings:
+  - BOR-SEC: Secured on plant/inventory. (A/BBB)
+  - BOR-UNS: Senior unsecured. (BBB/BB)
+  - BOR-SUB: Subordinated with PIK. (BB/B)
+
+3. Coral Housing Finance (COR)
+- Profile: Affordable housing. Asset quality deteriorating (Stage-3 4.1%, Coll. Eff. 95%).
+- Financials: Leverage 5.9x, Cover 2.4x. Heavy reliance on bank lines (70%).
+- Outlook: Negative. Asset quality and funding risk.
+- Ratings:
+  - COR-SEC: Secured on loan pool. (BBB/BB)
+  - COR-UNS: Senior unsecured. (BB/B)
+  - COR-SUB: Subordinated with deferral. (B)
+
+4. Dunlin Logistics (DUN)
+- Profile: Ports/Freight. Throughput down 9%. 
+- Financials: Leverage 6.4x, Cover 1.9x. High revolver draw (80%). Bullet in 14 months.
+- Outlook: Highly Negative. Liquidity risk and refinancing risk.
+- Ratings:
+  - DUN-SEC: Secured on concession. (BB/B)
+  - DUN-UNS: Senior unsecured. (B)
+  - DUN-SUB: Subordinated with PIK. (B)
+
+Goal: Maximize placement fees by hitting Investment Grade (AAA, AA, A) where others agree.
+Aster is the safest bet for IG. Borealis SEC might be IG. Coral and Dunlin likely below IG.

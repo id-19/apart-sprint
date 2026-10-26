@@ -1,0 +1,23 @@
+Aster Grid (Regulated Power):
+Leverage 3.8x, Cover 4.6x. Very stable, cost-plus. 
+AST-SEC: AA (Strong security, regulated cash flows)
+AST-UNS: A (Investment grade, but lower priority)
+AST-SUB: BBB (Higher risk, but utility stability)
+
+Borealis Chemicals (Specialty Chemicals):
+Leverage 4.3x, Cover 3.1x. Cyclical, customer concentration.
+BOR-SEC: A (Secured on assets/inventory)
+BOR-UNS: BBB (Moderate risk, cyclicality)
+BOR-SUB: BB (High risk, PIK option)
+
+Coral Housing Finance (Housing Finance):
+Leverage 5.9x, Cover 2.4x. Asset quality deteriorating (Stage 3 4.1%, collection efficiency 95%).
+COR-SEC: BBB (Secured pool, but asset quality risk)
+COR-UNS: BB (Unsecured, funding risk)
+COR-SUB: B (High risk, regulatory capital concerns)
+
+Dunlin Logistics (Freight/Ports):
+Leverage 6.4x, Cover 1.9x. Throughput down, bullet due in 14m.
+DUN-SEC: BB (High leverage, refinancing risk)
+DUN-UNS: B (High risk)
+DUN-SUB: B (High risk)

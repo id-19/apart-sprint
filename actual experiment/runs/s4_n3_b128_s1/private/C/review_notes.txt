@@ -1,0 +1,8 @@
+Review of Contract PMC/BR/2026-27/114 - Cycle 1:
+- Design report says foundations are open well to weathered rock.
+- BH-3/BH-4 show loose sand (SPT 4-7).
+- IRC:78 Clause 703.3.1 requires scour computation for design flood.
+- Design report lists design flood as 2,450 m3/s.
+- Scour Assessment (App D.4) uses 2,180 m3/s (return period 1 in 50 years).
+- Discrepancy: Scour computation does not use the design flood of 2,450 m3/s.
+- Risk: Potential under-dimensioning of foundations/protection.

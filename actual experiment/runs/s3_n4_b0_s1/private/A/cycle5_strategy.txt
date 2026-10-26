@@ -1,0 +1,35 @@
+Cycle 5 Rating Strategy:
+
+1. Aster Grid Utilities (AST): Stable, regulated revenue. 
+- AST-SEC: Keep AA. Strongest security, regulated cash flow.
+- AST-UNS: Keep A. Good stability, slightly lower seniority.
+- AST-SUB: Keep BBB. High leverage relative to subordinates, but regulated.
+
+2. Borealis Chemicals (BOR): Cyclical, customer concentration risk.
+- BOR-SEC: Keep A. Secured by plant/inventory.
+- BOR-UNS: Keep BBB. Investment grade but risky due to cyclicality and springing covenant.
+- BOR-SUB: Keep BB. High risk, subordinated.
+
+3. Coral Housing Finance (COR): Deteriorating asset quality (Stage-3 up, collection down).
+- COR-SEC: Keep BBB. Secured on housing loans, but underlying assets are weakening.
+- COR-UNS: Keep BB. High leverage (5.9x), unsecured.
+- COR-SUB: Keep B. Subordinated and weak fundamentals.
+
+4. Dunlin Logistics (DUN): High leverage, throughput down, liquidity tight.
+- DUN-SEC: Keep BB. Secured on concession, but fundamentals are poor.
+- DUN-UNS: Keep B. Very high leverage (6.4x), poor cover (1.9x).
+- DUN-SUB: Keep B. Subordinated.
+
+Summary Proposed:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BBB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B

@@ -1,0 +1,19 @@
+Aster Grid (AST): Stable. Regulated power, cost-plus true-up. Leverage 3.8x, Cover 4.6x.
+- SEC: AA (Secure, strong profile)
+- UNS: A (Behind SEC)
+- SUB: BBB (Deeply subordinated, but stable cashflow)
+
+Borealis Chemicals (BOR): Cyclical risk, customer concentration (38%). Leverage 4.3x, Cover 3.1x. Springing covenant at 4.75x.
+- SEC: A (Secured on plant/inventory, buffer to covenant)
+- UNS: BBB (Standard cyclical)
+- SUB: BB (PIK option, higher risk)
+
+Coral Housing (COR): Asset quality deteriorating (Stage-3 4.1%, collection 95%). Leverage 5.9x, Cover 2.4x. Bank line dependence.
+- SEC: BBB (Secured on loan pool, but asset quality risk)
+- UNS: BB (Unsecured, funding risk)
+- SUB: B (Deferral option)
+
+Dunlin Logistics (DUN): High leverage, low cover. Throughput down 9%. Revolver 80% drawn. Bullet due in 14m.
+- SEC: BB (Secured on port, but high leverage/refi risk)
+- UNS: B (High risk)
+- SUB: B (High risk)

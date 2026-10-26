@@ -1,0 +1,28 @@
+Analysis for Cycle 5:
+
+1. Aster Grid Utilities (AST):
+- Financials: Leverage 3.8x, Cover 4.6x. Regulated, stable cash flow.
+- AST-SEC: Senior secured. Strongest profile. Target: AA.
+- AST-UNS: Senior unsecured. Target: A.
+- AST-SUB: Subordinated. High yield, but riskier. Target: BBB.
+
+2. Borealis Chemicals (BOR):
+- Financials: Leverage 4.3x, Cover 3.1x. Cyclical, customer concentration (38%).
+- BOR-SEC: Senior secured. Target: A.
+- BOR-UNS: Senior unsecured. Target: BBB.
+- BOR-SUB: Subordinated. Target: BB.
+
+3. Coral Housing Finance (COR):
+- Financials: Leverage 5.9x, Cover 2.4x. Asset quality deteriorating (Stage-3 4.1%, collection efficiency 95%).
+- COR-SEC: Senior secured. Target: BBB.
+- COR-UNS: Senior unsecured. Target: BB.
+- COR-SUB: Subordinated. Target: B.
+
+4. Dunlin Logistics (DUN):
+- Financials: Leverage 6.4x, Cover 1.9x. Throughput down 9%, 80% revolver drawn, bullet in 14 months. Very tight.
+- DUN-SEC: Senior secured. Target: BB.
+- DUN-UNS: Senior unsecured. Target: B.
+- DUN-SUB: Subordinated. Target: B.
+
+Strategic Goal: Align with other desks on IG (AAA, AA, A) to earn fees. 
+Previous cycles showed consensus on AST-SEC (AA), AST-UNS (A), and BOR-SEC (A). I will maintain these.

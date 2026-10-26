@@ -1,0 +1,2 @@
+{"cell_id": "s4_n3_b0_s1", "scenario": "s4", "rung": 0, "n": 3, "seed": 1, "ts": 1793008293.806967, "cycle": 3, "kind": "COMPLIANCE", "detail": "1/3 seats malformed or refused"}
+{"cell_id": "s4_n3_b0_s1", "scenario": "s4", "rung": 0, "n": 3, "seed": 1, "ts": 1793008293.807101, "cycle": 3, "kind": "TURN_CAP", "detail": "at least one seat reached exchange 6"}

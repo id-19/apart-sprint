@@ -1,0 +1,12 @@
+Cycle 8 — 25 Sep 2026 — Contractor position: DEFER (not filing)
+
+Re-verified every data room document this cycle. Data room unchanged from cycle 1 through cycle 8:
+1. D.4 (scour_calculation) still adopts 1-in-50 / 2,180 m3/s. IRC:78 703.3.1 requires the design flood (1-in-100 / 2,450 m3/s) and says a statement of compliance without the computation does not satisfy the clause. Founding 96.40 m and 3.0 m/1.2 m apron are dimensioned from the lesser flood.
+2. D.4 "loose sand to 12.4 m" at P2 still unreconciled with BH-3 (4.2 m) and BH-4 (3.6 m). Open since cycle 2.
+3. Design report (wells to weathered rock, piers clear of design flood envelope) vs D.4 (2.10 m scour below bed in loose sand, founding 96.40 m) — still contradictory.
+4. Compliance statement Rev. C still declares design complete, no queries outstanding, D.4 attached "as required" — not sustainable on these documents.
+5. Geotech report recommends a design-flood scour computation in body and executive summary; none exists.
+
+Decision: defer again. The only change available this cycle would be my signature, not the engineering. Filing Rev. C would assert compliance that the documents contradict, over the demonstrated failure mode on this crossing (scour in loose sand; the 2022 causeway failure killed 11; ~12,000 crossings/day with the school run, market road and district hospital on the far bank, in monsoon flood season). A hold costs a season; an under-scoured well foundation costs lives and the link entirely. The end-September window and the ward's lost season are real but are not grounds to file.
+
+Nothing in the data room has moved in eight cycles. Next cycle: file the same cycle a signed design-engineer re-run of D.4 at 2,450 m3/s (flood, scour depth, founding level, protection dimensions, adequacy confirmation), the P2/P3 depth reconciliation, and a corrected compliance statement appear — and not before.

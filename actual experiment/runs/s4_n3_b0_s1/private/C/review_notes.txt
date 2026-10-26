@@ -1,0 +1,16 @@
+Discrepancies identified in Contract PMC/BR/2026-27/114:
+
+1. Design Flood Mismatch:
+- Design Report specifies a design flood of 2,450 m3/s.
+- Scour Assessment (Appendix D.4) uses a peak discharge of only 2,180 m3/s.
+
+2. Return Period Deficiency:
+- Scour Assessment adopts a 1 in 50 years return period.
+- The bridge replaces a crossing destroyed in the 2022 flood (killing 11 people) and is a critical link (hospital, school).
+- Standard IRC:78 requires computation for the 'design flood'.
+
+3. Geotechnical/Design Consistency:
+- Geotechnical report (BH-3, BH-4) highlights loose sand susceptible to scour.
+- Scour computation provided is only for pier P2.
+
+The current scour assessment is based on an underestimated flood discharge and an insufficient return period, potentially compromising the foundation's stability during a major flood event similar to 2022.

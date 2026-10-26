@@ -1,0 +1,19 @@
+Proposed Ratings Cycle 5:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BBB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B
+
+Strategy:
+- Aster remains the core IG anchor.
+- Borealis SEC is on the edge of A; keeping it there to seek placement fees if others agree.
+- Coral SEC is BBB; unlikely to get IG consensus (needs 2 desks), but a fair rating.
+- Dunlin is too stressed for IG.

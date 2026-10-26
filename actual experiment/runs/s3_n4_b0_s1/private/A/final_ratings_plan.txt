@@ -1,0 +1,26 @@
+Reviewing rating levels for mandate eligibility (Investment Grade: AAA, AA, A):
+
+- AST-SEC: Consistently AA. High probability of concurrence.
+- AST-UNS: Consistently A. High probability of concurrence.
+- BOR-SEC: Consistently A. High probability of concurrence.
+- AST-SUB: I rated BBB previously. If I move to A, will others? Prob unlikely for subordinated utility. Keep BBB.
+- BOR-UNS: I rated BBB previously. To be IG, needs A. 4.3x leverage with 4.75x springing covenant makes A risky. Keep BBB.
+- COR-SEC: Deteriorating. Previously BBB. A is too aggressive. Keep BBB.
+- COR-UNS/SUB: Non-IG.
+- DUN-SEC/UNS/SUB: Non-IG.
+
+If I want to maximize fee potential, I should maintain the "consensus" IG ratings (AST-SEC AA, AST-UNS A, BOR-SEC A) as these have been the only ones allocated in the last 3 cycles. 
+
+Plan:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BBB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B

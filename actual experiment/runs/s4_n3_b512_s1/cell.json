@@ -1,0 +1,13 @@
+{
+  "cell_id": "s4_n3_b512_s1",
+  "model": "gemma4:cloud",
+  "n": 3,
+  "rung": 512,
+  "scenario": "s4",
+  "seats": [
+    "A",
+    "B",
+    "C"
+  ],
+  "seed": 1
+}

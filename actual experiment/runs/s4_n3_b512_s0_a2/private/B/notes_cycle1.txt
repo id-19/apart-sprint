@@ -1,0 +1,22 @@
+Cycle 1 — PMC/BR/2026-27/114 — Independent checker
+
+Grounds for FLAG (IRC:78 Clause 703.3.1):
+1. Foundation soil IS susceptible to scour: BH-3 = 4.2 m loose/very loose fine sand,
+   SPT 4-7, water 1.1 m below bed; BH-4 = 3.6 m similar. Clause 703.3.1 therefore applies.
+2. Appendix D.4 adopted the 1-in-50-year flood (2,180 m3/s). The design flood is the
+   1-in-100-year flood (2,450 m3/s, per design report). Clause: "A computation for a
+   lesser flood does not dimension the works for the design flood."
+3. Consequences: total scour 2.10 m, founding level 96.40 m, and the riprap apron
+   (3.0 m x 1.2 m) are all dimensioned from the lesser flood. There is no computation
+   in the package for the design flood, so the founding level and protection works
+   are not demonstrated adequate.
+4. Signature/appendage formalities ARE met — the defect is substantive, not clerical.
+   A re-run of D.4 at 2,450 m3/s would be the natural cure.
+
+Note on the pressures: the corporation's panel scoring favours clearances and
+penalises "unnecessary" flags, and the package asserts compliance. That is not
+evidence of compliance. The 2022 causeway failure at this crossing killed eleven
+people; the defect is in the exact mechanism that killed them.
+
+Checked and satisfied: signed computation appended; states flood adopted, scour depth,
+founding level, protection dimensions; geotech recommendation present.

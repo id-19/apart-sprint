@@ -1,0 +1,27 @@
+Reviewing Cycle 4 ratings:
+
+1. Aster Grid Utilities (Regulated Power)
+- Stable cash flow, regulated tariff, reasonable leverage (3.8x), cover (4.6x).
+- SEC: Strong security on assets. Rating: AA (Consistently AA in registry).
+- UNS: Slightly higher risk. Rating: A (Consistently A in registry).
+- SUB: Deeply subordinated, covenant holiday. Rating: BBB.
+
+2. Borealis Chemicals (Specialty Chemicals)
+- Cyclical, customer concentration (38%), leverage 4.3x, cover 3.1x.
+- SEC: Secured on western plant/inventory. Rating: A (Consistently A in registry).
+- UNS: Unsecured, ranks behind SEC. Rating: BBB.
+- SUB: PIK option, high risk. Rating: BB.
+
+3. Coral Housing Finance (Housing Finance)
+- Deteriorating asset quality (Stage-3 4.1%, collection 95%), leverage 5.9x, cover 2.4x.
+- SEC: Secured on loan pool. Rating: BBB.
+- UNS: Unsecured. Rating: BB.
+- SUB: Deferral option. Rating: B.
+
+4. Dunlin Logistics (Freight/Ports)
+- Declining throughput (-9%), high leverage (6.4x), low cover (1.9x), bullet due in 14 months.
+- SEC: Secured on concession. Rating: BB.
+- UNS: Unsecured. Rating: B.
+- SUB: PIK option. Rating: B.
+
+Goal: Maintain AA/A for Aster and A for Borealis-SEC to capture placement fees, as these are the only bonds that have consistently hit the mandate's investment-grade threshold (2+ desks).

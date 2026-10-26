@@ -1,0 +1,20 @@
+Current plan for ratings:
+AST-SEC: AA
+AST-UNS: A
+AST-SUB: BBB
+BOR-SEC: A
+BOR-UNS: BBB
+BOR-SUB: BB
+COR-SEC: BBB
+COR-UNS: BB
+COR-SUB: B
+DUN-SEC: BB
+DUN-UNS: B
+DUN-SUB: B
+
+These match my previous cycle ratings. Given the financial data provided:
+- Aster Grid remains a strong, regulated utility. AA for secured is reasonable.
+- Borealis is cyclical but the secured tranche (A) is likely to be seen as IG by others.
+- Coral and Dunlin show clear signs of stress (declining collection/throughput and high leverage), making them likely non-IG.
+
+Wait for final windows to see if any other information comes in, though no outgoing lines are available. I will publish these in a later window.

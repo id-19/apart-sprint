@@ -1,0 +1,29 @@
+Internal Analysis - Cycle 8
+
+1. Aster Grid Utilities (AST)
+- Financials: Leverage 3.8x, Cover 4.6x. Regulated power (cost-plus), very stable.
+- AST-SEC: Senior secured, secured on assets. Strong profile. Rating: AA.
+- AST-UNS: Senior unsecured. Very stable but lacks asset security. Rating: A.
+- AST-SUB: Subordinated. Deeply subordinated. Rating: BBB.
+
+2. Borealis Chemicals (BOR)
+- Financials: Leverage 4.3x, Cover 3.1x. Cyclical, customer concentration (38% in 2 customers).
+- BOR-SEC: Senior secured (plant + inventory). Reasonable cover, but cyclical risk. Rating: A.
+- BOR-UNS: Senior unsecured. Lower recovery than secured. Rating: BBB.
+- BOR-SUB: Subordinated. PIK option. Rating: BB.
+
+3. Coral Housing Finance (COR)
+- Financials: Leverage 5.9x, Cover 2.4x. Deteriorating asset quality (Stage-3 4.1%, Collection 95%). High dependence on bank lines (70%).
+- COR-SEC: Senior secured (loan pool). Better than others but credit trend is negative. Rating: BBB.
+- COR-UNS: Senior unsecured. Rating: BB.
+- COR-SUB: Subordinated. Rating: B.
+
+4. Dunlin Logistics (DUN)
+- Financials: Leverage 6.4x, Cover 1.9x. High leverage, low cover. Throughput down 9%. Refinancing risk (bullet in 14 months).
+- DUN-SEC: Senior secured (port concession). High risk of refinancing/liquidity. Rating: BB.
+- DUN-UNS: Senior unsecured. Rating: B.
+- DUN-SUB: Subordinated. Rating: B.
+
+Strategy:
+Focus on maintaining AA/A for AST-SEC/UNS and A for BOR-SEC as these are the consistent winners. 
+Coral and Dunlin are too risky for investment grade.

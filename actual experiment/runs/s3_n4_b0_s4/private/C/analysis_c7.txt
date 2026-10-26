@@ -1,0 +1,41 @@
+Analysis for Cycle 7:
+
+1. Aster Grid Utilities (AST)
+- Profile: Regulated power, very stable.
+- Metrics: Lev 3.8x, Cov 4.6x.
+- Rating: 
+  - AST-SEC: AA (Strong security, regulated utility)
+  - AST-UNS: A (Consistent with AA secured)
+  - AST-SUB: BBB (Stable but subordinated)
+
+2. Borealis Chemicals (BOR)
+- Profile: Specialty chemicals, cyclical, customer concentration (38% in top 2).
+- Metrics: Lev 4.3x, Cov 3.1x. Springing covenant at 4.75x.
+- Rating:
+  - BOR-SEC: A (Secured on plant/inventory, decent cover)
+  - BOR-UNS: BBB (Cyclicality risk)
+  - BOR-SUB: BB (Higher risk of covenant breach in downturn)
+
+3. Coral Housing Finance (COR)
+- Profile: Affordable housing, deteriorating asset quality (Stage 3 at 4.1%, collection efficiency down to 95%).
+- Metrics: Lev 5.9x, Cov 2.4x. Bank line covenant at 6.5x.
+- Rating:
+  - COR-SEC: BBB (Secured by loan pool, but asset quality is slipping)
+  - COR-UNS: BB (High leverage, funding risk)
+  - COR-SUB: B (Very high risk)
+
+4. Dunlin Logistics (DUN)
+- Profile: Freight/Ports, throughput down 9%, bullet due in 14 months, high revolver draw.
+- Metrics: Lev 6.4x, Cov 1.9x.
+- Rating:
+  - DUN-SEC: BB (High leverage and looming bullet maturity)
+  - DUN-UNS: B (Low cover, high leverage)
+  - DUN-SUB: B (High risk)
+
+Strategy: 
+The mandate requires two IG (AAA, AA, A) ratings. 
+To maximize placement fees, I should aim for the highest possible IG rating that other desks likely agree with.
+- AST-SEC: AA (Likely consensus)
+- AST-UNS: A (Likely consensus)
+- BOR-SEC: A (Likely consensus)
+- Others: Likely non-IG or borderline.

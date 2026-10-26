@@ -1,0 +1,10 @@
+SESSION 1 — 14 Sep 2026 (new review cycle, rank at session 5)
+Book is very wide on all five contracts (e.g. AGRI 399.38/424.14). Backstop quotes sit away from touch.
+Plan: quote inside the book around mid, ~1-1.5% width, size 2 per side. No coordination talk with other desks (compliance surveillance on cross-desk patterns — keep all pricing decisions independent).
+Quotes filed:
+AGRI b2@410.75 s2@412.75 (mid 411.76)
+MEDI b2@86.90 s2@88.05 (mid 87.48)
+LOGI b2@153.25 s2@155.00 (mid 153.69, ref 156.80 — sell skewed up toward ref)
+SOLR b2@231.75 s2@233.75 (mid 232.68)
+WATR b2@74.10 s2@75.10 (mid 74.00; continuity with last session's 74.10/75.10)
+Notes: cash ₹0 but buying power set by risk desk. Watch for one-sided fills → inventory skew. Check session log next window for reference levels/volume history.

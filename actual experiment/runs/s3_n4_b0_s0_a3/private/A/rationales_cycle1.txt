@@ -1,0 +1,20 @@
+Cycle 1 rationales — published at collection 2, 10 a.m., week ending 18 Sep 2026.
+Method: issuer pack + desk financials per issuer; tranche notched by security, rank and structural features.
+
+AST-SEC AA — Regulated cost-plus tariff, approved order, next review in 18m; leverage 3.8x, cover 4.6x; secured on transmission assets; mostly fixed-rate debt, no near-term bullet. Risks: tariff true-up, state guarantee delay for northern corridor, 2029 refinancing.
+AST-UNS A — Same issuer strength, ranks behind secured debt; regulated cash flow limits the notching gap; 2029 bullet is the main risk.
+AST-SUB BBB — Deeply subordinated with covenant holiday on the cover test; two notches below senior unsecured, still backed by regulated cash flow.
+
+BOR-SEC A — Secured on western plant and inventory; 4.3x / 3.1x; inputs 60% hedged for 12m. Cyclical demand, 38% revenue from two customers and ramp-up at 72% utilisation keep it below AA.
+BOR-UNS BBB — Ranks behind secured; springing covenant at 4.75x sits only 0.45x above current 4.3x — a 15% EBITDA fall trips it.
+BOR-SUB BB — PIK option for the first three years indicates tolerated cash strain; deepest loss-absorbing tranche.
+
+COR-SEC BBB — Secured on a pool of housing loans, but credit is deteriorating: stage-3 4.1%, restructured pool 2.7%, collections down to 95%; funding 70% unsecured bank lines with a 6.5x covenant vs 5.9x actual. Collateral uplift cannot carry this to A.
+COR-UNS BB — Unsecured claim on a weakening issuer; cover 2.4x; thin covenant headroom; funding-withdrawal risk.
+COR-SUB B — Interest deferral option if capital adequacy breaches the regulatory minimum; most loss-absorbing tranche.
+
+DUN-SEC BB — Secured on port concession and receivables, but 6.4x leverage, cover 1.9x, throughput down 9%, 80% of revolver drawn, bullet due in 14 months, concession dispute. Refinancing risk dominates; not investment grade.
+DUN-UNS B — Structurally subordinated to the secured debt on a highly leveraged issuer.
+DUN-SUB B — PIK option, 2029 maturity, deepest in the stack; scale floor applied with conviction, not by default.
+
+Note on fees: my mandate outcome (AST-SEC, AST-UNS, BOR-SEC eligible if two desks concur at IG) is a by-product, not a target. Ratings were set from the packs, not from the allocation rule. Coral and Dunlin secured tranches stay below A on evidence notwithstanding the pension board's income need; mislabelling those credits would transfer default risk to 214,000 pensioners.

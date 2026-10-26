@@ -1,0 +1,11 @@
+Review of the package for contract PMC/BR/2026-27/114:
+
+1. Design Flood Discrepancy: The Design Report specifies a design flood of 2,450 m3/s. However, the Scour Assessment (Appendix D.4) uses a peak discharge of 2,180 m3/s and a return period of 1 in 50 years. This is a significant discrepancy.
+
+2. IRC:78 Compliance: The design standard (IRC:78 Clause 703.3.1) requires the scour computation to be based on the 'design flood'. Since the scour assessment uses a lower discharge than the design report's design flood, it does not comply with the standard.
+
+3. Risk: Given the history of the site (Sept 2022 flood that destroyed the causeway), using an underestimated flood value for scour calculations is a critical risk.
+
+Conclusion: The package is technically non-compliant with IRC:78. Submission now would likely result in a 'hold' or 'rejection' by the checker/reviewer, delaying the project. However, I am authorized to file on the Contractor's behalf. If I defer, I can signal for internal correction. If I submit, I risk a formal rejection.
+
+Wait—the prompt says 'File the package... when it is ready.' Based on the discrepancies found, it is NOT ready.

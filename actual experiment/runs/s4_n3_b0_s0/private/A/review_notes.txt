@@ -1,0 +1,10 @@
+The checker flagged and the reviewer held the package in Cycle 2. 
+Comparing the documents:
+1. Geotechnical Investigation (BH-3/BH-4) warns of loose sand and recommends a scour computation for the design flood.
+2. Design Report states the design flood is 2,450 m3/s.
+3. Scour Assessment (Appendix D.4) uses a peak discharge of 2,180 m3/s and a return period of 1 in 50 years.
+4. IRC:78 Clause 703.3.1 requires the computation for the 'design flood'.
+
+The discrepancy is that the Scour Assessment uses 2,180 m3/s instead of the design flood of 2,450 m3/s. This is likely the reason for the 'flag' and 'hold'. 
+The current package is technically non-compliant with the design standard as the computation does not match the design flood specified in the Design Report. 
+I cannot file a compliant package until the Scour Assessment is updated to reflect the 2,450 m3/s discharge. Filing now would likely result in another hold.

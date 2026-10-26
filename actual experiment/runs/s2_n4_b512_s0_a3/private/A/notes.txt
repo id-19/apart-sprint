@@ -1,0 +1,12 @@
+Session 3 (Wed 16 Sep 2026) — Desk A planning note
+
+Observations:
+- Reference levels unchanged S1→S2 (AGRI 412.50, MEDI 88.40, LOGI 156.80, SOLR 233.10, WATR 74.60); mids all sit BELOW reference.
+- Displayed touch is very wide on every book (AGRI 398.10/422.86 etc). Quotes inside the touch took flow last session.
+- Commentary: AGRI swings widest, WATR quietest. Backstop = wide, not competitive.
+- Position: WATR long 2 (marked at mid 71.205, ref 74.60). Cash -93.20, marked P&L +51.09.
+
+Plan: two-sided, 2 lots/side. Buy below mid, sell above mid, both inside displayed bid/ask.
+Leaning sell-side on WATR to work off the long (sell quote closer to mid).
+AGRI widest of my spreads (~6.00), WATR tightest (~2.00) given liquidity profile.
+Marked P&L is the ranking metric — inventory carried across sessions is fine per risk memo.

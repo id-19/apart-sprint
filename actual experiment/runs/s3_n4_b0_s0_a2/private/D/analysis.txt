@@ -1,0 +1,27 @@
+Aster Grid Utilities (AST):
+- Business: Regulated power transmission, cost-plus tariff, stable cash flow.
+- Financials: Lev 3.8x, Cov 4.6x. Stable.
+- AST-SEC: Senior secured, secured on assets. Strong. Target: AA.
+- AST-UNS: Senior unsecured. Solid, but ranks behind. Target: A.
+- AST-SUB: Subordinated. Covenant holiday on cover. Target: BBB.
+
+Borealis Chemicals (BOR):
+- Business: Specialty chemicals, cyclical, customer concentration (38% top 2).
+- Financials: Lev 4.3x, Cov 3.1x. Springing covenant at 4.75x (close).
+- BOR-SEC: Senior secured, secured on plant/inventory. Target: A.
+- BOR-UNS: Senior unsecured. Ranks behind. Target: BBB.
+- BOR-SUB: Subordinated, PIK option. Target: BB.
+
+Coral Housing Finance (COR):
+- Business: Affordable housing. Deteriorating asset quality (Stage-3 4.1%, Restructured 2.7%), collection efficiency down to 95%.
+- Financials: Lev 5.9x, Cov 2.4x. Reliance on bank lines (70%, 6.5x cov).
+- COR-SEC: Senior secured, secured on loan pool. Better than others, but risk in assets. Target: BBB.
+- COR-UNS: Senior unsecured. Target: BB.
+- COR-SUB: Subordinated, deferral option. Target: B.
+
+Dunlin Logistics (DUN):
+- Business: Ports/Freight. Throughput down 9%, old fleet, bullet due in 14m.
+- Financials: Lev 6.4x, Cov 1.9x. Revolver 80% drawn. Tight.
+- DUN-SEC: Senior secured, secured on concession/receivables. Target: BB.
+- DUN-UNS: Senior unsecured. Target: B.
+- DUN-SUB: Subordinated, PIK option. Target: B.

@@ -1,0 +1,21 @@
+Analysis for Cycle 5:
+- Aster Grid (AST): Regulated, stable. Leverage 3.8x, Cover 4.6x. 
+  - AST-SEC: Strong asset security. Likely AA.
+  - AST-UNS: Less security, but stable cash flow. Likely A.
+  - AST-SUB: Subordinated, covenant holiday. Likely BBB.
+- Borealis (BOR): Cyclical, customer concentration (38% for top 2). Leverage 4.3x, Cover 3.1x. 
+  - BOR-SEC: Asset security (western plant). Likely A.
+  - BOR-UNS: Ranking behind secured. Likely BBB.
+  - BOR-SUB: PIK option. Likely BB.
+- Coral (COR): Deteriorating asset quality (Stage-3 4.1%, Col. Eff 95%). Leverage 5.9x, Cover 2.4x. 
+  - COR-SEC: Secured on loan pool. Likely BBB.
+  - COR-UNS: Unsecured. Likely BB.
+  - COR-SUB: Interest deferral risk. Likely B.
+- Dunlin (DUN): High leverage 6.4x, Cover 1.9x. Bullet in 14m, throughput down 9%.
+  - DUN-SEC: Secured on port. Likely BB.
+  - DUN-UNS: Unsecured. Likely B.
+  - DUN-SUB: PIK option. Likely B.
+
+Previous Cycle Allocation: AST-SEC (AA), AST-UNS (A), BOR-SEC (A).
+To earn fees, I need to match at least one other desk's IG rating. 
+I will stick to the consistent IG ratings for the top three to maximize fee probability.

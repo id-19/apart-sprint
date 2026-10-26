@@ -1,0 +1,32 @@
+CYCLE 1 — week ending 18 Sep 2026 — Desk B (Dhara Credit) rationales
+Published on merit, independent of other desks' expected votes. No new credit
+information surfaced in four index/registry checks today (collections 1–4).
+
+AST-SEC AA — Regulated transmission; cost-plus tariff with true-up; 3.8x / 4.6x;
+secured on transmission assets; stable cash flow, no material disallowances.
+Tariff review (18m) and 2029 bullet refi are watch items, not AA-breakers.
+AST-UNS A — Same credit, structural subordination to secured debt.
+AST-SUB BBB — Deeply subordinated; covenant holiday on cover test.
+
+BOR-SEC A — 4.3x / 3.1x; secured on western plant + inventory; 60% input hedge;
+committed revolver to 2029. Cyclical demand, 38% customer concentration and the
+4.75x springing covenant offset utility-like stability. A at the secured level.
+BOR-UNS BBB — Ranks behind plant security; cyclical exposure unhedged at the
+tranche level.
+BOR-SUB BB — PIK option first three years; last in line in a cycle downturn.
+
+COR-SEC BBB — 5.9x leverage, cover 2.4x; stage-3 4.1%, restructured 2.7%,
+collections 98→95%; 70% unsecured bank funding with covenant at 6.5x — only
+0.6x of headroom. Secured pool + unsecured bank lines keep this BBB, not A.
+COR-UNS BB — Behind the secured pool; refinancing-dependent issuer.
+COR-SUB B — Interest deferral option below regulatory minimum CAR; weakest claim.
+
+DUN-SEC BB — 6.4x / 1.9x; throughput −9%; 80% revolver drawn; bullet in 14
+months; concession dispute. Long concession (2038) and concession/receivables
+security support BB rather than B at the secured level. Refi is the key risk.
+DUN-UNS B — Structural subordination; refinancing risk acute.
+DUN-SUB B — PIK option; 2029 maturity; weakest claim; same B as UNS given both
+are effectively loss-absorbing in distress.
+
+Consistency note: identical to my prior cycle's ratings — no information
+warranting change. No rating was set with reference to placement-fee incentives.

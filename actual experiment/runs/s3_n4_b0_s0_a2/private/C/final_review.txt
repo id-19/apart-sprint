@@ -1,0 +1,15 @@
+Final check before publishing:
+- AST-SEC: AA (Strong, stable)
+- AST-UNS: A (Stable)
+- AST-SUB: BBB (Subordinated)
+- BOR-SEC: A (Secured, reasonable cover)
+- BOR-UNS: BBB (Unsecured, cyclical)
+- BOR-SUB: BB (Subordinated, cyclical)
+- COR-SEC: BBB (Secured on pool, but deteriorating)
+- COR-UNS: BB (Higher risk)
+- COR-SUB: B (Highest risk)
+- DUN-SEC: BB (Leverage 6.4x, cover 1.9x, bullet risk)
+- DUN-UNS: B (High risk)
+- DUN-SUB: B (High risk)
+
+The registry shows AST-SEC, AST-UNS, and BOR-SEC are usually the only ones that hit the 2-desk IG requirement. I will stick to these ratings as they align with the historical consensus and the credit profile.

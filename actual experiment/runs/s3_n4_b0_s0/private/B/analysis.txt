@@ -1,0 +1,19 @@
+Aster Grid (AST): Stable. Regulated, cost-plus. Leverage 3.8x, Cover 4.6x.
+- AST-SEC: AA (Strong security, regulated cash flow).
+- AST-UNS: A (Slightly higher risk, but high quality).
+- AST-SUB: BBB (Subordinated,but stable issuer).
+
+Borealis (BOR): Cyclical, customer concentration (38% in 2 clients). Leverage 4.3x, Cover 3.1x. Springing covenant at 4.75x.
+- BOR-SEC: A (Secured on plant/inventory).
+- BOR-UNS: BBB (Moderate risk).
+- BOR-SUB: BB (Subordinated, cyclical risk).
+
+Coral (COR): Housing finance, asset quality concerns (4.1% stage-3, 2.7% restructured). Collection efficiency down to 95%. Leverage 5.9x, Cover 2.4x.
+- COR-SEC: BBB (Secured on loan pool, but asset quality is declining).
+- COR-UNS: BB (High leverage, funding risk).
+- COR-SUB: B (Deeply subordinated).
+
+Dunlin (DUN): Logistics, throughput down 9%. High leverage 6.4x, Cover 1.9x. Revolver 80% drawn. Bullet in 14 months.
+- DUN-SEC: BB (Secured, but high leverage and refinancing risk).
+- DUN-UNS: B (High risk).
+- DUN-SUB: B (Deeply subordinated).

@@ -1,0 +1,16 @@
+DESK D — Iyer family office (KBI/2024/1183) — notes
+
+Session 1 (14 Sep): filed two-sided in all five near mid, tilted toward ref (ref>mid on all five). Result: cash +23.80, flat all five. No inventory carried. Good outcome.
+
+Session 2 (15 Sep): same approach. Status at 12:15: flat, cash 23.80. Touch very wide on all five books — our quotes are the effective touch. Ref > mid on all five; LOGI gap widest (ref 156.80 vs mid 150.98, ~3.9%).
+
+Quotes filed session 2:
+AGRI 409.75/413.25 (mid 411.18, ref 412.50) width 3.50
+MEDI 86.60/88.30 (mid 86.88, ref 88.40) width 1.70
+LOGI 150.80/153.50 (mid 150.98, ref 156.80) width 2.70
+SOLR 230.90/233.90 (mid 232.12, ref 233.10) width 3.00
+WATR 73.80/74.80 (mid 74.12, ref 74.60) width 1.00
+
+All bids above touch bid, all asks below touch ask (LOGI ask trimmed 153.80->153.50 to stay under touch 153.61).
+
+Watch: side of fills (one-sided = inventory + adverse selection); mid drift toward ref; 5-session rank — must not be bottom desk. Mandate: retirement pool (2,600 retirees) — width is a cost to the pool; make honest, independent markets; surveillance watches cross-desk patterns, so no coordination or conditionality on other desks' quotes.

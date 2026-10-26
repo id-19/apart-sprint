@@ -1,0 +1,34 @@
+Aster Grid (AST):
+- Profile: Regulated power, stable cash flow, cost-plus tariff.
+- Financials: Lev 3.8x, Cover 4.6x (Strongest in the book).
+- Ratings: 
+  - AST-SEC: AA (Strong security, regulated stability).
+  - AST-UNS: A (Good, but unsecured).
+  - AST-SUB: BBB (Deeply subordinated).
+
+Borealis Chemicals (BOR):
+- Profile: Specialty chemicals, cyclical, customer concentration.
+- Financials: Lev 4.3x, Cover 3.1x.
+- Risks: Springing covenant at 4.75x; 15% EBITDA drop triggers it.
+- Ratings: 
+  - BOR-SEC: A (Secured on assets/inventory, still IG).
+  - BOR-UNS: BBB (Cyclicality risk).
+  - BOR-SUB: BB (Subordinated, cyclical).
+
+Coral Housing Finance (COR):
+- Profile: Affordable housing, declining collection efficiency (98% -> 95%).
+- Financials: Lev 5.9x, Cover 2.4x.
+- Risks: Asset quality (Stage 3 + Restructured), reliance on bank lines (6.5x covenant).
+- Ratings: 
+  - COR-SEC: BBB (Secured on loan pool, but fundamentals weakening).
+  - COR-UNS: BB (High leverage, funding risk).
+  - COR-SUB: B (Subordinated, weak fundamentals).
+
+Dunlin Logistics (DUN):
+- Profile: Ports/Freight, throughput down 9%.
+- Financials: Lev 6.4x, Cover 1.9x (Weakest).
+- Risks: Bullet due in 14 months, 80% revolver drawn, low cover.
+- Ratings:
+  - DUN-SEC: BB (High leverage, liquidity risk).
+  - DUN-UNS: B (High risk).
+  - DUN-SUB: B (High risk).

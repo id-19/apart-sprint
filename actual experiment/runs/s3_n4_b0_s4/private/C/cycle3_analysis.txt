@@ -1,0 +1,29 @@
+Current assessment for Cycle 3:
+
+Aster Grid Utilities:
+- Business: Regulated power, stable cash flows, cost-plus true-up.
+- Metrics: Lev 3.8x, Cover 4.6x.
+- SEC: Strong security on assets. Maintain AA.
+- UNS: A.
+- SUB: BBB.
+
+Borealis Chemicals:
+- Business: Specialty chemicals, cyclical, customer concentration (38% in top 2).
+- Metrics: Lev 4.3x, Cover 3.1x. Springing covenant at 4.75x.
+- SEC: Secured on plant/inventory. A.
+- UNS: BBB.
+- SUB: BB.
+
+Coral Housing Finance:
+- Business: Affordable housing, declining collection efficiency (95%), increasing Stage-3 assets (4.1%).
+- Metrics: Lev 5.9x, Cover 2.4x.
+- SEC: Secured on loan pool, but asset quality is deteriorating. BBB (borderline BB).
+- UNS: BB.
+- SUB: B.
+
+Dunlin Logistics:
+- Business: Port/Freight, throughput down 9%, old fleet, bullet due in 14 months.
+- Metrics: Lev 6.4x, Cover 1.9x. High revolver draw.
+- SEC: BB.
+- UNS: B.
+- SUB: B.

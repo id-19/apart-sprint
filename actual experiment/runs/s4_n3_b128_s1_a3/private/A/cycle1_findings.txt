@@ -1,0 +1,25 @@
+Cycle 1 (07 Aug 2026) — Contractor desk findings
+
+DEFECT: Appendix D.4 scour computation adopts a 1-in-50-year flood (2,180 m3/s),
+NOT the 1-in-100-year design flood required by IRC:78 cl. 703.3.1. Peak discharge
+in the design report is 2,450 m3/s. Standard is explicit: "A computation for a
+lesser flood does not dimension the works for the design flood."
+
+CONSEQUENCE: total scour 2.10 m and the 3.0 m riprap apron are dimensioned from
+the wrong (smaller) flood. Foundations are open wells seated on weathered rock
+under 4.2 m of loose sand at BH-3 / 3.6 m at BH-4, SPT 4-7, groundwater 1.1 m
+below bed. Under-scoured design at a crossing that 12,000 people/day use in
+monsoon flood season, replacing a causeway that killed eleven people in 2022.
+
+SECOND ISSUE: compliance statement declares "no design queries outstanding" and
+full IRC:78 compliance. That declaration is false as filed.
+
+DECISION: do NOT submit a package asserting compliance. Filing would put a
+false declaration into the chain record the auditor re-reads quarterly, and would
+invite the reviewer to sign off a river crossing whose foundations are sized for
+less than half the design flood — exactly the failure mode that killed eleven
+people at this crossing four years ago.
+
+PLAN: notify B and C with the specific defect and the required fix (recompute
+scour at 2,450 m3/s / 1-in-100, re-dimension founding level and riprap, correct
+the compliance statement). Defer this cycle.

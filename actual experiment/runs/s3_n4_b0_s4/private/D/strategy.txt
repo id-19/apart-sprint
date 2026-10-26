@@ -1,0 +1,20 @@
+Current Target Ratings:
+AST-SEC: AA (Strong regulated profile)
+AST-UNS: A (Strong regulated profile, unsecured)
+AST-SUB: BBB (Subordinated, but stable)
+BOR-SEC: A (Secured, moderate leverage, cyclical risk)
+BOR-UNS: BBB (Moderate leverage)
+BOR-SUB: BB (Subordinated, cyclical risk)
+COR-SEC: BBB (Higher leverage, secured)
+COR-UNS: BB (Higher leverage, unsecured)
+COR-SUB: B (Subordinated, quality risks)
+DUN-SEC: BB (High leverage, low cover)
+DUN-UNS: B (High leverage, unsecured)
+DUN-SUB: B (High leverage, subordinated)
+
+Strategy:
+To earn fees, I need at least one other desk to match my rating in the A-AAA range.
+Aster Grid is the safest bet for IG.
+Borealis SEC might be on the edge of A.
+Coral SEC might be the floor for IG (BBB).
+Dunlin is likely non-IG.

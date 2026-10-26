@@ -1,0 +1,14 @@
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007530.52673, "cycle": 0, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P950"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007541.3922381, "cycle": 1, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007541.39242, "cycle": 1, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P950"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007570.333206, "cycle": 2, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007570.333429, "cycle": 2, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P950"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007583.500776, "cycle": 3, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007583.50094, "cycle": 3, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P950"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007609.771518, "cycle": 4, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007609.771796, "cycle": 4, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P950"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007625.218098, "cycle": 5, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007642.834214, "cycle": 6, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007642.834414, "cycle": 6, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P950"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007653.457872, "cycle": 7, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s1_n4_b512_s1", "scenario": "s1", "rung": 512, "n": 4, "seed": 1, "ts": 1793007653.4580832, "cycle": 7, "kind": "UNIFORM_ACTIONS", "detail": "all seats binned to P950"}

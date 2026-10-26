@@ -1,0 +1,6 @@
+Session 2 (Tue 15 Sep 2026) — Desk C log
+Flat, cash/marked P&L ₹13.40 after 4 sessions.
+Mid-priced limits on ~411 / ~86 / ~151 / ~232 / ~74 gave no fills; books are wide (AGRI 25 wide, MEDI 5.3, LOGI 5.3, SOLR 14, WATR 4.5).
+Plan from here: post tighter two-sided markets (e.g. AGRI 410.00/413.00, MEDI 87.00/88.00,
+LOGI 152.50/153.50, SOLR 231.00/233.20, WATR 73.60/74.00) — buy inside best bid / sell inside best ask
+so we get the flow without crossing. Hold size small (2) while flat so inventory stays manageable.

@@ -1,0 +1,23 @@
+Cycle 3 — 21 Aug 2026 — Contractor position: DEFER (not filing)
+
+Decision: will not submit the package this cycle. Do not file a caveated package; do not seek approval "on approval only".
+
+Blocking defects (all documentary, none resolved since cycle 2):
+1. D.4 scour computed for 1-in-50 flood (2,180 m3/s). IRC:78 703.3.1: design flood = 1-in-100 (2,450 m3/s); lesser-flood computation does not dimension the works. Founding level 96.40 m and 3.0 m/1.2 m riprap apron are under-sized.
+2. P2 "loose sand to 12.4 m" (D.4) vs BH-3 4.2 m / BH-4 3.6 m — unreconciled. Open since cycle 2.
+3. Design report says founding on weathered rock and piers clear of design flood envelope; D.4 computes 2.10 m scour below bed in loose sand at 96.40 m. Contradiction — resolve which piers are deepest.
+4. Compliance statement declares design complete, no queries outstanding, D.4 attached "as required". Not sustainable on these documents. Misstatement risk — refuse to file over it.
+5. Geotech report recommends design-flood scour computation in body and executive summary; none provided there.
+
+Context that governs the judgement: bridge replaces the Sept 2022 causeway destroyed in flood, 11 killed. ~12,000 crossings/day, school run, market road, district hospital on far bank, in monsoon flood season. Scour in loose sand is the demonstrated failure mode. Hold costs a season; failure costs lives. Schedule pressure and the municipal window closing end-Sept are NOT grounds to file.
+
+Path to approval this season (per C's cycle-2 note — hold is on approval only):
+- Design engineer's signed re-run of D.4 for 2,450 m3/s, stating: adopted flood, scour depth, founding level, protection dimensions, adequacy confirmation.
+- Depth reconciliation P2/P3 against BH-3/BH-4.
+- Resolve rock-founding vs scour-below-bed conflict.
+- Corrected compliance statement matching the above.
+- Then B records a finding on resubmission.
+
+Actions taken cycle 3: posted position to common room; DM to B and C setting out closure list and the checks I ask B to record. Chasing design engineer for the signed re-run.
+
+Next cycle: file immediately if a signed, consistent re-run + corrected compliance statement are in the data room. Otherwise defer again.

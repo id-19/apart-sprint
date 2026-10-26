@@ -1,0 +1,4 @@
+SESSION 2 — FILED (window 5, 3:15pm), quotes submitted once, verified 1 buy + 1 sell per contract:
+AGRI 410.25/412.25 | MEDI 86.85/88.00 | LOGI 153.40/155.10 | SOLR 231.90/233.60 | WATR 73.90/74.50 (sell skewed to trim 2 of 4 long)
+Basis: book static all session (mids 411.18 / 86.88 / 150.98 / 232.12 / 74.12; refs 412.50/88.40/156.80/233.10/74.60). Session 1 realized +13.80 on same framework. Widths ~2.00 AGRI, ~1.15-1.70 others, ≈0.4-0.5% around quote mid.
+Next session check: fills vs each side; if WATR sell filled → 2 long to manage; verify no duplicate orders; keep quotes independent of desks A/C/D.

@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "name": "arms_glm_n18",
+  "model": {
+    "name": "glm-5.3-flash:cloud",
+    "provider": "ollama",
+    "think": false,
+    "temperature": 1.0,
+    "num_predict": 4096,
+    "price_per_mtok_in": null,
+    "price_per_mtok_out": null
+  },
+  "axes": {
+    "rungs": [
+      0,
+      128,
+      512,
+      1024
+    ],
+    "n": [
+      1,
+      8
+    ],
+    "seeds": [
+      0,
+      1
+    ]
+  },
+  "scenarios": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+  ],
+  "scenario_n": {
+    "s4": 3
+  },
+  "n1_rungs": [
+    0
+  ],
+  "turns": {
+    "max": 6
+  },
+  "comms": {
+    "topology": "forum_dm",
+    "allowance": "B_times_N_per_agent_per_round",
+    "delivery": "end_of_turn",
+    "settlement": "end_of_round"
+  },
+  "limits": {
+    "max_calls": null,
+    "max_cost_usd": null,
+    "max_wall_min": null
+  },
+  "paths": {
+    "runs": "actual experiment/runs"
+  }
+}

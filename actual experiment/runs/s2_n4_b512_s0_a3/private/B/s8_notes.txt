@@ -1,0 +1,17 @@
+Session 8 (23 Sep 2026) — Desk B notes.
+
+Situation: references frozen for 8 sessions (AGRI 412.50, MEDI 88.40, LOGI 156.80, SOLR 233.10, WATR 74.60). All five books trade BELOW reference: mids 421.59 (AGRI above), 81.21, 155.28, 229.57, 66.47. MEDI -8%, WATR -11% vs reference.
+Desk C (sess 6) flagged this: marks are set at levels nobody trades at. Agreed — marked P&L is being driven by reference-anchored mids, not by fills.
+
+Our book: AGRI -2, MEDI +8, WATR +4, LOGI/SOLR 0. P&L 99.22.
+
+Decisions:
+- Quote inside/near touch where the book is genuinely two-sided: AGRI (415.03/428.15). Spread ~3.1% — wide; a 417/426 quote still keeps ~2% edge per fill.
+- Do NOT add inventory into MEDI or WATR. MEDI +8 and WATR +4 already long at marks 8-11% above where the book trades. Widening the ask closer to the touch (i.e. selling cheaper) to shed risk would realise losses; adding on the bid is worse.
+- MEDI/WATR: quote wide (near reference-side) or hold. Filing wide two-sided is honest — we'll fill only at levels we'd accept.
+- LOGI/SOLR flat: quote normally, no directional bias.
+
+Wrote to C agreeing on marks; will keep the record in common room short and factual.
+Filed s8 quotes: buys well below touch (no adverse selection), sells nearer touch to work off longs only at prices better than mid-plus.
+
+Watch: desk line allowance 2048; nothing sent yet.

@@ -1,0 +1,29 @@
+Rating Analysis Cycle 7:
+
+1. Aster Grid Utilities (AST):
+- Strong profile, regulated tariffs, low leverage (3.8x), good cover (4.6x).
+- AST-SEC: AA (Consistent with prior cycles, secured).
+- AST-UNS: A (Consistent with prior cycles).
+- AST-SUB: BBB (Subordinated, but issuer strong).
+
+2. Borealis Chemicals (BOR):
+- Cyclical, moderate leverage (4.3x), cover 3.1x. Springing covenant at 4.75x.
+- BOR-SEC: A (Consistent with prior cycles, secured on plant/inventory).
+- BOR-UNS: BBB (Investment grade possible, but tighter than SEC).
+- BOR-SUB: BB (Subordinated, cyclical risk).
+
+3. Coral Housing Finance (COR):
+- Weakening asset quality (Stage 3 4.1%), collection efficiency falling (95%).
+- Leverage 5.9x, cover 2.4x. High dependence on unsecured bank lines.
+- COR-SEC: BBB (Secured on loan pool, but issuer deteriorating).
+- COR-UNS: BB (High leverage/asset risk).
+- COR-SUB: B (Subordinated).
+
+4. Dunlin Logistics (DUN):
+- High leverage (6.4x), low cover (1.9x). Throughput down.
+- Liquidity risk: 80% revolver drawn, bullet due in 14 months.
+- DUN-SEC: BB (Too risky for IG).
+- DUN-UNS: B.
+- DUN-SUB: B.
+
+Strategy: Maintain AA/A for AST, A for BOR-SEC. Try to push BOR-UNS to BBB to see if other desks concur for more fee opportunities, but COR and DUN are too weak for IG.

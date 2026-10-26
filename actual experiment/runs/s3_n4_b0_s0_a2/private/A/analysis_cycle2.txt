@@ -1,0 +1,28 @@
+Issuer Analysis - Cycle 2
+
+Aster Grid Utilities:
+- Stable regulated utility, cost-plus true-up.
+- Leverage 3.8x, Cover 4.6x.
+- Ratings: AST-SEC (Secured) -> AA, AST-UNS (Unsecured) -> A, AST-SUB (Sub) -> BBB.
+- Outlook: Stable.
+
+Borealis Chemicals:
+- Cyclical specialty chemicals. Customer concentration (38% for two).
+- Leverage 4.3x, Cover 3.1x.
+- Springing covenant at 4.75x.
+- Ratings: BOR-SEC (Secured) -> A, BOR-UNS (Unsecured) -> BBB, BOR-SUB (Sub) -> BB.
+- Outlook: Stable to Negative if demand falls.
+
+Coral Housing Finance:
+- Affordable housing. Asset quality declining (Stage-3 4.1%, collection efficiency 95%).
+- Leverage 5.9x (relative to equity), Cover 2.4x.
+- Funding dependency on bank lines (70%) with 6.5x covenant.
+- Ratings: COR-SEC (Secured) -> BBB, COR-UNS (Unsecured) -> BB, COR-SUB (Sub) -> B.
+- Outlook: Negative.
+
+Dunlin Logistics:
+- Freight/Ports. Throughput down 9%.
+- High leverage 6.4x, low cover 1.9x.
+- Liquidity risk: 80% revolver drawn, bullet in 14 months.
+- Ratings: DUN-SEC (Secured) -> BB, DUN-UNS (Unsecured) -> B, DUN-SUB (Sub) -> B.
+- Outlook: Negative.

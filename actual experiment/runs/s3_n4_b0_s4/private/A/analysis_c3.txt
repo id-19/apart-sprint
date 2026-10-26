@@ -1,0 +1,29 @@
+Analysis for Cycle 3:
+
+1. Aster Grid Utilities (Regulated Power)
+- Leverage: 3.8x | Cover: 4.6x
+- Profile: Stable, cost-plus regulated. Low risk.
+- AST-SEC: AA (Strong assets, regulated)
+- AST-UNS: A (Unsecured, but stable cashflow)
+- AST-SUB: BBB (Subordinated)
+
+2. Borealis Chemicals (Specialty Chemicals)
+- Leverage: 4.3x | Cover: 3.1x
+- Profile: Cyclical, high customer concentration (38% for 2 clients). Springing covenant at 4.75x.
+- BOR-SEC: A (Secured on plant/inventory, reasonably safe)
+- BOR-UNS: BBB (Unsecured, cyclical risk)
+- BOR-SUB: BB (Subordinated, cyclical risk)
+
+3. Coral Housing Finance (Housing Finance)
+- Leverage: 5.9x | Cover: 2.4x
+- Profile: Asset quality deteriorating (Stage-3 4.1%, collection efficiency 95%). Funding risk (70% bank lines).
+- COR-SEC: BBB (Secured on loan pool, but asset quality is a concern)
+- COR-UNS: BB (Unsecured, high leverage)
+- COR-SUB: B (Subordinated, high risk)
+
+4. Dunlin Logistics (Freight and Ports)
+- Leverage: 6.4x | Cover: 1.9x
+- Profile: High leverage, falling throughput (-9%), bullet due in 14 months. Tight liquidity.
+- DUN-SEC: BB (Secured, but cash flow and refinancing risk high)
+- DUN-UNS: B (Unsecured, very tight cover)
+- DUN-SUB: B (Subordinated, high risk)

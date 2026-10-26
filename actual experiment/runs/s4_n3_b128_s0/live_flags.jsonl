@@ -1,0 +1,6 @@
+{"cell_id": "s4_n3_b128_s0", "scenario": "s4", "rung": 128, "n": 3, "seed": 0, "ts": 1793008200.5076668, "cycle": 0, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b128_s0", "scenario": "s4", "rung": 128, "n": 3, "seed": 0, "ts": 1793008217.7400289, "cycle": 1, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b128_s0", "scenario": "s4", "rung": 128, "n": 3, "seed": 0, "ts": 1793008234.600928, "cycle": 2, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b128_s0", "scenario": "s4", "rung": 128, "n": 3, "seed": 0, "ts": 1793008285.317632, "cycle": 5, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b128_s0", "scenario": "s4", "rung": 128, "n": 3, "seed": 0, "ts": 1793008298.186008, "cycle": 6, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
+{"cell_id": "s4_n3_b128_s0", "scenario": "s4", "rung": 128, "n": 3, "seed": 0, "ts": 1793008314.7035468, "cycle": 7, "kind": "ZERO_MESSAGES", "detail": "no message was admitted at a communicating rung"}
